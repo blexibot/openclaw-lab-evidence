@@ -1,0 +1,158 @@
++/Users/admin/a2-v1.sh:4> date -u +%FT%TZ
+2026-11-16T09:07:29Z
++/Users/admin/a2-v1.sh:5> STATE=/Users/admin/t191855/.openclaw 
++/Users/admin/a2-v1.sh:6> W=/Users/admin/t191855/.openclaw/workspace/state 
++/Users/admin/a2-v1.sh:7> mkdir -p /Users/admin/t191855-out
++/Users/admin/a2-v1.sh:9> rm -f /Users/admin/labvol1.dmg
++/Users/admin/a2-v1.sh:10> hdiutil create -size 64m -fs APFS -volname labvol1 /Users/admin/labvol1.dmg
+created: /Users/admin/labvol1.dmg
+create rc=0
++/Users/admin/a2-v1.sh:11> echo 'create rc=0'
++/Users/admin/a2-v1.sh:12> mkdir -p /Users/admin/t191855/.openclaw/workspace/state/labvol
++/Users/admin/a2-v1.sh:13> hdiutil attach -owners on -mountpoint /Users/admin/t191855/.openclaw/workspace/state/labvol /Users/admin/labvol1.dmg
+/dev/disk7          	GUID_partition_scheme          	
+/dev/disk7s1        	Apple_APFS                     	
+/dev/disk8          	EF57347C-0000-11AA-AA11-0030654	
+/dev/disk8s1        	41504653-0000-11AA-AA11-0030654	/Users/admin/t191855/.openclaw/workspace/state/labvol
+attach rc=0
++/Users/admin/a2-v1.sh:14> echo 'attach rc=0'
++/Users/admin/a2-v1.sh:15> echo x
++/Users/admin/a2-v1.sh:16> i=1
++/Users/admin/a2-v1.sh:16> [ -e /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd ']'
++/Users/admin/a2-v1.sh:16> sleep 2
++/Users/admin/a2-v1.sh:16> i=2
++/Users/admin/a2-v1.sh:16> [ -e /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd ']'
++/Users/admin/a2-v1.sh:16> break
++/Users/admin/a2-v1.sh:17> mount
++/Users/admin/a2-v1.sh:17> grep labvol
+/dev/disk8s1 on /Users/admin/t191855/.openclaw/workspace/state/labvol (apfs, local, nodev, nosuid, journaled, mounted by admin)
++/Users/admin/a2-v1.sh:18> grep -iE 'owners|file system|mount point'
++/Users/admin/a2-v1.sh:18> diskutil info /Users/admin/t191855/.openclaw/workspace/state/labvol
+   Mount Point:               /Users/admin/t191855/.openclaw/workspace/state/labvol
+   File System Personality:   APFS
+   Owners:                    Enabled
++/Users/admin/a2-v1.sh:19> ls -leOd /Users/admin/t191855/.openclaw/workspace/state/labvol /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd
+drwxr-xr-x  4 admin  staff  - 128 Nov 16 09:07 /Users/admin/t191855/.openclaw/workspace/state/labvol
+drwx------+ 3 root   staff  -  96 Nov 16 09:07 /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd
+ 0: group:everyone allow readextattr
++/Users/admin/a2-v1.sh:20> stat /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture
+stat: /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture: stat: Permission denied
+stat rc=1
++/Users/admin/a2-v1.sh:20> echo 'stat rc=1'
++/Users/admin/a2-v1.sh:21> openclaw backup create --dry-run --json
+{
+  "createdAt": "2026-11-16T09:07:33.289Z",
+  "archiveRoot": "2026-11-16T09-07-33.289+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/2026-11-16T09-07-33.289+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-07-33.289+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++/Users/admin/a2-v1.sh:21> echo 'dryrun rc=0'
++/Users/admin/a2-v1.sh:22> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+backup rc=1
++/Users/admin/a2-v1.sh:22> echo 'backup rc=1'
++/Users/admin/a2-v1.sh:23> hdiutil detach /Users/admin/t191855/.openclaw/workspace/state/labvol
+"disk7" ejected.
+detach rc=0
++/Users/admin/a2-v1.sh:23> echo 'detach rc=0'
++/Users/admin/a2-v1.sh:24> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "createdAt": "2026-11-16T09:07:45.780Z",
+  "archiveRoot": "2026-11-16T09-07-45.780+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/t191855-out/2026-11-16T09-07-45.780+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-07-45.780+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+control-backup rc=0
++/Users/admin/a2-v1.sh:24> echo 'control-backup rc=0'
++/Users/admin/a2-v1.sh:25> date -u +%FT%TZ
+2026-11-16T09:07:46Z
+host-rc=0

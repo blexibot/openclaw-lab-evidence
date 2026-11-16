@@ -1,0 +1,11 @@
+# bench action logs (t191855 lines only), read from each lab host after the run
+# <LAB-MAC> bench log
+2026-11-16T09:03:07Z	new t191855-mac golden-macos26
+2026-11-16T09:03:45Z	openclaw t191855-mac 2026.11.3
+2026-11-16T09:08:19Z	openclaw t191855-mac 2026.11.4
+2026-11-16T09:09:25Z	openclaw t191855-mac 2026.11.3
+2026-11-16T09:13:07Z	destroy t191855-mac
+# <LAB-LINUX> bench log
+2026-11-16T09:13:22Z	new t191855-lin ubuntu/24.04
+2026-11-16T09:14:06Z	openclaw t191855-lin 2026.11.3
+2026-11-16T09:57:36Z	destroy t191855-lin

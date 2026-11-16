@@ -1,0 +1,69 @@
+2026-11-16T11:20:49.622+00:00 [gateway] startup phase: post-attach.system-ca starting total=6380.2ms
+2026-11-16T11:20:49.623+00:00 [gateway] startup phase: post-attach.system-ca 0.4ms total=6380.6ms
+2026-11-16T11:20:49.628+00:00 [gateway] startup phase: sidecars.main-session-recovery starting total=6385.4ms
+2026-11-16T11:20:49.630+00:00 [gateway] startup phase: plugins.runtime-post-bind starting total=6387.6ms
+2026-11-16T11:20:49.915+00:00 [gateway] startup phase: plugins.runtime-post-bind 284.9ms total=6672.5ms
+2026-11-16T11:20:49.915+00:00 [gateway] startup phase: plugins.runtime-attach starting total=6672.7ms
+2026-11-16T11:20:49.919+00:00 [gateway] startup phase: plugins.runtime-attach 3.9ms total=6676.6ms
+2026-11-16T11:20:50.594+00:00 [gateway] startup phase: sidecars.main-session-recovery 966.7ms total=7352.2ms
+2026-11-16T11:20:50.601+00:00 [gateway] agent model: ollama/mock:latest (thinking=off, fast=off)
+2026-11-16T11:20:50.602+00:00 [gateway] http server listening (14 plugins: anthropic, browser, canvas, cua-computer, device-pair, file-transfer, geolocation, github, linux-node, memory-core, ollama, openai, talk-voice, xai; 5.4s)
+2026-11-16T11:20:50.602+00:00 [gateway] log file: /tmp/openclaw/openclaw-2026-11-16.log
+2026-11-16T11:20:50.602+00:00 [gateway] Older local CLI/SDK versions can bypass Gateway state mutation routing. Use matching CLI/SDK and Gateway versions; direct state writes from another process while this Gateway owns state are unsupported.
+2026-11-16T11:20:50.602+00:00 [gateway] native runtime: {"pid":3107,"platform":"linux","arch":"x64","node":"24.22.3","v8":"13.6.233.17-node.63","uv":"1.52.1","openssl":"3.5.9","sqlite":"3.54.1","sqliteClose":{"explicitSqliteCloseReleasesNativeResources":true,"decided":true,"reason":"Node runtime"}}
+2026-11-16T11:20:50.602+00:00 [gateway] worker startup state: {"workerCount":11,"workerLifecycle":[{"script":"other","started":1,"retired":[{"reason":"exit","count":1}]},{"script":"openclaw-state-read.worker.js","started":3,"retired":[{"reason":"closed","count":1}]},{"script":"gateway-state-owner-heartbeat.worker.js","started":1,"retired":[]},{"script":"worker-native-lifecycle.worker.js","started":1,"retired":[]},{"script":"openclaw-state-lease-heartbeat.worker.js","started":1,"retired":[]},{"script":"sqlite-store.worker.js","started":2,"retired":[]},{"script":"session-transcript.worker.js","started":4,"retired":[]}],"compute":{"limit":19,"active":0,"waitingPools":0,"pendingTasks":0,"pendingBytes":0}}
+2026-11-16T11:20:50.611+00:00 [gateway] startup phase: sidecars.worker-environments starting total=7369.3ms
+2026-11-16T11:20:50.641+00:00 [gateway] startup phase: sidecars.worker-environments 29.2ms total=7398.5ms
+2026-11-16T11:20:50.641+00:00 [gateway] starting channels and sidecars...
+2026-11-16T11:20:50.642+00:00 [gateway] startup phase: sidecars.internal-hooks starting total=7400.1ms
+2026-11-16T11:20:50.644+00:00 [gateway] startup phase: sidecars.reply-runtime starting total=7402.3ms
+2026-11-16T11:20:50.646+00:00 [gateway] startup phase: sidecars.model-runtime starting total=7403.4ms
+2026-11-16T11:20:50.793+00:00 [gateway] startup phase: sidecars.internal-hooks 150.7ms total=7550.8ms
+2026-11-16T11:20:50.940+00:00 [gateway] startup phase: sidecars.reply-runtime 295.3ms total=7697.6ms
+2026-11-16T11:20:51.091+00:00 [gateway] startup phase: sidecars.model-runtime 445.9ms total=7849.3ms
+2026-11-16T11:20:51.094+00:00 [gateway] startup phase: sidecars.chat-metadata starting total=7851.6ms
+2026-11-16T11:20:51.094+00:00 [gateway] startup phase: sidecars.chat-metadata 0.4ms total=7852.0ms
+2026-11-16T11:20:51.094+00:00 [gateway] startup phase: sidecars.channels starting total=7852.1ms
+2026-11-16T11:20:51.095+00:00 [gateway] startup phase: sidecars.channels 0.4ms total=7852.6ms
+2026-11-16T11:20:51.096+00:00 [gateway] startup phase: sidecars.plugin-services starting total=7853.9ms
+2026-11-16T11:20:51.576+00:00 [gateway] startup phase: sidecars.plugin-services 479.8ms total=8333.7ms
+2026-11-16T11:20:51.579+00:00 [gateway] startup outcomes: internal-hooks=skipped (not-configured); internal-startup-hook=skipped (no-handlers-loaded); gateway-start-hooks=scheduled; gmail-watcher=skipped (hooks-disabled); gmail-model=skipped (not-configured)
+2026-11-16T11:20:51.583+00:00 [gateway] startup phase: runtime.worker-pool-metrics starting total=8341.4ms
+2026-11-16T11:20:51.586+00:00 [gateway] startup phase: runtime.worker-pool-metrics 3.0ms total=8344.4ms
+2026-11-16T11:20:51.587+00:00 [gateway] startup phase: ready 0.4ms total=8344.8ms
+2026-11-16T11:20:51.587+00:00 [gateway] ready
+2026-11-16T11:20:51.607+00:00 [heartbeat] started
+2026-11-16T11:20:52.188+00:00 [gateway] startup phase: sidecars.subagent-recovery starting total=8945.7ms
+(node:3107) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: resolveAuthStorePathForDisplay is deprecated; use provider/profile identifiers for displays (there is no public async database-path replacement) instead. The legacy contract remains supported during its deprecation period. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-16T11:20:53.003+00:00 [gateway] startup phase: sidecars.subagent-recovery 814.7ms total=9760.4ms
+2026-11-16T11:20:53.191+00:00 [gateway] database page-cache residency: database=state scope=file-sample resident=100.0% readBytes=48101 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=21.5 projectionQueryMs=n/a->n/a limited=false
+2026-11-16T11:20:53.332+00:00 [gateway] database page-cache residency: database=agent scope=file-sample resident=100.0% readBytes=117877 diskBytes=0 payloadBytes=0 payloadMessages=0 elapsedMs=30.9 projectionQueryMs=0.87->n/a limited=false
+2026-11-16T11:20:54.153+00:00 [gateway] startup phase: post-ready.startup-maintenance starting total=10911.2ms
+2026-11-16T11:20:54.154+00:00 [gateway] startup phase: startup.maintenance.plugin-registry starting total=10912.2ms
+2026-11-16T11:20:54.155+00:00 [gateway] startup phase: startup.maintenance.channels starting total=10912.7ms
+2026-11-16T11:20:54.156+00:00 [gateway] startup phase: startup.maintenance.sessions starting total=10913.7ms
+2026-11-16T11:20:54.156+00:00 [gateway] startup phase: startup.maintenance.pairing starting total=10914.1ms
+2026-11-16T11:20:54.157+00:00 [gateway] startup phase: startup.maintenance.plugin-registry 3.0ms total=10915.3ms
+2026-11-16T11:20:54.159+00:00 [gateway] startup phase: startup.maintenance.channels 3.9ms total=10916.6ms
+2026-11-16T11:20:54.159+00:00 [gateway] startup phase: startup.maintenance.pairing 3.1ms total=10917.1ms
+2026-11-16T11:20:54.160+00:00 [gateway] startup phase: startup.maintenance.session-transcripts starting total=10917.6ms
+2026-11-16T11:20:54.196+00:00 [gateway] startup phase: startup.maintenance.session-transcripts 36.5ms total=10954.0ms
+2026-11-16T11:20:54.197+00:00 [gateway] startup phase: startup.maintenance.sessions 40.9ms total=10954.6ms
+2026-11-16T11:20:54.197+00:00 [gateway] startup phase: post-ready.startup-maintenance 43.6ms total=10954.8ms
+2026-11-16T11:21:12.012+00:00 [tools] heartbeat_respond failed: heartbeat_respond is only accepted during a heartbeat run raw_params={"outcome":"no_change","notify":false,"summary":"Nothing needs attention.","scratch":"No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+2026-11-16T11:21:12.110+00:00 [agent/embedded] incomplete turn detected: runId=d2c463fb-b582-4f8d-8a69-90e25d5c65fb sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe provider=ollama/mock:latest stopReason=stop hasLastAssistant=yes hasCurrentAttemptAssistant=yes payloads=1 tools=1 replaySafe=no compactions=0 reasoningRetries=0/2 emptyRetries=0/1 missingAssistantRetries=0/1 — surfacing error to user
+2026-11-16T11:21:12.210+00:00 [diagnostic] message dispatch completed: channel=unknown sessionId=unknown sessionKey=agent:main:main source=replyResolver outcome=error duration=1782ms
+2026-11-16T11:21:12.211+00:00 [diagnostic] message processed: channel=unknown chatId=heartbeat messageId=unknown sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe sessionKey=agent:main:main outcome=error duration=1816ms
+2026-11-16T11:21:12.215+00:00 [heartbeat] session event wake failed; no wake retry scheduled source=interval intent=scheduled agentId=main wakeReason=interval error=agent-runner-failure
+2026-11-16T11:22:10.959+00:00 [agent/embedded] [prompt-cache] message 63 (toolResult) differs from the previous request; history must be append-only; changed fields: envelope.__openclaw sessionKey=agent:main:main
+2026-11-16T11:22:10.992+00:00 [tools] heartbeat_respond failed: heartbeat_respond is only accepted during a heartbeat run raw_params={"outcome":"no_change","notify":false,"summary":"Nothing needs attention.","scratch":"No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+2026-11-16T11:22:11.058+00:00 [agent/embedded] incomplete turn detected: runId=86098e75-7e76-4896-9ba8-af8632770adb sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe provider=ollama/mock:latest stopReason=stop hasLastAssistant=yes hasCurrentAttemptAssistant=yes payloads=1 tools=1 replaySafe=no compactions=0 reasoningRetries=0/2 emptyRetries=0/1 missingAssistantRetries=0/1 — surfacing error to user
+2026-11-16T11:22:11.158+00:00 [diagnostic] message dispatch completed: channel=unknown sessionId=unknown sessionKey=agent:main:main source=replyResolver outcome=error duration=923ms
+2026-11-16T11:22:11.159+00:00 [diagnostic] message processed: channel=unknown chatId=heartbeat messageId=unknown sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe sessionKey=agent:main:main outcome=error duration=933ms
+2026-11-16T11:22:11.160+00:00 [heartbeat] session event wake failed; no wake retry scheduled source=interval intent=scheduled agentId=main wakeReason=interval error=agent-runner-failure
+2026-11-16T11:23:12.663+00:00 [tools] heartbeat_respond failed: heartbeat_respond is only accepted during a heartbeat run raw_params={"outcome":"no_change","notify":false,"summary":"Nothing needs attention.","scratch":"No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+2026-11-16T11:23:12.702+00:00 [agent/embedded] incomplete turn detected: runId=cfb301ba-a63e-4761-bf81-2ffdbad89617 sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe provider=ollama/mock:latest stopReason=stop hasLastAssistant=yes hasCurrentAttemptAssistant=yes payloads=1 tools=1 replaySafe=no compactions=0 reasoningRetries=0/2 emptyRetries=0/1 missingAssistantRetries=0/1 — surfacing error to user
+2026-11-16T11:23:12.751+00:00 [diagnostic] message dispatch completed: channel=unknown sessionId=unknown sessionKey=agent:main:main source=replyResolver outcome=error duration=1292ms
+2026-11-16T11:23:12.751+00:00 [diagnostic] message processed: channel=unknown chatId=heartbeat messageId=unknown sessionId=70f7a616-9fd1-4cac-b20f-3143f66ae5fe sessionKey=agent:main:main outcome=error duration=1301ms
+2026-11-16T11:23:12.752+00:00 [heartbeat] session event wake failed; no wake retry scheduled source=interval intent=scheduled agentId=main wakeReason=interval error=agent-runner-failure

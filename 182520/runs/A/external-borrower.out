@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "capability": "model.run",
+  "transport": "local",
+  "provider": "stub",
+  "model": "slow",
+  "attempts": [],
+  "outputs": [
+    {
+      "text": "......................................................................................... STUB_DONE_90",
+      "mediaUrl": null
+    }
+  ]
+}

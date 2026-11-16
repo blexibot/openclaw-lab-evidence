@@ -1,0 +1,13 @@
+chat_requests=6 hb_calls=3 hb_calls_after_15s=3 chat_without_hb_poll=0
+hb_tool_offered=True,True,True
+scratch_in_prompt=True,True,True
+  hb #4 2026-11-16T11:21:11Z kind=hb-respond-note pe=None secs= excerpt='No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are'
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratch": "No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+  hb #6 2026-11-16T11:22:10Z kind=hb-respond-note pe=None secs= excerpt='No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are'
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratch": "No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+  hb #8 2026-11-16T11:23:12Z kind=hb-respond-note pe=None secs= excerpt='No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are'
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratch": "No active heartbeat tasks. HEARTBEAT.md is comment-only; keep future wakes quiet unless new scratch context or tasks are provided."}
+  tool result seen by model #5 2026-11-16T11:21:12Z: '[tool error] {\n  "status": "error",\n  "tool": "heartbeat_respond",\n  "error": "heartbeat_respond is only accepted during a heartbeat run"\n}'
+  tool result seen by model #7 2026-11-16T11:22:11Z: '[tool error] {\n  "status": "error",\n  "tool": "heartbeat_respond",\n  "error": "heartbeat_respond is only accepted during a heartbeat run"\n}'
+  tool result seen by model #9 2026-11-16T11:23:12Z: '[tool error] {\n  "status": "error",\n  "tool": "heartbeat_respond",\n  "error": "heartbeat_respond is only accepted during a heartbeat run"\n}'
+non_200=0

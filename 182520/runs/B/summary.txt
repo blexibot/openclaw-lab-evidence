@@ -1,0 +1,52 @@
+B_START 2026-11-16T13:48:13Z openclaw=OpenClaw 2026.11.4 (d843d6a) node=v24.22.3 arch=x86_64 nproc=20
+B_HOST mem_kb=32020200 glibc=2.39 disk_free=289G
+B_EGRESS https://huggingface.co http=200
+B_EGRESS https://github.com http=200
+B_EGRESS https://registry.npmjs.org http=200
+B_STEP b1-plugin-install rc=0 secs=10
+B_STEP b1-plugin-list rc=0 secs=1
+B_STEP b2-set-provider rc=0 secs=3
+B_STEP b2-set-fallback rc=0 secs=3
+B_STEP b2-set-cache rc=0 secs=3
+B_STEP b3-onboard rc=0 secs=22
+B_HEALTH_URL http://127.0.0.1:43837/health
+B_STEP b4-agent-owner rc=0 secs=5
+B_STEP b4-agent-borrower rc=0 secs=4
+B_STEP b4-status-owner rc=0 secs=7
+B_cal_borrower rc=0 secs=107 start=1794836953 end=1794837060 errlines=244
+B_cal_borrower_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","inputCount":10}
+B_cal_borrower_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","status":200}
+B_cal_borrower_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","vectorCount":10,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_cal_borrower_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+B_cal_borrower_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+B_cal_borrower_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_cal_borrower_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+B_cal_borrower_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+B_CAL total_secs=107 ready_secs=9 secs_per_file=2.450 -> owner_files=13 borrower_files=98
+B_ov1_owner rc=0 secs=44 start=1794837060 end=1794837104 errlines=82
+B_ov1_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","inputCount":10}
+B_ov1_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","status":200}
+B_ov1_owner_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","vectorCount":10,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_ov1_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+B_ov1_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+B_ov1_owner_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_ov1_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+B_ov1_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+B_ov1_borrower rc=1 secs=5 start=1794837071 end=1794837076 errlines=1
+B_ov1_borrower_ERRLINE Cannot admit memory.cli for memory stores in state root /root/t182520/B/.openclaw: This operation requires exclusive offline state ownership. No local mutation was attempted. Inspect openclaw gateway status. Update the Gateway or fix authentication and retry. To run offline, stop the Gateway through
+B_STEP ov1-status-borrower rc=0 secs=7
+B_ov1_FACTS owner_rc=0 borrower_rc=1 reused=yes overlap=no owner_exit_to_borrower_exit_secs=-28 monitor_samples_owner_gone=0 first_sample_servers_under_owner=2 first_sample_servers_under_borrower=0 monitor_lines_server_under_borrower=0 borrower_transport_err_lines=0 borrower_retry_lines=1
+B_ov2_owner rc=0 secs=74 start=1794837112 end=1794837186 errlines=160
+B_ov2_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","inputCount":10}
+B_ov2_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","status":200}
+B_ov2_owner_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","vectorCount":10,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_ov2_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+B_ov2_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+B_ov2_owner_ERRLINE memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+B_ov2_owner_ERRLINE memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+B_ov2_owner_ERRLINE memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+B_ov2_borrower rc=1 secs=4 start=1794837122 end=1794837126 errlines=1
+B_ov2_borrower_ERRLINE Cannot admit memory.cli for memory stores in state root /root/t182520/B/.openclaw: This operation requires exclusive offline state ownership. No local mutation was attempted. Inspect openclaw gateway status. Update the Gateway or fix authentication and retry. To run offline, stop the Gateway through
+B_STEP ov2-status-borrower rc=0 secs=7
+B_ov2_FACTS owner_rc=0 borrower_rc=1 reused=yes overlap=no owner_exit_to_borrower_exit_secs=-60 monitor_samples_owner_gone=0 first_sample_servers_under_owner=2 first_sample_servers_under_borrower=0 monitor_lines_server_under_borrower=0 borrower_transport_err_lines=0 borrower_retry_lines=1
+RESULT_B=inconclusive (attempt 2: reused=yes overlap=no (see B_ov2_FACTS))

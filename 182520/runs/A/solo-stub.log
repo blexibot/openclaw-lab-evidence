@@ -1,0 +1,4 @@
+2026-11-16T13:38:23.761Z pid=798 STUB start port=18555 ppid=748 pgid=798
+2026-11-16T13:38:23.988Z pid=798 REQ start id=1 tag=borrower delay=90 stream=true bytes=173
+2026-11-16T13:39:54.116Z pid=798 REQ end id=1 tag=borrower
+2026-11-16T13:39:54.132Z pid=798 STUB got SIGTERM

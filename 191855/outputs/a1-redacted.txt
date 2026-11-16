@@ -1,0 +1,251 @@
++/Users/admin/a1.sh:4> date -u +%FT%TZ
+2026-11-16T09:06:42Z
++/Users/admin/a1.sh:5> mkdir -p /Users/admin/t191855 /Users/admin/t191855-out
++/Users/admin/a1.sh:6> openclaw backup create --help
+
+OpenClaw 2026.11.3 (847611d) — All your chats, one OpenClaw.
+
+Usage: openclaw backup create [options]
+
+Write a backup archive for config, credentials, sessions, and workspaces
+
+Options:
+  --claim-namespace       Deliberately take over the backup namespace for this
+                          installation
+  --dry-run               Print the backup plan without writing the archive
+                          (default: false)
+  -h, --help              Display help for command
+  --json                  Output JSON (default: false)
+  --keep-daily <n>        Retain the newest backup in N daily UTC buckets
+  --keep-monthly <n>      Retain the newest backup in N monthly UTC buckets
+  --keep-weekly <n>       Retain the newest backup in N weekly UTC buckets
+  --namespace <name>      Backup namespace (default: sanitized hostname)
+  --no-include-workspace  Exclude workspace directories from the backup
+  --only-config           Back up only the active JSON config file (default:
+                          false)
+  --output <path>         Archive path or destination directory
+  --to <location>         Upload the verified archive to a storage location
+  --verify                Verify the archive after writing it (default: false)
+
+Examples:
+  openclaw backup create
+    Create a timestamped backup in the current directory.
+  openclaw backup create --output ~/Backups
+    Write the archive into an existing backup directory.
+  openclaw backup create --dry-run --json
+    Preview the archive plan without writing any files.
+  openclaw backup create --verify
+    Create the archive and immediately validate its manifest and payload layout.
+  openclaw backup create --no-include-workspace
+    Back up state/config without agent workspace files.
+  openclaw backup create --only-config
+    Back up only the active JSON config file.
+help-backup rc=0
++/Users/admin/a1.sh:6> echo 'help-backup rc=0'
++/Users/admin/a1.sh:7> openclaw setup --help
+[PUBLIC COPY: 140 lines of 'openclaw setup --help' output omitted here (flag list only; it names credential flags). The private raw copy keeps them.]
+help-setup rc=0
++/Users/admin/a1.sh:7> echo 'help-setup rc=0'
++/Users/admin/a1.sh:8> openclaw update --help
+
+OpenClaw 2026.11.3 (847611d) — All your chats, one OpenClaw.
+
+Usage: openclaw update [options] [command]
+
+Update OpenClaw and inspect update channel status
+
+Options:
+  --accept-capabilities                        Accept widened plugin capabilities (default: false)
+  --admission <auto|installed>                 Select candidate or installed admission checks (default: auto)
+  --channel <stable|extended-stable|beta|dev>  Persist update channel (git + npm)
+  --drain-timeout <seconds>                    Set the immutable activation drain budget before interruption
+  --dry-run                                    Preview update actions without making changes (default: false)
+  -h, --help                                   Display help for command
+  --json                                       Output result as JSON (default: false)
+  --no-restart                                 Skip updater restart (package Gateways may restart themselves)
+  --reapply-local-overrides                    Replay trusted packaged dist edits when the target baseline is unchanged (default: false)
+  --sha <commit>                               Prepare an exact official commit for an adopted immutable installation
+  --tag <dist-tag|version|spec>                Override the package target for this update (dist-tag, version, or package spec)
+  --timeout <seconds>                          Set a per-step deadline in seconds
+  --yes                                        Skip confirmation prompts (non-interactive) (default: false)
+
+Commands:
+  adopt-immutable                              Explicitly record ownership of an existing sealed release installation
+  cleanup                                      Retire verified update recovery originals after acknowledging rollback loss
+  recover                                      Resume a retained immutable activation without restarting a healthy Gateway
+  repair                                       Reconcile abandoned updates or repair post-update doctor and plugin convergence
+  status                                       Show update channel and version status
+  wizard                                       Interactive update wizard
+
+What this does:
+  - Git checkouts: fetches, rebases, installs deps, builds, and runs doctor
+  - npm installs: updates via detected package manager
+  - Adopted immutable installs: prepares sealed generations and activates only when adoption enables it
+
+Switch channels:
+  - Use --channel stable|extended-stable|beta|dev to persist the update channel in config
+  - Run openclaw update status to see the active channel and source
+  - Use --tag <dist-tag|version|spec> for a one-off package update without persisting
+  - Use --channel dev for the moving GitHub main checkout; package installs reject --tag main
+
+Non-interactive:
+  - Use --yes to accept downgrade prompts
+  - Use --accept-capabilities to accept each plugin's reviewed capability changes
+  - Combine with --channel/--tag/--no-restart/--json/--timeout as needed
+  - Use --dry-run to preview actions without writing config/installing/restarting
+
+Examples:
+  openclaw update # Update a source checkout (git)
+  openclaw update --channel extended-stable # Switch to the monthly supported npm channel
+  openclaw update --channel beta # Switch to beta channel (git + npm)
+  openclaw update --channel dev # Switch to dev channel (git + npm)
+  openclaw update --tag beta # One-off update to a dist-tag or version
+  openclaw update --dry-run # Preview actions without changing anything
+  openclaw update --no-restart # Update without an updater-managed restart
+  openclaw update --json # Output result as JSON
+  openclaw update --yes # Non-interactive (accept downgrade prompts)
+  openclaw update --accept-capabilities # Accept reviewed plugin capability changes
+  openclaw update repair # Repair stranded post-update plugin state
+  openclaw update wizard # Interactive update wizard
+  openclaw --update # Shorthand for openclaw update
+
+Notes:
+  - Switch channels with --channel stable|extended-stable|beta|dev
+  - For global installs: auto-updates via detected package manager when possible (see docs/install/updating.md)
+  - Downgrades require confirmation (can break configuration)
+  - Skips update if the working directory has uncommitted changes
+
+Docs: https://docs.openclaw.ai/cli/update
+help-update rc=0
++/Users/admin/a1.sh:8> echo 'help-update rc=0'
++/Users/admin/a1.sh:9> openclaw setup --baseline
+[state/agent-db] agent database clean-close receipt: written
+Wrote $OPENCLAW_HOME/.openclaw/openclaw.json
+Workspace OK: $OPENCLAW_HOME/.openclaw/workspace
+Sessions OK: $OPENCLAW_HOME/.openclaw/agents/main/sessions
+
+Setup complete: config, workspace, and session directories are ready.
+Next guided path: openclaw onboard.
+Next targeted changes: openclaw configure for models, channels, Gateway, plugins, skills, and health checks.
+Add a chat channel later: openclaw channels add.
+setup rc=0
++/Users/admin/a1.sh:9> echo 'setup rc=0'
++/Users/admin/a1.sh:10> openclaw backup create --dry-run --json
+{
+  "createdAt": "2026-11-16T09:06:45.623Z",
+  "archiveRoot": "2026-11-16T09-06-45.623+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/2026-11-16T09-06-45.623+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-06-45.623+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++/Users/admin/a1.sh:10> echo 'dryrun rc=0'
++/Users/admin/a1.sh:11> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "createdAt": "2026-11-16T09:06:46.220Z",
+  "archiveRoot": "2026-11-16T09-06-46.220+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/t191855-out/2026-11-16T09-06-46.220+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-06-46.220+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+backup rc=0
++/Users/admin/a1.sh:11> echo 'backup rc=0'
++/Users/admin/a1.sh:12> ls -la /Users/admin/t191855 /Users/admin/t191855/.openclaw
+/Users/admin/t191855:
+total 0
+drwxr-xr-x   3 admin  staff   96 Nov 16 09:06 .
+drwxr-x---+ 30 admin  staff  960 Nov 16 09:06 ..
+drwx------   9 admin  staff  288 Nov 16 09:06 .openclaw
+
+/Users/admin/t191855/.openclaw:
+total 24
+drwx------  9 admin  staff  288 Nov 16 09:06 .
+drwxr-xr-x  3 admin  staff   96 Nov 16 09:06 ..
+drwxr-xr-x  3 admin  staff   96 Nov 16 09:06 agents
+-rw-------  1 admin  staff   32 Nov 16 09:06 config-journal-fingerprint.key
+-rw-------  1 admin  staff  869 Nov 16 09:06 openclaw.json
+-rw-------  1 admin  staff  742 Nov 16 09:06 openclaw.json.bak
+drwx------  5 admin  staff  160 Nov 16 09:06 state
+drwx------  3 admin  staff   96 Nov 16 09:06 tmp
+drwxr-xr-x  8 admin  staff  256 Nov 16 09:06 workspace
++/Users/admin/a1.sh:13> date -u +%FT%TZ
+2026-11-16T09:06:47Z
+host-rc=0

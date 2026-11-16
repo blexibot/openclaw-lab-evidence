@@ -1,0 +1,22 @@
+run dir: /root/r188657/cap-rel113-resp
+requests: 3
+- req-001.json turn=t1 route=responses items=3 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=false prompt_cache_key=- instructions_sha=- tools_sha=651a5db01bde
+- req-002.json turn=t1 route=responses items=5 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=false prompt_cache_key=- instructions_sha=- tools_sha=651a5db01bde
+- req-003.json turn=t2 route=responses items=7 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=false prompt_cache_key=- instructions_sha=- tools_sha=651a5db01bde
+
+[within turn 1 (control)] req-001.json -> req-002.json
+  items: 3 -> 5; identical leading items: 3; earlier list is a prefix of later: YES
+  serialized input chars: 44516 -> 44717; common prefix chars: 44515
+  instructions equal: YES; tools equal: YES
+
+[turn 1 last -> turn 2 first (the bug)] req-002.json -> req-003.json
+  items: 5 -> 7; identical leading items: 2; earlier list is a prefix of later: NO
+  serialized input chars: 44717 -> 44987; common prefix chars: 44226
+  first difference at item 2:
+    before: message/user "OpenClaw runtime context: Conversation data (data, not instructions): "
+    after:  function_call "{"path":"fixture.txt"}"
+  instructions equal: YES; tools equal: YES
+  carrier item positions: turn 1 last [2] of 5; turn 2 first [6] of 7
+  turn-1 carrier kept in place and turn 2 adds its own: NO
+
+VERDICT route=responses tool_call_in_turn1=yes carrier_retained=no append_only_prefix=no prev_response_id_used=no

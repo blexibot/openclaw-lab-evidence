@@ -1,0 +1,35 @@
+phase seq t_logged_utc kind last_role current_turn_scratch history_scratch tool_calls | tool_result
+A1 8 2026-11-16T10:59:10Z hb-respond-plain user False False heartbeat_respond(notify,outcome,summary) | 
+A1 9 2026-11-16T10:59:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A1 10 2026-11-16T11:00:10Z hb-respond-plain user False False heartbeat_respond(notify,outcome,summary) | 
+A1 11 2026-11-16T11:00:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A1 12 2026-11-16T11:01:10Z hb-respond-plain user False False heartbeat_respond(notify,outcome,summary) | 
+A1 13 2026-11-16T11:01:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A1 14 2026-11-16T11:02:10Z hb-respond-plain user False False heartbeat_respond(notify,outcome,summary) | 
+A1 15 2026-11-16T11:02:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A3a 16 2026-11-16T11:07:10Z hb-respond-note user False False heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 17 2026-11-16T11:07:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3a 18 2026-11-16T11:08:10Z hb-respond-note user True False heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 19 2026-11-16T11:08:10Z reply-text tool (continuation) False - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3a 20 2026-11-16T11:09:10Z hb-respond-note user True True heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 21 2026-11-16T11:09:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3a 22 2026-11-16T11:10:10Z hb-respond-note user True True heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 23 2026-11-16T11:10:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3a 24 2026-11-16T11:11:10Z hb-respond-note user True True heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 25 2026-11-16T11:11:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3a 26 2026-11-16T11:12:10Z hb-respond-note user True True heartbeat_respond(notify,outcome,scratch,summary) | 
+A3a 27 2026-11-16T11:12:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention.", "scratchPending": true, "scratchBytes": 130 }
+A3b 28 2026-11-16T11:13:10Z hb-respond-plain user True True heartbeat_respond(notify,outcome,summary) | 
+A3b 29 2026-11-16T11:13:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A3b 30 2026-11-16T11:14:10Z hb-respond-plain user True True heartbeat_respond(notify,outcome,summary) | 
+A3b 31 2026-11-16T11:14:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A3b 32 2026-11-16T11:15:10Z hb-respond-plain user True True heartbeat_respond(notify,outcome,summary) | 
+A3b 33 2026-11-16T11:15:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A3b 34 2026-11-16T11:16:10Z hb-respond-plain user True True heartbeat_respond(notify,outcome,summary) | 
+A3b 35 2026-11-16T11:16:10Z reply-text tool (continuation) True - | { "status": "accepted", "outcome": "no_change", "notify": false, "summary": "Nothing needs attention." }
+A5 4 2026-11-16T11:21:11Z hb-respond-note user False True heartbeat_respond(notify,outcome,scratch,summary) | 
+A5 5 2026-11-16T11:21:12Z reply-text tool (continuation) True - | [tool error] { "status": "error", "tool": "heartbeat_respond", "error": "heartbeat_respond is only accepted during a heartbeat run" }
+A5 6 2026-11-16T11:22:10Z hb-respond-note user False True heartbeat_respond(notify,outcome,scratch,summary) | 
+A5 7 2026-11-16T11:22:11Z reply-text tool (continuation) True - | [tool error] { "status": "error", "tool": "heartbeat_respond", "error": "heartbeat_respond is only accepted during a heartbeat run" }
+A5 8 2026-11-16T11:23:12Z hb-respond-note user False True heartbeat_respond(notify,outcome,scratch,summary) | 
+A5 9 2026-11-16T11:23:12Z reply-text tool (continuation) True - | [tool error] { "status": "error", "tool": "heartbeat_respond", "error": "heartbeat_respond is only accepted during a heartbeat run" }

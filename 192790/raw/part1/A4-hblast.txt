@@ -1,0 +1,6 @@
+{
+  "ts": 1794828010184,
+  "status": "skipped",
+  "reason": "empty-heartbeat-file",
+  "durationMs": 8
+}

@@ -1,0 +1,69 @@
++ date -u +%FT%TZ
+2026-11-16T09:57:16Z
+=== N1: owned dir, mode 000 ===
++ echo '=== N1: owned dir, mode 000 ==='
++ mkdir -m 000 /home/lab/t191855/.openclaw/workspace/state/owned
+mkdir rc=0
++ echo 'mkdir rc=0'
++ ls -ld /home/lab/t191855/.openclaw/workspace/state/owned
+d--------- 1 lab lab 0 Nov 16 09:57 /home/lab/t191855/.openclaw/workspace/state/owned
++ stat /home/lab/t191855/.openclaw/workspace/state/owned/.openclaw-private-update-capture
+stat: cannot statx '/home/lab/t191855/.openclaw/workspace/state/owned/.openclaw-private-update-capture': Permission denied
+stat rc=1
++ echo 'stat rc=1'
++ node /home/lab/pr/openclaw.mjs backup create --verify --json --output /home/lab/t191855-out
+Your OpenClaw config was written by version 2026.11.3, but this command is running 2026.11.1.
+Check: `openclaw --version`, `which openclaw`, and `openclaw gateway status --deep`.
+If unexpected, update PATH so `openclaw` points to the version you want, or reinstall the Gateway service from that same OpenClaw install.
+[state/db] state database schema migration pending; verifying integrity first
+Warning: the backup outcome could not be recorded: Client credentials require backed-up migration custody; stop the app and run openclaw doctor --fix.
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+N1 backup rc=1
++ echo 'N1 backup rc=1'
++ chmod 700 /home/lab/t191855/.openclaw/workspace/state/owned
++ rmdir /home/lab/t191855/.openclaw/workspace/state/owned
+n1 cleanup rc=0
+=== N2: owned marker unreadable ===
++ echo 'n1 cleanup rc=0'
++ echo '=== N2: owned marker unreadable ==='
++ mkdir /home/lab/t191855/.openclaw/workspace/state/owned2
+mkdir rc=0
+write rc=0
++ echo 'mkdir rc=0'
++ printf 'openclaw-private-update-capture-v1\n'
++ echo 'write rc=0'
++ chmod 000 /home/lab/t191855/.openclaw/workspace/state/owned2/.openclaw-private-update-capture
+chmod rc=0
++ echo 'chmod rc=0'
++ node /home/lab/pr/openclaw.mjs backup create --verify --json --output /home/lab/t191855-out
+Your OpenClaw config was written by version 2026.11.3, but this command is running 2026.11.1.
+Check: `openclaw --version`, `which openclaw`, and `openclaw gateway status --deep`.
+If unexpected, update PATH so `openclaw` points to the version you want, or reinstall the Gateway service from that same OpenClaw install.
+[state/db] state database schema migration pending; verifying integrity first
+Warning: the backup outcome could not be recorded: Client credentials require backed-up migration custody; stop the app and run openclaw doctor --fix.
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+N2 backup rc=1
++ echo 'N2 backup rc=1'
++ chmod 600 /home/lab/t191855/.openclaw/workspace/state/owned2/.openclaw-private-update-capture
++ rm -r /home/lab/t191855/.openclaw/workspace/state/owned2
+n2 cleanup rc=0
++ echo 'n2 cleanup rc=0'
++ date -u +%FT%TZ
+2026-11-16T09:57:22Z
+host-rc=0

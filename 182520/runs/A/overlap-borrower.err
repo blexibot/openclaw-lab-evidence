@@ -1,0 +1,3 @@
+[35m[provider-error][39m [33mModel request failed provider=stub model=slow message=terminated responseId=chatcmpl-2[39m
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.

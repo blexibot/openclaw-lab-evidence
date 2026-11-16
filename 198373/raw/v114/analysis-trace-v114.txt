@@ -1,0 +1,84 @@
+trace: 15 records with messages in /root/r198373/v114/cache-trace.jsonl
+--- #0 stage=session:loaded messages=0 __openclaw=0 runId=1 
+    roles=[]
+--- #1 stage=session:sanitized messages=0 __openclaw=0 runId=1 
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 269 of 625
+--- #2 stage=session:limited messages=0 __openclaw=0 runId=1 
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 269 of 468
+--- #3 stage=prompt:before messages=0 __openclaw=0 runId=1 
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 268 of 466
+--- #4 stage=prompt:images messages=0 __openclaw=0 runId=1 
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 280 of 566
+--- #5 stage=stream:context messages=2 __openclaw=1 runId=1 
+    roles=['user', 'user']
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 268 of 612
+--- #6 stage=stream:context messages=4 __openclaw=2 runId=2 
+    roles=['user', 'user', 'assistant', 'toolResult']
+    APPEND-ONLY vs previous: yes (previous 2 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 263 of 3040
+--- #7 stage=session:after messages=5 __openclaw=3 runId=3 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    changed message index 3 (role toolResult): messages[3].details (only in new)
+    STAMP: message index 0 has __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Mon 2026-11-16 08:50 UTC] Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true}}
+      new: {"role":"user","content":[{"type":"text","text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}],"timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true,"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    first differing byte offset of the whole serialized request: 266 of 4135
+--- #8 stage=session:loaded messages=5 __openclaw=4 runId=4 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 3 (role toolResult): messages[3].details (only in old)
+    STAMP: message index 0 has __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has __openclaw/runId in the NEW request (old has it: False)
+      old: {"role":"user","content":[{"type":"text","text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}],"timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true,"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+      new: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true,"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    first differing byte offset of the whole serialized request: 10 of 3729
+--- #9 stage=session:sanitized messages=5 __openclaw=4 runId=4 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 270 of 3860
+--- #10 stage=session:limited messages=5 __openclaw=4 runId=4 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 270 of 3703
+--- #11 stage=prompt:before messages=5 __openclaw=4 runId=4 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 269 of 3701
+--- #12 stage=prompt:images messages=5 __openclaw=4 runId=4 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 280 of 3738
+--- #13 stage=stream:context messages=7 __openclaw=5 runId=4 
+    roles=['user', 'user', 'assistant', 'toolResult', 'assistant', 'user', 'user']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role custom): messages[1].role
+    STAMP: message index 0 has __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true,"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+      new: {"role":"user","content":"[Mon 2026-11-16 08:50 UTC] Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true}}
+    first differing byte offset of the whole serialized request: 268 of 3784
+--- #14 stage=session:after messages=8 __openclaw=6 runId=5 
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    changed message index 5 (role user): messages[5].content
+    changed message index 6 (role user): messages[6].role
+    STAMP: message index 0 has __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 5 has __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Mon 2026-11-16 08:50 UTC] Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true}}
+      new: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1794819034799,"idempotencyKey":"d85b4802-3ab6-4d48-9992-155513d4c3f6:user","__openclaw":{"senderIsOwner":true,"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    first differing byte offset of the whole serialized request: 266 of 6058

@@ -1,0 +1,55 @@
+import json, sys, datetime as dt
+def T(s): return dt.datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+def text(m):
+    c = m.get("content")
+    if isinstance(c, list): return " ".join(p.get("text", "") for p in c if isinstance(p, dict))
+    return c or ""
+def load(f):
+    try: return [json.loads(l) for l in open(f) if l.strip()]
+    except OSError: return []
+def args_of(c):
+    a = (c.get("function") or {}).get("arguments") or {}
+    if isinstance(a, str):
+        try: a = json.loads(a)
+        except Exception: a = {"_raw": a}
+    return a
+cmd, f = sys.argv[1], sys.argv[2]
+E = [e for e in load(f) if e.get("path", "").startswith("/api/chat")]
+HB = [e for e in E if e.get("hb_poll") and e.get("last_role") != "tool"]
+if cmd == "phase":
+    t0 = T(sys.argv[3])
+    late = [e for e in HB if (T(e["t"]) - t0).total_seconds() > 15]
+    print(f"chat_requests={len(E)} hb_calls={len(HB)} hb_calls_after_15s={len(late)} "
+          f"chat_without_hb_poll={sum(1 for e in E if not e.get('hb_poll'))}")
+    print("hb_tool_offered=" + (",".join(str(e.get("hb_tool")) for e in HB) or "-"))
+    print("scratch_in_prompt=" + (",".join(str(e.get("scratch_in_prompt")) for e in HB) or "-"))
+    for e in HB:
+        ex = e.get("scratch_excerpt")
+        print(f"  hb #{e['seq']} {e['t']} kind={e.get('kind') or e.get('status')} pe={e.get('prompt_eval_count')} "
+              f"secs={e.get('secs', '')} excerpt={ex[:120]!r}" if ex else
+              f"  hb #{e['seq']} {e['t']} kind={e.get('kind') or e.get('status')} pe={e.get('prompt_eval_count')} secs={e.get('secs', '')} excerpt=None")
+        for c in e.get("reply_tool_calls") or (e.get("reply") or {}).get("tool_calls") or []:
+            print(f"     model tool call: {(c.get('function') or {}).get('name')} args={json.dumps(args_of(c), ensure_ascii=False)}")
+        if e.get("mode") == "relay" and e.get("reply_text"):
+            print(f"     model text: {e['reply_text'][:300]!r}")
+    for e in E:
+        if e.get("last_role") == "tool" and e.get("body"):
+            m = (e["body"].get("messages") or [{}])[-1]
+            print(f"  tool result seen by model #{e['seq']} {e['t']}: {text(m)[:400]!r}")
+    bad = [e for e in E if e.get("status") not in (None, 200)]
+    print(f"non_200={len(bad)}")
+    for e in bad: print(f"  non-200 #{e['seq']} {e['t']} status={e.get('status')} error={(e.get('error') or '')[:300]!r}")
+elif cmd == "watch":   # Part 2: hb count, ticks since the first hb call that passed scratch, non-200 count
+    first = None
+    for i, e in enumerate(HB):
+        if any("scratch" in args_of(c) for c in e.get("reply_tool_calls") or []):
+            first = i; break
+    after = (len(HB) - 1 - first) if first is not None else -1
+    bad = sum(1 for e in E if e.get("status") not in (None, 200))
+    print(len(HB), after, bad)
+elif cmd == "tools":   # tool names in the first heartbeat request (mock mode only)
+    for e in E:
+        if e.get("body") and e.get("hb_poll"):
+            print(sorted((t.get("function") or {}).get("name") for t in e["body"].get("tools") or [])); break
+    else:
+        print("no heartbeat request with a body yet")

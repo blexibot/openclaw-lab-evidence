@@ -1,0 +1,12 @@
++ date -u +%FT%TZ
+2026-11-16T09:15:45Z
++ rmdir /home/lab/t191855/.openclaw/workspace/state/foreign
+rmdir rc=0
++ echo 'rmdir rc=0'
++ ls -ld /home/lab/t191855/.openclaw/workspace/state/foreign
+ls: cannot access '/home/lab/t191855/.openclaw/workspace/state/foreign': No such file or directory
+ls rc=2
++ echo 'ls rc=2'
++ date -u +%FT%TZ
+2026-11-16T09:15:45Z
+host-rc=0

@@ -1,0 +1,9 @@
+{
+  "ts": 1794829820458,
+  "status": "ok-token",
+  "reason": "interval",
+  "preview": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation.",
+  "indicatorType": "ok",
+  "silent": true,
+  "durationMs": 8841
+}

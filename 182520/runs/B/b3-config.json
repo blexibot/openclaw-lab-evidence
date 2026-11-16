@@ -1,0 +1,71 @@
+{
+  "models.providers.llama-cpp": {
+    "baseUrl": "http://127.0.0.1:43837/v1",
+    "api": "openai-completions",
+    "timeoutSeconds": 600,
+    "localService": {
+      "command": "/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server",
+      "args": [
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "43837",
+        "--models-preset",
+        "/root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b12c.ini",
+        "--models-max",
+        "2",
+        "--metrics",
+        "--no-ui"
+      ],
+      "healthUrl": "http://127.0.0.1:43837/health",
+      "readyTimeoutMs": 30000,
+      "idleStopMs": 600000
+    },
+    "models": []
+  },
+  "memory": {
+    "search": {
+      "provider": "local",
+      "fallback": "none",
+      "cache": {
+        "enabled": false
+      }
+    }
+  },
+  "agents": {
+    "entries": {
+      "main": {
+        "name": "main",
+        "workspace": "/root/t182520/B/.openclaw/workspace",
+        "agentDir": "/root/t182520/B/.openclaw/agents/main/agent",
+        "identity": {
+          "name": "main"
+        }
+      }
+    },
+    "defaults": {
+      "workspace": "/root/t182520/B/.openclaw/workspace"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "llama-cpp": {
+        "enabled": true
+      },
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      }
+    }
+  }
+}

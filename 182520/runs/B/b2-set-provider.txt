@@ -1,0 +1,1 @@
+Updated memory.search.provider. Restart the gateway to apply.

@@ -1,0 +1,16 @@
+Registered plugin command: /dreaming (plugin: memory-core)
+Memory Index (borrower)
+Provider: local (requested: local)
+Model: hf:ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/embeddinggemma-300m-qat-Q8_0.gguf
+Sources: memory (MEMORY.md + $OPENCLAW_HOME/ws-borrower/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+
+(node:2760) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[provider-local-service] starting llama-cpp local service: /root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server
+[provider-local-service] llama-cpp local service ready: pid=2908 spawnMs=9 readyMs=274
+(node:2760) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Memory index updated (borrower): 41 files indexed.
+[state/agent-db] agent database clean-close receipt: written
+[provider-local-service] stopping local model service: reason=host-shutdown
+[provider-local-service] llama-cpp local service exited: code=0

@@ -1,0 +1,1 @@
+133:2026-11-16T08:51:51.234+00:00 [agent/embedded] [prompt-cache] message 3 (toolResult) differs from the previous request; history must be append-only; changed fields: envelope.__openclaw sessionKey=agent:main:cache-repro

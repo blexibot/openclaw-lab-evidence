@@ -1,0 +1,6 @@
+{"t":"2026-11-16T06:31:37.855Z","mark":"t1"}
+{"t":"2026-11-16T06:31:40.891Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-001.json","bytes":58837,"stream":true,"action":"tool","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:40.982Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-002.json","bytes":59080,"stream":true,"action":"final","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:41.188Z","mark":"t2"}
+{"t":"2026-11-16T06:31:42.245Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-003.json","bytes":59762,"stream":true,"action":"text","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:42.360Z","mark":"end"}

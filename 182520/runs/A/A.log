@@ -1,0 +1,77 @@
+A_START 2026-11-16T13:38:20Z openclaw=OpenClaw 2026.11.4 (d843d6a) node=v24.22.3 arch=x86_64
+=== case solo managed=1 2026-11-16T13:38:20Z
+CFG wrote /root/t182520/A-solo/.openclaw/openclaw.json managed=1
+HC NOTREADY http://127.0.0.1:18555/v1/models after 0.0s last=ECONNREFUSED
+A_solo_borrower_STARTED pid=736 2026-11-16T13:38:20Z delay=90
+--- procs solo+10s 2026-11-16T13:38:30Z
+pid=798 ppid=748 pgid=798 chain=,798,748,740,738,736,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/solo-stub.log
+A_solo_borrower rc=0 secs=94 done=1
+A_solo_AFTER HC NOTREADY http://127.0.0.1:18555/v1/models after 0.0s last=ECONNREFUSED
+--- stub log solo
+2026-11-16T13:38:23.761Z pid=798 STUB start port=18555 ppid=748 pgid=798
+2026-11-16T13:38:23.988Z pid=798 REQ start id=1 tag=borrower delay=90 stream=true bytes=173
+2026-11-16T13:39:54.116Z pid=798 REQ end id=1 tag=borrower
+2026-11-16T13:39:54.132Z pid=798 STUB got SIGTERM
+A_solo_STUB servers_started=1 owner_req_pid=none borrower_first_req_pid=798 first_req_ended=1 first_req_client_closed=0 borrower_req_starts=1
+=== case overlap managed=1 2026-11-16T13:39:55Z
+CFG wrote /root/t182520/A-overlap/.openclaw/openclaw.json managed=1
+HC NOTREADY http://127.0.0.1:18555/v1/models after 0.0s last=ECONNREFUSED
+A_overlap_owner_STARTED pid=882 2026-11-16T13:39:55Z delay=40
+HC READY http://127.0.0.1:18555/v1/models after 3.6s
+--- procs owner-ready 2026-11-16T13:39:59Z
+pid=951 ppid=901 pgid=951 chain=,951,901,885,884,882,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/overlap-stub.log
+A_overlap_borrower_STARTED pid=969 2026-11-16T13:40:01Z delay=90
+--- procs borrower+10s 2026-11-16T13:40:11Z
+pid=951 ppid=901 pgid=951 chain=,951,901,885,884,882,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/overlap-stub.log
+A_overlap_OWNER_EXITED 2026-11-16T13:40:38Z
+--- procs owner-exited+1s 2026-11-16T13:40:39Z
+A_overlap_BORROWER_EXITED 2026-11-16T13:40:40Z
+--- procs borrower-exited 2026-11-16T13:40:40Z
+A_overlap_owner rc=0 secs=43 done=1
+A_overlap_borrower rc=1 secs=37 done=0
+A_overlap_borrower_ERRLINE [35m[provider-error][39m [33mModel request failed provider=stub model=slow message=terminated responseId=chatcmpl-2[39m
+A_overlap_borrower_ERRLINE [openclaw] The CLI command failed.
+A_overlap_borrower_ERRLINE   "error": {
+A_overlap_borrower_ERRLINE     "type": "cli_error",
+A_overlap_borrower_ERRLINE     "message": "Model run failed for provider \"stub\" model \"slow\": terminated."
+A_overlap_PIDS owner_cli=882 borrower_cli=969
+A_overlap_AFTER HC NOTREADY http://127.0.0.1:18555/v1/models after 0.0s last=ECONNREFUSED
+--- stub log overlap
+2026-11-16T13:39:58.584Z pid=951 STUB start port=18555 ppid=901 pgid=951
+2026-11-16T13:39:58.811Z pid=951 REQ start id=1 tag=owner delay=40 stream=true bytes=170
+2026-11-16T13:40:03.939Z pid=951 REQ start id=2 tag=borrower delay=90 stream=true bytes=173
+2026-11-16T13:40:38.859Z pid=951 REQ end id=1 tag=owner
+2026-11-16T13:40:38.873Z pid=951 STUB got SIGTERM
+A_overlap_STUB servers_started=1 owner_req_pid=951 borrower_first_req_pid=951 first_req_ended=0 first_req_client_closed=0 borrower_req_starts=1
+=== case external managed=0 2026-11-16T13:40:41Z
+CFG wrote /root/t182520/A-external/.openclaw/openclaw.json managed=0
+HC NOTREADY http://127.0.0.1:18555/v1/models after 0.0s last=ECONNREFUSED
+HC READY http://127.0.0.1:18555/v1/models after 0.6s
+A_external_owner_STARTED pid=1135 2026-11-16T13:40:41Z delay=40
+HC READY http://127.0.0.1:18555/v1/models after 0.0s
+--- procs owner-ready 2026-11-16T13:40:41Z
+pid=1118 ppid=702 pgid=1118 chain=,1118,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/external-stub.log
+A_external_borrower_STARTED pid=1211 2026-11-16T13:40:44Z delay=90
+--- procs borrower+10s 2026-11-16T13:40:54Z
+pid=1118 ppid=702 pgid=1118 chain=,1118,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/external-stub.log
+A_external_OWNER_EXITED 2026-11-16T13:41:25Z
+--- procs owner-exited+1s 2026-11-16T13:41:26Z
+pid=1118 ppid=702 pgid=1118 chain=,1118,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/external-stub.log
+A_external_BORROWER_EXITED 2026-11-16T13:42:16Z
+--- procs borrower-exited 2026-11-16T13:42:16Z
+pid=1118 ppid=702 pgid=1118 chain=,1118,702,686, args=/usr/local/bin/node /root/kit/slowllm.mjs 18555 /root/t182520/out/A/external-stub.log
+A_external_owner rc=0 secs=44 done=1
+A_external_borrower rc=0 secs=92 done=1
+A_external_PIDS owner_cli=1135 borrower_cli=1211
+A_external_AFTER HC READY http://127.0.0.1:18555/v1/models after 0.0s
+--- stub log external
+2026-11-16T13:40:41.385Z pid=1118 STUB start port=18555 ppid=702 pgid=1118
+2026-11-16T13:40:45.020Z pid=1118 REQ start id=1 tag=owner delay=40 stream=true bytes=170
+2026-11-16T13:40:46.799Z pid=1118 REQ start id=2 tag=borrower delay=90 stream=true bytes=173
+2026-11-16T13:41:25.044Z pid=1118 REQ end id=1 tag=owner
+2026-11-16T13:42:16.925Z pid=1118 REQ end id=2 tag=borrower
+2026-11-16T13:42:17.127Z pid=1118 STUB got SIGTERM
+A_external_STUB servers_started=1 owner_req_pid=1118 borrower_first_req_pid=1118 first_req_ended=1 first_req_client_closed=0 borrower_req_starts=1
+A_FACTS solo_ok=yes external_ok=yes owner_ok=yes reused=yes killed_inflight=yes
+RESULT_A=reproduced (owner exit killed the server under the borrower's in-flight request; borrower rc=1)
+A_END 2026-11-16T13:42:18Z

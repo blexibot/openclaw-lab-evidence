@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Model run failed for provider \"stub\" model \"slow\": terminated."
+  }
+}

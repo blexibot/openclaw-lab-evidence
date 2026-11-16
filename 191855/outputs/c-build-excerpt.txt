@@ -1,0 +1,32 @@
+[PUBLIC EXCERPT of c-build.log (3437 lines). Included: lines 1-14 and the last 16 lines. Omitted: dependency download and build progress.]
++ export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
++ COREPACK_ENABLE_DOWNLOAD_PROMPT=0
++ date -u +%FT%TZ
+2026-11-16T09:17:18Z
++ mkdir -p /home/lab/pr
++ cd /home/lab/pr
++ git init -q
++ git remote add origin https://github.com/openclaw/openclaw.git
++ git fetch -q --depth 1 origin pull/194166/head
++ git checkout -q FETCH_HEAD
++ git rev-parse HEAD
+5438a832520be89cde6799215b99a711fc039950
++ pnpm install --frozen-lockfile
+Downloading the pnpm 12.15.0 binary for linux-x64...
+[... lines 15-3421 omitted ...]
+    zh-CN: 120091 B gzip (base 16200 B + config hints 103891 B; cap 307200 B; headroom 187109 B)
+    zh-TW: 121366 B gzip (base 16279 B + config hints 105087 B; cap 307200 B; headroom 185834 B)
+  violations:
+    - largest JS gzip: 547.7 KiB exceeds 547.2 KiB
+    - chat boot JS gzip: 1259.7 KiB exceeds 1258.9 KiB
+    - new boot JS gzip: 779.9 KiB exceeds 778.9 KiB
+[build-all] ui:build done in 52.5s
+[build-all] write-build-info
+[build-all] write-build-info done in 153ms
+[build-all] write-cli-startup-metadata
+[build-all] write-cli-startup-metadata done in 4.76s
+[build-all] phase timings: total 5m 19.8s; slowest write-unified-entry-dts 1m 58.6s; ui:build 52.5s; tsdown-packages 44.9s; tsdown 37.8s; plugins:assets:build 12.6s; tsdown-ai 12.3s; plugins:assets:copy 10.7s; external-plugins:local-dist 7.94s; check-cli-bootstrap-imports 7.69s; runtime-postbuild 5.29s; write-cli-startup-metadata 4.76s; runtime:scripts:check 2.75s; check-plugin-sdk-exports 2.02s; build-stamp 727ms; write-build-info 153ms; native-protocol 82ms; runtime-postbuild-stamp 64ms
+build rc=0
++ echo 'build rc=0'
++ date -u +%FT%TZ
+2026-11-16T09:25:11Z

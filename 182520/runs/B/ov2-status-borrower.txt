@@ -1,0 +1,158 @@
+[31m[provider-local-service][39m [36mstarting llama-cpp local service: /root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server[39m
+[31m[provider-local-service][39m [36mllama-cpp local service ready: pid=4577 spawnMs=13 readyMs=276[39m
+[
+  {
+    "agentId": "borrower",
+    "status": {
+      "backend": "builtin",
+      "files": 41,
+      "chunks": 250,
+      "dirty": true,
+      "workspaceDir": "/root/t182520/B/ws-borrower",
+      "dbPath": "/root/t182520/B/.openclaw/agents/borrower/agent/openclaw-agent.sqlite",
+      "storage": {
+        "databaseBytes": 6684672,
+        "walBytes": 0,
+        "reusableBytes": 0,
+        "embeddingCacheBytes": 0,
+        "embeddingCacheEntries": 0
+      },
+      "provider": "local",
+      "model": "hf:ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/embeddinggemma-300m-qat-Q8_0.gguf",
+      "requestedProvider": "local",
+      "sources": [
+        "memory",
+        "sessions"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 41,
+          "chunks": 250,
+          "chunkBytes": 1876945,
+          "dirty": true,
+          "eligible": 197,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "files": 0,
+          "chunks": 0,
+          "chunkBytes": 0,
+          "eligible": 0,
+          "issues": [
+            "no eligible session transcripts found"
+          ]
+        }
+      ],
+      "cache": {
+        "enabled": false,
+        "maxEntries": 50000
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true,
+        "index": {
+          "state": "complete"
+        },
+        "storeAvailable": true,
+        "semanticAvailable": true,
+        "available": true,
+        "extensionPath": "/usr/local/lib/node_modules/openclaw/node_modules/sqlite-vec-linux-x64/vec0.so",
+        "dims": 768
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "llamaCppRuntime": {
+          "engine": "llama.cpp",
+          "state": "ready",
+          "buildInfo": "b10809-5266f24da",
+          "model": {
+            "id": "embeddinggemma-300m-qat-q8_0",
+            "path": "/root/t182520/B/.openclaw/models/llama.cpp/hf_ggml-org_embeddinggemma-300m-qat-Q8_0.gguf"
+          },
+          "capabilities": {
+            "vision": false,
+            "draft": false
+          },
+          "endpoints": {
+            "health": "ready",
+            "models": "ready",
+            "props": "ready",
+            "metrics": "ready"
+          }
+        },
+        "searchMode": "hybrid",
+        "providerState": {
+          "mode": "active",
+          "providerId": "local"
+        },
+        "indexIdentity": {
+          "status": "valid"
+        },
+        "automaticRebuildNotice": {
+          "sequence": 0,
+          "warning": ""
+        }
+      }
+    },
+    "embeddingProbe": {
+      "ok": true
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 197,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "totalFiles": 0,
+          "issues": [
+            "no eligible session transcripts found"
+          ]
+        }
+      ],
+      "totalFiles": 197,
+      "issues": [
+        "no eligible session transcripts found"
+      ]
+    },
+    "audit": {
+      "storePath": "plugin-state:memory-core/short-term-recall/f0407eb0bb6cd5f6f9f233443238688a1f3777f94bb4bc755519aeebd0d142d5",
+      "lockPath": "plugin-state:memory-core/short-term-locks/f0407eb0bb6cd5f6f9f233443238688a1f3777f94bb4bc755519aeebd0d142d5",
+      "exists": false,
+      "entryCount": 0,
+      "promotedCount": 0,
+      "spacedEntryCount": 0,
+      "conceptTaggedEntryCount": 0,
+      "invalidEntryCount": 0,
+      "danglingEntryCount": 0,
+      "issues": []
+    },
+    "dreamingAudit": {
+      "sessionCorpusDir": "/root/t182520/B/ws-borrower/memory/.dreams/session-corpus",
+      "sessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusLineCount": 0,
+      "sessionIngestionPath": "/root/t182520/B/ws-borrower/memory/.dreams/session-ingestion.json",
+      "sessionIngestionExists": false,
+      "issues": []
+    }
+  }
+]
+[31m[provider-local-service][39m [36mstopping local model service: reason=host-shutdown[39m
+[31m[provider-local-service][39m [36mllama-cpp local service exited: code=0[39m

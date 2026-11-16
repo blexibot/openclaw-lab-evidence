@@ -1,0 +1,1 @@
+logproxy 127.0.0.1:11434 -> <RELAY>:11435 log /root/r198373/v114/wire-v114.jsonl

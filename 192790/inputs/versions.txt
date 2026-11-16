@@ -1,0 +1,41 @@
+# Versions and environment for run L192790 (openclaw/openclaw#192790). Source of each line in brackets.
+
+OpenClaw (Parts 1 and 2): `openclaw --version` -> OpenClaw 2026.11.3 (847611d)      [bench job log J192790a.log, verbatim below]
+  install: `npm install -g openclaw@2026.11.3 --no-fund --no-audit` inside the bench, after a Node tarball whose
+           sha256 was checked against nodejs.org SHASUMS256.txt              [lab `bench` helper source, read 2026-11-16]
+  registry integrity (read-only `npm view openclaw@2026.11.3 dist.integrity`, 2026-11-16):
+           sha512-FBq/q0TCaoA2b7qfdV0q81fHhI6RBB1zAQfJQREc1u2TlK5khVgCUsAlXskLWthyVqRz5PWEj+oOmfYgK58dHg==
+           (registry value; the installed tarball's integrity was not recorded in the bench)
+  registry gitHead: not published (npm view returned none)
+  running Gateway revision: unknown as a separate record. The gateway log has no version banner; the runner starts
+           the gateway with the same `openclaw` on PATH (run192790.sh `bin_of`), so it is inferred to be 847611d.
+  resolved executable path: unknown (runner calls `openclaw` from PATH; path not printed)
+
+OpenClaw (Part 3 install only): OpenClaw 2026.11.5-beta.4 (2c173a3), `npm install openclaw@2026.11.5-beta.4` into
+           /root/r192790/beta, exit 0                                          [raw/part3-beta/beta-install-steps.log]
+  registry integrity (npm view, 2026-11-16):
+           sha512-gZFtwWmY+wFmV33aBJe62njcMDHazGdgOkP1yh6xWku6p1Dnd1Yckp3LLfiySHQRLYxfxBT4BpeougtaU++vdw==
+
+Runtime in bench: Node 24.22.3, V8 13.6.233.17-node.63, sqlite 3.54.1, platform linux, arch x64
+                                                                             [raw/part1/A5-gateway-window.log "native runtime"]
+Python 3.12.3 (kit mock/relay)                                               [worker notes, runner `prep` output; not in packet]
+
+Guest: Incus system container from image ubuntu/24.04 (`bench new ubuntu/24.04 b192790`), shares the host kernel.
+       Runner ran as root inside the container. Container destroyed after the run.
+Host:  Ubuntu 26.04.1 LTS, Linux 7.0.0-43-generic x86_64, Incus 6.0.5      [read 2026-11-16 after the run; the host
+       kernel at run time is not separately recorded]
+Lab `bench` helper sha256 (read 2026-11-16, after the run): bf11b9affcaeb9d40ae341517115e1118731a9965f742d819285f28218a05498
+
+Backend, Part 1: none. hb_mock.py answers /api/chat itself (scripted provider). Its /api/version reply ("0.40.16")
+       is hard-coded in the mock and is NOT a backend version.
+Backend, Part 2: Ollama behind the lab filter <RELAY>. Version 0.40.16 per the worker's direct
+       `curl <RELAY>/api/version` (worker note; that output is not in this packet). Model tag qwen3.8:27b-q4_K_M;
+       model digest: unknown (not captured); quantization: q4_K_M per the tag name only. Host: <LAB-MODEL>.
+       Requested num_ctx 262144 (config + filter records); effective context: unknown (no /api/ps or server log).
+Filter (<RELAY>) revision: unknown. Rejected routes: none during this run's window. Earlier records in the same filter log (not included here) show /api/pull (403 "endpoint not
+       allowed"), a non-allowed model (400 "model not allowed").
+
+J192790a.log (verbatim):
+b192790
+OpenClaw 2026.11.3 (847611d)
+J192790a.exit: 0

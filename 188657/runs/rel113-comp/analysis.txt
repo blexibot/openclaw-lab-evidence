@@ -1,0 +1,19 @@
+run dir: /root/r188657/cap-rel113-comp
+requests: 3
+- req-001.json turn=t1 route=chat items=3 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+- req-002.json turn=t1 route=chat items=5 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+- req-003.json turn=t2 route=chat items=8 carriers(items)=2 marker_count=2 end_count=2 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+
+[within turn 1 (control)] req-001.json -> req-002.json
+  items: 3 -> 5; identical leading items: 3; earlier list is a prefix of later: YES
+  serialized input chars: 44645 -> 44888; common prefix chars: 44644
+  instructions equal: YES; tools equal: YES
+
+[turn 1 last -> turn 2 first (the bug)] req-002.json -> req-003.json
+  items: 5 -> 8; identical leading items: 5; earlier list is a prefix of later: YES
+  serialized input chars: 44888 -> 45570; common prefix chars: 44887
+  instructions equal: YES; tools equal: YES
+  carrier item positions: turn 1 last [2] of 5; turn 2 first [2,7] of 8
+  turn-1 carrier kept in place and turn 2 adds its own: YES
+
+VERDICT route=chat tool_call_in_turn1=yes carrier_retained=yes append_only_prefix=yes prev_response_id_used=no

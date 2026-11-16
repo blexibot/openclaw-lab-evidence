@@ -1,0 +1,6 @@
+[33m[state/agent-db][39m [36magent database clean-close receipt: written[39m
+Updated config: $OPENCLAW_HOME/.openclaw/openclaw.json
+  Backup: $OPENCLAW_HOME/.openclaw/openclaw.json.bak
+Agent: owner
+Workspace: $OPENCLAW_HOME/ws-owner
+Agent dir: $OPENCLAW_HOME/.openclaw/agents/owner/agent

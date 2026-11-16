@@ -1,0 +1,40 @@
+{
+ "schema": 1,
+ "id": "20261116-0900-11-lab-191855-foreign-dir",
+ "created": "2026-11-16T09:00:00Z",
+ "expires": "2026-11-17T12:00:00Z",
+ "issuer": "maintainer",
+ "policy_version": 1,
+ "tranche": "lab",
+ "tier": "A",
+ "live": false,
+ "targets": [
+  {
+   "order": "ORDER.md",
+   "sha256": "f000b40c4e9079143d03f13907ec67e34bf95bd311649c3f85a360255287e811"
+  }
+ ],
+ "after": [],
+ "supersedes": null,
+ "steps": [
+  "step 0 TIPS",
+  "A0-A3 macOS bench RED",
+  "A4 optional",
+  "A5 destroy mac bench",
+  "B Linux control",
+  "C optional PR build",
+  "evidence + report"
+ ],
+ "acceptance": [
+  "Part A exact output on 2026.11.3 macOS",
+  "Part B Linux",
+  "both benches destroyed",
+  "evidence sha256 in report"
+ ],
+ "rollback": "destroy t191855-mac and t191855-lin; rm -rf ~/worker/jobs/T191855",
+ "recovery_check": "bench lists show no t191855-*",
+ "cleanup": [
+  "destroy both benches"
+ ],
+ "window_ok": true
+}

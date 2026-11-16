@@ -1,0 +1,6 @@
+{"t":"2026-11-16T06:52:21.175Z","mark":"t1"}
+{"t":"2026-11-16T06:52:25.942Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-001.json","bytes":68073,"stream":true,"action":"tool","tool_names":["apply_patch","dispatch_action","edit","exec","github_publish","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:52:26.054Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-002.json","bytes":68316,"stream":true,"action":"final","tool_names":["apply_patch","dispatch_action","edit","exec","github_publish","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:52:26.308Z","mark":"t2"}
+{"t":"2026-11-16T06:52:27.376Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-003.json","bytes":69476,"stream":true,"action":"text","tool_names":["apply_patch","dispatch_action","edit","exec","github_publish","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:52:27.506Z","mark":"end"}

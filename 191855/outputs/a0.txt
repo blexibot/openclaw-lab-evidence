@@ -1,0 +1,24 @@
++/Users/admin/a0.sh:4> date -u +%FT%TZ
+2026-11-16T09:04:19Z
++/Users/admin/a0.sh:5> sw_vers
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
++/Users/admin/a0.sh:5> uname -m
+arm64
++/Users/admin/a0.sh:5> node --version
+v24.22.3
++/Users/admin/a0.sh:5> npm --version
+11.19.1
++/Users/admin/a0.sh:5> npm prefix -g
+/Users/admin/.npm-global
++/Users/admin/a0.sh:5> openclaw --version
+OpenClaw 2026.11.3 (847611d)
++/Users/admin/a0.sh:5> id
+uid=501(admin) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),264(_webdeveloper),701(com.apple.sharepoint.group.1),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
++/Users/admin/a0.sh:6> npm root -g
++/Users/admin/a0.sh:6> head -3
++/Users/admin/a0.sh:6> grep -rl 'denied path is unknown or outside the install root' /Users/admin/.npm-global/lib/node_modules/openclaw/dist
+grep194160 rc=1
++/Users/admin/a0.sh:7> echo 'grep194160 rc=1'
+host-rc=0

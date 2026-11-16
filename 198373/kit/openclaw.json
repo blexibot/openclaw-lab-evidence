@@ -1,0 +1,41 @@
+{
+ "gateway": {
+  "mode": "local",
+  "port": 18789,
+  "bind": "loopback",
+  "auth": {
+   "mode": "token",
+   "token": "REPLACE_ME"
+  }
+ },
+ "models": {
+  "providers": {
+   "ollama": {
+    "apiKey": "ollama-local",
+    "baseUrl": "http://127.0.0.1:11434",
+    "api": "ollama",
+    "models": [
+     {
+      "id": "qwen3.8:27b-q4_K_M",
+      "name": "qwen3.8:27b-q4_K_M",
+      "contextWindow": 262144
+     }
+    ],
+    "timeoutSeconds": 1200
+   }
+  }
+ },
+ "agents": {
+  "defaults": {
+   "model": {
+    "primary": "ollama/qwen3.8:27b-q4_K_M"
+   },
+   "workspace": "/root/r198373/ws"
+  }
+ },
+ "diagnostics": {
+  "cacheTrace": {
+   "enabled": true
+  }
+ }
+}

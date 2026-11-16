@@ -1,0 +1,2 @@
+Registered plugin command: /dreaming (plugin: memory-core)
+Cannot admit memory.cli for memory stores in state root /root/t182520/B/.openclaw: This operation requires exclusive offline state ownership. No local mutation was attempted. Inspect openclaw gateway status. Update the Gateway or fix authentication and retry. To run offline, stop the Gateway through its service owner, wait for ownership to release, then rerun this exact command.

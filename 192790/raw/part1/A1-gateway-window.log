@@ -1,0 +1,5 @@
+2026-11-16T10:59:10.397+00:00 [agent/embedded] [prompt-cache] message 3 (toolResult) differs from the previous request; history must be append-only; changed fields: envelope.__openclaw sessionKey=agent:main:main
+2026-11-16T10:59:10.512+00:00 [auto-reply/message-tool-outcome] recorded message-tool-only run outcome
+2026-11-16T11:00:10.365+00:00 [auto-reply/message-tool-outcome] recorded message-tool-only run outcome
+2026-11-16T11:01:10.367+00:00 [auto-reply/message-tool-outcome] recorded message-tool-only run outcome
+2026-11-16T11:02:10.352+00:00 [auto-reply/message-tool-outcome] recorded message-tool-only run outcome

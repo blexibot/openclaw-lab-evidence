@@ -1,0 +1,15 @@
+t=0 owner_alive=1
+pid=3453 ppid=3305 pgid=3453 chain=,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --host 127.0.0.1 --port 43837 --models-preset /root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b
+pid=3477 ppid=3453 pgid=3453 chain=,3477,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --embeddings --host 127.0.0.1 --metrics --port 45297 --no-webui --alias embeddinggemma-300m-qat-q8_0 --ctx-size 2048 --model /ro
+t=1 owner_alive=1
+pid=3453 ppid=3305 pgid=3453 chain=,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --host 127.0.0.1 --port 43837 --models-preset /root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b
+pid=3477 ppid=3453 pgid=3453 chain=,3477,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --embeddings --host 127.0.0.1 --metrics --port 45297 --no-webui --alias embeddinggemma-300m-qat-q8_0 --ctx-size 2048 --model /ro
+t=2 owner_alive=1
+pid=3453 ppid=3305 pgid=3453 chain=,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --host 127.0.0.1 --port 43837 --models-preset /root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b
+pid=3477 ppid=3453 pgid=3453 chain=,3477,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --embeddings --host 127.0.0.1 --metrics --port 45297 --no-webui --alias embeddinggemma-300m-qat-q8_0 --ctx-size 2048 --model /ro
+t=3 owner_alive=1
+pid=3453 ppid=3305 pgid=3453 chain=,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --host 127.0.0.1 --port 43837 --models-preset /root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b
+pid=3477 ppid=3453 pgid=3453 chain=,3477,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --embeddings --host 127.0.0.1 --metrics --port 45297 --no-webui --alias embeddinggemma-300m-qat-q8_0 --ctx-size 2048 --model /ro
+t=4 owner_alive=1
+pid=3453 ppid=3305 pgid=3453 chain=,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --host 127.0.0.1 --port 43837 --models-preset /root/t182520/B/.openclaw/tools/llama.cpp/models-bd429ae7-4575-430a-935c-7d3a1ce2b
+pid=3477 ppid=3453 pgid=3453 chain=,3477,3453,3305,3285,3284,3282,1958,1942, args=/root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server --embeddings --host 127.0.0.1 --metrics --port 45297 --no-webui --alias embeddinggemma-300m-qat-q8_0 --ctx-size 2048 --model /ro

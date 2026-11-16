@@ -1,0 +1,8 @@
+Preparing managed llama.cpp server…
+Managed llama.cpp server prepared
+[state/agent-db] agent database clean-close receipt: written
+Workspace OK: $OPENCLAW_HOME/.openclaw/workspace
+Sessions OK: $OPENCLAW_HOME/.openclaw/agents/main/sessions
+Updated config: $OPENCLAW_HOME/.openclaw/openclaw.json
+  Backup: $OPENCLAW_HOME/.openclaw/openclaw.json.bak
+Tip: run `openclaw configure --section web` to store your Brave API key for web_search. Docs: https://docs.openclaw.ai/tools/web

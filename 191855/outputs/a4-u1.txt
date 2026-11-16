@@ -1,0 +1,422 @@
++/Users/admin/a4-u1.sh:4> date -u +%FT%TZ
+2026-11-16T09:09:47Z
++/Users/admin/a4-u1.sh:5> STATE=/Users/admin/t191855/.openclaw 
++/Users/admin/a4-u1.sh:6> W=/Users/admin/t191855/.openclaw/workspace/state 
++/Users/admin/a4-u1.sh:7> openclaw --version
+OpenClaw 2026.11.3 (847611d)
++/Users/admin/a4-u1.sh:8> mkdir -p /Users/admin/t191855/.openclaw/workspace/state/labvol
++/Users/admin/a4-u1.sh:9> hdiutil attach -owners on -mountpoint /Users/admin/t191855/.openclaw/workspace/state/labvol /Users/admin/labvol1.dmg
+/dev/disk7          	GUID_partition_scheme          	
+/dev/disk7s1        	Apple_APFS                     	
+/dev/disk8          	EF57347C-0000-11AA-AA11-0030654	
+/dev/disk8s1        	41504653-0000-11AA-AA11-0030654	/Users/admin/t191855/.openclaw/workspace/state/labvol
+attach rc=0
++/Users/admin/a4-u1.sh:10> echo 'attach rc=0'
++/Users/admin/a4-u1.sh:11> touch /Users/admin/u1-marker
++/Users/admin/a4-u1.sh:12> openclaw update --tag 2026.11.4 --yes --no-restart --json
+Warning: Original state capture is unavailable; the update continues without it. A running Gateway or another active writer changing state during capture is expected to cause this. Database rollback uses the pre-migration snapshots taken after the Gateway stops. A completed update does not need to be restarted because of this warning. Cause: Original update capture failed; evidence retained at $OPENCLAW_STATE_DIR.update-captures/cd1caff4-d031-4a3b-8625-91133b70c71e | Private update capture marker is unreadable; export refused. | EACCES: permission denied, lstat '$OPENCLAW_STATE_DIR/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture' | EACCES
+{
+  "status": "error",
+  "mode": "npm",
+  "root": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+  "reason": "global-install-permission-denied",
+  "before": {
+    "version": "2026.11.3",
+    "buildId": "2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z"
+  },
+  "after": {
+    "version": null,
+    "buildId": "2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z"
+  },
+  "steps": [
+    {
+      "name": "updater-runtime-retention",
+      "command": "retain running updater runtime",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+      "durationMs": 17128,
+      "exitCode": 0,
+      "diagnostics": [
+        "{\"inventoryMs\":9057,\"materializationMs\":7516,\"entries\":45820,\"estimatedBytes\":669065216,\"linked\":41487,\"copied\":1577}"
+      ]
+    },
+    {
+      "name": "package-install",
+      "command": "npm i -g --allow-scripts=openclaw --prefix /Users/admin/.npm-global/lib/node_modules/.openclaw.update-stage-zpPkwC openclaw@2026.11.4 --no-fund --no-audit --loglevel=error --min-release-age=0",
+      "durationMs": 5672,
+      "exitCode": 0,
+      "stdoutTail": "\nadded 361 packages in 6s",
+      "stderrTail": null,
+      "signal": null,
+      "killed": false,
+      "termination": "exit",
+      "cwd": "/Users/admin"
+    },
+    {
+      "name": "package-update",
+      "command": "update installed package",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+      "durationMs": 0,
+      "exitCode": 1,
+      "stderrTail": "Package update cannot write /Users/admin/.npm-global/lib/node_modules (EACCES; owner UID 501, GID 20). Run `chmod u+rwx /Users/admin/.npm-global/lib/node_modules`, then rerun `openclaw update`.",
+      "failureFacts": [
+        {
+          "check": "package-install",
+          "code": "global-install-permission-denied",
+          "message": "Package update cannot write [redacted-path]"
+        }
+      ]
+    },
+    {
+      "name": "gateway recovery observation",
+      "command": "gateway verification",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+      "durationMs": 0,
+      "exitCode": 0,
+      "diagnostics": [
+        "No recovery needed; installation unchanged at 2026.11.3. No service was stopped or started."
+      ]
+    }
+  ],
+  "failedStep": {
+    "name": "package-update",
+    "command": "update installed package",
+    "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+    "durationMs": 0,
+    "exitCode": 1,
+    "stderrTail": "Package update cannot write /Users/admin/.npm-global/lib/node_modules (EACCES; owner UID 501, GID 20). Run `chmod u+rwx /Users/admin/.npm-global/lib/node_modules`, then rerun `openclaw update`.",
+    "failureFacts": [
+      {
+        "check": "package-install",
+        "code": "global-install-permission-denied",
+        "message": "Package update cannot write [redacted-path]"
+      }
+    ]
+  },
+  "recovery": {
+    "serviceRestartSafe": true,
+    "version": "2026.11.3"
+  },
+  "durationMs": 39032,
+  "runId": "cd1caff4-d031-4a3b-8625-91133b70c71e",
+  "verification": {},
+  "run": {
+    "runId": "cd1caff4-d031-4a3b-8625-91133b70c71e",
+    "createdAtMs": 1794820190791,
+    "updatedAtMs": 1794820227470,
+    "trigger": "cli",
+    "phase": "finished",
+    "status": "failed",
+    "reason": "global-install-permission-denied",
+    "origin": {
+      "admission": {
+        "owner": "candidate",
+        "protocol": 1,
+        "candidateVersion": "2026.11.4",
+        "checks": [
+          {
+            "name": "config",
+            "status": "ok"
+          },
+          {
+            "name": "database-schema",
+            "status": "ok"
+          },
+          {
+            "name": "node-runtime",
+            "status": "ok"
+          },
+          {
+            "name": "plugin-availability",
+            "status": "ok"
+          }
+        ]
+      },
+      "candidateAdmission": {
+        "protocol": 1,
+        "verdict": "admit",
+        "reasons": [],
+        "warnings": [],
+        "facts": {
+          "candidateVersion": "2026.11.4",
+          "installedVersion": "2026.11.3",
+          "nodeEngines": ">=24.16.0 <25 || >=26.1.0",
+          "checks": [
+            {
+              "name": "config",
+              "status": "ok"
+            },
+            {
+              "name": "database-schema",
+              "status": "ok"
+            },
+            {
+              "name": "node-runtime",
+              "status": "ok"
+            },
+            {
+              "name": "plugin-availability",
+              "status": "ok"
+            }
+          ]
+        }
+      },
+      "driver": {
+        "host": "<GUEST-HOST>",
+        "pid": 2572,
+        "startIdentity": "1794820187"
+      },
+      "nextAction": "Package update cannot write ~/.npm-global/lib/node_modules (EACCES; owner UID 501, GID 20). Run `chmod u+rwx ~/.npm-global/lib/node_modules`, then rerun `openclaw update`."
+    },
+    "target": {
+      "channel": "stable",
+      "tag": "2026.11.4",
+      "kind": "package",
+      "version": "2026.11.4"
+    },
+    "before": {
+      "version": "2026.11.3",
+      "buildId": "2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z"
+    },
+    "after": {
+      "version": null,
+      "buildId": "2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z"
+    },
+    "steps": [
+      {
+        "step": "requested",
+        "status": "completed",
+        "startedAtMs": 1794820190791,
+        "endedAtMs": 1794820198547
+      },
+      {
+        "step": "driver:adopted",
+        "status": "completed",
+        "endedAtMs": 1794820190889
+      },
+      {
+        "step": "snapshot-space-preflight",
+        "status": "completed",
+        "exitCode": 0
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight",
+        "status": "completed",
+        "detail": "Snapshot size estimate: plugin copies and registered external databases are measured after staging."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:2",
+        "status": "completed",
+        "detail": "Initial snapshot needs 72 MiB for 2 MiB of known SQLite files and temporary working space."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:3",
+        "status": "completed",
+        "detail": "explicit-tmpdir /var/folders/p7/f_99nxmj7s16qrxbl0cbpz4r0000gn/T: 72 MiB needed; 14 GiB free."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:4",
+        "status": "completed",
+        "detail": "state-volume ~/.openclaw.update-captures: 72 MiB needed; 14 GiB free."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:5",
+        "status": "completed",
+        "detail": "system-tmpdir /tmp: 72 MiB needed; 14 GiB free."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:6",
+        "status": "completed",
+        "detail": "SQLite family ~/.openclaw/agents/main/agent/openclaw-agent.sqlite: 1 MiB (database and supporting files)."
+      },
+      {
+        "step": "diagnostic:snapshot-space-preflight:7",
+        "status": "completed",
+        "detail": "SQLite family ~/.openclaw/state/openclaw.sqlite: 1 MiB (database and supporting files)."
+      },
+      {
+        "step": "warning:original-state-capture:1",
+        "status": "completed",
+        "detail": "Original state capture is unavailable; the update continues without it. A running Gateway or another active writer changing state during capture is expected to cause this. Database rollback uses the pre-migration snapshots taken after the Gateway stops. A completed update does not need to be restarted because of this warning. Cause: Original update capture failed; evidence retained at $OPENCLAW_STATE_DIR.update-captures/cd1caff4-d031-4a3b-8625-91133b70c71e | Private update capture marker is unreadable; export refused. | EACCES: permission denied, lstat '$OPENCLAW_STATE_DIR/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture' | EACCES"
+      },
+      {
+        "step": "staging",
+        "status": "completed",
+        "startedAtMs": 1794820198547,
+        "endedAtMs": 1794820198562
+      },
+      {
+        "step": "candidate-admission",
+        "status": "completed",
+        "endedAtMs": 1794820198541,
+        "detail": "[{\"name\":\"config\",\"status\":\"ok\"},{\"name\":\"database-schema\",\"status\":\"ok\"},{\"name\":\"node-runtime\",\"status\":\"ok\"},{\"name\":\"plugin-availability\",\"status\":\"ok\"}]"
+      },
+      {
+        "step": "validating",
+        "status": "failed",
+        "startedAtMs": 1794820198562,
+        "endedAtMs": 1794820227470
+      },
+      {
+        "step": "updater-runtime-retention",
+        "status": "completed",
+        "startedAtMs": 1794820198780,
+        "endedAtMs": 1794820215908,
+        "exitCode": 0
+      },
+      {
+        "step": "diagnostic:updater-runtime-retention",
+        "status": "completed",
+        "startedAtMs": 1794820198780,
+        "endedAtMs": 1794820215908,
+        "detail": "{\"inventoryMs\":9057,\"materializationMs\":7516,\"entries\":45820,\"estimatedBytes\":669065216,\"linked\":41487,\"copied\":1577}"
+      },
+      {
+        "step": "restart",
+        "status": "skipped",
+        "endedAtMs": 1794820226840,
+        "detail": "skipped by operator"
+      },
+      {
+        "step": "global update",
+        "status": "completed",
+        "exitCode": 0,
+        "termination": "exit",
+        "signal": null
+      },
+      {
+        "step": "package-update",
+        "status": "failed",
+        "exitCode": 1,
+        "detail": "Exit code: 1; Package update cannot write [redacted-path]",
+        "failureFacts": [
+          {
+            "check": "package-install",
+            "code": "global-install-permission-denied",
+            "message": "Package update cannot write [redacted-path]"
+          }
+        ]
+      },
+      {
+        "step": "gateway recovery observation",
+        "status": "completed",
+        "exitCode": 0
+      },
+      {
+        "step": "diagnostic:gateway recovery observation",
+        "status": "completed",
+        "detail": "No recovery needed; installation unchanged at 2026.11.3. No service was stopped or started."
+      }
+    ],
+    "verification": {
+      "recovery": {
+        "serviceRestartSafe": true,
+        "version": "2026.11.3"
+      }
+    },
+    "repair": [],
+    "confirmedAtMs": null,
+    "finishedAtMs": 1794820227470,
+    "downtimeMs": null,
+    "admission": {
+      "owner": "candidate",
+      "protocol": 1,
+      "candidateVersion": "2026.11.4",
+      "checks": [
+        {
+          "name": "config",
+          "status": "ok"
+        },
+        {
+          "name": "database-schema",
+          "status": "ok"
+        },
+        {
+          "name": "node-runtime",
+          "status": "ok"
+        },
+        {
+          "name": "plugin-availability",
+          "status": "ok"
+        }
+      ]
+    }
+  },
+  "reportPath": "/Users/admin/t191855/.openclaw/update-reports/cd1caff4-d031-4a3b-8625-91133b70c71e.md"
+}
+Preparing triage diagnostics...
+Saved failure diagnostics: /Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-f6f9bad6_4324_4d64_be15_6990389cb946.json
+To start a repair agent, run env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' openclaw triage --run --update-result /Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-f6f9bad6_4324_4d64_be15_6990389cb946.json
+{
+  "promptPath": "/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md",
+  "bundlePath": "/Users/admin/t191855/.openclaw/logs/support/openclaw-diagnostics-2026-11-16T09-10-32-399Z-2643.zip",
+  "bundleError": null,
+  "findings": {
+    "error": 0,
+    "warning": 3,
+    "info": 3
+  },
+  "detectedAgents": [],
+  "suggestedCommands": [
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' codex exec --skip-git-repo-check - < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' claude -p < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' pi --print < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' opencode run < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' muse exec --prompt-file /Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' grok --prompt-file /Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' cursor-agent --print < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' kimi --prompt 'Read the debugging prompt at /Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md and follow its repair and verification instructions.'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' qwen < '/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' agy --prompt-interactive 'Read the debugging prompt at /Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md and follow its repair and verification instructions.'",
+    "env OPENCLAW_STATE_DIR='/Users/admin/t191855/.openclaw' OPENCLAW_CONFIG_PATH='/Users/admin/t191855/.openclaw/openclaw.json' OPENCLAW_WORKSPACE_DIR='/Users/admin/t191855/.openclaw/workspace' openclaw triage --run --update-result /Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-27c39e95_ecf4_4511_9049_c13df94ab988.json"
+  ]
+}
+Triage diagnostics saved; no repair agent was started.
+[infra:temp-artifacts] Runtime retained at /Users/admin/.npm-global/lib/openclaw-update-runtime-mdNl91: worker generation settled; cleanup deferred to the next eligible update or openclaw doctor --fix
+update rc=1
++/Users/admin/a4-u1.sh:13> echo 'update rc=1'
++/Users/admin/a4-u1.sh:14> openclaw --version
+OpenClaw 2026.11.3 (847611d)
++/Users/admin/a4-u1.sh:15> find /Users/admin/t191855/.openclaw /Users/admin/.openclaw -newer /Users/admin/u1-marker -type f
++/Users/admin/a4-u1.sh:15> head -20
+/Users/admin/t191855/.openclaw/update-reports/cd1caff4-d031-4a3b-8625-91133b70c71e.md
+/Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite-shm
+/Users/admin/t191855/.openclaw/state/openclaw.sqlite
+/Users/admin/t191855/.openclaw/logs/support/openclaw-diagnostics-2026-11-16T09-10-32-399Z-2643.zip
+/Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-610d75d0_cc6a_496b_8033_cdbc8d167af4.json
+/Users/admin/t191855/.openclaw/logs/support/openclaw-triage-prompt-2026-11-16T09-10-32-529Z-2643.md
+/Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-27c39e95_ecf4_4511_9049_c13df94ab988.json
+/Users/admin/t191855/.openclaw/logs/support/openclaw-update-failure-f6f9bad6_4324_4d64_be15_6990389cb946.json
++/Users/admin/a4-u1.sh:16> npm config list
+; "user" config from /Users/admin/.npmrc
+
+prefix = "/Users/admin/.npm-global"
+
+; node bin location = /Users/admin/.local/node/bin/node
+; node version = v24.22.3
+; npm local prefix = /Users/admin
+; npm version = 11.19.1
+; cwd = /Users/admin
+; HOME = /Users/admin
+; Run `npm config ls -l` to show all defaults.
++/Users/admin/a4-u1.sh:17> npm prefix -g
++/Users/admin/a4-u1.sh:17> ls -leOd /Users/admin/.npm-global/lib/node_modules
+drwxr-xr-x  3 admin  staff  - 96 Nov 16 09:10 /Users/admin/.npm-global/lib/node_modules
++/Users/admin/a4-u1.sh:18> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+backup rc=1
++/Users/admin/a4-u1.sh:18> echo 'backup rc=1'
++/Users/admin/a4-u1.sh:19> hdiutil detach /Users/admin/t191855/.openclaw/workspace/state/labvol
+"disk7" ejected.
+detach rc=0
++/Users/admin/a4-u1.sh:19> echo 'detach rc=0'
++/Users/admin/a4-u1.sh:20> date -u +%FT%TZ
+2026-11-16T09:10:34Z
+host-rc=0

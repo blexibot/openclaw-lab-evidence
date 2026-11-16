@@ -1,0 +1,16 @@
+seq  time                  kind/status        hb_poll hb_tool scratch_in_prompt  calls  prompt_eval  secs
+  6  2026-11-16T11:31:19Z  200                True    True    False              exec(outcome=None,scratch=no) 14111  65.9
+  7  2026-11-16T11:31:25Z  200                True    True    False              exec(outcome=None,scratch=no) 14368  4.6
+  8  2026-11-16T11:31:28Z  200                True    True    False              exec(outcome=None,scratch=no) 14461  3.2
+  9  2026-11-16T11:31:35Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 14723  7.1
+ 10  2026-11-16T11:31:37Z  200                True    True    False              -      14941  1.5
+ 11  2026-11-16T11:35:24Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 15358  72.5
+ 12  2026-11-16T11:35:26Z  200                True    True    False              -      15540  1.5
+ 13  2026-11-16T11:38:18Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 15881  6.5
+ 14  2026-11-16T11:38:20Z  200                True    True    False              -      16063  1.7
+ 15  2026-11-16T11:42:18Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 16404  6.5
+ 16  2026-11-16T11:42:20Z  200                True    True    False              -      16586  1.7
+ 17  2026-11-16T11:46:18Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 16927  6.4
+ 18  2026-11-16T11:46:20Z  200                True    True    False              -      17109  1.6
+ 19  2026-11-16T11:50:18Z  200                True    True    False              heartbeat_respond(outcome=no_change,scratch=no) 17450  6.6
+ 20  2026-11-16T11:50:20Z  200                True    True    False              -      17632  1.7

@@ -1,0 +1,6 @@
+Installing to /root/t182520/B/.openclaw/npm/projects/openclaw-llama-cpp-provider-15b2d859e6…
+Installing @openclaw/llama-cpp-provider@2026.11.4 into /root/t182520/B/.openclaw/npm/projects/.openclaw-install-stage-yrp1I9…
+Linked peerDependency "openclaw" -> /usr/local/lib/node_modules/openclaw
+Plugin manifest id "llama-cpp" differs from npm package name "@openclaw/llama-cpp-provider"; using manifest id as the config key.
+Installed plugin: llama-cpp
+Saved for the next Gateway start.

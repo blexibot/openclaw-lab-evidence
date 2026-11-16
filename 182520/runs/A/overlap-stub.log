@@ -1,0 +1,5 @@
+2026-11-16T13:39:58.584Z pid=951 STUB start port=18555 ppid=901 pgid=951
+2026-11-16T13:39:58.811Z pid=951 REQ start id=1 tag=owner delay=40 stream=true bytes=170
+2026-11-16T13:40:03.939Z pid=951 REQ start id=2 tag=borrower delay=90 stream=true bytes=173
+2026-11-16T13:40:38.859Z pid=951 REQ end id=1 tag=owner
+2026-11-16T13:40:38.873Z pid=951 STUB got SIGTERM

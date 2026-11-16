@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "scratch": null,
+  "currentRevision": 10,
+  "maxBytes": 262144
+}
+exit=0

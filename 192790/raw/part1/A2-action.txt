@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "scratch": {
+    "content": "<!-- idle: nothing to check -->",
+    "revision": 1,
+    "updatedAtMs": 1794826973142
+  },
+  "currentRevision": 1,
+  "maxBytes": 262144
+}
+exit=0

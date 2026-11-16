@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "20261116-0900-11-lab-191855-foreign-dir",
+  "state": "passed",
+  "worker": "worker",
+  "policy_version": 1,
+  "claimedAt": "2026-11-16T09:02:19.154Z",
+  "finishedAt": "2026-11-16T10:17:51.712Z",
+  "lastStep": "resuming stale: checking bench state and C results",
+  "recoveries": 0,
+  "notes": null,
+  "report": "reports/20261116-0900-11-lab-191855-foreign-dir.md",
+  "reportSha256": "f3138d16a0c0398164017476050443c7ef69122bf74db5302d20a334dd5948af",
+  "reportBytes": 19071
+}

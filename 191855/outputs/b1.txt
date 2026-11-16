@@ -1,0 +1,143 @@
++ date -u +%FT%TZ
+2026-11-16T09:14:52Z
++ head -2 /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
++ node --version
+v24.22.3
++ openclaw --version
+OpenClaw 2026.11.3 (847611d)
++ id
+uid=1001(lab) gid=1001(lab) groups=1001(lab)
++ mkdir -p /home/lab/t191855 /home/lab/t191855-out
++ openclaw setup --baseline
+[state/agent-db] agent database clean-close receipt: written
+Wrote $OPENCLAW_HOME/.openclaw/openclaw.json
+Workspace OK: $OPENCLAW_HOME/.openclaw/workspace
+Sessions OK: $OPENCLAW_HOME/.openclaw/agents/main/sessions
+
+Setup complete: config, workspace, and session directories are ready.
+Next guided path: openclaw onboard.
+Next targeted changes: openclaw configure for models, channels, Gateway, plugins, skills, and health checks.
+Add a chat channel later: openclaw channels add.
+setup rc=0
++ echo 'setup rc=0'
++ openclaw backup create --dry-run --json
+{
+  "createdAt": "2026-11-16T09:14:57.508Z",
+  "archiveRoot": "2026-11-16T09-14-57.508+00-00-openclaw-backup",
+  "archivePath": "/home/lab/2026-11-16T09-14-57.508+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-14-57.508+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++ echo 'dryrun rc=0'
++ openclaw backup create --verify --json --output /home/lab/t191855-out
+{
+  "createdAt": "2026-11-16T09:14:59.029Z",
+  "archiveRoot": "2026-11-16T09-14-59.029+00-00-openclaw-backup",
+  "archivePath": "/home/lab/t191855-out/2026-11-16T09-14-59.029+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-14-59.029+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
++ echo 'backup rc=0'
++ ls -la /home/lab/t191855 /home/lab/t191855/.openclaw
+backup rc=0
+/home/lab/t191855:
+total 0
+drwxrwxr-x 1 lab lab  18 Nov 16 09:14 .
+drwxr-x--- 1 lab lab 112 Nov 16 09:14 ..
+drwx------ 1 lab lab 166 Nov 16 09:14 .openclaw
+
+/home/lab/t191855/.openclaw:
+total 12
+drwx------ 1 lab lab 166 Nov 16 09:14 .
+drwxrwxr-x 1 lab lab  18 Nov 16 09:14 ..
+drwxrwxr-x 1 lab lab   8 Nov 16 09:14 agents
+-rw------- 1 lab lab  32 Nov 16 09:14 config-journal-fingerprint.key
+-rw------- 1 lab lab 860 Nov 16 09:14 openclaw.json
+-rw------- 1 lab lab 736 Nov 16 09:14 openclaw.json.bak
+drwx------ 1 lab lab 122 Nov 16 09:15 state
+drwx------ 1 lab lab  26 Nov 16 09:14 tmp
+drwxrwxr-x 1 lab lab  92 Nov 16 09:14 workspace
++ date -u +%FT%TZ
+2026-11-16T09:15:02Z
+host-rc=0

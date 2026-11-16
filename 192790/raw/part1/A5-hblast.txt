@@ -1,0 +1,9 @@
+{
+  "ts": 1794828192750,
+  "status": "failed",
+  "reason": "agent-runner-failure",
+  "preview": "⚠️ Heartbeat Respond failed",
+  "indicatorType": "error",
+  "silent": true,
+  "durationMs": 1319
+}

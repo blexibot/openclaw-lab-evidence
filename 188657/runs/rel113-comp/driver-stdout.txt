@@ -1,0 +1,39 @@
+== run=rel113-comp api=openai-completions oc='openclaw' home=/root/r188657/home-rel113-comp 2026-11-16T06:31:28Z
+== version: OpenClaw 2026.11.3 (847611d)
+== config check: api=openai-completions
+== t1 06:31:37
+   exit=0 reply_tail:    "read"        ],        "failures": 0      },      "finalAssistantMessageRawText": "The fixture says: lab fixture line one.",      "terminalReply": {        "disposition": "visible",        "text": "The fixture says: lab fixture line one."      }    },    "sourceReplyDeliveryState": "missing"  }}
+== t2 06:31:41
+   exit=0 reply_tail: {        "thinking": "off"      },      "completion": {        "stopReason": "stop",        "finishReason": "stop"      },      "finalAssistantMessageRawText": "ok",      "terminalReply": {        "disposition": "visible",        "text": "ok"      }    },    "sourceReplyDeliveryState": "missing"  }}
+== mock index:
+{"t":"2026-11-16T06:31:37.855Z","mark":"t1"}
+{"t":"2026-11-16T06:31:40.891Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-001.json","bytes":58837,"stream":true,"action":"tool","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:40.982Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-002.json","bytes":59080,"stream":true,"action":"final","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:41.188Z","mark":"t2"}
+{"t":"2026-11-16T06:31:42.245Z","method":"POST","path":"/v1/chat/completions","route":"chat","file":"req-003.json","bytes":59762,"stream":true,"action":"text","tool_names":["apply_patch","dispatch_action","edit","exec","heartbeat_respond","ls","message","openclaw","process","read","sessions_yield","tool_describe","tool_search","write"]}
+{"t":"2026-11-16T06:31:42.360Z","mark":"end"}
+== analysis:
+run dir: /root/r188657/cap-rel113-comp
+requests: 3
+- req-001.json turn=t1 route=chat items=3 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+- req-002.json turn=t1 route=chat items=5 carriers(items)=1 marker_count=1 end_count=1 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+- req-003.json turn=t2 route=chat items=8 carriers(items)=2 marker_count=2 end_count=2 prev_response_id=- store=- prompt_cache_key=- instructions_sha=- tools_sha=774363ce4db7
+
+[within turn 1 (control)] req-001.json -> req-002.json
+  items: 3 -> 5; identical leading items: 3; earlier list is a prefix of later: YES
+  serialized input chars: 44645 -> 44888; common prefix chars: 44644
+  instructions equal: YES; tools equal: YES
+
+[turn 1 last -> turn 2 first (the bug)] req-002.json -> req-003.json
+  items: 5 -> 8; identical leading items: 5; earlier list is a prefix of later: YES
+  serialized input chars: 44888 -> 45570; common prefix chars: 44887
+  instructions equal: YES; tools equal: YES
+  carrier item positions: turn 1 last [2] of 5; turn 2 first [2,7] of 8
+  turn-1 carrier kept in place and turn 2 adds its own: YES
+
+VERDICT route=chat tool_call_in_turn1=yes carrier_retained=yes append_only_prefix=yes prev_response_id_used=no
+== gateway log lines about cache trace / carriers:
+== cache trace (runtimeContextCarrierRetained values, per file):
+  /root/r188657/home-rel113-comp/.openclaw/logs/cache-trace.jsonl
+      4 "runtimeContextCarrierRetained":true
+== done 2026-11-16T06:31:42Z

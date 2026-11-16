@@ -1,0 +1,7 @@
+pair: 2 records with messages in pulled/v113/wire-v113.jsonl
+--- #0 seq=8 t=1794818625.4602566 status=200 secs=1.161 num_ctx=None keep_alive=None last_user='t time, use `session_status`." End OpenClaw runtime context.' messages=5 __openclaw=0 runId=2 prompt_eval_count=15290 cached=15262 uncached=28 prompt_eval_s=0.31
+    roles=['system', 'user', 'user', 'assistant', 'tool']
+--- #1 seq=9 t=1794818628.487201 status=200 secs=1.558 num_ctx=None keep_alive=None last_user='t time, use `session_status`." End OpenClaw runtime context.' messages=8 __openclaw=0 runId=2 prompt_eval_count=15467 cached=15298 uncached=169 prompt_eval_s=1.02
+    roles=['system', 'user', 'user', 'assistant', 'tool', 'assistant', 'user', 'user']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 49836 of 64501

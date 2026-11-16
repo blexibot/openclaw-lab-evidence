@@ -1,0 +1,3 @@
+run=03001920 seq=7 modelApi=openai-responses messageCount=2 :: [0] user; [1] user CARRIER {"runtimeContext": {"retained": false}, "runtimeContextCarrier": true, "runtimeContextCarrierRetained": false}
+run=03001920 seq=10 modelApi=openai-responses messageCount=4 :: [0] user; [1] assistant; [2] toolResult; [3] user CARRIER {"runtimeContext": {"retained": false}, "runtimeContextCarrier": true, "runtimeContextCarrierRetained": false}
+run=c3e718ac seq=7 modelApi=openai-responses messageCount=6 :: [0] user; [1] assistant; [2] toolResult; [3] assistant; [4] user; [5] user CARRIER {"runtimeContext": {"retained": false}, "runtimeContextCarrier": true, "runtimeContextCarrierRetained": false}

@@ -1,0 +1,4 @@
+chat_requests=0 hb_calls=0 hb_calls_after_15s=0 chat_without_hb_poll=0
+hb_tool_offered=-
+scratch_in_prompt=-
+non_200=0

@@ -1,0 +1,11 @@
+wire: 3 records with messages in /root/r198373/v114/wire-v114.jsonl
+--- #0 seq=7 t=1794819038.148588 status=200 secs=69.294 num_ctx=None keep_alive=None last_user='t time, use `session_status`." End OpenClaw runtime context.' messages=3 __openclaw=0 runId=2 prompt_eval_count=15265 cached=0 uncached=15265 prompt_eval_s=67.7
+    roles=['system', 'user', 'user']
+--- #1 seq=8 t=1794819107.9203825 status=200 secs=1.082 num_ctx=None keep_alive=None last_user='t time, use `session_status`." End OpenClaw runtime context.' messages=5 __openclaw=0 runId=2 prompt_eval_count=15317 cached=15289 uncached=28 prompt_eval_s=0.32
+    roles=['system', 'user', 'user', 'assistant', 'tool']
+    APPEND-ONLY vs previous: yes (previous 3 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 49599 of 64403
+--- #2 seq=9 t=1794819111.2478743 status=200 secs=1.521 num_ctx=None keep_alive=None last_user='t time, use `session_status`." End OpenClaw runtime context.' messages=8 __openclaw=0 runId=2 prompt_eval_count=15494 cached=15325 uncached=169 prompt_eval_s=1.04
+    roles=['system', 'user', 'user', 'assistant', 'tool', 'assistant', 'user', 'user']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    first differing byte offset of the whole serialized request: 49836 of 64640

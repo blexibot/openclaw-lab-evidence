@@ -1,0 +1,22 @@
+2026-11-16T08:50:22Z tag=v114 version: OpenClaw 2026.11.4 (d843d6a) 
+2026-11-16T08:50:24Z config baseUrl read back: http://127.0.0.1:11434
+2026-11-16T08:50:25Z cacheTrace read back: true
+2026-11-16T08:50:26Z proxy listening; relay version via proxy: {"version":"0.40.16"}
+2026-11-16T08:50:32Z gateway listening
+2026-11-16T08:50:32Z turn session=cache-repro msg=Use the read tool to read note.txt in your workspace, then reply with its first word only.
+2026-11-16T08:51:49Z turn exit=0 (run1)
+2026-11-16T08:51:49Z tool result seen in 1 /api/chat request(s); run 2 uses session cache-repro
+2026-11-16T08:51:49Z turn session=cache-repro msg=Reply with one word: ready.
+2026-11-16T08:51:52Z turn exit=0 (run2)
+total 404
+drwxr-xr-x 1 root root    166 Nov 16 08:51 .
+drwxr-xr-x 1 root root    102 Nov 16 08:50 ..
+-rw------- 1 root root  59015 Nov 16 08:51 cache-trace.jsonl
+-rw-r--r-- 1 root root  15928 Nov 16 08:51 gw-v114.log
+drwxr-xr-x 1 root root     18 Nov 16 08:50 home
+-rw-r--r-- 1 root root     85 Nov 16 08:50 proxy.log
+-rw-r--r-- 1 root root  14163 Nov 16 08:51 run1.json
+-rw-r--r-- 1 root root  13921 Nov 16 08:51 run2.json
+-rw-r--r-- 1 root root    706 Nov 16 08:51 steps.log
+-rw-r--r-- 1 root root 291069 Nov 16 08:51 wire-v114.jsonl
+2026-11-16T08:51:56Z DONE

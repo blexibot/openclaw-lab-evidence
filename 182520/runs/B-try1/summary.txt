@@ -1,0 +1,12 @@
+B_START 2026-11-16T13:42:18Z openclaw=OpenClaw 2026.11.4 (d843d6a) node=v24.22.3 arch=x86_64 nproc=20
+B_HOST mem_kb=32020200 glibc=2.39 disk_free=289G
+B_EGRESS https://huggingface.co http=200
+B_EGRESS https://github.com http=200
+B_EGRESS https://registry.npmjs.org http=200
+B_STEP b1-plugin-install rc=0 secs=9
+B_STEP b1-plugin-list rc=0 secs=2
+B_STEP b2-set-provider rc=0 secs=3
+B_STEP b2-set-fallback rc=0 secs=3
+B_STEP b2-set-cache rc=0 secs=3
+B_STEP b3-onboard rc=1 secs=7
+RESULT_B=blocked (embedding-only onboarding failed (see b3-onboard.txt))

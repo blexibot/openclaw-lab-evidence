@@ -1,0 +1,9 @@
+{
+  "ts": 1794827770433,
+  "status": "ok-token",
+  "reason": "interval",
+  "preview": "Nothing needs attention.",
+  "indicatorType": "ok",
+  "silent": true,
+  "durationMs": 299
+}

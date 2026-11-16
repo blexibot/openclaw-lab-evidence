@@ -1,0 +1,56 @@
++ date -u +%FT%TZ
+2026-11-16T09:15:45Z
++ STATE=/home/lab/t191855/.openclaw
++ W=/home/lab/t191855/.openclaw/workspace/state
++ openclaw backup create --verify --json --output /home/lab/t191855-out
+{
+  "createdAt": "2026-11-16T09:15:46.780Z",
+  "archiveRoot": "2026-11-16T09-15-46.780+00-00-openclaw-backup",
+  "archivePath": "/home/lab/t191855-out/2026-11-16T09-15-46.780+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-15-46.780+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+backup rc=0
++ echo 'backup rc=0'
++ date -u +%FT%TZ
+2026-11-16T09:15:49Z
+host-rc=0

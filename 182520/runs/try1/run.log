@@ -1,0 +1,46 @@
+2026-11-16T13:38:20Z
+OpenClaw 2026.11.4 (d843d6a)
+v24.22.3
+Linux b182520 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+2462e7800a187ca7c8bb8645841e999f957f5300da87663ba263a9eb9e6fd0fb  /root/kit/cfg.mjs
+2a08fea1d1b2a9892d84b795564affbcaf8e90894123a749c8685405e1445fef  /root/kit/corpus.mjs
+e32f5d7aff5a1a9d96d854ab996d401a7c69b05d1938a340cb49fedcb5f559bd  /root/kit/hc.mjs
+18abc743202202b81ee13d547549907a44d9b71ba24cc2a72617bd0b91fb2310  /root/kit/job.sh
+da27dadbc6024a2b4199e5b1f3f5823d05304329c54546658b86d667c37decaa  /root/kit/partA.sh
+24247defa90fa558b81e4fbb6b25de95d6736d889632b18c696e2dc107b68835  /root/kit/partB.sh
+b9e03fab34b9ab8a1622c6bf7587c6781038bba969a561af9aa68c05761e63b7  /root/kit/procs.mjs
+c343b3cabff52956ee41c96f1e969331da4429b69673dfced35e95e7e74dc19e  /root/kit/run.sh
+f3291ad21caf36f5fca10a7d30bad4dd233b2e128d3e1bce886019c66120f8b8  /root/kit/slowllm.mjs
+RESULT_A=reproduced (owner exit killed the server under the borrower's in-flight request; borrower rc=1)
+RESULT_B=blocked (embedding-only onboarding failed (see b3-onboard.txt))
+== A summary
+A_START 2026-11-16T13:38:20Z openclaw=OpenClaw 2026.11.4 (d843d6a) node=v24.22.3 arch=x86_64
+A_solo_borrower rc=0 secs=94 done=1
+A_solo_STUB servers_started=1 owner_req_pid=none borrower_first_req_pid=798 first_req_ended=1 first_req_client_closed=0 borrower_req_starts=1
+A_overlap_owner rc=0 secs=43 done=1
+A_overlap_borrower rc=1 secs=37 done=0
+A_overlap_PIDS owner_cli=882 borrower_cli=969
+A_overlap_STUB servers_started=1 owner_req_pid=951 borrower_first_req_pid=951 first_req_ended=0 first_req_client_closed=0 borrower_req_starts=1
+A_external_owner rc=0 secs=44 done=1
+A_external_borrower rc=0 secs=92 done=1
+A_external_PIDS owner_cli=1135 borrower_cli=1211
+A_external_STUB servers_started=1 owner_req_pid=1118 borrower_first_req_pid=1118 first_req_ended=1 first_req_client_closed=0 borrower_req_starts=1
+A_FACTS solo_ok=yes external_ok=yes owner_ok=yes reused=yes killed_inflight=yes
+RESULT_A=reproduced (owner exit killed the server under the borrower's in-flight request; borrower rc=1)
+== B summary
+B_START 2026-11-16T13:42:18Z openclaw=OpenClaw 2026.11.4 (d843d6a) node=v24.22.3 arch=x86_64 nproc=20
+B_HOST mem_kb=32020200 glibc=2.39 disk_free=289G
+B_EGRESS https://huggingface.co http=200
+B_EGRESS https://github.com http=200
+B_EGRESS https://registry.npmjs.org http=200
+B_STEP b1-plugin-install rc=0 secs=9
+B_STEP b1-plugin-list rc=0 secs=2
+B_STEP b2-set-provider rc=0 secs=3
+B_STEP b2-set-fallback rc=0 secs=3
+B_STEP b2-set-cache rc=0 secs=3
+B_STEP b3-onboard rc=1 secs=7
+RESULT_B=blocked (embedding-only onboarding failed (see b3-onboard.txt))
+T182520 RESULT_A=reproduced (owner exit killed the server under the borrower's in-flight request; borrower rc=1)
+T182520 RESULT_B=blocked (embedding-only onboarding failed (see b3-onboard.txt))

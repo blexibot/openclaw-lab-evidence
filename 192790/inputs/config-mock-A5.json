@@ -1,0 +1,42 @@
+{
+ "gateway": {
+  "mode": "local",
+  "port": 18789,
+  "bind": "loopback",
+  "auth": {
+   "mode": "token",
+   "token": "<TOKEN>"
+  }
+ },
+ "models": {
+  "providers": {
+   "ollama": {
+    "apiKey": "ollama-local",
+    "baseUrl": "http://127.0.0.1:11434",
+    "api": "ollama",
+    "models": [
+     {
+      "id": "mock:latest",
+      "name": "mock:latest",
+      "contextWindow": 65536,
+      "params": {
+       "keep_alive": "30m"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "agents": {
+  "defaults": {
+   "model": {
+    "primary": "ollama/mock:latest"
+   },
+   "workspace": "/root/r192790/ws-mock",
+   "heartbeat": {
+    "every": "1m",
+    "target": "none"
+   }
+  }
+ }
+}

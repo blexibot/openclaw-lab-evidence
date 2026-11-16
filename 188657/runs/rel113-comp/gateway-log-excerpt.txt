@@ -1,0 +1,4 @@
+96:2026-11-16T06:31:35.730+00:00 [gateway] agent model: myproxy/test-model (thinking=off, fast=off)
+97:2026-11-16T06:31:35.730+00:00 [gateway] http server listening (14 plugins: anthropic, browser, canvas, cua-computer, device-pair, file-transfer, geolocation, github, linux-node, memory-core, ollama, openai, talk-voice, xai; 4.0s)
+98:2026-11-16T06:31:35.730+00:00 [gateway] log file: /tmp/openclaw/openclaw-2026-11-16.log
+125:2026-11-16T06:31:37.159+00:00 [gateway] update available (latest): v2026.11.4 (current v2026.11.3). Run: openclaw update

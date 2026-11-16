@@ -1,0 +1,5 @@
+Preparing managed llama.cpp server…
+llama.cpp setup failed
+Managed llama.cpp setup failed. Run openclaw doctor, fix the reported runtime or model issue, then retry. The verified llama-server build could not start. Install the OpenMP runtime (for example libgomp1 on Debian/Ubuntu or libgomp on Fedora), then rerun llama.cpp setup. Detail: Command failed: /root/t182520/B/.openclaw/tools/llama.cpp/.extract-1aa4b4d9-b7b8-4151-8995-dcd78b7a55ba/server/llama-b10809/llama-server --version
+/root/t182520/B/.openclaw/tools/llama.cpp/.extract-1aa4b4d9-b7b8-4151-8995-dcd78b7a55ba/server/llama-b10809/llama-server: error while loading shared libraries: libgomp.so.1: cannot open shared object file: No such file or directory
+

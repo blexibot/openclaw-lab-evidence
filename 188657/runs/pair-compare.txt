@@ -1,0 +1,30 @@
+cap-rel113-resp
+  top-level fields other than input/messages: model:equal stream:equal max_output_tokens:equal tools:equal store:equal
+  instructions field present: no
+  items: 5 -> 7
+  carriers turn-1 last: [2] sha=b7d7468eb7c1af80 chars=298 | turn-2 first: [6] sha=b7d7468eb7c1af80 chars=298
+  raw bytes: 58673 -> 58943; raw common prefix bytes: 44273; turn-1 file next bytes: "message\",\"role\":\"user\",\"content\":[{\"type"; turn-2 file next bytes: "function_call\",\"call_id\":\"call_mwivwdzp3"
+cap-rel113-comp
+  top-level fields other than input/messages: model:equal stream:equal stream_options:equal tools:equal tool_choice:equal max_completion_tokens:equal
+  instructions field present: no
+  items: 5 -> 8
+  carriers turn-1 last: [2] sha=565b233831f13842 chars=525 | turn-2 first: [2] sha=565b233831f13842 chars=525 [7] sha=565b233831f13842 chars=525
+  raw bytes: 59080 -> 59762; raw common prefix bytes: 44937; turn-1 file next bytes: "],\"stream\":true,\"stream_options\":{\"inclu"; turn-2 file next bytes: ",{\"role\":\"assistant\",\"content\":\"The fixt"
+cap-rel114-resp
+  top-level fields other than input/messages: model:equal stream:equal max_output_tokens:equal tools:equal store:equal
+  instructions field present: no
+  items: 5 -> 7
+  carriers turn-1 last: [2] sha=b7d7468eb7c1af80 chars=298 | turn-2 first: [6] sha=b7d7468eb7c1af80 chars=298
+  raw bytes: 59116 -> 59386; raw common prefix bytes: 44577; turn-1 file next bytes: "message\",\"role\":\"user\",\"content\":[{\"type"; turn-2 file next bytes: "function_call\",\"call_id\":\"call_mwiw6bol3"
+cap-main-resp
+  top-level fields other than input/messages: model:equal stream:equal max_output_tokens:equal tools:equal store:equal
+  instructions field present: no
+  items: 5 -> 8
+  carriers turn-1 last: [2] sha=b5182821b80b608b chars=955 | turn-2 first: [2] sha=b5182821b80b608b chars=955 [7] sha=b5182821b80b608b chars=955
+  raw bytes: 68140 -> 69462; raw common prefix bytes: 50718; turn-1 file next bytes: "],\"stream\":true,\"max_output_tokens\":4096"; turn-2 file next bytes: ",{\"type\":\"message\",\"role\":\"assistant\",\"c"
+cap-main-comp-src
+  top-level fields other than input/messages: model:equal stream:equal stream_options:equal tools:equal tool_choice:equal max_completion_tokens:equal
+  instructions field present: no
+  items: 5 -> 8
+  carriers turn-1 last: [2] sha=b761d25dbd284585 chars=907 | turn-2 first: [2] sha=b761d25dbd284585 chars=907 [7] sha=b761d25dbd284585 chars=907
+  raw bytes: 68316 -> 69476; raw common prefix bytes: 50661; turn-1 file next bytes: "],\"stream\":true,\"stream_options\":{\"inclu"; turn-2 file next bytes: ",{\"role\":\"assistant\",\"content\":\"The fixt"

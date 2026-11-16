@@ -1,0 +1,16 @@
+chat_requests=8 hb_calls=4 hb_calls_after_15s=4 chat_without_hb_poll=0
+hb_tool_offered=True,True,True,True
+scratch_in_prompt=False,False,False,False
+  hb #8 2026-11-16T10:59:10Z kind=hb-respond-plain pe=None secs= excerpt=None
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention."}
+  hb #10 2026-11-16T11:00:10Z kind=hb-respond-plain pe=None secs= excerpt=None
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention."}
+  hb #12 2026-11-16T11:01:10Z kind=hb-respond-plain pe=None secs= excerpt=None
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention."}
+  hb #14 2026-11-16T11:02:10Z kind=hb-respond-plain pe=None secs= excerpt=None
+     model tool call: heartbeat_respond args={"outcome": "no_change", "notify": false, "summary": "Nothing needs attention."}
+  tool result seen by model #9 2026-11-16T10:59:10Z: '{\n  "status": "accepted",\n  "outcome": "no_change",\n  "notify": false,\n  "summary": "Nothing needs attention."\n}'
+  tool result seen by model #11 2026-11-16T11:00:10Z: '{\n  "status": "accepted",\n  "outcome": "no_change",\n  "notify": false,\n  "summary": "Nothing needs attention."\n}'
+  tool result seen by model #13 2026-11-16T11:01:10Z: '{\n  "status": "accepted",\n  "outcome": "no_change",\n  "notify": false,\n  "summary": "Nothing needs attention."\n}'
+  tool result seen by model #15 2026-11-16T11:02:10Z: '{\n  "status": "accepted",\n  "outcome": "no_change",\n  "notify": false,\n  "summary": "Nothing needs attention."\n}'
+non_200=0

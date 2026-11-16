@@ -1,0 +1,139 @@
++/Users/admin/a3.sh:4> date -u +%FT%TZ
+2026-11-16T09:08:51Z
++/Users/admin/a3.sh:5> STATE=/Users/admin/t191855/.openclaw 
++/Users/admin/a3.sh:6> W=/Users/admin/t191855/.openclaw/workspace/state 
++/Users/admin/a3.sh:7> mkdir -p /Users/admin/t191855-out
++/Users/admin/a3.sh:8> openclaw --version
+OpenClaw 2026.11.4 (d843d6a)
++/Users/admin/a3.sh:10> mkdir -p /Users/admin/t191855/.openclaw/workspace/state/labvol
++/Users/admin/a3.sh:11> hdiutil attach -owners on -mountpoint /Users/admin/t191855/.openclaw/workspace/state/labvol /Users/admin/labvol1.dmg
+/dev/disk7          	GUID_partition_scheme          	
+/dev/disk7s1        	Apple_APFS                     	
+/dev/disk8          	EF57347C-0000-11AA-AA11-0030654	
+/dev/disk8s1        	41504653-0000-11AA-AA11-0030654	/Users/admin/t191855/.openclaw/workspace/state/labvol
+attach rc=0
++/Users/admin/a3.sh:12> echo 'attach rc=0'
++/Users/admin/a3.sh:13> ls -leOd /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd
+drwx------+ 5 root  staff  - 160 Nov 16 09:07 /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd
+ 0: group:everyone allow readextattr
++/Users/admin/a3.sh:14> stat /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture
+stat: /Users/admin/t191855/.openclaw/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture: stat: Permission denied
+stat rc=1
++/Users/admin/a3.sh:14> echo 'stat rc=1'
++/Users/admin/a3.sh:15> openclaw backup create --dry-run --json
+{
+  "createdAt": "2026-11-16T09:08:51.919Z",
+  "archiveRoot": "2026-11-16T09-08-51.919+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/2026-11-16T09-08-51.919+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-08-51.919+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++/Users/admin/a3.sh:15> echo 'dryrun rc=0'
++/Users/admin/a3.sh:16> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+backup rc=1
++/Users/admin/a3.sh:16> echo 'backup rc=1'
++/Users/admin/a3.sh:17> hdiutil detach /Users/admin/t191855/.openclaw/workspace/state/labvol
+"disk7" ejected.
+detach rc=0
++/Users/admin/a3.sh:17> echo 'detach rc=0'
++/Users/admin/a3.sh:18> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "createdAt": "2026-11-16T09:08:54.001Z",
+  "archiveRoot": "2026-11-16T09-08-54.001+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/t191855-out/2026-11-16T09-08-54.001+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-08-54.001+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+control-backup rc=0
++/Users/admin/a3.sh:18> echo 'control-backup rc=0'
++/Users/admin/a3.sh:19> date -u +%FT%TZ
+2026-11-16T09:08:55Z
+host-rc=0

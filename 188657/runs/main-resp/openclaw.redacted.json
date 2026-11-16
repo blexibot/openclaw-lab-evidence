@@ -1,0 +1,41 @@
+{
+  "gateway": {
+    "mode": "local",
+    "port": 18789,
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "<TOKEN>"
+    }
+  },
+  "models": {
+    "providers": {
+      "myproxy": {
+        "api": "openai-responses",
+        "baseUrl": "http://127.0.0.1:8099/v1",
+        "apiKey": "dummy",
+        "models": [
+          {
+            "id": "test-model",
+            "name": "test-model",
+            "contextWindow": 65536,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "myproxy/test-model"
+      },
+      "workspace": "/root/r188657/ws-main-resp"
+    }
+  },
+  "diagnostics": {
+    "cacheTrace": {
+      "enabled": true
+    }
+  }
+}

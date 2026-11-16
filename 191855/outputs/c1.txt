@@ -1,0 +1,128 @@
++ date -u +%FT%TZ
+2026-11-16T09:56:46Z
++ node /home/lab/pr/openclaw.mjs --version
+OpenClaw 2026.11.1 (5438a83)
+version rc=0
++ echo 'version rc=0'
++ stat /home/lab/t191855/.openclaw/workspace/state/foreign/.openclaw-private-update-capture
+stat: cannot statx '/home/lab/t191855/.openclaw/workspace/state/foreign/.openclaw-private-update-capture': Permission denied
+stat rc=1
++ echo 'stat rc=1'
++ node /home/lab/pr/openclaw.mjs backup create --dry-run --json
+Your OpenClaw config was written by version 2026.11.3, but this command is running 2026.11.1.
+Check: `openclaw --version`, `which openclaw`, and `openclaw gateway status --deep`.
+If unexpected, update PATH so `openclaw` points to the version you want, or reinstall the Gateway service from that same OpenClaw install.
+{
+  "createdAt": "2026-11-16T09:56:47.292Z",
+  "archiveRoot": "2026-11-16T09-56-47.292+00-00-openclaw-backup",
+  "archivePath": "/home/lab/2026-11-16T09-56-47.292+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-56-47.292+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++ echo 'dryrun rc=0'
++ node /home/lab/pr/openclaw.mjs backup create --verify --json --output /home/lab/t191855-out
+Your OpenClaw config was written by version 2026.11.3, but this command is running 2026.11.1.
+Check: `openclaw --version`, `which openclaw`, and `openclaw gateway status --deep`.
+If unexpected, update PATH so `openclaw` points to the version you want, or reinstall the Gateway service from that same OpenClaw install.
+[state/db] state database schema migration pending; verifying integrity first
+{
+  "createdAt": "2026-11-16T09:56:49.105Z",
+  "archiveRoot": "2026-11-16T09-56-49.105+00-00-openclaw-backup",
+  "archivePath": "/home/lab/t191855-out/2026-11-16T09-56-49.105+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-56-49.105+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    },
+    {
+      "kind": "entry",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace/state/foreign",
+      "displayPath": "/home/lab/t191855/.openclaw/workspace/state/foreign",
+      "reason": "unreadable-foreign"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "Skipped unreadable foreign entry: /home/lab/t191855/.openclaw/workspace/state/foreign"
+  ]
+}
+Warning: the backup outcome could not be recorded: Client credentials require backed-up migration custody; stop the app and run openclaw doctor --fix.
+backup rc=0
++ echo 'backup rc=0'
++ date -u +%FT%TZ
+2026-11-16T09:56:52Z
+host-rc=0

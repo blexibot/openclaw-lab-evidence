@@ -1,0 +1,20 @@
+## Q  start=2026-11-16T11:29:49Z end=2026-11-16T11:54:05Z mode=- action=unset(exit 0) wait=2520s
+chat_requests=15 hb_calls=6 hb_calls_after_15s=6 chat_without_hb_poll=0
+hb_tool_offered=True,True,True,True,True,True
+scratch_in_prompt=False,False,False,False,False,False
+  hb #6 2026-11-16T11:31:19Z kind=200 pe=14111 secs=65.9 excerpt=None
+     model tool call: exec args={"command": "openclaw automations list --all 2>/dev/null; ls memory/ 2>/dev/null | tail -5", "title": "Check automations and recent memory notes"}
+  hb #11 2026-11-16T11:35:24Z kind=200 pe=15358 secs=72.5 excerpt=None
+     model tool call: heartbeat_respond args={"notify": false, "outcome": "no_change", "summary": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation."}
+  hb #13 2026-11-16T11:38:18Z kind=200 pe=15881 secs=6.5 excerpt=None
+     model tool call: heartbeat_respond args={"notify": false, "outcome": "no_change", "summary": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation."}
+  hb #15 2026-11-16T11:42:18Z kind=200 pe=16404 secs=6.5 excerpt=None
+     model tool call: heartbeat_respond args={"notify": false, "outcome": "no_change", "summary": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation."}
+  hb #17 2026-11-16T11:46:18Z kind=200 pe=16927 secs=6.4 excerpt=None
+     model tool call: heartbeat_respond args={"notify": false, "outcome": "no_change", "summary": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation."}
+  hb #19 2026-11-16T11:50:18Z kind=200 pe=17450 secs=6.6 excerpt=None
+     model tool call: heartbeat_respond args={"notify": false, "outcome": "no_change", "summary": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation."}
+non_200=0
+empty-heartbeat-file lines in gateway log: 0
+heartbeat last: {   "ts": 1794829820458,   "status": "ok-token",   "reason": "interval",   "preview": "Heartbeat check: no active subagents/exec, no unread items, no urgent mail or calendar events to surface. Workspace is still in bootstrap state (BOOTSTRAP.md present) awaiting first conversation.",   "indicatorType": "ok",   "silent": true,   "durationMs": 8841 } 
+

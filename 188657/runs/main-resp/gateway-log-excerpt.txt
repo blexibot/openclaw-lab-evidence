@@ -1,0 +1,6 @@
+118:2026-11-16T06:51:04.921+00:00 [gateway] agent model: myproxy/test-model (thinking=off, fast=off)
+119:2026-11-16T06:51:04.921+00:00 [gateway] http server listening (18 plugins: acpx, anthropic, browser, canvas, cua-computer, deep-research, device-pair, file-transfer, geolocation, github, linux-node, llama-cpp, memory-core, ollama, openai, skill-workshop, talk-voice, xai; 3.3s)
+120:2026-11-16T06:51:04.921+00:00 [gateway] log file: /root/r188657/home-main-resp/.openclaw/logs/openclaw-2026-11-16.log
+123:2026-11-16T06:51:04.927+00:00 [gateway] PATH CLI 2026.11.4 at /usr/local/lib/node_modules/openclaw differs from this Gateway 2026.11.3 at /root/src/openclaw. Run openclaw update or use the CLI from /root/src/openclaw.
+166:2026-11-16T06:51:08.505+00:00 [ws] client connected conn=d664aabd-8118-4c68-b58c-1e8d93d56c90 client=cli name=cli mode=cli role=operator auth=token version=2026.11.3 platform=linux build=legacy remote=127.0.0.1
+171:2026-11-16T06:51:13.384+00:00 [ws] client connected conn=ce42e740-5e4e-424f-bfd1-4e41d65b0434 client=cli name=cli mode=cli role=operator auth=token version=2026.11.3 platform=linux build=legacy remote=127.0.0.1

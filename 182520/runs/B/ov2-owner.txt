@@ -1,0 +1,175 @@
+Registered plugin command: /dreaming (plugin: memory-core)
+Memory Index (owner)
+Provider: local (requested: local)
+Model: hf:ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/embeddinggemma-300m-qat-Q8_0.gguf
+Sources: memory (MEMORY.md + $OPENCLAW_HOME/ws-owner/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+
+(node:3979) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[31m[provider-local-service][39m [36mstarting llama-cpp local service: /root/t182520/B/.openclaw/tools/llama.cpp/b10809/linux-x64/llama-server[39m
+[31m[provider-local-service][39m [36mllama-cpp local service ready: pid=4102 spawnMs=7 readyMs=271[39m
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","inputCount":10}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 10)","vectorCount":10,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 5)","vectorCount":5,"firstVectorDimensions":768,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","status":200}
+memory embeddings: remote response shape {"context":"llama-cpp embeddings failed (model: embeddinggemma-300m-qat-q8_0, batch size: 1)","vectorCount":1,"firstVectorDimensions":768,"firstIndexType":"number"}
+(node:3979) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Memory index updated (owner): 27 files indexed.
+[33m[state/agent-db][39m [36magent database clean-close receipt: written[39m
+[31m[provider-local-service][39m [36mstopping local model service: reason=host-shutdown[39m
+[31m[provider-local-service][39m [36mllama-cpp local service exited: code=0[39m

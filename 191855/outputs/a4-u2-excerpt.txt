@@ -1,0 +1,187 @@
+[PUBLIC EXCERPT of a4-u2.txt (1362 lines). Included: lines 1-40, 566-612, 1266-1362. Omitted lines are updater/doctor progress and lint output; full file kept private.]
++/Users/admin/a4-u2.sh:4> date -u +%FT%TZ
+2026-11-16T09:10:57Z
++/Users/admin/a4-u2.sh:5> STATE=/Users/admin/t191855/.openclaw 
++/Users/admin/a4-u2.sh:6> W=/Users/admin/t191855/.openclaw/workspace/state 
++/Users/admin/a4-u2.sh:7> openclaw --version
+OpenClaw 2026.11.3 (847611d)
++/Users/admin/a4-u2.sh:9> touch /Users/admin/u2-marker
++/Users/admin/a4-u2.sh:10> openclaw update --tag 2026.11.4 --yes --no-restart --json
+[infra:temp-artifacts] Runtime retained at /Users/admin/.npm-global/lib/openclaw-update-runtime-mdNl91: other OpenClaw processes are still running (PIDs: 2857, 2850); let these holders finish, then rerun openclaw doctor --fix
+candidate-state-snapshot: Preparing update checks
+candidate-state-snapshot: database snapshot $OPENCLAW_STATE_DIR/agents/main/agent/openclaw-agent.sqlite: copying, attempt 1, 0/0 pages, 0.000 seconds.
+candidate-state-snapshot: database snapshot $OPENCLAW_STATE_DIR/agents/main/agent/openclaw-agent.sqlite: copying, attempt 1, 165/165 pages, 0.005 seconds.
+candidate-state-snapshot: database snapshot $OPENCLAW_STATE_DIR/agents/main/agent/openclaw-agent.sqlite: completed, attempt 1, 165/165 pages, 675,840 bytes, 0.046 seconds.
+candidate-state-snapshot: database snapshot $OPENCLAW_STATE_DIR/state/openclaw.sqlite: copying, attempt 1, 364/364 pages, 0.002 seconds.
+candidate-state-snapshot: database snapshot $OPENCLAW_STATE_DIR/state/openclaw.sqlite: completed, attempt 1, 364/364 pages, 1,490,944 bytes, 0.041 seconds.
+candidate-doctor: doctor --fix --non-interactive --no-workspace-suggestions
+candidate-doctor-lint: doctor --lint --json --severity-min error
+candidate-config: config validate --json
+candidate-plugins: plugins list --json
+candidate-recovery: --check
+candidate-gateway-startup: gateway run
+candidate-state-cleanup: Temporary-copy cleanup /private/var/folders/p7/f_99nxmj7s16qrxbl0cbpz4r0000gn/T/openclaw-update-canary-7pZDtK; waiting for filesystem removal; budget=300000ms (5 minutes for large copies on slow disks); deadline=2026-11-16T09:16:44.191Z.
+candidate-state-cleanup: Temporary-copy cleanup /private/var/folders/p7/f_99nxmj7s16qrxbl0cbpz4r0000gn/T/openclaw-update-canary-7pZDtK; removed disposable temporary copy; budget=300000ms (5 minutes for large copies on slow disks); deadline=2026-11-16T09:16:44.191Z.
+Package publication recovery: /Users/admin/.local/node/bin/node /Users/admin/.npm-global/lib/node_modules/.openclaw.package-activation-b5d3192735a1776c20639389.control/recovery.mjs --anchor /Users/admin/.npm-global/lib/node_modules/.openclaw.package-activation-b5d3192735a1776c20639389 --operation b640b910-4c49-4998-a140-c9b0d5343d10 status
+Keep other package managers stopped; repair may republish a missing installation. Recovery does not restart or verify the Gateway.
+┌  OpenClaw doctor
+Original update capture retained at /Users/admin/t191855/.openclaw.update-captures/e515547f-34ad-4316-a41c-5956db8c0bea/manifest.json.
+│
+◇  Update history ────────────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│  Recorded warnings from update e515547f-34ad-4316-a41c-5956db8c0bea (a                  │
+│  later repair may have resolved them):                                                  │
+│  Automatic database restoration unavailable: databases changed after                    │
+│  snapshot capture; the writer is unknown. Snapshots retained at                         │
+│  ~/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases.  │
+│  Model retirement deferred until configured plugin installation                         │
+│  converges.                                                                             │
+│  Skipped agent database path repair during update Doctor. Run openclaw                  │
+│  doctor --fix to repair agent database paths.                                           │
+│                                                                                         │
+[... lines 41-565 omitted ...]
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases",
+      "durationMs": 0,
+      "exitCode": 0,
+      "diagnostics": [
+        "Doctor interval openclaw doctor; backup /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases; from SHA-256 c20d8ef60b93043ded220409a1d85f6234ec67f96f7519b0005793fd70f576dc to SHA-256 a25fcf5e64b742de1244e28870261ac4523bf46874e4d78471f223ec3ed155d5.",
+        "Post-migration write inventory: 2 databases; SHA-256 a25fcf5e64b742de1244e28870261ac4523bf46874e4d78471f223ec3ed155d5. Snapshots: /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases.",
+        "Database write fingerprint: /Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite; f1ce34041a3accb47f889526f66ac3aea7cb850b8031c7ffe884f84cad3526e1",
+        "Database write fingerprint: /Users/admin/t191855/.openclaw/state/openclaw.sqlite; 27604fc549c1a4b28733da31571d5b4dda368f1db6ac571e439b19f312e95e67"
+      ],
+      "warnings": [
+        "Automatic database restoration unavailable: databases changed after snapshot capture; the writer is unknown. Snapshots retained at /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases."
+      ]
+    },
+    {
+      "name": "post-stop-checks",
+      "command": "recheck schemas, published artifacts and candidate configuration",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+      "durationMs": 19,
+      "exitCode": 0
+    },
+    {
+      "name": "post-plugin doctor",
+      "command": "/Users/admin/.local/node/bin/node /Users/admin/.npm-global/lib/node_modules/openclaw/dist/infra/update-migrated-finalize.worker.js --doctor",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/openclaw",
+      "durationMs": 8326,
+      "exitCode": 0,
+      "diagnostics": [
+        "Doctor sections: maintenance.preserve-original-state 0.2 s, maintenance.begin 1.0 s, config-flow 2.5 s, contributions 2.4 s, maintenance-ready 0.2 s, maintenance.finish 0.5 s, maintenance.release 0.0 s; slowest contributions: runtime-tool-schemas 0.5 s, session-transcripts 0.3 s, provider-catalog-projection 0.3 s, memory-search 0.2 s, plugin-registry 0.2 s"
+      ],
+      "deferredInspectionCheckIds": null
+    },
+    {
+      "name": "database migration writes",
+      "command": "record Doctor database write fingerprints",
+      "cwd": "/Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases",
+      "durationMs": 0,
+      "exitCode": 0,
+      "diagnostics": [
+        "Doctor interval post-plugin doctor; backup /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases; from SHA-256 c20d8ef60b93043ded220409a1d85f6234ec67f96f7519b0005793fd70f576dc to SHA-256 d5db58542400e6e5b7b1bab0330278350d9ef505e380476fcfd2565b418f6fee.",
+        "Post-migration write inventory: 2 databases; SHA-256 d5db58542400e6e5b7b1bab0330278350d9ef505e380476fcfd2565b418f6fee. Snapshots: /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases.",
+        "Database write fingerprint: /Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite; f1ce34041a3accb47f889526f66ac3aea7cb850b8031c7ffe884f84cad3526e1",
+        "Database write fingerprint: /Users/admin/t191855/.openclaw/state/openclaw.sqlite; 2c2b3babb3aa6c9c1e6b018d0562dabd58b38151b28441fe4e288a2d8f246870"
+      ],
+      "warnings": [
+        "Automatic database restoration unavailable: databases changed after snapshot capture; the writer is unknown. Snapshots retained at /Users/admin/.npm-global/lib/node_modules/.openclaw.package-backup-2851-1794820304207.databases."
+      ]
+    },
+[... lines 613-1265 omitted ...]
+    }
+  },
+  "reportPath": "/Users/admin/t191855/.openclaw/update-reports/e515547f-34ad-4316-a41c-5956db8c0bea.md"
+}
+[infra:temp-artifacts] Runtime retained at /Users/admin/.npm-global/lib/openclaw-update-runtime-c1CXIE: worker generation settled; cleanup deferred to the next eligible update or openclaw doctor --fix
+update rc=0
++/Users/admin/a4-u2.sh:11> echo 'update rc=0'
++/Users/admin/a4-u2.sh:12> openclaw --version
+OpenClaw 2026.11.4 (d843d6a)
++/Users/admin/a4-u2.sh:13> find /Users/admin/t191855/.openclaw /Users/admin/.openclaw -newer /Users/admin/u2-marker -type f
++/Users/admin/a4-u2.sh:13> head -20
+/Users/admin/t191855/.openclaw/openclaw.json
+/Users/admin/t191855/.openclaw/openclaw.json.bak
+/Users/admin/t191855/.openclaw/update-reports/e515547f-34ad-4316-a41c-5956db8c0bea.md
+/Users/admin/t191855/.openclaw/completions/openclaw.fish
+/Users/admin/t191855/.openclaw/completions/openclaw.ps1
+/Users/admin/t191855/.openclaw/completions/openclaw.zsh
+/Users/admin/t191855/.openclaw/completions/openclaw.bash
+/Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite
+/Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite.seal
+/Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite-shm
+/Users/admin/t191855/.openclaw/agents/main/agent/openclaw-agent.sqlite-wal
+/Users/admin/t191855/.openclaw/state/openclaw.sqlite
+/Users/admin/t191855/.openclaw/openclaw.json.pre-update
++/Users/admin/a4-u2.sh:14> npm config list
+; "user" config from /Users/admin/.npmrc
+
+prefix = "/Users/admin/.npm-global"
+
+; node bin location = /Users/admin/.local/node/bin/node
+; node version = v24.22.3
+; npm local prefix = /Users/admin
+; npm version = 11.19.1
+; cwd = /Users/admin
+; HOME = /Users/admin
+; Run `npm config ls -l` to show all defaults.
++/Users/admin/a4-u2.sh:15> npm prefix -g
++/Users/admin/a4-u2.sh:15> ls -leOd /Users/admin/.npm-global/lib/node_modules
+drwxr-xr-x  4 admin  staff  - 128 Nov 16 09:12 /Users/admin/.npm-global/lib/node_modules
++/Users/admin/a4-u2.sh:16> openclaw backup create --verify --json --output /Users/admin/t191855-out
+{
+  "createdAt": "2026-11-16T09:12:47.298Z",
+  "archiveRoot": "2026-11-16T09-12-47.298+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/t191855-out/2026-11-16T09-12-47.298+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-12-47.298+00-00-openclaw-backup/payload/posix/Users/admin/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "plugin skills",
+      "sourcePath": "/Users/admin/t191855/.openclaw/plugin-skills",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/plugin-skills",
+      "reason": "regenerable"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+backup rc=0
++/Users/admin/a4-u2.sh:16> echo 'backup rc=0'
++/Users/admin/a4-u2.sh:17> date -u +%FT%TZ
+2026-11-16T09:12:48Z
+host-rc=0

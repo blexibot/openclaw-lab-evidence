@@ -1,0 +1,10 @@
+== 2026.11.3
+version = '2026.11.3'
+dist.integrity = 'sha512-FBq/q0TCaoA2b7qfdV0q81fHhI6RBB1zAQfJQREc1u2TlK5khVgCUsAlXskLWthyVqRz5PWEj+oOmfYgK58dHg=='
+dist.shasum = 'd7db24ae086448184e328ff69a39cbea3e43d4b6'
+engines.node = '>=24.16.0 <25 || >=26.1.0'
+== 2026.11.4
+version = '2026.11.4'
+dist.integrity = 'sha512-kSMzBc0fIWrW4DqneFEXL9FRboCZCQV22Edm6iFPqRaBexUeZp9huWNPVWLXmuSAQRezorPfrABkODqq65NOmw=='
+dist.shasum = '71eeeac4e4b95a0d2bb6c80fb1e0463ac7ec79b9'
+engines.node = '>=24.16.0 <25 || >=26.1.0'

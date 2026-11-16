@@ -1,0 +1,74 @@
++ date -u +%FT%TZ
+2026-11-16T09:15:28Z
++ STATE=/home/lab/t191855/.openclaw
++ W=/home/lab/t191855/.openclaw/workspace/state
++ openclaw --version
+OpenClaw 2026.11.3 (847611d)
++ stat /home/lab/t191855/.openclaw/workspace/state/foreign/.openclaw-private-update-capture
+stat: cannot statx '/home/lab/t191855/.openclaw/workspace/state/foreign/.openclaw-private-update-capture': Permission denied
+stat rc=1
++ echo 'stat rc=1'
++ openclaw backup create --dry-run --json
+{
+  "createdAt": "2026-11-16T09:15:29.557Z",
+  "archiveRoot": "2026-11-16T09-15-29.557+00-00-openclaw-backup",
+  "archivePath": "/home/lab/2026-11-16T09-15-29.557+00-00-openclaw-backup.tar.gz",
+  "dryRun": true,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": false,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/home/lab/t191855/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T09-15-29.557+00-00-openclaw-backup/payload/posix/home/lab/t191855/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/home/lab/t191855/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/home/lab/t191855/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/home/lab/t191855/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+dryrun rc=0
++ echo 'dryrun rc=0'
++ openclaw backup create --verify --json --output /home/lab/t191855-out
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+backup rc=1
++ echo 'backup rc=1'
++ date -u +%FT%TZ
+2026-11-16T09:15:33Z
+host-rc=0
