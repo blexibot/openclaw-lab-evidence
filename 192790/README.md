@@ -1,7 +1,9 @@
 # Evidence packet: openclaw/openclaw#192790 (heartbeat monitor scratch, release 2026.11.3)
 
-Status: **draft, not yet reviewed by the human publisher, not posted.** Synthetic content only. Redacted copies; the private raw
-bundle is kept in the lab and is not identified by the hashes in this packet.
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/issues/192790#issuecomment-6925572567 on 2026-11-16 (UTC). Corrected
+after first publication: original hashes of redacted files are now withheld (see "Inputs"). Synthetic content only.
+Redacted copies; the private raw bundle is kept in the lab and is not identified by the hashes in this packet.
 
 ## Summary
 
@@ -71,11 +73,13 @@ chat requests, 0 non-200. Part 3: 2 gateway start attempts, 2 config refusals (o
 
 - **Package:** see `inputs/versions.txt` (banner, install command, registry `dist.integrity`, what is unknown).
 - **Kit:** `kit/hb_mock.py` (sha256 `6608081e14a9611cf4cfc70983f0c48033049ddbd0e5041940ffd9e5271d6491`),
-  `kit/run192790.sh` (original sha256 `58ff4a6f79cbd7cb5cb41da1ee13a154bc37faf9f6e0a07dfe3ac229b9153f71`), shipped as
-  `kit192790.tgz` sha256 `a83473722c7e95df6c1bb12fd028537f6df86d6f2be643d5e2d2aed724fad3e0` (the ticket's value; the
-  worker and this packet both re-hashed it). `hb_mock.py` here is byte-identical to the original. The published
-  `run192790.sh` is a redacted copy: the lab filter address is replaced by `http://<RELAY>` (three lines), so its
-  hash in `MANIFEST.sha256` differs from the original hash above. To replay Part 2, set your own Ollama endpoint there. `kit/p_stats.py.generated` is the stats helper `run192790.sh` writes at
+  `kit/run192790.sh` (original sha256 `<WITHHELD-ORIGINAL-HASH>`), shipped as `kit192790.tgz` sha256
+  `<WITHHELD-ORIGINAL-HASH>` (the ticket's value; the worker and the packet builder both re-hashed it). `hb_mock.py`
+  here is byte-identical to the original (original sha256 = published sha256). The published `run192790.sh` is a
+  redacted copy: the lab filter address is replaced by `http://<RELAY>` (three lines), so its hash in
+  `MANIFEST.sha256` differs from the original. The original hashes of `run192790.sh`, of the kit archive and of the
+  lab `bench` helper (`inputs/versions.txt`) are **withheld**: they would let anyone confirm guesses at the redacted
+  address and names. They are kept in the lab's private store. To replay Part 2, set your own Ollama endpoint there. `kit/p_stats.py.generated` is the stats helper `run192790.sh` writes at
   run time (copied from the bench, not part of the tgz).
 - **Exact invocation** (from the lab controller; `<LAB-HOST>` is the lab Linux host):
   ```

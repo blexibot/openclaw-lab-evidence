@@ -1,0 +1,9 @@
+(node:3081) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: saveAuthProfileStore is deprecated; use updateAuthProfileStoreWithLock from openclaw/plugin-sdk/provider-auth instead. The legacy contract remains supported during its deprecation period. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Default SGLang model: deepseek-v4.1-flash
+[state/agent-db] agent database clean-close receipt: active-leases
+[state/agent-db] agent database clean-close receipt: written
+Workspace OK: $OPENCLAW_HOME/.openclaw/workspace
+Sessions OK: $OPENCLAW_HOME/.openclaw/agents/main/sessions
+Updated config: $OPENCLAW_HOME/.openclaw/openclaw.json
+  Backup: $OPENCLAW_HOME/.openclaw/openclaw.json.bak

@@ -1,0 +1,76 @@
+{
+ "agents": {
+  "defaults": {
+   "model": {
+    "primary": "sglang/deepseek-v4.1-flash"
+   },
+   "workspace": "/root/r198178/ws"
+  },
+  "entries": {
+   "main": {
+    "models": {
+     "sglang/deepseek-v4.1-flash": {
+      "agentRuntime": {
+       "id": "openclaw"
+      }
+     }
+    },
+    "model": "sglang/deepseek-v4.1-flash@sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24"
+   }
+  }
+ },
+ "models": {
+  "providers": {
+   "sglang": {
+    "baseUrl": "http://127.0.0.1:18178/v1",
+    "api": "openai-completions",
+    "apiKey": "<redacted len=49>",
+    "models": [
+     {
+      "id": "deepseek-v4.1-flash",
+      "name": "deepseek-v4.1-flash",
+      "reasoning": false,
+      "input": [
+       "text"
+      ],
+      "cost": {
+       "input": 0,
+       "output": 0,
+       "cacheRead": 0,
+       "cacheWrite": 0
+      },
+      "contextWindow": 128000,
+      "maxTokens": 32768
+     }
+    ]
+   }
+  }
+ },
+ "diagnostics": {
+  "cacheTrace": {
+   "enabled": true
+  }
+ },
+ "auth": {
+  "profiles": {
+   "sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24": {
+    "provider": "sglang",
+    "mode": "api_key"
+   }
+  }
+ },
+ "plugins": {
+  "entries": {
+   "sglang": {
+    "enabled": true
+   }
+  }
+ },
+ "meta": {
+  "migrations": {
+   "modelPolicyAllowlist": true,
+   "utilityModelSeparation": true
+  },
+  "lastTouchedVersion": "2026.11.5"
+ }
+}

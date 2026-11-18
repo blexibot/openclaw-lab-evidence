@@ -1,0 +1,250 @@
+trace: 29 records with messages in /root/r198373/v115/cache-trace.jsonl
+--- #0 stage=session:loaded messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+--- #1 stage=session:sanitized messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 276 of 632
+--- #2 stage=session:limited messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 277 of 475
+--- #3 stage=prompt:before messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 276 of 473
+--- #4 stage=prompt:images messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 287 of 509
+--- #5 stage=stream:context messages=2 stamp_keys=2 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'user']
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 275 of 555
+--- #6 stage=session:after messages=3 stamp_keys=4 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007086497,"idempotencyKey":"fc4c60d7-c0d0-47c7-9d1e-c499796a6ae6:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:warm","operatorProfileId":"gateway-owner"}}}
+      new: {"role":"user","content":[{"type":"text","text":"Reply with one word: warm."}],"timestamp":1795007086497,"idempotencyKey":"fc4c60d7-c0d0-47c7-9d1e-c499796a6ae6:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:warm","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Reply with one word: warm."}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 270 of 3371
+--- #7 stage=session:loaded messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    NOTE: this request has FEWER messages (0) than the previous one (3)
+    APPEND-ONLY vs previous: yes (previous 3 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 10 of 2919
+--- #8 stage=session:sanitized messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 639
+--- #9 stage=session:limited messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 482
+--- #10 stage=prompt:before messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 480
+--- #11 stage=prompt:images messages=0 stamp_keys=1 (JSON keys __openclaw/runId)
+    
+    roles=[]
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 294 of 580
+--- #12 stage=stream:context messages=2 stamp_keys=2 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'user']
+    APPEND-ONLY vs previous: yes (previous 0 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 626
+--- #13 stage=stream:context messages=4 stamp_keys=6 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'user', 'assistant', 'toolResult']
+    APPEND-ONLY vs previous: yes (previous 2 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 279 of 3385
+--- #14 stage=session:after messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    changed message index 2 (role assistant): messages[2].content[0].id
+    changed message index 3 (role toolResult): messages[3].toolCallId
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 2 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"}}}
+      new: {"role":"user","content":[{"type":"text","text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}],"timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 280 of 4586
+--- #15 stage=session:loaded messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 3 (role toolResult): messages[3].details (only in old)
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":[{"type":"text","text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}],"timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+      new: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 10 of 4335
+--- #16 stage=session:sanitized messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 2 (role assistant); first differing path: messages[2].content[0].id
+    changed message index 2 (role assistant): messages[2].content[0].id
+    changed message index 3 (role toolResult): messages[3].toolCallId
+    STAMP: message index 2 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"assistant","content":[{"type":"toolCall","id":"call_nd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"
+      new: {"role":"assistant","content":[{"type":"toolCall","id":"callnd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"t
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 4404
+--- #17 stage=session:limited messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 4245
+--- #18 stage=prompt:before messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 4243
+--- #19 stage=prompt:images messages=5 stamp_keys=8 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 294 of 4280
+--- #20 stage=stream:context messages=7 stamp_keys=9 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'user', 'assistant', 'toolResult', 'assistant', 'user', 'user']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role custom): messages[1].role
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+      new: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 4326
+--- #21 stage=session:after messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    changed message index 5 (role user): messages[5].content
+    changed message index 6 (role user): messages[6].role
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 5 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"}}}
+      new: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 279 of 6653
+--- #22 stage=session:loaded messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 2 (role assistant); first differing path: messages[2].content[0].id
+    changed message index 2 (role assistant): messages[2].content[0].id
+    changed message index 3 (role toolResult): messages[3].toolCallId
+    changed message index 5 (role user): messages[5].content
+    changed message index 7 (role assistant): messages[7].diagnostics
+    STAMP: message index 2 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 5 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 7 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"assistant","content":[{"type":"toolCall","id":"callnd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"t
+      new: {"role":"assistant","content":[{"type":"toolCall","id":"call_nd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 10 of 6536
+--- #23 stage=session:sanitized messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 2 (role assistant); first differing path: messages[2].content[0].id
+    changed message index 2 (role assistant): messages[2].content[0].id
+    changed message index 3 (role toolResult): messages[3].toolCallId
+    STAMP: message index 2 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 3 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"assistant","content":[{"type":"toolCall","id":"call_nd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"
+      new: {"role":"assistant","content":[{"type":"toolCall","id":"callnd55xwq9","name":"read","arguments":{"path":"note.txt"}}],"api":"openai-completions","provider":"lab-qwen","model":"qwen3.8:27b-q4_K_M","usage":{"input":527,"output":120,"cacheRead":16638,"cacheWrite":0,"cacheTelemetry":{"state":"available"},"contextUsage":{"state":"available","promptTokens":17165,"totalTokens":17285},"totalTokens":17285,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0},"usageReport":{"state":"available"}},"stopReason":"toolUse","timestamp":1795007185182,"responseId":"chatcmpl-38","diagnostics":[{"t
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 6734
+--- #24 stage=session:limited messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 8 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 6575
+--- #25 stage=prompt:before messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 8 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 6573
+--- #26 stage=prompt:images messages=8 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: yes (previous 8 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 284 of 6610
+--- #27 stage=stream:context messages=10 stamp_keys=12 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'user', 'assistant', 'toolResult', 'assistant', 'user', 'user', 'assistant', 'user', 'user']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role custom): messages[1].role
+    changed message index 5 (role user): messages[5].content
+    changed message index 6 (role custom): messages[6].role
+    changed message index 7 (role assistant): messages[7].diagnostics[1]
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 5 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 7 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+      new: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 283 of 6656
+--- #28 stage=session:after messages=11 stamp_keys=10 (JSON keys __openclaw/runId)
+    
+    roles=['user', 'custom', 'assistant', 'toolResult', 'assistant', 'user', 'custom', 'assistant']
+    APPEND-ONLY vs previous: NO. first changed message index 0 (role user); first differing path: messages[0].content
+    changed message index 0 (role user): messages[0].content
+    changed message index 1 (role user): messages[1].role
+    changed message index 5 (role user): messages[5].content
+    changed message index 6 (role user): messages[6].role
+    changed message index 7 (role assistant): messages[7].diagnostics[1]
+    changed message index 8 (role user): messages[8]
+    changed message index 9 (role user): messages[9]
+    STAMP: message index 0 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 5 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+    STAMP: message index 7 has a JSON key __openclaw/runId in the NEW request (old has it: True)
+      old: {"role":"user","content":"[Malformed diagnostic JSON redacted]","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"}}}
+      new: {"role":"user","content":"Use the read tool to read note.txt in your workspace, then reply with its first word only.","timestamp":1795007184364,"idempotencyKey":"6ff30013-154a-4195-bd3c-5ea463a7f8b2:user","__openclaw":{"senderIsOwner":true,"senderId":"gateway-owner","senderIdentity":{"type":"profile","id":"gateway-owner"},"requesterOrigin":{"sessionKey":"agent:main:cache-repro","operatorProfileId":"gateway-owner"},"modelPromptProjection":{"version":1,"text":"Use the read tool to read note.txt in your workspace, then reply with its first word only."}}}
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 280 of 8718

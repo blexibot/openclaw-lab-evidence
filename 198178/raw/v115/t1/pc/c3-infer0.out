@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "capability": "model.run",
+  "transport": "local",
+  "provider": "sglang",
+  "model": "deepseek-v4.1-flash",
+  "usage": {
+    "input": 11,
+    "output": 2,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "cacheTelemetry": {
+      "state": "unavailable"
+    },
+    "cost": {
+      "total": 0
+    },
+    "contextUsage": {
+      "state": "available",
+      "promptTokens": 11,
+      "totalTokens": 13
+    },
+    "usageReport": {
+      "state": "available"
+    },
+    "total": 13
+  },
+  "lastCallUsage": {
+    "input": 11,
+    "output": 2,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "cacheTelemetry": {
+      "state": "unavailable"
+    },
+    "cost": {
+      "total": 0
+    },
+    "contextUsage": {
+      "state": "available",
+      "promptTokens": 11,
+      "totalTokens": 13
+    },
+    "usageReport": {
+      "state": "available"
+    },
+    "total": 13
+  },
+  "attempts": [],
+  "outputs": [
+    {
+      "text": "OK",
+      "mediaUrl": null
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+relay198178 <BRIDGE-IP>:18178 routes=GET /v1/models,POST /v1/chat/completions night=07:30-13:00Z allow=<BENCH-IP>/32 -> <LAB-PROXY> max_posts=16 max_body=16384 out_cap=256 hard_stop=1795020926 log=/home/<LAB-USER>/labruns/T198178v5-20261118T160525Z/relay/relay.jsonl

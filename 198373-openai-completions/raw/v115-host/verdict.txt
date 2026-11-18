@@ -1,0 +1,2 @@
+VERDICT run1last-run2first pass seqs=5->6 append_only=yes params=identical stamp_keys=0 prompt_tokens=17432 cached_tokens=17213
+VERDICT run2last-run3first(control) pass seqs=6->7 append_only=yes params=identical stamp_keys=0 prompt_tokens=17640 cached_tokens=17428

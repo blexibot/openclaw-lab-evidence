@@ -1,0 +1,26 @@
+job: T198178v5
+host: <LAB-LINUX-HOST>
+bench: r198178b
+mode: normal
+pre_list_utc: 2026-11-18T16:12:59Z
+pre_list_rc: 0
+pre_list:
+  golden-debian13,RUNNING,<OTHER-BENCH-IP> (eth0)
+  golden-fedora44,RUNNING,<OTHER-BENCH-IP> (eth0)
+  golden-ubuntu2604,RUNNING,<OTHER-BENCH-IP> (eth0)
+  r198178b,RUNNING,<BENCH-IP> (eth0)
+  smoke1,RUNNING,<OTHER-BENCH-IP> (eth0)
+command_utc: 2026-11-18T16:12:59Z
+command: ssh -i /Users/<LAB-USER>/.ssh/<KEY-FILE> -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 -o ServerAliveCountMax=4 -o LogLevel=ERROR <LAB-USER>@<LAB-LINUX-HOST> '/usr/local/bin/bench destroy r198178b'
+rc: 0
+command_end_utc: 2026-11-18T16:13:01Z
+output:
+  (empty)
+post_list_utc: 2026-11-18T16:13:01Z
+post_list_rc: 0
+post_list:
+  golden-debian13,RUNNING,<OTHER-BENCH-IP> (eth0)
+  golden-fedora44,RUNNING,<OTHER-BENCH-IP> (eth0)
+  golden-ubuntu2604,RUNNING,<OTHER-BENCH-IP> (eth0)
+  smoke1,RUNNING,<OTHER-BENCH-IP> (eth0)
+result: destroyed

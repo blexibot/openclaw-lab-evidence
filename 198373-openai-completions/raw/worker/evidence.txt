@@ -1,0 +1,57 @@
+2026-11-17T18:19:40Z
+=== 2026-11-17T18:56:21Z step3 done ===
+exit: 0
+log: r198373 / OpenClaw 2026.11.4 (d843d6a)
+=== step4 bench preflight ===
+/usr/bin/python3
+OpenClaw 2026.11.4 (d843d6a)
+--- /api/version ---
+{"version":"0.40.16"}
+=== step5 kit upload (2026-11-17T18:56:40Z) ===
+kit.tgz <REDACTED-UNREDACTED-KIT-HASH> (both sides match)
+analyze198373v1.py 89630ccea43d45c13f18042ade7a0f80a9190f358ac391a35d3ebfa74bd533f0
+logproxy.py <REDACTED-UNREDACTED-KIT-HASH>
+openclaw.json 3140b7c9fe3bb119ad541f18cacebe62537dde00117df146243bf621f1707be0
+run198373v1.sh <REDACTED-UNREDACTED-KIT-HASH>
+
+=== step6 v114 launched 2026-11-17T18:56:50Z ===
+cmd: ssh ... bench exec r198373 -- sh -c 'cd /root/r198373 && (setsid nohup bash kit-198373v1/run198373v1.sh v114 > v114.console 2>&1 < /dev/null &)'
+LAUNCH_RC=0
+18:57:40Z check: RUNNING 2026-11-17T18:57:07Z turn session=warm msg=Reply with one word: warm.
+expected 15-60 min
+=== before destroy 2026-11-17T20:00:10Z ===
+(eval):3: no such file or directory: ssh -i ~/.ssh/lab_worker -o BatchMode=yes -o ConnectTimeout=20 <user>@<LAB-LINUX>
+=== bench destroy r198373 2026-11-17T20:00:10Z ===
+(eval):5: no such file or directory: ssh -i ~/.ssh/lab_worker -o BatchMode=yes -o ConnectTimeout=20 <user>@<LAB-LINUX>
+=== after destroy 2026-11-17T20:00:10Z ===
+(eval):7: no such file or directory: ssh -i ~/.ssh/lab_worker -o BatchMode=yes -o ConnectTimeout=20 <user>@<LAB-LINUX>
+=== before destroy 2026-11-17T20:00:22Z ===
+golden-debian13,RUNNING,<BENCH-IP> (eth0)
+golden-fedora44,RUNNING,<BENCH-IP> (eth0)
+golden-ubuntu2604,RUNNING,<BENCH-IP> (eth0)
+r198373,RUNNING,<BENCH-IP> (eth0)
+smoke1,RUNNING,<BENCH-IP> (eth0)
+=== bench destroy r198373 2026-11-17T20:00:33Z ===
+=== after destroy 2026-11-17T20:00:45Z ===
+golden-debian13,RUNNING,<BENCH-IP> (eth0)
+golden-fedora44,RUNNING,<BENCH-IP> (eth0)
+golden-ubuntu2604,RUNNING,<BENCH-IP> (eth0)
+smoke1,RUNNING,<BENCH-IP> (eth0)
+=== incus list (confirm gone) 2026-11-17T20:00:57Z ===
+0
+golden-debian13
+golden-fedora44
+golden-ubuntu2604
+smoke1
+=== rm <LAB-LINUX> job files 2026-11-17T20:01:09Z ===
+0
+
+=== analysis (on pulled copies) 2026-11-17T20:02Z ===
+pulled/v114 evidence-v114.sha256: 15/15 OK
+analysis-wire-mac.txt identical to bench analysis-wire-v114.txt after the first (path) line
+pair 5->6 (run1 last -> run2 first): APPEND-ONLY yes; PARAMS identical; stamp_keys=0
+pair 6->7 (run2 last -> run3 first, control): APPEND-ONLY yes; PARAMS identical
+gw-promptcache-v114.txt:145 internal warning, sessionKey=agent:main:cache-repro, changed fields: content[0].id
+trace rec18 toolResult keys lack __openclaw; trace rec27 toolResult has __openclaw.runId; other fields identical
+tool_call_id model=call_6yhilm61 replayed=call6yhilm61
+result: payload stable despite internal warning

@@ -1,0 +1,133 @@
+LOG 2026-11-18T16:06:09Z WINDOW ok utc=2026-11-18T16:06:09Z left=2957s umask=0022
+LOG 2026-11-18T16:06:09Z tag=t1 agent_flag=[--agent main] version: OpenClaw 2026.11.5 (e13cf15) 
+LOG 2026-11-18T16:06:09Z INSTALL openclaw_bin=/usr/local/bin/openclaw -> /usr/local/lib/node_modules/openclaw/openclaw.mjs npm_root=/usr/local/lib/node_modules package=openclaw 2026.11.5 resolved=- integrity=-
+LOG 2026-11-18T16:06:09Z INTEGRITY provider-setup-B98DCyPJ.mjs match=yes got=be23922f1b49750c42cc8b5cdb22b999304c701ab8d4ac7a0dcc93568e5e5646
+LOG 2026-11-18T16:06:09Z INTEGRITY defaults-BWyoTPqn.mjs match=yes got=f7a65f58c356f2547e1502dfb52d1e333ac24297170fdd91d97717c1caf2376b
+LOG 2026-11-18T16:06:09Z INTEGRITY merge-patch-B7gt1grQ.mjs match=yes got=64bf0130cca1926e064a44cd2b6c39f8b5ce3a7a574618299e42a6f52bd2c6ee
+LOG 2026-11-18T16:06:09Z INTEGRITY setup-inference-turn-x2uYo8LG.mjs match=yes got=0c2d50b87ac8510565d48861851687d286ea0aeb817cf9b34ef536566071a833
+LOG 2026-11-18T16:06:09Z INTEGRITY auth-choice-BFNQSl9s.mjs match=yes got=7c659f0e8e20f98d0efc4db5476800267b9ba335961fa9d4b6d3292ee76fb7f5
+LOG 2026-11-18T16:06:09Z INTEGRITY extensions/sglang/index.js match=yes got=39ef8696353638185ff396ad9a51574b2110697eefa54e0ab2d0d0045845ea8b
+LOG 2026-11-18T16:06:10Z PREFLIGHT GET /v1/models via shim+relay+proxy status=200 body={"object": "list", "data": [{"id": "deepseek-v4.1-flash", "object": "model"}]}
+LOG 2026-11-18T16:06:10Z PROCS profile=none after=preflight n=0 list=[]
+LOG 2026-11-18T16:06:13Z CONFIGFILE profile=pa active=/root/r198178/t1/pa/home/.openclaw/openclaw.json expected=/root/r198178/t1/pa/home/.openclaw/openclaw.json
+LOG 2026-11-18T16:06:14Z READBACK models.providers.sglang.models[0].maxTokens = 8192
+LOG 2026-11-18T16:06:15Z READBACK models.providers.sglang.models[0].contextWindow = 200000
+LOG 2026-11-18T16:06:16Z READBACK models.providers.sglang.maxTokens = 4096
+LOG 2026-11-18T16:06:17Z READBACK models.providers.sglang.timeoutSeconds = 1234
+LOG 2026-11-18T16:06:18Z READBACK diagnostics.cacheTrace.enabled = true
+LOG 2026-11-18T16:06:24Z INFER profile=pa label=c1-infer rc=0 wire=2..2 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+LOG 2026-11-18T16:06:27Z C1OK=yes statuses=[200:-:8192:-]
+LOG 2026-11-18T16:06:32Z ONBOARD c2 rc=1 statuses=[] stdout_tail=lang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main"   },   "phase": "options",   "message": "Replacement credential saved but inactive. Your connection is unchanged. Test and activate it with:\nopenclaw models auth activate sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main" } 
+LOG 2026-11-18T16:06:32Z PROCS profile=pa after=c2-onboard n=0 list=[]
+LOG 2026-11-18T16:06:38Z ACTIVATE c2 needed profile_id=sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 staged_message=yes (id found in models auth list)
+LOG 2026-11-18T16:06:44Z ACTIVATE-STEP profile=pa label=c2-activate rc=0 wire=3..3 attempt=1 chat_posts=1 statuses=[200:-:256:-]
+LOG 2026-11-18T16:06:44Z ACTIVATE c2 rc=0 statuses=[200:-:256:-]
+LOG 2026-11-18T16:06:44Z PROCS profile=pa after=c2-activate n=0 list=[]
+LOG 2026-11-18T16:06:52Z INFER profile=pa label=c2-infer rc=0 wire=4..4 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+LOG 2026-11-18T16:07:02Z INFER profile=pc label=c3-infer0 rc=0 wire=5..5 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+LOG 2026-11-18T16:07:04Z C3OK=yes statuses=[200:-:8192:-]
+LOG 2026-11-18T16:07:10Z LOGIN c3 rc=0 PTY rc=0 answered=url,key,model enters=0 statuses=[]
+LOG 2026-11-18T16:07:10Z PROCS profile=pc after=c3-login n=0 list=[]
+LOG 2026-11-18T16:07:14Z ACTIVATE c3 not-needed (no activation command printed)
+LOG 2026-11-18T16:07:18Z INFER profile=pc label=c3-infer rc=0 wire=6..6 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+LOG 2026-11-18T16:07:26Z ONBOARD c4-1 rc=0 statuses=[]
+LOG 2026-11-18T16:07:26Z PROCS profile=pb after=c4-onboard1 n=0 list=[]
+LOG 2026-11-18T16:07:31Z CONFIGSET models.providers.sglang.models[0].maxTokens 8192 rc=0
+LOG 2026-11-18T16:07:34Z CONFIGSET models.providers.sglang.models[0].contextWindow 200000 rc=0
+LOG 2026-11-18T16:07:37Z CONFIGSET models.providers.sglang.maxTokens 4096 rc=0
+LOG 2026-11-18T16:07:39Z CONFIGSET models.providers.sglang.timeoutSeconds 1234 rc=0
+LOG 2026-11-18T16:07:42Z CONFIGSET diagnostics.cacheTrace.enabled true rc=0
+LOG 2026-11-18T16:07:45Z CONFIGSET agents.defaults.workspace "/root/r198178/ws" rc=0
+LOG 2026-11-18T16:07:45Z CONFIGSET_ALL profile=pb nonzero=0
+LOG 2026-11-18T16:07:53Z INFER profile=pb label=c4-infer1 rc=0 wire=7..7 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+LOG 2026-11-18T16:08:02Z ONBOARD c4-2 rc=0 statuses=[] stdout_tail=true,   "mode": "local",   "workspace": "/root/r198178/t1/pb/home/.openclaw/workspace",   "authChoice": "sglang",   "gateway": {     "port": 18789,     "bind": "loopback",     "authMode": "token",     "tailscaleMode": "off"   },   "installDaemon": false,   "skipSkills": true,   "skipHealth": true } 
+LOG 2026-11-18T16:08:02Z PROCS profile=pb after=c4-onboard2 n=0 list=[]
+LOG 2026-11-18T16:08:05Z ACTIVATE c4 not-needed (no activation command printed)
+LOG 2026-11-18T16:08:09Z INFER profile=pb label=c4-infer2 rc=0 wire=8..8 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+LOG 2026-11-18T16:08:14Z PROCS profile=pb after=finish n=0 list=[]
+WIRE seq=1 step=preflight/other GET /v1/models status=200 secs=0.18 req_bytes=0 cap_field=None cap=None caps=None stream=None msgs=None roles=None tools=None user=None resp_text='' usage=None err=None auth_present=True
+WIRE seq=2 step=pa/c1-infer POST /v1/chat/completions status=200 secs=0.37 req_bytes=186 cap_field=max_completion_tokens cap=8192 caps={'max_completion_tokens': 8192} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=3 step=pa/c2-activate POST /v1/chat/completions status=200 secs=0.458 req_bytes=358 cap_field=max_completion_tokens cap=256 caps={'max_completion_tokens': 256} stream=True msgs=2 roles=['system', 'user'] tools=0 user='Reply with the single word OK. Do not use tools.' resp_text='OK' usage={'prompt_tokens': 50, 'total_tokens': 52, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=4 step=pa/c2-infer POST /v1/chat/completions status=200 secs=0.366 req_bytes=187 cap_field=max_completion_tokens cap=32768 caps={'max_completion_tokens': 32768} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=5 step=pc/c3-infer0 POST /v1/chat/completions status=200 secs=0.369 req_bytes=186 cap_field=max_completion_tokens cap=8192 caps={'max_completion_tokens': 8192} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=6 step=pc/c3-infer POST /v1/chat/completions status=200 secs=0.389 req_bytes=187 cap_field=max_completion_tokens cap=32768 caps={'max_completion_tokens': 32768} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=7 step=pb/c4-infer1 POST /v1/chat/completions status=200 secs=0.349 req_bytes=186 cap_field=max_completion_tokens cap=8192 caps={'max_completion_tokens': 8192} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+WIRE seq=8 step=pb/c4-infer2 POST /v1/chat/completions status=200 secs=0.371 req_bytes=187 cap_field=max_completion_tokens cap=32768 caps={'max_completion_tokens': 32768} stream=True msgs=1 roles=['user'] tools=0 user='Reply with the single word OK.' resp_text='OK' usage={'prompt_tokens': 11, 'total_tokens': 13, 'completion_tokens': 2, 'prompt_tokens_details': None, 'reasoning_tokens': 0} err=None auth_present=True
+ORPHANS chat_posts_outside_every_step=[]
+CFG profile=pa n=1 label=base row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pa n=2 label=after-c1-infer row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pa n=3 label=after-c2-onboard row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pa n=4 label=after-c2-activate row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=None prov.timeoutSeconds=None prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=<redacted len=49> prov.keys=api,apiKey,baseUrl,models row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pa n=5 label=after-c2-infer row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=None prov.timeoutSeconds=None prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=<redacted len=49> prov.keys=api,apiKey,baseUrl,models row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pc n=1 label=base row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pc n=2 label=after-c3-infer0 row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pc n=3 label=after-c3-login row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pc n=4 label=after-c3-infer row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,id,maxTokens,name sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pb n=1 label=after-c4-onboard1 row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=None prov.timeoutSeconds=None prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,models row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=None sentinel.workspace=/root/r198178/t1/pb/home/.openclaw/workspace primary=sglang/deepseek-v4.1-flash
+CFG profile=pb n=2 label=pinned row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pb n=3 label=after-c4-infer1 row.maxTokens=8192 row.contextWindow=200000 rows=1 prov.maxTokens=4096 prov.timeoutSeconds=1234 prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pb n=4 label=after-c4-onboard2 row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=None prov.timeoutSeconds=None prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,models row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+CFG profile=pb n=5 label=after-c4-infer2 row.maxTokens=32768 row.contextWindow=128000 rows=1 prov.maxTokens=None prov.timeoutSeconds=None prov.baseUrl=http://127.0.0.1:18178/v1 prov.apiKey=SGLANG_API_KEY prov.keys=api,apiKey,baseUrl,models row.keys=contextWindow,cost,id,input,maxTokens,name,reasoning sentinel.cacheTrace=True sentinel.workspace=/root/r198178/ws primary=sglang/deepseek-v4.1-flash
+DIFF profile=pa base -> after-c1-infer: 0 changed path(s)
+DIFF profile=pa after-c1-infer -> after-c2-onboard: 0 changed path(s)
+DIFF profile=pa after-c2-onboard -> after-c2-activate: 19 changed path(s)
+  agents.entries.main.model: "<absent>" -> "sglang/deepseek-v4.1-flash@sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24"
+  agents.entries.main.models.sglang/deepseek-v4.1-flash.agentRuntime.id: "<absent>" -> "openclaw"
+  auth.profiles.sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24.mode: "<absent>" -> "api_key"
+  auth.profiles.sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24.provider: "<absent>" -> "sglang"
+  meta.lastTouchedVersion: "<absent>" -> "2026.11.5"
+  meta.migrations.modelPolicyAllowlist: "<absent>" -> true
+  meta.migrations.utilityModelSeparation: "<absent>" -> true
+  models.providers.sglang.apiKey: "SGLANG_API_KEY" -> "<redacted len=49>"
+  models.providers.sglang.maxTokens: 4096 -> "<absent>"
+  models.providers.sglang.models[id=deepseek-v4.1-flash].contextWindow: 200000 -> 128000
+  models.providers.sglang.models[id=deepseek-v4.1-flash].cost.cacheRead: "<absent>" -> 0
+  models.providers.sglang.models[id=deepseek-v4.1-flash].cost.cacheWrite: "<absent>" -> 0
+  models.providers.sglang.models[id=deepseek-v4.1-flash].cost.input: "<absent>" -> 0
+  models.providers.sglang.models[id=deepseek-v4.1-flash].cost.output: "<absent>" -> 0
+  models.providers.sglang.models[id=deepseek-v4.1-flash].input: "<absent>" -> ["text"]
+  models.providers.sglang.models[id=deepseek-v4.1-flash].maxTokens: 8192 -> 32768
+  models.providers.sglang.models[id=deepseek-v4.1-flash].reasoning: "<absent>" -> false
+  models.providers.sglang.timeoutSeconds: 1234 -> "<absent>"
+  plugins.entries.sglang.enabled: "<absent>" -> true
+DIFF profile=pa after-c2-activate -> after-c2-infer: 0 changed path(s)
+DIFF profile=pc base -> after-c3-infer0: 0 changed path(s)
+DIFF profile=pc after-c3-infer0 -> after-c3-login: 6 changed path(s)
+  meta.lastTouchedVersion: "<absent>" -> "2026.11.5"
+  meta.migrations.modelPolicyAllowlist: "<absent>" -> true
+  meta.migrations.utilityModelSeparation: "<absent>" -> true
+  models.mode: "<absent>" -> "merge"
+  models.providers.sglang.models[id=deepseek-v4.1-flash].contextWindow: 200000 -> 128000
+  models.providers.sglang.models[id=deepseek-v4.1-flash].maxTokens: 8192 -> 32768
+DIFF profile=pc after-c3-login -> after-c3-infer: 0 changed path(s)
+DIFF profile=pb after-c4-onboard1 -> pinned: 6 changed path(s)
+  agents.defaults.workspace: "/root/r198178/t1/pb/home/.openclaw/workspace" -> "/root/r198178/ws"
+  diagnostics.cacheTrace.enabled: "<absent>" -> true
+  models.providers.sglang.maxTokens: "<absent>" -> 4096
+  models.providers.sglang.models[id=deepseek-v4.1-flash].contextWindow: 128000 -> 200000
+  models.providers.sglang.models[id=deepseek-v4.1-flash].maxTokens: 32768 -> 8192
+  models.providers.sglang.timeoutSeconds: "<absent>" -> 1234
+DIFF profile=pb pinned -> after-c4-infer1: 0 changed path(s)
+DIFF profile=pb after-c4-infer1 -> after-c4-onboard2: 5 changed path(s)
+  models.providers.sglang.maxTokens: 4096 -> "<absent>"
+  models.providers.sglang.models[id=deepseek-v4.1-flash].contextWindow: 200000 -> 128000
+  models.providers.sglang.models[id=deepseek-v4.1-flash].maxTokens: 8192 -> 32768
+  models.providers.sglang.timeoutSeconds: 1234 -> "<absent>"
+  wizard.lastRunAt: "2026-11-18T16:07:25.819Z" -> "2026-11-18T16:08:01.714Z"
+DIFF profile=pb after-c4-onboard2 -> after-c4-infer2: 0 changed path(s)
+VERDICT c1 baseline=ok reason=- baseline_cap=8192 infer_rc=0 attempts=1 retry_body_identical=n/a in_step_retries=0:n/a cfg_row_maxTokens=8192 cfg_prov_maxTokens=4096 requests=[(2, 'max_completion_tokens', 8192, 200)]
+VERDICT c2 outcome='reproduced' scope=config+request reason=- flags=CAP-OVERWRITE path=noninteractive-rerun:staged+activate setup_rc=c2-onboard=1 activate_rc=0 setup_effective=True probe_requests=[(3, 'max_completion_tokens', 256, 200)] row_maxTokens=8192->32768 baseline_cap=8192 next_request_cap=32768 next_status=200 request_cap_changed=True after_snapshot=after-c2-activate refused=[] attempts=1 retry_body_identical=n/a in_step_retries=probe:0:n/a,infer:0:n/a baseline_from=own:pa:c1
+CTXWIN c2 row_contextWindow=200000->128000
+PROVFIELDS c2 prov_maxTokens=4096->None prov_timeoutSeconds=1234->None prov_keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds->api,apiKey,baseUrl,models row_keys=contextWindow,id,maxTokens,name->contextWindow,cost,id,input,maxTokens,name,reasoning
+SENTINEL c2 cacheTrace_preserved=True workspace_preserved=True primary=sglang/deepseek-v4.1-flash->sglang/deepseek-v4.1-flash baseUrl_preserved=True
+VERDICT c3-baseline baseline=ok reason=- baseline_cap=8192 infer_rc=0 attempts=1 retry_body_identical=n/a in_step_retries=0:n/a base_identical_to_pa=True requests=[(5, 'max_completion_tokens', 8192, 200)]
+VERDICT c3 outcome='reproduced' scope=config+request reason=- flags=CAP-OVERWRITE path=interactive-login:direct-write setup_rc=c3-login=0 activate_rc=n/a setup_effective=True probe_requests=[] row_maxTokens=8192->32768 baseline_cap=8192 next_request_cap=32768 next_status=200 request_cap_changed=True after_snapshot=after-c3-login refused=[] attempts=1 retry_body_identical=n/a in_step_retries=probe:0:n/a,infer:0:n/a baseline_from=own:pc:c3-infer0
+CTXWIN c3 row_contextWindow=200000->128000
+PROVFIELDS c3 prov_maxTokens=4096->4096 prov_timeoutSeconds=1234->1234 prov_keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds->api,apiKey,baseUrl,maxTokens,models,timeoutSeconds row_keys=contextWindow,id,maxTokens,name->contextWindow,id,maxTokens,name
+SENTINEL c3 cacheTrace_preserved=True workspace_preserved=True primary=sglang/deepseek-v4.1-flash->sglang/deepseek-v4.1-flash baseUrl_preserved=True
+VERDICT c4-baseline baseline=ok reason=- baseline_cap=8192 infer_rc=0 attempts=1 retry_body_identical=n/a in_step_retries=0:n/a configset_total=6 configset_nonzero=[] requests=[(7, 'max_completion_tokens', 8192, 200)]
+VERDICT c4 outcome='reproduced' scope=config+request reason=- flags=CAP-OVERWRITE path=noninteractive-rerun-of-onboarded:direct-write setup_rc=c4-onboard2=0 activate_rc=n/a setup_effective=True probe_requests=[] row_maxTokens=8192->32768 baseline_cap=8192 next_request_cap=32768 next_status=200 request_cap_changed=True after_snapshot=after-c4-onboard2 refused=[] attempts=1 retry_body_identical=n/a in_step_retries=probe:0:n/a,infer:0:n/a baseline_from=own:pb:c4-infer1
+CTXWIN c4 row_contextWindow=200000->128000
+PROVFIELDS c4 prov_maxTokens=4096->None prov_timeoutSeconds=1234->None prov_keys=api,apiKey,baseUrl,maxTokens,models,timeoutSeconds->api,apiKey,baseUrl,models row_keys=contextWindow,cost,id,input,maxTokens,name,reasoning->contextWindow,cost,id,input,maxTokens,name,reasoning
+SENTINEL c4 cacheTrace_preserved=True workspace_preserved=True primary=sglang/deepseek-v4.1-flash->sglang/deepseek-v4.1-flash baseUrl_preserved=True
+TOKENS posts=7 posts_200=7 refused=0 actual_in=116 actual_out=14 posts_200_without_usage=0 (SGLang usage from the responses; the relay clamps output to its OUT_CAP)

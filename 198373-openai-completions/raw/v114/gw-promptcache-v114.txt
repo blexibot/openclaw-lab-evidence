@@ -1,0 +1,1 @@
+145:2026-11-17T18:58:37.588+00:00 [agent/embedded] [prompt-cache] message 2 (assistant) differs from the previous request; history must be append-only; changed fields: content[0].id sessionKey=agent:main:cache-repro

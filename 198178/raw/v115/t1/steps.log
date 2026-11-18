@@ -1,0 +1,80 @@
+2026-11-18T16:06:09Z WINDOW ok utc=2026-11-18T16:06:09Z left=2957s umask=0022
+2026-11-18T16:06:09Z tag=t1 agent_flag=[--agent main] version: OpenClaw 2026.11.5 (e13cf15) 
+2026-11-18T16:06:09Z INSTALL openclaw_bin=/usr/local/bin/openclaw -> /usr/local/lib/node_modules/openclaw/openclaw.mjs npm_root=/usr/local/lib/node_modules package=openclaw 2026.11.5 resolved=- integrity=-
+2026-11-18T16:06:09Z INTEGRITY provider-setup-B98DCyPJ.mjs match=yes got=be23922f1b49750c42cc8b5cdb22b999304c701ab8d4ac7a0dcc93568e5e5646
+2026-11-18T16:06:09Z INTEGRITY defaults-BWyoTPqn.mjs match=yes got=f7a65f58c356f2547e1502dfb52d1e333ac24297170fdd91d97717c1caf2376b
+2026-11-18T16:06:09Z INTEGRITY merge-patch-B7gt1grQ.mjs match=yes got=64bf0130cca1926e064a44cd2b6c39f8b5ce3a7a574618299e42a6f52bd2c6ee
+2026-11-18T16:06:09Z INTEGRITY setup-inference-turn-x2uYo8LG.mjs match=yes got=0c2d50b87ac8510565d48861851687d286ea0aeb817cf9b34ef536566071a833
+2026-11-18T16:06:09Z INTEGRITY auth-choice-BFNQSl9s.mjs match=yes got=7c659f0e8e20f98d0efc4db5476800267b9ba335961fa9d4b6d3292ee76fb7f5
+2026-11-18T16:06:09Z INTEGRITY extensions/sglang/index.js match=yes got=39ef8696353638185ff396ad9a51574b2110697eefa54e0ab2d0d0045845ea8b
+2026-11-18T16:06:10Z PREFLIGHT GET /v1/models via shim+relay+proxy status=200 body={"object": "list", "data": [{"id": "deepseek-v4.1-flash", "object": "model"}]}
+2026-11-18T16:06:10Z PROCS profile=none after=preflight n=0 list=[]
+2026-11-18T16:06:10Z PROFILE pa home=/root/r198178/t1/pa/home
+2026-11-18T16:06:12Z STEP profile=pa label=c1-validate rc=0 secs=2 wire=2..1 t0=1795017970
+2026-11-18T16:06:13Z STEP profile=pa label=c1-configfile rc=0 secs=1 wire=2..1 t0=1795017972
+2026-11-18T16:06:13Z CONFIGFILE profile=pa active=/root/r198178/t1/pa/home/.openclaw/openclaw.json expected=/root/r198178/t1/pa/home/.openclaw/openclaw.json
+2026-11-18T16:06:14Z READBACK models.providers.sglang.models[0].maxTokens = 8192
+2026-11-18T16:06:15Z READBACK models.providers.sglang.models[0].contextWindow = 200000
+2026-11-18T16:06:16Z READBACK models.providers.sglang.maxTokens = 4096
+2026-11-18T16:06:17Z READBACK models.providers.sglang.timeoutSeconds = 1234
+2026-11-18T16:06:18Z READBACK diagnostics.cacheTrace.enabled = true
+2026-11-18T16:06:18Z SNAP profile=pa n=1 label=base raw_sha256=87e5aa8db42914983682b7cf5c7220fcd7516655cd5e1213d4656b986b0b1e51 file=cfg-01-base.json
+2026-11-18T16:06:24Z STEP profile=pa label=c1-infer rc=0 secs=3 wire=2..2 t0=1795017981
+2026-11-18T16:06:24Z INFER profile=pa label=c1-infer rc=0 wire=2..2 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+2026-11-18T16:06:24Z SNAP profile=pa n=2 label=after-c1-infer raw_sha256=87e5aa8db42914983682b7cf5c7220fcd7516655cd5e1213d4656b986b0b1e51 file=cfg-02-after-c1-infer.json
+2026-11-18T16:06:27Z C1OK=yes statuses=[200:-:8192:-]
+2026-11-18T16:06:32Z STEP profile=pa label=c2-onboard rc=1 secs=4 wire=3..2 t0=1795017987
+2026-11-18T16:06:32Z ONBOARD c2 rc=1 statuses=[] stdout_tail=lang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main"   },   "phase": "options",   "message": "Replacement credential saved but inactive. Your connection is unchanged. Test and activate it with:\nopenclaw models auth activate sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main" } 
+2026-11-18T16:06:32Z PROCS profile=pa after=c2-onboard n=0 list=[]
+2026-11-18T16:06:32Z SNAP profile=pa n=3 label=after-c2-onboard raw_sha256=87e5aa8db42914983682b7cf5c7220fcd7516655cd5e1213d4656b986b0b1e51 file=cfg-03-after-c2-onboard.json
+2026-11-18T16:06:38Z ACTIVATE c2 needed profile_id=sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 staged_message=yes (id found in models auth list)
+2026-11-18T16:06:44Z STEP profile=pa label=c2-activate rc=0 secs=6 wire=3..3 t0=1795017998
+2026-11-18T16:06:44Z ACTIVATE-STEP profile=pa label=c2-activate rc=0 wire=3..3 attempt=1 chat_posts=1 statuses=[200:-:256:-]
+2026-11-18T16:06:44Z ACTIVATE c2 rc=0 statuses=[200:-:256:-]
+2026-11-18T16:06:44Z PROCS profile=pa after=c2-activate n=0 list=[]
+2026-11-18T16:06:44Z SNAP profile=pa n=4 label=after-c2-activate raw_sha256=0e3d487ce1de441933c926e883ce984ae0b4979439e37910b74c4023e02e8299 file=cfg-04-after-c2-activate.json
+2026-11-18T16:06:52Z STEP profile=pa label=c2-infer rc=0 secs=4 wire=4..4 t0=1795018008
+2026-11-18T16:06:52Z INFER profile=pa label=c2-infer rc=0 wire=4..4 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+2026-11-18T16:06:52Z SNAP profile=pa n=5 label=after-c2-infer raw_sha256=0e3d487ce1de441933c926e883ce984ae0b4979439e37910b74c4023e02e8299 file=cfg-05-after-c2-infer.json
+2026-11-18T16:06:56Z PROFILE pc home=/root/r198178/t1/pc/home
+2026-11-18T16:06:56Z SNAP profile=pc n=1 label=base raw_sha256=87e5aa8db42914983682b7cf5c7220fcd7516655cd5e1213d4656b986b0b1e51 file=cfg-01-base.json
+2026-11-18T16:07:02Z STEP profile=pc label=c3-infer0 rc=0 secs=4 wire=5..5 t0=1795018018
+2026-11-18T16:07:02Z INFER profile=pc label=c3-infer0 rc=0 wire=5..5 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+2026-11-18T16:07:02Z SNAP profile=pc n=2 label=after-c3-infer0 raw_sha256=87e5aa8db42914983682b7cf5c7220fcd7516655cd5e1213d4656b986b0b1e51 file=cfg-02-after-c3-infer0.json
+2026-11-18T16:07:04Z C3OK=yes statuses=[200:-:8192:-]
+2026-11-18T16:07:10Z STEP profile=pc label=c3-login rc=0 secs=6 wire=6..5 t0=1795018024
+2026-11-18T16:07:10Z LOGIN c3 rc=0 PTY rc=0 answered=url,key,model enters=0 statuses=[]
+2026-11-18T16:07:10Z PROCS profile=pc after=c3-login n=0 list=[]
+2026-11-18T16:07:10Z SNAP profile=pc n=3 label=after-c3-login raw_sha256=5fc8a6da63691f6391d89de03d8b3469d40534badc0d8f3b888d7610cd58aa95 file=cfg-03-after-c3-login.json
+2026-11-18T16:07:14Z ACTIVATE c3 not-needed (no activation command printed)
+2026-11-18T16:07:18Z STEP profile=pc label=c3-infer rc=0 secs=4 wire=6..6 t0=1795018034
+2026-11-18T16:07:18Z INFER profile=pc label=c3-infer rc=0 wire=6..6 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+2026-11-18T16:07:18Z SNAP profile=pc n=4 label=after-c3-infer raw_sha256=5fc8a6da63691f6391d89de03d8b3469d40534badc0d8f3b888d7610cd58aa95 file=cfg-04-after-c3-infer.json
+2026-11-18T16:07:21Z PROFILE pb home=/root/r198178/t1/pb/home
+2026-11-18T16:07:26Z STEP profile=pb label=c4-onboard1 rc=0 secs=5 wire=7..6 t0=1795018041
+2026-11-18T16:07:26Z ONBOARD c4-1 rc=0 statuses=[]
+2026-11-18T16:07:26Z PROCS profile=pb after=c4-onboard1 n=0 list=[]
+2026-11-18T16:07:26Z SNAP profile=pb n=1 label=after-c4-onboard1 raw_sha256=d8ca3abb0e029bcb3444e84197164a3145683f1a7e048220eaf826e66e600c71 file=cfg-01-after-c4-onboard1.json
+2026-11-18T16:07:31Z CONFIGSET models.providers.sglang.models[0].maxTokens 8192 rc=0
+2026-11-18T16:07:34Z CONFIGSET models.providers.sglang.models[0].contextWindow 200000 rc=0
+2026-11-18T16:07:37Z CONFIGSET models.providers.sglang.maxTokens 4096 rc=0
+2026-11-18T16:07:39Z CONFIGSET models.providers.sglang.timeoutSeconds 1234 rc=0
+2026-11-18T16:07:42Z CONFIGSET diagnostics.cacheTrace.enabled true rc=0
+2026-11-18T16:07:45Z CONFIGSET agents.defaults.workspace "/root/r198178/ws" rc=0
+2026-11-18T16:07:45Z CONFIGSET_ALL profile=pb nonzero=0
+2026-11-18T16:07:46Z STEP profile=pb label=c4-validate rc=0 secs=1 wire=7..6 t0=1795018065
+2026-11-18T16:07:46Z SNAP profile=pb n=2 label=pinned raw_sha256=17ce06aafbda92ab69f889d768641fb42d0f622b7b5bdf89d10107ed71494d6a file=cfg-02-pinned.json
+2026-11-18T16:07:53Z STEP profile=pb label=c4-infer1 rc=0 secs=4 wire=7..7 t0=1795018069
+2026-11-18T16:07:53Z INFER profile=pb label=c4-infer1 rc=0 wire=7..7 attempt=1 chat_posts=1 statuses=[200:-:8192:-]
+2026-11-18T16:07:53Z SNAP profile=pb n=3 label=after-c4-infer1 raw_sha256=17ce06aafbda92ab69f889d768641fb42d0f622b7b5bdf89d10107ed71494d6a file=cfg-03-after-c4-infer1.json
+2026-11-18T16:08:02Z STEP profile=pb label=c4-onboard2 rc=0 secs=5 wire=8..7 t0=1795018077
+2026-11-18T16:08:02Z ONBOARD c4-2 rc=0 statuses=[] stdout_tail=true,   "mode": "local",   "workspace": "/root/r198178/t1/pb/home/.openclaw/workspace",   "authChoice": "sglang",   "gateway": {     "port": 18789,     "bind": "loopback",     "authMode": "token",     "tailscaleMode": "off"   },   "installDaemon": false,   "skipSkills": true,   "skipHealth": true } 
+2026-11-18T16:08:02Z PROCS profile=pb after=c4-onboard2 n=0 list=[]
+2026-11-18T16:08:02Z SNAP profile=pb n=4 label=after-c4-onboard2 raw_sha256=1eaf210fea3d086815194d6c665e977a5bfc9a10df6b373975ff2039f4b46ba6 file=cfg-04-after-c4-onboard2.json
+2026-11-18T16:08:05Z ACTIVATE c4 not-needed (no activation command printed)
+2026-11-18T16:08:09Z STEP profile=pb label=c4-infer2 rc=0 secs=4 wire=8..8 t0=1795018085
+2026-11-18T16:08:09Z INFER profile=pb label=c4-infer2 rc=0 wire=8..8 attempt=1 chat_posts=1 statuses=[200:-:32768:-]
+2026-11-18T16:08:09Z SNAP profile=pb n=5 label=after-c4-infer2 raw_sha256=1eaf210fea3d086815194d6c665e977a5bfc9a10df6b373975ff2039f4b46ba6 file=cfg-05-after-c4-infer2.json
+2026-11-18T16:08:14Z PROCS profile=pb after=finish n=0 list=[]
+2026-11-18T16:08:14Z verdict lines: 6
+2026-11-18T16:08:14Z DONE

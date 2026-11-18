@@ -1,6 +1,9 @@
 # Evidence packet: openclaw/openclaw#191855 (and draft PR #194166)
 
-Status: **lab packet, not posted.** Nothing here has been published. The human publication gate still applies.
+Status: **published; reviewed by Harold before posting.** Two comments link here, both posted on
+2026-11-16 (UTC): the candidate-head result on PR #194166,
+https://github.com/openclaw/openclaw/pull/194166#issuecomment-6925581435, and the release result on issue #191855,
+https://github.com/openclaw/openclaw/issues/191855#issuecomment-6925585314.
 
 ## Summary
 
@@ -89,8 +92,8 @@ still refuse.
 
 ### Kit and invocation
 
-- Ticket: `kit/ORDER.md`. The original's sha256 is `f000b40c4e9079143d03f13907ec67e34bf95bd311649c3f85a360255287e811`,
-  which matches `kit/order.json`. The public copy is redacted, so its bytes and hash differ (see Redactions).
+- Ticket: `kit/ORDER.md`. The original's sha256 is withheld here and in `kit/order.json` (`<WITHHELD-ORIGINAL-HASH>`):
+  it would confirm guesses at the redacted values. (Withheld 2026-11-18, after first publication.) The public copy is redacted, so its bytes and hash differ (see Redactions).
 - Scripts: `kit/scripts/*.sh`. Each one is byte-identical to the file the worker hashed in its private
   `evidence.sha256`.
 - Per-step invocation (from the ticket's recipes). Each script was copied into the bench, its hash was checked on

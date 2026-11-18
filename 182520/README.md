@@ -1,7 +1,8 @@
 # Evidence packet: openclaw/openclaw#182520 (managed local model service has no cross-process ownership)
 
-Status: **built, not yet reviewed by the human publisher. Not posted anywhere.** Nothing in this packet authorizes a
-public action. Issue state when this packet was built (read-only check, 2026-11-16): open, labels include `stale`, `P2`.
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/issues/182520#issuecomment-6925586126 on 2026-11-16 (UTC). Issue state when this
+packet was built (read-only check, 2026-11-16): open, labels include `stale`, `P2`.
 
 ## Result in one paragraph
 
@@ -96,7 +97,7 @@ Gateway memory sync adopts it, the CLI exits and kills it.
 
 | Item | Value | Evidence kind |
 |---|---|---|
-| Install method | `npm install -g openclaw@2026.11.4 --no-fund --no-audit` as root inside the container, by the lab's `bench openclaw b182520 2026.11.4` helper (lab helper revision sha256 `bf11b9affcaeb9d40ae341517115e1118731a9965f742d819285f28218a05498`; helper not included) | observed (helper source read 2026-11-16) |
+| Install method | `npm install -g openclaw@2026.11.4 --no-fund --no-audit` as root inside the container, by the lab's `bench openclaw b182520 2026.11.4` helper (lab helper revision sha256 `<WITHHELD-ORIGINAL-HASH>`: a redacted copy of this helper is published elsewhere in this repository, and its original hash would confirm a guess at the redacted text; helper not included here) | observed (helper source read 2026-11-16) |
 | Banner | `OpenClaw 2026.11.4 (d843d6a)` (`runs/try1/versions.txt`, `runs/try2/versions.txt`) | observed |
 | Source commit for the tag | `v2026.11.4` → `d843d6af39a42cd3c30084edbeabeece732fd93a` (GitHub API, read-only, 2026-11-16); matches the banner's short hash | observed |
 | Registry integrity, `openclaw@2026.11.4` | `sha512-kSMzBc0fIWrW4DqneFEXL9FRboCZCQV22Edm6iFPqRaBexUeZp9huWNPVWLXmuSAQRezorPfrABkODqq65NOmw==` (shasum `71eeeac4e4b95a0d2bb6c80fb1e0463ac7ec79b9`), from `npm view` on 2026-11-16 | observed (registry); **unknown** whether the bench's installed tarball had this integrity (not recorded; bench destroyed) |
@@ -110,8 +111,10 @@ Gateway memory sync adopts it, the CLI exits and kills it.
 - Kit tarball sha256 `c75be79f012f0e528d3c34fde607917a61167f5e84976f6f1801ea5cafda0afd` (9 files). The in-bench sha256 of
   all 9 files is printed at the top of each `runs/try*/versions.txt` and `run.log`.
 - `kit/` holds the 9 files. Eight are byte-identical to the run's copies. `kit/job.sh` is a **redacted copy**: one
-  comment word (the lab account name) became `<user>`, so its hash here (`50a0ed13…`) differs from the run's
-  (`18abc743…`); the code is unchanged.
+  comment word (the lab account name) became `<user>`, so its hash here (`50a0ed13…`) differs from the run's;
+  the code is unchanged. The run's hash of the original is withheld (`<WITHHELD-ORIGINAL-HASH>` in `runs/try*/versions.txt`,
+  `run.log` and `custody/worker-evidence.sha256`): it would confirm a guess at the redacted word. (Withheld 2026-11-18,
+  after first publication.)
 - Files: `run.sh` (entry point inside the bench), `partA.sh` (Part A), `partB.sh` (Part B), `slowllm.mjs` (stand-in
   OpenAI-compatible server that logs every request start/end/close and signal with its pid), `cfg.mjs` (writes the
   Part A config, dumps Part B config with secrets redacted), `procs.mjs` (`/proc` process snapshot with parent chain),

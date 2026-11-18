@@ -1,0 +1,10 @@
+# npm view, read 2026-11-18 (after the run) from registry.npmjs.org
+name = 'openclaw'
+version = '2026.11.4'
+dist.integrity = 'sha512-kSMzBc0fIWrW4DqneFEXL9FRboCZCQV22Edm6iFPqRaBexUeZp9huWNPVWLXmuSAQRezorPfrABkODqq65NOmw=='
+dist.shasum = '71eeeac4e4b95a0d2bb6c80fb1e0463ac7ec79b9'
+dist.tarball = 'https://registry.npmjs.org/openclaw/-/openclaw-2026.11.4.tgz'
+dist.fileCount = 15230
+dist.unpackedSize = 276117104
+dist-tags (at read time): {"extended-stable":"2026.10.33","beta":"2026.11.5","latest":"2026.11.5"}
+time.2026.11.5 = 2026-11-17T09:59:33.472Z

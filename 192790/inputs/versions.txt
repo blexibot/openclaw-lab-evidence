@@ -24,7 +24,9 @@ Guest: Incus system container from image ubuntu/24.04 (`bench new ubuntu/24.04 b
        Runner ran as root inside the container. Container destroyed after the run.
 Host:  Ubuntu 26.04.1 LTS, Linux 7.0.0-43-generic x86_64, Incus 6.0.5      [read 2026-11-16 after the run; the host
        kernel at run time is not separately recorded]
-Lab `bench` helper sha256 (read 2026-11-16, after the run): bf11b9affcaeb9d40ae341517115e1118731a9965f742d819285f28218a05498
+Lab `bench` helper sha256 (read 2026-11-16, after the run): <WITHHELD-ORIGINAL-HASH> (kept privately; a redacted
+       copy of this helper is published elsewhere in this repository, and its original hash would confirm a guess at
+       the redacted text)
 
 Backend, Part 1: none. hb_mock.py answers /api/chat itself (scripted provider). Its /api/version reply ("0.40.16")
        is hard-coded in the mock and is NOT a backend version.

@@ -1,0 +1,2 @@
+VERSION OpenClaw 2026.11.5 (e13cf15)
+BACKEND ollama {"version":"0.40.16"} (Qwen 27B via lab filter v4 relay)

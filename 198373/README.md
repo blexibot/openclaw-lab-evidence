@@ -1,8 +1,10 @@
 # Evidence packet: openclaw/openclaw#198373 on the native Ollama `/api/chat` route (2026.11.3, 2026.11.4)
 
-Status: lab evidence, built 2026-11-16 from the run's pulled raw files. **Not yet reviewed by the maintainer; nothing
-here has been posted.** Every file listed in `MANIFEST.sha256` is in this folder; the manifest covers only these
-redacted/synthetic copies (see "Custody").
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/issues/198373#issuecomment-6925571504 on 2026-11-16 (UTC). Corrected
+after first publication: `ASSERTIONS.md` row 5 (tool-call IDs) and the withheld original hashes (see "Test kit" and
+"Custody"). Lab evidence, built 2026-11-16 from the run's pulled raw files. Every file listed in `MANIFEST.sha256` is
+in this folder; the manifest covers only these redacted/synthetic copies (see "Custody").
 
 ## Summary
 
@@ -25,8 +27,9 @@ redacted/synthetic copies (see "Custody").
 
 Plain statement: on this native Ollama route, **we observed no `__openclaw`/`runId` field on the captured tool message,
 despite the internal trace stamp and the watchdog warning.** This sample does not show what other transports
-serialize, does not exercise the issue's ID-normalization or system-prompt symptoms, and does not establish native-route
-cache stability in general.
+serialize, does not show the issue's ID-normalization symptom (the underscore-bearing tool-call IDs `call_` + 8 were
+replayed unchanged; `ASSERTIONS.md` row 5), does not exercise its system-prompt symptom, and does not establish
+native-route cache stability in general.
 
 Supporting counters (backend fields as returned through the relay; `uncached` is derived as
 `prompt_eval_count − prompt_eval_cached_count`):
@@ -85,15 +88,13 @@ OpenClaw's own `cache:result` trace record for run 2 reports the same values (`p
 
 ### Test kit
 
-- Original kit archive `kit-198373.tgz`, sha256 `273fbb838801c6fbfcc868e68168ad852ebdf09c09d3a4cbd4948107d269c199`
-  (verified by the worker on extraction, `evidence.txt`). Original file hashes: `analyze198373.py`
-  `4211606159b031cdb009b0b79f2c4af3949d1e8098c5935b4d19ac1573ccc593`, `openclaw.json`
-  `f56e3c84bcf9c40d0bb37735e9e6a3691ffda85af512a6c0dfbe885b1c40d6ff`, `logproxy.py`
-  `563eac67bb4228b034731c35b2423d08e141ee905bf582b6e4f78a683f8c08df`, `run198373.sh`
-  `6b6fae5dfc1da812784cebbc146500a8d6019b25d5ed01cdea3ae75d683c2e8a`.
-- Published copies in `kit/`: `analyze198373.py` and `openclaw.json` are byte-identical to the originals.
-  `logproxy.py` and `run198373.sh` have the relay address replaced with `<RELAY>`; their original hashes do not
-  identify the published bytes.
+- Original kit archive `kit-198373.tgz`, sha256 `<WITHHELD-ORIGINAL-HASH>` (verified by the worker on extraction,
+  `evidence.txt`). Files as run whose published copies are byte-identical (original sha256 = published sha256):
+  `analyze198373.py` `4211606159b031cdb009b0b79f2c4af3949d1e8098c5935b4d19ac1573ccc593`, `openclaw.json`
+  `f56e3c84bcf9c40d0bb37735e9e6a3691ffda85af512a6c0dfbe885b1c40d6ff`.
+- `logproxy.py` and `run198373.sh` in `kit/` have the relay address replaced with `<RELAY>`. The original hashes of
+  these two files and of the kit archive are **withheld** (`<WITHHELD-ORIGINAL-HASH>`): they would let anyone confirm
+  guesses at the redacted address. They are kept in the lab's private store.
 - Exact invocation (inside the bench, as root):
   `cd /root/r198373 && (setsid nohup bash kit-198373/run198373.sh <tag> > <tag>.console 2>&1 < /dev/null &)`
   with `<tag>` = `v113`, then `v114` after the 2026.11.4 install.
@@ -151,7 +152,7 @@ retry or failure branch).
 ### Proxy, filter and capture position
 
 - **Capture point:** `kit/logproxy.py` (published sha256 in `MANIFEST.sha256`; original
-  `563eac67…`), listening on `127.0.0.1:11434` **inside the bench**, between OpenClaw and the lab relay. It records
+  `<WITHHELD-ORIGINAL-HASH>`), listening on `127.0.0.1:11434` **inside the bench**, between OpenClaw and the lab relay. It records
   each request body exactly as OpenClaw sent it (plus its sha256 at capture time) and the response bytes as returned by
   the relay. It re-sends bodies upstream with `Content-Length` (no chunking); bodies are not altered.
 - **Downstream of the capture:** the lab relay/filter at `<RELAY>:11435`, then Ollama. Filter revision: **unknown**
@@ -174,7 +175,7 @@ retry or failure branch).
 | `raw/<tag>/lab-stats-<tag>-window.json` | relay request log, filtered to this tag's run window | other lab clients' records outside the window removed |
 | `raw/<tag>/proxy.log` | proxy start line | relay address → `<RELAY>` |
 | `raw/<tag>/evidence-<tag>.sha256` | the in-bench manifest of the original files (for the record; see "Harness gaps") | none |
-| `raw/install/` | install wrappers and logs, bench tool (`bench-tool.sh`, original sha256 `bf11b9af…`), `npm view` output | `bench-tool.sh`: one internal network-fence name in a comment replaced; otherwise none |
+| `raw/install/` | install wrappers and logs, bench tool (`bench-tool.sh`, original sha256 `<WITHHELD-ORIGINAL-HASH>`), `npm view` output | `bench-tool.sh`: one internal network-fence name in a comment replaced; otherwise none |
 | `tools/verify198373.py` | replay check over this packet | — |
 
 Exit codes: both turns `exit=0` in both tags (`steps.log`); `openclaw agent` status `ok` (`run1.json`, `run2.json`);
@@ -188,4 +189,6 @@ sha256 `12a11e38…` / `84ae9c67…`), then copied unmodified to the maintainer'
 manifests verify `OK` for every file except `steps.log` (both tags) and `gw-v113.log` (see "Harness gaps"). The
 throwaway gateway credential lived only in the excluded `home/` folder and does not appear in any pulled file. This
 packet holds inspected copies; where a file was redacted, the original hash does not identify the published bytes.
+Original hashes of redacted files are withheld from this packet (the kit archive, `logproxy.py`, `run198373.sh` and
+`bench-tool.sh`): each would let a guess at a redacted address or name be confirmed. They are kept privately.
 `MANIFEST.sha256` hashes exactly the files in this folder.

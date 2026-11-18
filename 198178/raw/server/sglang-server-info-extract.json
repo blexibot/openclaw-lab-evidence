@@ -1,0 +1,14 @@
+{
+ "read_at_utc": "2026-11-18T05:42:22Z",
+ "request": "GET /get_server_info (read-only, direct to the SGLang server, not through the lab proxy)",
+ "note": "selected fields only; the full response (502 keys) and its read time are kept in the lab's private store",
+ "fields": {
+  "served_model_name": "deepseek-v4.1-flash",
+  "context_length": 1048576,
+  "max_req_input_len": 1048570,
+  "max_total_num_tokens": 5531904,
+  "max_running_requests": 16,
+  "tp_size": 4,
+  "version": "0.0.0.dev0"
+ }
+}

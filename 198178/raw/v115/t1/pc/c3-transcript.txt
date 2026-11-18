@@ -1,0 +1,46 @@
+│
+◇  
+
+OpenClaw 2026.11.5 (e13cf15) — You had me at 'openclaw gateway start.'
+
+│
+◇  Provider sign-in ─────────────────────────────────────────────────────────────────────╮
+│                                                                                        │
+│  Scope: System / agent                                                                 │
+│  Agent: main                                                                           │
+│  Location: the machine running OpenClaw                                                │
+│  For personal model accounts on a Gateway, run openclaw models accounts login --help.  │
+│                                                                                        │
+├────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◆  SGLang base URL
+│  http://127.0.0.1:18178/v1█
+└
+
+[pty198178 sent: backspace x120]
+
+[pty198178 sent: base url]
+│  http://127.0.0.1:18178/v█│  http://127.0.0.1:18178/█│  http://127.0.0.1:18178█│  http://127.0.0.1:1817█│  http://127.0.0.1:181█│  http://127.0.0.1:18█│  http://127.0.0.1:1█│  http://127.0.0.1:█│  http://127.0.0.1█│  http://127.0.0.█│  http://127.0.0█│  http://127.0.█│  http://127.0█│  http://127.█│  http://127█│  http://12█│  http://1█│  http://█│  http:/█│  http:█│  http█│  htt█│  ht█│  h█│  http://127.0.0.1:30000/v1│  h█│  ht█│  htt█│  http█│  http:█│  http:/█│  http://█│  http://1█│  http://12█│  http://127█│  http://127.█│  http://127.0█│  http://127.0.█│  http://127.0.0█│  http://127.0.0.█│  http://127.0.0.1█│  http://127.0.0.1:█│  http://127.0.0.1:1█│  http://127.0.0.1:18█│  http://127.0.0.1:181█│  http://127.0.0.1:1817█│  http://127.0.0.1:18178█│  http://127.0.0.1:18178/█│  http://127.0.0.1:18178/v█│  http://127.0.0.1:18178/v1█◇  SGLang base URL
+│  http://127.0.0.1:18178/v1
+│
+◆  SGLang API key
+│  _
+└
+
+[pty198178 sent: dummy api key]
+│  ▪_│  ▪▪_│  ▪▪▪_│  ▪▪▪▪_│  ▪▪▪▪▪_│  ▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪_│  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪_◇  SGLang API key
+│  ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+│
+◆  SGLang model
+│  Qwen/Qwen3-8B
+└
+
+[pty198178 sent: model id]
+│  d█│  de█│  dee█│  deep█│  deeps█│  deepse█│  deepsee█│  deepseek█│  deepseek-█│  deepseek-v█│  deepseek-v4█│  deepseek-v4.█│  deepseek-v4.1█│  deepseek-v4.1-█│  deepseek-v4.1-f█│  deepseek-v4.1-fl█│  deepseek-v4.1-fla█│  deepseek-v4.1-flas█│  deepseek-v4.1-flash█◇  SGLang model
+│  deepseek-v4.1-flash
+Updated config: $OPENCLAW_HOME/.openclaw/openclaw.json
+  Backup: $OPENCLAW_HOME/.openclaw/openclaw.json.bak
+Warning: Model auth changes were saved, but the local Gateway could not refresh them. Run `openclaw gateway restart` to apply the saved changes.
+Auth profile: sglang:default (sglang/api_key)
+Default model available: sglang/deepseek-v4.1-flash (current default unchanged; run openclaw models set sglang/deepseek-v4.1-flash to apply)
+[state/agent-db] agent database clean-close receipt: written; agent=main

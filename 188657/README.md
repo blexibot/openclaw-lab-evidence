@@ -1,6 +1,7 @@
 # Evidence packet: openclaw/openclaw#188657 (Responses route drops the previous turn's runtime-context carrier)
 
-Status: **built, not yet reviewed by the human publisher. Not posted anywhere.** Nothing in this packet authorizes a public action.
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/issues/188657#issuecomment-6925567235 on 2026-11-16 (UTC).
 
 ## Summary
 

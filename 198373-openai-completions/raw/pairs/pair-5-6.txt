@@ -1,0 +1,13 @@
+pair: 2 records with messages in pulled/v114/wire-v114.jsonl
+other request: seq=1 GET /api/version status=200
+--- #0 seq=5 t=1794941913.777798 gap_s=None status=200 secs=2.258 stream=True max_tokens=4096 last_user=' read note.txt in your workspace, then reply with its first word only.' messages=5 stamp_keys=0 (JSON keys __openclaw/runId)
+    prompt_tokens=15153 completion_tokens=26 cached_tokens=15097 uncached=56 usage_keys=['completion_tokens', 'prompt_tokens', 'prompt_tokens_details', 'total_tokens'] finish=stop tool_call_ids=[] tool_names=[] text='lab-198373' lab_request_id=a8e78b-13 lab_stats={"t":"2026-11-17T18:58:33.836+00:00","method":"POST","path":"/v1/chat/completions","model":"qwen3.8:27b-q4_K_M","stream":true,"messages":5,"tools":14,"usage_requested":true,"max_tokens":4096,"tool_choice":"auto","bytes":64057,"status":200,"ttfb_ms":526,"finish_reason":"stop","prompt_tokens":15153,"completion_tokens":26,"total_tokens":15179,"cached_tokens":15097,"prompt_n":15153,"prompt_ms":455,"predicted_n":26,"predicted_ms":1083,"sse_done":true,"ms":1610}
+    roles=['system', 'user', 'user', 'assistant', 'tool']
+    assistant tool_call ids=[(3, ['call6yhilm61'])] tool_call_id on tool messages=[(4, 'call6yhilm61')]
+--- #1 seq=6 t=1794941917.6014247 gap_s=3.8 status=200 secs=14.09 stream=True max_tokens=4096 last_user='[Tue 2026-11-17 18:58 UTC] Reply with one word: ready.' messages=8 stamp_keys=0 (JSON keys __openclaw/runId)
+    prompt_tokens=15330 completion_tokens=289 cached_tokens=15149 uncached=181 usage_keys=['completion_tokens', 'prompt_tokens', 'prompt_tokens_details', 'total_tokens'] finish=stop tool_call_ids=[] tool_names=[] text='ready' lab_request_id=a8e78b-14 lab_stats={"t":"2026-11-17T18:58:37.671+00:00","method":"POST","path":"/v1/chat/completions","model":"qwen3.8:27b-q4_K_M","stream":true,"messages":8,"tools":14,"usage_requested":true,"max_tokens":4096,"tool_choice":"auto","bytes":64710,"status":200,"ttfb_ms":1124,"finish_reason":"stop","prompt_tokens":15330,"completion_tokens":289,"total_tokens":15619,"cached_tokens":15149,"prompt_n":15330,"prompt_ms":1048,"predicted_n":289,"predicted_ms":12438,"sse_done":true,"ms":13563}
+    roles=['system', 'user', 'user', 'assistant', 'tool', 'assistant', 'user', 'user']
+    assistant tool_call ids=[(3, ['call6yhilm61'])] tool_call_id on tool messages=[(4, 'call6yhilm61')]
+    APPEND-ONLY vs previous: yes (previous 5 messages kept byte-identical)
+    PARAMS vs previous: identical (every top-level field other than messages)
+    first differing byte offset of the whole serialized request: 49768 of 64039

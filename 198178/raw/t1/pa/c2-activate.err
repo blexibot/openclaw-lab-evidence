@@ -1,0 +1,1 @@
+Warning: Model auth changes were saved, but the local Gateway could not refresh them. Run `openclaw gateway restart` to apply the saved changes.

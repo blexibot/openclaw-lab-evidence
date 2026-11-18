@@ -1,8 +1,9 @@
 # Evidence packet: openclaw/openclaw#194166 on macOS (matched base vs head, backup path)
 
-Status: **draft, not yet reviewed by the human publisher, not posted.** Synthetic fixtures only, on a disposable macOS
-VM (user `admin`, uid 501; destroyed after the run). Publish this folder only as a fresh file copy, never by pushing
-the lab's own repository.
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/pull/194166#issuecomment-6965944737 on 2026-11-18 (UTC). Synthetic
+fixtures only, on a disposable macOS VM (user `admin`, uid 501; destroyed after the run). Publish this folder only as
+a fresh file copy, never by pushing the lab's own repository.
 
 **Custody and redactions.** Every file in `raw/` is byte-identical to the lab job `T194166r2`. On 2026-11-17 the files
 were checked against the job's private `evidence.sha256` (all matched), and the six `attach.*`/`probe.*` files against
@@ -10,7 +11,9 @@ hashes taken on the lab host at fetch time. Four kit files were edited before pu
 the lab's:
 - `kit/d194166.sh`: build host address → `<LAB-LINUX-HOST>`, lab account → `<LAB-USER>`, SSH key name → `<KEY>`, VM tool
   path → `<VM-TOOL>`, lab host name removed from the header comment.
-- `kit/m194166.sh`: the guest's sudo password is no longer inline; it is read from `GUEST_SUDO_PW` at run time.
+- `kit/m194166.sh`: the guest's sudo password is no longer inline; it is read from `GUEST_SUDO_PW` at run time. The
+  pushed original's hash in `raw/verdicts.txt` line 4 is withheld (`<WITHHELD-ORIGINAL-HASH>`), since it would confirm a
+  guessed password. (Withheld 2026-11-18, after first publication.)
 - `kit/s194166.sh`, `kit/w194166.sh`: lab host name removed from a comment.
 The kit tarball as run and the lab's hash list are not included because they would identify those values. The
 capture manifests carry the guest's stock VM host name and random per-run UUIDs; nothing there identifies a machine.

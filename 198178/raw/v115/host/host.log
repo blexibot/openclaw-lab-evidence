@@ -1,0 +1,7 @@
+r198178b
+OpenClaw 2026.11.5 (e13cf15)
+/usr/bin/python3
+/usr/bin/curl
+/usr/bin/pkill
+/usr/bin/timeout
+/usr/bin/sha256sum

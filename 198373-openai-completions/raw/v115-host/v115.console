@@ -1,0 +1,20 @@
+2026-11-18T13:04:27Z tag=v115 version: OpenClaw 2026.11.5 (e13cf15) 
+2026-11-18T13:04:29Z config baseUrl read back: http://127.0.0.1:11434/v1
+2026-11-18T13:04:30Z config api read back: openai-completions
+2026-11-18T13:04:31Z config compat read back: "compat":{"supportsUsageInStreaming":true,"maxTokensField":"max_tokens"}
+2026-11-18T13:04:32Z config validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json
+2026-11-18T13:04:33Z cacheTrace read back: true
+2026-11-18T13:04:34Z proxy listening (pid 799); backend version via proxy: {"version":"0.40.16"}
+2026-11-18T13:04:37Z PREFLIGHT v1 stream+tool attempt a: http=200 chunks=25 tool_calls=True usage=True finish=tool_calls
+2026-11-18T13:04:43Z gateway listening (pid 820)
+2026-11-18T13:04:43Z turn session=warm msg=Reply with one word: warm.
+2026-11-18T13:06:22Z turn exit=0 (warm)
+2026-11-18T13:06:22Z turn session=cache-repro msg=Use the read tool to read note.txt in your workspace, then reply with its first word only.
+2026-11-18T13:06:36Z turn exit=0 (run1)
+2026-11-18T13:06:36Z tool result seen in 1 /v1 request(s); runs 2 and 3 use session cache-repro
+2026-11-18T13:06:36Z turn session=cache-repro msg=Reply with one word: ready.
+2026-11-18T13:06:40Z turn exit=0 (run2)
+2026-11-18T13:06:40Z turn session=cache-repro msg=Reply with one word: again.
+2026-11-18T13:06:44Z turn exit=0 (run3)
+2026-11-18T13:06:48Z STOP gateway pid=820 proxy pid=799; left: 
+2026-11-18T13:06:48Z DONE

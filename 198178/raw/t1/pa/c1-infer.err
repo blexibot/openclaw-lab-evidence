@@ -1,0 +1,4 @@
+[provider-transport-fetch] [model-fetch] response provider=sglang api=openai-completions model=deepseek-v4.1-flash status=429 elapsedMs=185 dispatcher=new contentType=application/json httpRequestId=unknown
+[provider-error] Model request failed provider=sglang model=deepseek-v4.1-flash status=429 type=lab_proxy_refused message="429 {\"type\":\"lab_proxy_refused\",\"reason\":\"lab-request-in-flight\"}" body={"type":"lab_proxy_refused","reason":"lab-request-in-flight"}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.

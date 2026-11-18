@@ -1,0 +1,5 @@
+{
+ "note": "extract of the lab proxy's last start record before the run: only the event and its time are kept; other fields (listen address and configuration) omitted. Read from the proxy's log after the run (2026-11-18): no later start record (that log is not in this packet). Says nothing about the SGLang server behind the proxy.",
+ "event": "start",
+ "t": "2026-11-15T13:30:43+00:00"
+}

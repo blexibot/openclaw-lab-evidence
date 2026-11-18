@@ -1,0 +1,9 @@
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Replacement credential saved but inactive. Your connection is unchanged. Test and activate it with:\nopenclaw models auth activate sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main"
+  },
+  "phase": "options",
+  "message": "Replacement credential saved but inactive. Your connection is unchanged. Test and activate it with:\nopenclaw models auth activate sglang:setup-b6ac8270-5b28-4ff2-b633-846688898d24 --agent main"
+}

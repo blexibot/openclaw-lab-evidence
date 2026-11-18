@@ -1,0 +1,16 @@
+{
+  "agentId": "main",
+  "agentDir": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+  "authStatePath": "$OPENCLAW_HOME/.openclaw/state/openclaw.sqlite",
+  "provider": null,
+  "profiles": [
+    {
+      "id": "sglang:default",
+      "provider": "sglang",
+      "type": "api_key",
+      "label": "sglang:default"
+    }
+  ]
+}
+(node:2850) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: resolveAuthStorePathForDisplay is deprecated; use provider/profile identifiers for displays (there is no public async database-path replacement) instead. The legacy contract remains supported during its deprecation period. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)

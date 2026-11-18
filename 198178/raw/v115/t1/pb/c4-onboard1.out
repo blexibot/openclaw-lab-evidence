@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "mode": "local",
+  "workspace": "/root/r198178/t1/pb/home/.openclaw/workspace",
+  "authChoice": "sglang",
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "authMode": "token",
+    "tailscaleMode": "off"
+  },
+  "installDaemon": false,
+  "skipSkills": true,
+  "skipHealth": true
+}

@@ -1,0 +1,2 @@
+VERSION OpenClaw 2026.11.5 (e13cf15)
+BACKEND sglang ['deepseek-v4.1-flash'] via the lab proxy (relay198178 out_cap 256, max 16 chat POSTs)

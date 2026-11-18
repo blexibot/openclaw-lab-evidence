@@ -1,0 +1,37 @@
+2026-11-17T18:56:50Z tag=v114 version: OpenClaw 2026.11.4 (d843d6a) 
+2026-11-17T18:56:51Z config baseUrl read back: http://127.0.0.1:11434/v1
+2026-11-17T18:56:53Z config api read back: openai-completions
+2026-11-17T18:56:54Z config compat read back: "compat":{"supportsUsageInStreaming":true,"maxTokensField":"max_tokens"}
+2026-11-17T18:56:55Z config validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json
+2026-11-17T18:56:56Z cacheTrace read back: true
+2026-11-17T18:56:57Z proxy listening (pid 935); backend version via proxy: {"version":"0.40.16"}
+2026-11-17T18:57:01Z PREFLIGHT v1 stream+tool attempt a: http=200 chunks=36 tool_calls=True usage=True finish=tool_calls
+2026-11-17T18:57:07Z gateway listening (pid 960)
+2026-11-17T18:57:07Z turn session=warm msg=Reply with one word: warm.
+2026-11-17T18:58:24Z turn exit=0 (warm)
+2026-11-17T18:58:24Z turn session=cache-repro msg=Use the read tool to read note.txt in your workspace, then reply with its first word only.
+2026-11-17T18:58:36Z turn exit=0 (run1)
+2026-11-17T18:58:36Z tool result seen in 1 /v1 request(s); runs 2 and 3 use session cache-repro
+2026-11-17T18:58:36Z turn session=cache-repro msg=Reply with one word: ready.
+2026-11-17T18:58:51Z turn exit=0 (run2)
+2026-11-17T18:58:51Z turn session=cache-repro msg=Reply with one word: again.
+2026-11-17T18:58:55Z turn exit=0 (run3)
+2026-11-17T18:58:59Z STOP gateway pid=960 proxy pid=935; left: 
+total 740
+drwxr-xr-x 1 root root    364 Nov 17 18:58 .
+drwxr-xr-x 1 root root     74 Nov 17 18:56 ..
+-rw------- 1 root root 120020 Nov 17 18:58 cache-trace.jsonl
+-rw-r--r-- 1 root root  17089 Nov 17 18:58 gw-v114.log
+drwxr-xr-x 1 root root     18 Nov 17 18:56 home
+-rw-r--r-- 1 root root   4989 Nov 17 18:58 lab-stats-v114.json
+-rw------- 1 root root  47346 Nov 17 18:58 oclog-openclaw-2026-11-17.log
+-rw-r--r-- 1 root root   8773 Nov 17 18:57 preflight-a.sse
+-rw-r--r-- 1 root root    500 Nov 17 18:56 preflight-req.json
+-rw-r--r-- 1 root root     85 Nov 17 18:56 proxy.log
+-rw-r--r-- 1 root root  13821 Nov 17 18:58 run1.json
+-rw-r--r-- 1 root root  13585 Nov 17 18:58 run2.json
+-rw-r--r-- 1 root root  13582 Nov 17 18:58 run3.json
+-rw-r--r-- 1 root root   1416 Nov 17 18:58 steps.log
+-rw-r--r-- 1 root root  13559 Nov 17 18:58 warm.json
+-rw-r--r-- 1 root root 465357 Nov 17 18:58 wire-v114.jsonl
+2026-11-17T18:59:00Z DONE

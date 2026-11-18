@@ -1,0 +1,6 @@
+Default SGLang model: deepseek-v4.1-flash
+[state/agent-db] agent database clean-close receipt: written
+Workspace OK: $OPENCLAW_HOME/.openclaw/workspace
+Sessions OK: $OPENCLAW_HOME/.openclaw/agents/main/sessions
+Updated config: $OPENCLAW_HOME/.openclaw/openclaw.json
+  Backup: $OPENCLAW_HOME/.openclaw/openclaw.json.bak

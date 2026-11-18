@@ -1,0 +1,111 @@
+{
+ "agents": {
+  "entries": {
+   "main": {
+    "name": "main",
+    "workspace": "/root/r198178/t1/pb/home/.openclaw/workspace",
+    "agentDir": "/root/r198178/t1/pb/home/.openclaw/agents/main/agent",
+    "identity": {
+     "name": "main"
+    }
+   }
+  },
+  "defaults": {
+   "workspace": "/root/r198178/ws",
+   "skipBootstrap": true,
+   "model": {
+    "primary": "sglang/deepseek-v4.1-flash"
+   }
+  }
+ },
+ "plugins": {
+  "entries": {
+   "anthropic": {
+    "config": {
+     "sessionCatalog": {
+      "enabled": false
+     }
+    }
+   },
+   "codex": {
+    "config": {
+     "sessionCatalog": {
+      "enabled": false
+     }
+    }
+   },
+   "sglang": {
+    "enabled": true
+   }
+  }
+ },
+ "meta": {
+  "migrations": {
+   "modelPolicyAllowlist": true,
+   "utilityModelSeparation": true
+  },
+  "lastTouchedVersion": "2026.11.4"
+ },
+ "gateway": {
+  "mode": "local",
+  "auth": {
+   "mode": "token",
+   "token": "<redacted len=48>"
+  },
+  "port": 18789,
+  "bind": "loopback",
+  "tailscale": {
+   "mode": "off"
+  }
+ },
+ "tools": {
+  "profile": "full"
+ },
+ "models": {
+  "mode": "merge",
+  "providers": {
+   "sglang": {
+    "baseUrl": "http://127.0.0.1:18178/v1",
+    "api": "openai-completions",
+    "apiKey": "SGLANG_API_KEY",
+    "models": [
+     {
+      "id": "deepseek-v4.1-flash",
+      "name": "deepseek-v4.1-flash",
+      "reasoning": false,
+      "input": [
+       "text"
+      ],
+      "cost": {
+       "input": 0,
+       "output": 0,
+       "cacheRead": 0,
+       "cacheWrite": 0
+      },
+      "contextWindow": 128000,
+      "maxTokens": 32768
+     }
+    ]
+   }
+  }
+ },
+ "auth": {
+  "profiles": {
+   "sglang:default": {
+    "provider": "sglang",
+    "mode": "api_key"
+   }
+  }
+ },
+ "wizard": {
+  "lastRunAt": "2026-11-17T16:05:04.184Z",
+  "lastRunVersion": "2026.11.4",
+  "lastRunCommand": "onboard",
+  "lastRunMode": "local"
+ },
+ "diagnostics": {
+  "cacheTrace": {
+   "enabled": true
+  }
+ }
+}

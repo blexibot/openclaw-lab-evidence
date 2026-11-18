@@ -1,8 +1,10 @@
 # Evidence packet: openclaw/openclaw#198830 on macOS (LM Studio embedding preload context)
 
-Status: **draft, not yet reviewed by the human publisher, not posted.** Synthetic fixtures only, on a disposable macOS
-VM (user `admin`; destroyed after the run: `MAC_DESTROY rc=0`, `NO_LEFTOVER t198830-mac` in `raw/verdicts.txt`).
-Publish this folder only as a fresh file copy, never by pushing the lab's own repository.
+Status: **published; reviewed by Harold before posting.** The comment that links here was posted at
+https://github.com/openclaw/openclaw/issues/198830#issuecomment-6965946746 on 2026-11-18 (UTC). Synthetic
+fixtures only, on a disposable macOS VM (user `admin`; destroyed after the run: `MAC_DESTROY rc=0`,
+`NO_LEFTOVER t198830-mac` in `raw/verdicts.txt`). Publish this folder only as a fresh file copy, never by pushing the
+lab's own repository.
 
 **Custody and redactions.** The files in `raw/` were fetched from the lab job folder `T198830r4` on 2026-11-17 with a
 streamed tar and checked against the job's private `evidence.sha256`. All 72 files under `raw/` matched it before

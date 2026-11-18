@@ -26,7 +26,8 @@ PR links here.
 ## How the lab works
 The tests run on fresh, throwaway machines that are destroyed after each issue: Linux (Incus containers, which share
 the host kernel), Windows 11 (Hyper-V VMs) and macOS 26 (Tart VMs). Where a model is needed, the OpenClaw installs
-under test use one remote Qwen3.8-27B model on Ollama (Apple Silicon), behind a chat-only filter. Most kits use a
+under test use a remote model served by the lab (Qwen3.8-27B on Ollama, or DeepSeek V4.1 Flash on SGLang), behind a
+relay and a request filter; each packet names the model and the path. Most kits use a
 deterministic mock server instead of a model.
 
 The tests are run by an autonomous lab of AI agents using local models, from written tickets. Harold reviews every
