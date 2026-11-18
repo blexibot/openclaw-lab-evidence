@@ -1,0 +1,130 @@
+=== /Users/admin/k198830/ev/lms-server.log (+4342 bytes)
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+=== /Users/admin/.lmstudio/server-logs/2026-11/2026-11-17.1.log (+4342 bytes)
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:26][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:26][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:27][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:28][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:28][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:59:31][INFO] Returning 2 models from v1 API
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:31][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 10:59:32][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models

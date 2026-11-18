@@ -1,0 +1,45 @@
++ openclaw memory index --force --verbose [2026-11-17T10:59:24Z]
+Registered plugin command: /dreaming (plugin: memory-core)
+(node:7668) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Memory Index (main)
+Provider: lmstudio (requested: lmstudio)
+Model: text-embedding-qwen3-embedding-0.6b
+Sources: memory (MEMORY.md + /Users/admin/k198830/ws-full/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload baseUrl=http://127.0.0.1:1235/v1 model=text-embedding-qwen3-embedding-0.6b error="LM Studio model load failed (599): {\"error\":\"lab proxy capture-only (synthetic-599): load with context_length > 2048 not forwarded\"}"
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 500ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 505ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 551ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+[memory] embeddings retryable error; retrying in 577ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 1166ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 1105ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 944ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+[memory] embeddings retryable error; retrying in 841ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+Memory index failed (main): lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5) (599): lab proxy capture-only (synthetic-599): embeddings for text-embedding-qwen3-embedding-0.6b not forwarded: no instance loaded at context <= 2048 (loaded: none; LM Studio could JIT-load)
+[state/agent-db] agent database clean-close receipt: written
+rc=1

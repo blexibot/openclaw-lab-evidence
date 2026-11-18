@@ -1,0 +1,192 @@
+STEP bk head 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:17:51Z
+SETUP bk-head rc=0
+PLAN bk-head rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-bk-head STATE=/Users/admin/k194166/h-bk-head/.openclaw WORKSPACE=/Users/admin/k194166/h-bk-head/.openclaw/workspace
+BK bk-head B0 rc=0 refusal=none skipwarn=0
+ARCH bk-head B0 tar_rc=0 entries=56 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-17-54.743+00-00-openclaw-backup.tar.gz
+ATTACH bk-head-B1 rc=0
+LS drwxr-xr-x@ 4 admin  staff  - 128 Nov 16 21:28 /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol
+LS drwx------+ 9 root   staff  - 288 Nov 16 22:17 /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd
+LS  0: group:everyone allow readextattr
+LSVOL total 8
+LSVOL drwxr-xr-x@ 4 admin  staff  128 Nov 16 21:28 .
+LSVOL drwxr-xr-x  4 admin  staff  128 Nov 16 22:17 ..
+LSVOL drwx------+ 9 root   staff  288 Nov 16 22:17 .fseventsd
+LSVOL -rw-r--r--  1 admin  staff   17 Nov 16 22:17 x.txt
+DISKUTIL    Mount Point:               /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol
+DISKUTIL    File System Personality:   APFS
+DISKUTIL    Owners:                    Enabled
+MOUNT /dev/disk8s1 on /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol (apfs, local, nodev, nosuid, journaled, mounted by admin)
+TRIGGER bk-head-B1 stat_rc=1 eacces=1 owner=root:staff:drwx------
+DRY bk-head B1 rc=0 refusal=none skipwarn=0
+BK bk-head B1 rc=0 refusal=none skipwarn=1
+ARCH bk-head B1 tar_rc=0 entries=58 fse_entries=0 keep=1e84a0f288fde2e4 x=892f51504c5e48bf sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=1 priv_entries=0 archive=2026-11-16T22-17-57.561+00-00-openclaw-backup.tar.gz
+DETACH bk-head-B1 rc=0
+BK bk-head B2 rc=0 refusal=none skipwarn=0
+BK bk-head N1 rc=1 refusal=unreadable skipwarn=0
+CLEAN N1 ok
+BK bk-head N2 rc=1 refusal=invalid skipwarn=0
+CLEAN N2 ok
+BK bk-head N3 rc=1 refusal=invalid skipwarn=0
+CLEAN N3 ok
+BK bk-head N4 rc=0 refusal=none skipwarn=0
+ARCH bk-head N4 tar_rc=0 entries=57 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-18-05.153+00-00-openclaw-backup.tar.gz
+CLEAN N4 ok
+LS N5 drwxr-xr-x  3 root  staff  - 96 Nov 16 22:18 /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/fmark
+LS N5 -rw-------  1 root  staff  - 35 Nov 16 22:18 /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/fmark/.openclaw-private-update-capture
+N5PROBE read_rc=1 eacces=1
+BK bk-head N5 rc=1 refusal=invalid skipwarn=0
+CLEAN N5 ok
+--- tail bk-head B0
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "SQLite file archived as opaque bytes without a live snapshot or integrity checks: /Users/admin/k194166/h-bk-head/.openclaw/control/services.sqlite"
+  ]
+}
+rc=0
+--- tail bk-head B1
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    },
+    {
+      "kind": "entry",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd",
+      "displayPath": "/Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd",
+      "reason": "unreadable-foreign"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "Skipped unreadable foreign entry: /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd",
+    "SQLite file archived as opaque bytes without a live snapshot or integrity checks: /Users/admin/k194166/h-bk-head/.openclaw/control/services.sqlite"
+  ]
+}
+rc=0
+--- tail bk-head B2
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "SQLite file archived as opaque bytes without a live snapshot or integrity checks: /Users/admin/k194166/h-bk-head/.openclaw/control/services.sqlite"
+  ]
+}
+rc=0
+--- tail bk-head N1
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-head/out [2026-11-16T22:18:01Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-head N2
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-head/out [2026-11-16T22:18:02Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-head N3
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-head/out [2026-11-16T22:18:03Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-head N4
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-head/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "SQLite file archived as opaque bytes without a live snapshot or integrity checks: /Users/admin/k194166/h-bk-head/.openclaw/control/services.sqlite"
+  ]
+}
+rc=0
+--- tail bk-head N5
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-head/out [2026-11-16T22:18:06Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+STEP bk end=2026-11-16T22:18:07Z
+host-rc=0

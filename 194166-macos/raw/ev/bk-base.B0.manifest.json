@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-16T22:17:25.817Z",
+  "archiveRoot": "2026-11-16T22-17-25.817+00-00-openclaw-backup",
+  "runtimeVersion": "2026.11.1",
+  "platform": "darwin",
+  "nodeVersion": "v24.22.3",
+  "options": {
+    "includeWorkspace": true,
+    "onlyConfig": false
+  },
+  "paths": {
+    "stateDir": "/Users/admin/k194166/h-bk-base/.openclaw",
+    "configPath": "/Users/admin/k194166/h-bk-base/.openclaw/openclaw.json",
+    "configSourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/openclaw.json",
+    "oauthDir": "/Users/admin/k194166/h-bk-base/.openclaw/credentials",
+    "workspaceDirs": [
+      "/Users/admin/k194166/h-bk-base/.openclaw/workspace"
+    ],
+    "agentRoots": [
+      {
+        "agentId": "main",
+        "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/agents/main/agent"
+      }
+    ],
+    "sharedDatabaseSourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/state/openclaw.sqlite"
+  },
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw",
+      "archivePath": "2026-11-16T22-17-25.817+00-00-openclaw-backup/payload/posix/Users/admin/k194166/h-bk-base/.openclaw"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "externalSymbolicLinks": [],
+  "sqliteSnapshots": [
+    {
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/state/openclaw.sqlite",
+      "role": "global"
+    },
+    {
+      "sourcePath": "/Users/admin/k194166/h-bk-base/.openclaw/agents/main/agent/openclaw-agent.sqlite",
+      "role": "agent",
+      "agentId": "main"
+    }
+  ],
+  "postgresSnapshots": []
+}

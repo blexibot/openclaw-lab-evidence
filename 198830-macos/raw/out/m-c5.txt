@@ -1,0 +1,161 @@
+STEP cell c5 2026.11.4 2048 ws-full 2048 start=2026-11-17T11:01:01Z
+INSTALL c5 want=2026.11.4 rc=skip version=OpenClaw_2026.11.4_(d843d6a)
+INTEGRITY c5 version=2026.11.4 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+CFG catalog=2048 models_entries=1 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c5/.openclaw/openclaw.json
+PRE UNLOAD requested=0 remaining=0
+CELLSTART c5 t0=1794913263 catalog=2048 ws=ws-full maxfwd=2048 proxy_from_line=110
+RUN c5 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+RUN c5 reset rc=0
+RUN c5 index rc=0 secs=17 proxy_lines=110-128
+RUN c5 status rc=0
+RUN c5 search-A rc=0
+RUN c5 search-B rc=0
+RUN c5 search-C rc=0
+RUN c5 search-D rc=0
+CELLEND c5 t1=1794913297 secs=34
+EFF c5 n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|2048
+LMSPS c5 
+LMSPS c5 IDENTIFIER                             MODEL                                  STATUS    SIZE         CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL
+LMSPS c5 text-embedding-qwen3-embedding-0.6b    text-embedding-qwen3-embedding-0.6b    IDLE      639.15 MB    2048       -           LM Studio      Local        
+LMSPS c5 
+PROBE insitu-c5 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.433757 cos_C_vs_Calt=0.377749 maxdiff_B=1.07e-1 maxdiff_C=1.32e-1 truncated=unclear kind=tokens-below-floor
+PX loads=1 req_ctx=2048 first_req_ctx=2048 load_results=200/loaded/-/fwd first_load_http=200 first_load_status=loaded first_load_instance=text-embedding-qwen3-embedding-0.6b first_load_secs=0.6
+PX_LOADERR none
+PX embeds=13 capture_only=0 models=text-embedding-qwen3-embedding-0.6b http=200,200,200,200,200,200,200,200,200,200,200,200,200 inputs=1,1,1,5,1,1,1,1,1,1,1,1,1 max_input_chars=1583 prompt_tokens=0,0,0,0,0,0,0,0,0,0,0,0,0 gets=19
+PX_EMBERR none
+PXROW id=111 GET /api/v1/models status=200 ms=2 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=112 POST /api/v1/models/load status=200 ms=604 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":2048} resp={"type":"embedding","instance_id":"text-embedding-qwen3-embedding-0.6b","load_time_seconds":0.603,"status":"loaded"}
+PXROW id=113 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=114 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=116 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=119 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=115 POST /v1/embeddings status=200 ms=136 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[103]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=121 GET /api/v1/models status=200 ms=3 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=117 POST /v1/embeddings status=200 ms=4024 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1425]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=123 GET /api/v1/models status=200 ms=2 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=118 POST /v1/embeddings status=200 ms=7919 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1428]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=125 GET /api/v1/models status=200 ms=2 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=120 POST /v1/embeddings status=200 ms=12802 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":5,"chars":[1580,1583,1576,1578,735]} resp={"n":5,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=127 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=122 POST /v1/embeddings status=200 ms=12834 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[260]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=124 POST /v1/embeddings status=200 ms=9293 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[460]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=126 POST /v1/embeddings status=200 ms=5603 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[264]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=128 POST /v1/embeddings status=200 ms=887 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[265]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=129 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=130 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=131 POST /v1/embeddings status=200 ms=208 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[4]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=132 GET /api/v1/models status=200 ms=2 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=133 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=134 POST /v1/embeddings status=200 ms=141 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[56]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=135 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=136 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=137 POST /v1/embeddings status=200 ms=173 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[68]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=138 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=139 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=140 POST /v1/embeddings status=200 ms=132 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[61]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXROW id=141 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=142 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=143 POST /v1/embeddings status=200 ms=174 fwd=true req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[62]} resp={"n":1,"dim":1024,"usage":{"prompt_tokens":0,"total_tokens":0}}
+PXIDX c5 rows=18 loads=1 embeds=8 inputs_2xx=12 inputs_non2xx=0 capture_only=0
+RTSUM c5 bytes=47336 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+GMEM c5 samples=17 guest_min_avail_mib=7155 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3521
+INDEX c5 rc=0 updated=Memory_index_updated_(main):_8_files_indexed. warmup_warn=0 chunks_vec_warn=0 failed=-
+STATUSJ c5 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T11:01:22Z]_[_{_"agentId":_"main",_"status":_{_"backend":_"builtin",_"files":_8,_"chunks":_12,_"dirty":_false,_"workspaceDir":_"/Users/admin/k198830/w
+SEARCHJ A parsed=no head=+_openclaw_memory_search_--query_coastal_beacon_caretaker_cleaning_metal_lamp_during_dusk_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:24Z]_{_"results":_[_{_"path":_"memory/a-0440df45.md",_"
+SEARCHJ B parsed=no head=+_openclaw_memory_search_--query_elderly_relative_making_loaves_using_spice_kernels_near_timber_stove_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:27Z]_{_"results":_[_{_"path":_"memory/b-044
+SEARCHJ C parsed=no head=+_openclaw_memory_search_--query_eruption_dust_blew_onto_ice_sheet_turning_frozen_terrain_grey_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:31Z]_{_"results":_[_{_"path":_"memory/c-0440df45.m
+SEARCHJ D parsed=no head=+_openclaw_memory_search_--query_symphony_players_adjusting_fiddles;_maestro_stood_near_lectern_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:34Z]_{_"results":_[_{_"path":_"memory/d-0440df45.
+POST UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+POST UNLOAD requested=1 remaining=0
+RTL c5 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL c5 [2026-11-17 11:01:07][DEBUG] 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL c5     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL c5     "Shelf 46 in aisle 9 holds 228 cartons of gaskets l... <Truncated in logs> ... 22 holds 631 cartons of brackets labelled yellow.",
+RTL c5     "Shelf 13 in aisle 22 holds 409 cartons of hinges l... <Truncated in logs> ... 39 holds 706 cartons of brackets labelled orange.",
+RTL c5     "Shelf 1 in aisle 15 holds 32 cartons of rivets lab... <Truncated in logs> ...le 19 holds 148 cartons of hinges labelled purple.",
+RTL c5     "Shelf 52 in aisle 17 holds 350 cartons of spools l... <Truncated in logs> ...e 38 holds 487 cartons of washers labelled purple.",
+RTL c5     "Shelf 37 in aisle 26 holds 409 cartons of gaskets ... <Truncated in logs> ...lins while the conductor waited beside the podium."
+RTL c5     "Shelf 91 in aisle 17 holds 137 cartons of gaskets ... <Truncated in logs> ...sle 29 holds 792 cartons of spools labelled green."
+RTL c5     "Shelf 98 in aisle 26 holds 182 cartons of brackets... <Truncated in logs> ...e 11 holds 471 cartons of washers labelled purple."
+RTL c5     "Shelf 31 in aisle 22 holds 300 cartons of washers ... <Truncated in logs> ...isle 35 holds 87 cartons of bolts labelled orange."
+RTL c5     "Shelf 7 in aisle 14 holds 364 cartons of rivets la... <Truncated in logs> ... 15 holds 710 cartons of brackets labelled yellow."
+RTL c5     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+RTL c5 [2026-11-17 11:01:07][DEBUG] 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL c5     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL c5     "Shelf 46 in aisle 9 holds 228 cartons of gaskets l... <Truncated in logs> ... 22 holds 631 cartons of brackets labelled yellow.",
+RTL c5     "Shelf 13 in aisle 22 holds 409 cartons of hinges l... <Truncated in logs> ... 39 holds 706 cartons of brackets labelled orange.",
+RTL c5     "Shelf 1 in aisle 15 holds 32 cartons of rivets lab... <Truncated in logs> ...le 19 holds 148 cartons of hinges labelled purple.",
+RTL c5     "Shelf 52 in aisle 17 holds 350 cartons of spools l... <Truncated in logs> ...e 38 holds 487 cartons of washers labelled purple.",
+RTL c5     "Shelf 37 in aisle 26 holds 409 cartons of gaskets ... <Truncated in logs> ...lins while the conductor waited beside the podium."
+RTL c5     "Shelf 91 in aisle 17 holds 137 cartons of gaskets ... <Truncated in logs> ...sle 29 holds 792 cartons of spools labelled green."
+RTL c5     "Shelf 98 in aisle 26 holds 182 cartons of brackets... <Truncated in logs> ...e 11 holds 471 cartons of washers labelled purple."
+RTL c5     "Shelf 31 in aisle 22 holds 300 cartons of washers ... <Truncated in logs> ...isle 35 holds 87 cartons of bolts labelled orange."
+RTL c5     "Shelf 7 in aisle 14 holds 364 cartons of rivets la... <Truncated in logs> ... 15 holds 710 cartons of brackets labelled yellow."
+RTL c5     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL c5     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+--- tail c5 index
++ openclaw memory index --force --verbose [2026-11-17T11:01:05Z]
+Registered plugin command: /dreaming (plugin: memory-core)
+Memory Index (main)
+Provider: lmstudio (requested: lmstudio)
+Model: text-embedding-qwen3-embedding-0.6b
+Sources: memory (MEMORY.md + /Users/admin/k198830/ws-full/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+(node:10755) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is requ
+(Use `node --trace-deprecation ...` to show where the warning was created)
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","vectorCount":5,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+Memory index updated (main): 8 files indexed.
+[state/agent-db] agent database clean-close receipt: written
+rc=0
+--- grep c5 warmup
+Provider: lmstudio (requested: lmstudio)
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","vectorCount":5,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+STEP cell end=2026-11-17T11:01:56Z
+host-rc=0 host-budget-s=2700

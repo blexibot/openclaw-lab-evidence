@@ -1,0 +1,7 @@
+STEP install base base-bk start=2026-11-16T22:16:50Z
+INSTALL base base-bk rc=0 version=OpenClaw_2026.11.1_(8dd41fc) buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z which=/Users/admin/.npm-global/bin/openclaw
+NPMLS /Users/admin/.npm-global/lib
+NPMLS └── openclaw@2026.11.1
+NPMLS 
+STEP install end=2026-11-16T22:17:22Z
+host-rc=0

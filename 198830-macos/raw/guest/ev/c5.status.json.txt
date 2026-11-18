@@ -1,0 +1,138 @@
++ openclaw memory status --deep --json [2026-11-17T11:01:22Z]
+[
+  {
+    "agentId": "main",
+    "status": {
+      "backend": "builtin",
+      "files": 8,
+      "chunks": 12,
+      "dirty": false,
+      "workspaceDir": "/Users/admin/k198830/ws-full",
+      "dbPath": "/Users/admin/k198830/h-c5/.openclaw/agents/main/agent/openclaw-agent.sqlite",
+      "storage": {
+        "databaseBytes": 5210112,
+        "walBytes": 0,
+        "reusableBytes": 0,
+        "embeddingCacheBytes": 98304,
+        "embeddingCacheEntries": 12
+      },
+      "provider": "lmstudio",
+      "model": "text-embedding-qwen3-embedding-0.6b",
+      "requestedProvider": "lmstudio",
+      "sources": [
+        "memory",
+        "sessions"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 8,
+          "chunks": 12,
+          "chunkBytes": 109561,
+          "dirty": false,
+          "eligible": 8,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "files": 0,
+          "chunks": 0,
+          "chunkBytes": 0,
+          "eligible": 0,
+          "issues": [
+            "no eligible session transcripts found"
+          ]
+        }
+      ],
+      "cache": {
+        "enabled": true,
+        "entries": 12,
+        "maxEntries": 50000
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true,
+        "index": {
+          "state": "complete"
+        },
+        "storeAvailable": true,
+        "semanticAvailable": true,
+        "available": true,
+        "extensionPath": "/Users/admin/.npm-global/lib/node_modules/openclaw/node_modules/sqlite-vec-darwin-arm64/vec0.dylib",
+        "dims": 1024
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "searchMode": "hybrid",
+        "providerState": {
+          "mode": "active",
+          "providerId": "lmstudio"
+        },
+        "indexIdentity": {
+          "status": "valid"
+        },
+        "automaticRebuildNotice": {
+          "sequence": 0,
+          "warning": ""
+        }
+      }
+    },
+    "embeddingProbe": {
+      "ok": true
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 8,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "totalFiles": 0,
+          "issues": [
+            "no eligible session transcripts found"
+          ]
+        }
+      ],
+      "totalFiles": 8,
+      "issues": [
+        "no eligible session transcripts found"
+      ]
+    },
+    "audit": {
+      "storePath": "plugin-state:memory-core/short-term-recall/1ef73d45e9b0979b933fc821dca29d8aa697addf1f6791d0437cce5a58727c61",
+      "lockPath": "plugin-state:memory-core/short-term-locks/1ef73d45e9b0979b933fc821dca29d8aa697addf1f6791d0437cce5a58727c61",
+      "exists": false,
+      "entryCount": 0,
+      "promotedCount": 0,
+      "spacedEntryCount": 0,
+      "conceptTaggedEntryCount": 0,
+      "invalidEntryCount": 0,
+      "danglingEntryCount": 0,
+      "issues": []
+    },
+    "dreamingAudit": {
+      "sessionCorpusDir": "/Users/admin/k198830/ws-full/memory/.dreams/session-corpus",
+      "sessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusLineCount": 0,
+      "sessionIngestionPath": "/Users/admin/k198830/ws-full/memory/.dreams/session-ingestion.json",
+      "sessionIngestionExists": false,
+      "issues": []
+    }
+  }
+]
+rc=0

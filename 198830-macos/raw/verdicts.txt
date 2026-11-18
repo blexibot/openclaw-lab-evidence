@@ -1,0 +1,371 @@
+V198830 2026-11-17T10:54:51Z START mode=run hard_stop_epoch=1794921600 left_min=145 vm=t198830-mac allow_tart_set=1 kit_d=<REDACTED-UNREDACTED-KIT-HASH>
+V198830 2026-11-17T10:54:51Z SUPERVISOR SUP_START pid=88030 vm=t198830-mac hse=1794921600 pregate_gib=18 floor_gib=2 swap_delta_mib=256 comp_delta_gib=2 rss_max_gib=21 period_s=2 host=Mac18,5 memsize=34359738368 os=27.0 SUP_BASELINE avail_gib=21.145 inactive_gib=5.887 purgeable_gib=0.066 free_pct=92 swap_used_mib=0.0 compressor_gib=0.335 level=1 vm_rss_gib=0.00 vz_rss_gib=0.00 SUP_PREGATE ok avail_gib=21.145 level=1 
+V198830 2026-11-17T10:55:03Z MAC_BENCH up t198830-mac
+V198830 2026-11-17T10:55:03Z SUPERVISOR sees VM (SUP_VM_SEEN pid=88185 vz_rss_gib=0.92)
+V198830 2026-11-17T10:55:03Z VMCONFIG before cpu=4 memory_mb=8192
+V198830 2026-11-17T10:55:14Z VMCONFIG set rc=0 after cpu=4 memory_mb=16384
+V198830 2026-11-17T10:55:21Z PUSH kit ok m198830.sh=66882f99543f98ea2311a8e71912a6ab65a87d00aa2b5efc5fca0be10cc96206 j198830.mjs=e4ed9f12f7ef783e73617b6b06b0764ed5c5b4298f15ce8af83219b5db4b908b
+[m-info] STEP info  start=2026-11-17T10:55:21Z
+[m-info] HW memsize=17179869184 ncpu=4 model=VirtualMac2,1 arch=arm64 os=26.6.2_25G83
+[m-info] SW node=v24.22.3 npm=11.19.1 openclaw=OpenClaw_2026.11.3_(847611d) npm_prefix=/Users/admin/.npm-global
+[m-info] GUESTMEM t=1794912922 avail_mib=10947 comp_mib=0 swap_mib=0 level=1 lms_rss_mib=1
+[m-info] STEP info end=2026-11-17T10:55:22Z
+[m-info] host-rc=0 host-budget-s=180
+V198830 2026-11-17T10:55:23Z NONCE 0440df459ae6cbb7
+[corpus] CORPUS ws-full a-0440df45.md bytes=103 chunks=1 sha256=6d6d41ef5ba2d5ab43c16bffdb8de68b74e4fb43ef01ae0fe31dc14d6d0fb890
+[corpus] CORPUS ws-full b-0440df45.md bytes=1425 chunks=1 sha256=791a6a2896fb6750635e4a0109973f90f8511723add30d5368c7e3e978efb6da
+[corpus] CORPUS ws-full c-0440df45.md bytes=1428 chunks=1 sha256=472886c0131b7f8db2c28f18343d62550a6493118b67350509c184b0f57a4c16
+[corpus] CORPUS ws-full d-0440df45.md bytes=5998 chunks=5 sha256=8052c7c1c834e243e4daa685f743700a4f7940d963008154e4929706da31b3f7
+[corpus] CORPUS ws-full f1-0440df45.md bytes=260 chunks=1 sha256=360fbd4fa3cded742aa54f6f0e5f10a3d952cdaefccbb52181e9d0eccb94b50c
+[corpus] CORPUS ws-full f2-0440df45.md bytes=460 chunks=1 sha256=c28d262b7be210feba37083393e8d150308c46b94f19a7fadb96e826e6ebd3c1
+[corpus] CORPUS ws-full f3-0440df45.md bytes=264 chunks=1 sha256=18f7a2a47bd39e4143b6f21a37ca75c8501af11aa9f66558e22fb331a8190743
+[corpus] CORPUS ws-full f4-0440df45.md bytes=265 chunks=1 sha256=cbfd00604c38b37e4713eefbb28a4bae954f9a4a9338576c9041fc02edf05918
+[corpus] CORPUS ws-prose a-0440df45.md bytes=103 chunks=1 sha256=6d6d41ef5ba2d5ab43c16bffdb8de68b74e4fb43ef01ae0fe31dc14d6d0fb890
+[corpus] CORPUS ws-prose d-0440df45.md bytes=5998 chunks=5 sha256=8052c7c1c834e243e4daa685f743700a4f7940d963008154e4929706da31b3f7
+[corpus] CORPUS ws-prose f1-0440df45.md bytes=260 chunks=1 sha256=360fbd4fa3cded742aa54f6f0e5f10a3d952cdaefccbb52181e9d0eccb94b50c
+[corpus] CORPUS ws-prose f2-0440df45.md bytes=460 chunks=1 sha256=c28d262b7be210feba37083393e8d150308c46b94f19a7fadb96e826e6ebd3c1
+[corpus] CORPUS ws-prose f3-0440df45.md bytes=264 chunks=1 sha256=18f7a2a47bd39e4143b6f21a37ca75c8501af11aa9f66558e22fb331a8190743
+[corpus] CORPUS ws-prose f4-0440df45.md bytes=265 chunks=1 sha256=cbfd00604c38b37e4713eefbb28a4bae954f9a4a9338576c9041fc02edf05918
+[corpus] CORPUS_EXPECT ws-full files=8 chunks=12
+[corpus] CORPUS_EXPECT ws-prose files=6 chunks=10
+[corpus] CORPUS_OVERLAP n=0 none
+V198830 2026-11-17T10:56:01Z PUSH corpus ok files=18
+[m-wd] STEP wd-start  start=2026-11-17T10:56:01Z
+[m-wd] WD started pid=2936 t=1794912963 avail_mib=10463 comp_mib=0 swap_mib=0 level=1 lms_rss_mib=1
+[m-wd] STEP wd-start end=2026-11-17T10:56:04Z
+[m-wd] host-rc=0 host-budget-s=120
+[m-lmsinst] STEP lmsinst  start=2026-11-17T10:56:04Z
+[m-lmsinst] DMG rc=0 bytes=572548100 expected_bytes=572548100 sha256=f8be634f1eeabaa19d9004d6de8b8bf8cd805a22e34b1f9538d4d702cf884775 url=https://installers.lmstudio.ai/darwin/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.dmg
+[m-lmsinst] DMG attach rc=0
+[m-lmsinst] APP src=LM_Studio.app installed=yes version=0.4.28+2 build=0.4.28+2 quarantine=
+[m-lmsinst] APP open rc=0
+[m-lmsinst] LMS route=app lms_pinned=yes app_version=0.4.28+2 app_build=0.4.28+2 cli=/Users/admin/.lmstudio/bin/lms version=Docs:_https://lmstudio.ai/docs/developer_Join_our_Discord:_https://discord.gg/lmstudio_Contribute:_https://github.com/lmstudio-ai/lms (lms_pinned=no = premise changed: LM Studio is not the reporter's 0.4.28 app build)
+[m-lmsinst] LMS_PROC 3677 /Applications/LM Studio.app/Contents/MacOS/LM Studio
+[m-lmsinst] LMS_PROC 3715 /Applications/LM Studio.app/Contents/Frameworks/Electron Framework.framework/Helpers/chrome_crashpad_handler --no-rate-limit --no-upload-gzip --monitor-self-annotation=ptype=crashpad-handler --database=/Users/admin/Library/Application Support/LM Studio/Crashpad --annotation=_productName=LM Studio --annotation=_version=0.4.28+2 --annotation=plat=OS X --annotation=prod=Electron --annotation=ver=38.6.0 --handshake-fd=17
+[m-lmsinst] LMS_PROC 3716 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper (GPU).app/Contents/MacOS/LM Studio Helper (GPU) --type=gpu-process --user-data-dir=/Users/admin/Library/Application Support/LM Studio --gpu-preferences=SAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAwAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --seatbelt-client=30
+[m-lmsinst] LMS_PROC 3717 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper.app/Contents/MacOS/LM Studio Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=network --user-data-dir=/Users/admin/Library/Application Support/LM Studio --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --seatbelt-client=30
+[m-lmsinst] LMS_PROC 3719 /Users/admin/.lmstudio/.internal/utils/node -e 
+[m-lmsinst] LMS_PROC function connectPort(port) {
+[m-lmsinst] LMS_PROC   const handlersMap = new Map();
+[m-lmsinst] LMS_PROC   return {
+[m-lmsinst] LMS_PROC     postMessage: data => process.send({ port: port, data }),
+[m-lmsinst] LMS_PROC     on: (event, handler) => {
+[m-lmsinst] LMS_PROC       if (event !== "message") {
+[m-lmsinst] LMS_PROC         throw new Error("Unsupported event: " + event);
+[m-lmsinst] LMS_PROC       }
+[m-lmsinst] LMS_PROC       const innerHandler = payload => {
+[m-lmsinst] LMS_PROC         if (payload.port === port) {
+[m-lmsinst] LMS_PROC           handler({ data: payload.data });
+[m-lmsinst] LMS_PROC         }
+[m-lmsinst] LMS_PROC       }
+[m-lmsinst] LMS_PROC       handlersMap.set(handler, innerHandler);
+[m-lmsinst] LMS_PROC       process.on('message', innerHandler);
+[m-lmsinst] LMS_PROC     },
+[m-lmsinst] LMS_PROC     off: (event, handler) => {
+[m-lmsinst] LMS_PROC       if (event !== "message") {
+[m-lmsinst] LMS_PROC         throw new Error("Unsupported event: " + event);
+[m-lmsinst] LMS_PROC       }
+[m-lmsinst] LMS_PROC       const innerHandler = handlersMap.get(handler);
+[m-lmsinst] LMS_PROC       if (innerHandler) {
+[m-lmsinst] LMS_PROC         process.off('message', innerHandler);
+[m-lmsinst] LMS_PROC         handlersMap.delete(handler);
+[m-lmsinst] LMS_PROC       }
+[m-lmsinst] LMS_PROC     },
+[m-lmsinst] LMS_PROC   };
+[m-lmsinst] LMS_PROC }
+[m-lmsinst] LMS_PROC process.parentPort = connectPort(0);
+[m-lmsinst] LMS_PROC process.rcPort = connectPort(1);
+[m-lmsinst] LMS_PROC process.resourcesPath = "/Applications/LM Studio.app/Contents/Resources";
+[m-lmsinst] LMS_PROC require("/Applications/LM Studio.app/Contents/Resources/app/.webpack/lib/systemresourcesworker.js"); /Applications/LM Studio.app/Contents/Resources/app/.webpack/lib/systemresourcesworker.js /Applications/LM Studio.app/Contents/Resources/app/.webpack/bin/liblmstudio/metal/liblmstudio_bindings.node
+[m-lmsinst] LMS_PROC 3749 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper (Renderer).app/Contents/MacOS/LM Studio Helper (Renderer) --type=renderer --user-data-dir=/Users/admin/Library/Application Support/LM Studio --app-path=/Applications/LM Studio.app/Contents/Resources/app --no-sandbox --no-zygote --node-integration-in-worker --lang=en-US --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1794912904703814 --launch-time-ticks=108154858 --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --lmstudio-window-key=window-1 --lmstudio-project-identifier=default-project-identifier --lmstudio-window-context=%7B%22type%22%3A%22singleProject%22%2C%22projectIdentifier%22%3A%22default-project-identifier%22%7D
+[m-lmsinst] LMS_PROC 3753 /Users/admin/.lmstudio/extensions/backends/vendor/_amphibian/cpython3.11-mac-arm64@10/bin/python -I /Users/admin/.lmstudio/extensions/backends/vendor/_amphibian/app-mlx-generate-mac14-arm64@39/postinstall.py
+[m-lmsinst] STEP lmsinst end=2026-11-17T10:56:56Z
+[m-lmsinst] host-rc=0 host-budget-s=3600
+[m-lmssetup] STEP lmssetup  start=2026-11-17T10:56:56Z
+[m-lmssetup] LISTEN LM\x20Stu 127.0.0.1:1234
+[m-lmssetup] SERVER start_rc=0 api_up=yes nonloopback_listeners=0
+[m-lmssetup] RUNTIME ls1 rc=0
+[m-lmssetup] RUNTIME pin=llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 get_rc=0 select_rc=0 listed_2_73_0=1 runtime_pinned=yes selected_line=llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0_✓_GGUF (runtime_pinned=no = premise changed; the run goes on, but an allocation non-reproduction is then inconclusive)
+[m-lmssetup] SETTINGS settings.json "unloadPreviousJITModelOnLoad": true
+[m-lmssetup] SETTINGS settings.json "jitModelTTL": {
+[m-lmssetup] SETTINGS settings.json "ttlSeconds": 3600
+[m-lmssetup] SETTINGS settings.json "apiPredictionHistoryEviction": {
+[m-lmssetup] SETTINGS settings.json "ttlDays": 30
+[m-lmssetup] SETTINGS settings.json "modelLoadingGuardrails": {
+[m-lmssetup] SERVERSTATUS The server is running on port 1234.
+[m-lmssetup] LOGSTREAM runtime alive=yes head=Streaming_logs_from_LM_Studio
+[m-lmssetup] LOGSTREAM server alive=yes head=Streaming_logs_from_LM_Studio
+[m-lmssetup] STEP lmssetup end=2026-11-17T10:57:08Z
+[m-lmssetup] host-rc=0 host-budget-s=2700
+[m-model] STEP model  start=2026-11-17T10:57:09Z
+[m-model] GGUF rc=0 bytes=639150592 expected_bytes=639150592 sha256=06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439 expected_sha256=06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439
+[m-model] MODELS http=200 n=2
+[m-model] MODEL key=text-embedding-qwen3-embedding-0.6b type=embedding max_ctx=32768 selected_variant=- loaded=none
+[m-model] MODEL key=text-embedding-nomic-embed-text-v1.5 type=embedding max_ctx=2048 selected_variant=- loaded=none
+[m-model] KEY text-embedding-qwen3-embedding-0.6b
+[m-model] MODELCHK key=text-embedding-qwen3-embedding-0.6b max_ctx=32768 expected_max_ctx=32768 match=yes reporter_key=text-embedding-qwen3-embedding-0.6b same_as_reporter=yes
+[m-model] STEP model end=2026-11-17T10:57:50Z
+[m-model] host-rc=0 host-budget-s=2400
+V198830 2026-11-17T10:57:51Z KEY text-embedding-qwen3-embedding-0.6b
+[m-estimate] STEP estimate  start=2026-11-17T10:57:51Z
+[m-estimate] EST ctx=1024 rc=0 out=Estimated_GPU_Memory:_853.36_MiB_Estimated_Total_Memory:_853.36_MiB_Confidence:_LOW_Estimate:_This_model_may_be_loaded_based_on_your_resource_guardrails_settings.
+[m-estimate] EST ctx=2048 rc=0 out=Estimated_GPU_Memory:_853.36_MiB_Estimated_Total_Memory:_853.36_MiB_Confidence:_LOW_Estimate:_This_model_may_be_loaded_based_on_your_resource_guardrails_settings.
+[m-estimate] AFTER_EST LOADED n=0 none
+[m-estimate] STEP estimate end=2026-11-17T10:57:53Z
+[m-estimate] host-rc=0 host-budget-s=600
+[m-p1024] STEP probe1024  start=2026-11-17T10:57:53Z
+[m-p1024] UNLOAD requested=0 remaining=0
+[m-p1024] LOADDIRECT req_ctx=1024 http=200 status=loaded instance=text-embedding-qwen3-embedding-0.6b eff_ctx=1024 secs=8.6 err=-
+[m-p1024] P1024 LOADED n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|1024
+[m-p1024] PROBE direct-1024 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.747740 cos_C_vs_Calt=1.000000 maxdiff_B=2.08e-1 maxdiff_C=0.00e+0 truncated=yes kind=tail-dropped
+[m-p1024] METALGATE metal=unknown why=no-model-buffer-line metal_lines=0 metal_err_lines=0 model_buf=unknown rmws_mb=none rmws_gib=none metal_budget=unknown (16 GB ref 10.67 GiB, band 10.0-12.0) runtime_log_bytes=12788
+[m-p1024] RTSUM p1024 bytes=12788 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-p1024] GMEM p1024 samples=13 guest_min_avail_mib=7342 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3454
+[m-p1024] UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+[m-p1024] UNLOAD requested=1 remaining=0
+[m-p1024] STEP probe1024 end=2026-11-17T10:58:19Z
+[m-p1024] host-rc=0 host-budget-s=900
+V198830 2026-11-17T10:58:19Z METAL gate=unknown why=no-model-buffer-line metal_budget=unknown rmws_gib=none proxy_maxfwd=2048 (capture-only: loads above 2048 and embeddings without a loaded <=2048 instance are answered 599 by the proxy; what OpenClaw does after that is its reaction to the proxy (synthetic-599))
+[m-proxy] STEP proxy-start  start=2026-11-17T10:58:20Z
+[m-proxy] PROXYUP up=yes pid=5577 listen=127.0.0.1:1235
+[m-proxy] STEP proxy-start end=2026-11-17T10:58:21Z
+[m-proxy] host-rc=0 host-budget-s=120
+[m-pack-pre] STEP pack pre start=2026-11-17T10:58:22Z
+[m-pack-pre] PACK pre rc=0 sha256=0fccab5b13952e3e882c23800e2a4a339b9d3bc0ad9768c0449e1eee22e84d5a bytes=6935
+[m-pack-pre] STEP pack end=2026-11-17T10:58:22Z
+[m-pack-pre] host-rc=0 host-budget-s=600
+V198830 2026-11-17T10:58:24Z PULL guest-ev-pre.tgz sha256=0fccab5b13952e3e882c23800e2a4a339b9d3bc0ad9768c0449e1eee22e84d5a ok
+[m-c2] STEP cell c2 2026.11.3 1024 ws-full 2048 start=2026-11-17T10:58:26Z
+[m-c2] INSTALL c2 want=2026.11.3 rc=skip version=OpenClaw_2026.11.3_(847611d)
+[m-c2] INTEGRITY c2 version=2026.11.3 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+[m-c2] CFG catalog=1024 models_entries=1 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c2/.openclaw/openclaw.json
+[m-c2] PRE UNLOAD requested=0 remaining=0
+[m-c2] CELLSTART c2 t0=1794913108 catalog=1024 ws=ws-full maxfwd=2048 proxy_from_line=1
+[m-c2] RUN c2 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+[m-c2] RUN c2 reset rc=0
+[m-c2] RUN c2 index rc=0 secs=14 proxy_lines=1-19
+[m-c2] RUN c2 status rc=0
+[m-c2] RUN c2 search-A rc=0
+[m-c2] RUN c2 search-B rc=0
+[m-c2] RUN c2 search-C rc=0
+[m-c2] RUN c2 search-D rc=0
+[m-c2] CELLEND c2 t1=1794913141 secs=33
+[m-c2] EFF c2 n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|1024
+[m-c2] LMSPS c2 
+[m-c2] LMSPS c2 IDENTIFIER                             MODEL                                  STATUS    SIZE         CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL
+[m-c2] LMSPS c2 text-embedding-qwen3-embedding-0.6b    text-embedding-qwen3-embedding-0.6b    IDLE      639.15 MB    1024       -           LM Studio      Local        
+[m-c2] LMSPS c2 
+[m-c2] PROBE insitu-c2 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.747740 cos_C_vs_Calt=1.000000 maxdiff_B=2.08e-1 maxdiff_C=0.00e+0 truncated=yes kind=tail-dropped
+[m-c2] PX loads=1 req_ctx=1024 first_req_ctx=1024 load_results=200/loaded/-/fwd first_load_http=200 first_load_status=loaded first_load_instance=text-embedding-qwen3-embedding-0.6b first_load_secs=0.6
+[m-c2] PX_LOADERR none
+[m-c2] PX embeds=13 capture_only=0 models=text-embedding-qwen3-embedding-0.6b http=200,200,200,200,200,200,200,200,200,200,200,200,200 inputs=1,1,1,5,1,1,1,1,1,1,1,1,1 max_input_chars=1583 prompt_tokens=0,0,0,0,0,0,0,0,0,0,0,0,0 gets=19
+[m-c2] PX_EMBERR none
+[m-c2] PXIDX c2 rows=18 loads=1 embeds=8 inputs_2xx=12 inputs_non2xx=0 capture_only=0
+[m-c2] RTSUM c2 bytes=49360 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-c2] GMEM c2 samples=17 guest_min_avail_mib=7129 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3462
+[m-c2] INDEX c2 rc=0 updated=Memory_index_updated_(main):_8_files_indexed. warmup_warn=0 chunks_vec_warn=0 failed=-
+[m-c2] STATUSJ c2 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T10:58:46Z]_[_{_"agentId":_"main",_"status":_{_"backend":_"builtin",_"files":_8,_"chunks":_12,_"dirty":_false,_"workspaceDir":_"/Users/admin/k198830/w
+[m-c2] SEARCHJ A parsed=no head=+_openclaw_memory_search_--query_coastal_beacon_caretaker_cleaning_metal_lamp_during_dusk_--max-results_6_--min-score_0_--json_[2026-11-17T10:58:49Z]_{_"results":_[_{_"path":_"memory/a-0440df45.md",_"
+[m-c2] SEARCHJ B parsed=no head=+_openclaw_memory_search_--query_elderly_relative_making_loaves_using_spice_kernels_near_timber_stove_--max-results_6_--min-score_0_--json_[2026-11-17T10:58:52Z]_{_"results":_[_{_"path":_"memory/a-044
+[m-c2] SEARCHJ C parsed=no head=+_openclaw_memory_search_--query_eruption_dust_blew_onto_ice_sheet_turning_frozen_terrain_grey_--max-results_6_--min-score_0_--json_[2026-11-17T10:58:55Z]_{_"results":_[_{_"path":_"memory/a-0440df45.m
+[m-c2] SEARCHJ D parsed=no head=+_openclaw_memory_search_--query_symphony_players_adjusting_fiddles;_maestro_stood_near_lectern_--max-results_6_--min-score_0_--json_[2026-11-17T10:58:58Z]_{_"results":_[_{_"path":_"memory/d-0440df45.
+[m-c2] POST UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+[m-c2] POST UNLOAD requested=1 remaining=0
+[m-c2] STEP cell end=2026-11-17T10:59:14Z
+[m-c2] host-rc=0 host-budget-s=2700
+V198830 2026-11-17T10:59:16Z CELL c2 oc=OpenClaw_2026.11.3_(847611d) oc_installed_ok=yes catalog=1024 ws=ws-full maxfwd=2048 px_src=cell req_ctx=1024 loads=1 load_http=200 load_status=loaded load_results=200/loaded/-/fwd eff_ctx=1024 n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:13,other:0 embed_capture_only=0 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=12/12 warmup_warn=0 index_rc=0 chunks_vec_warn=0 vector_available= files=/8 chunks=/12 A=none B=none C=none D=none insitu_trunc=yes insitu_kind=tail-dropped tokens_C=0 host_samples=23 host_min_avail_gib=4.02 host_max_level=1 host_max_swap_delta_mib=0 host_max_comp_delta_gib=-0.00 host_max_vm_rss_gib=19.45 guest_min_avail_mib=7129 guest_swap_peak_mib=0 lms_rss_peak_mib=3462 stop=none
+V198830 2026-11-17T10:59:16Z CELLERR c2 load_err=none embed_err=none index_failed=-
+[m-pack-c2] STEP pack c2 start=2026-11-17T10:59:16Z
+[m-pack-c2] PACK c2 rc=0 sha256=54ae1740f3c27c0e953bf608ee1d06ca00fa6b3e8f6c3e54629546922b5ab72f bytes=17908
+[m-pack-c2] STEP pack end=2026-11-17T10:59:16Z
+[m-pack-c2] host-rc=0 host-budget-s=600
+V198830 2026-11-17T10:59:18Z PULL guest-ev-c2.tgz sha256=54ae1740f3c27c0e953bf608ee1d06ca00fa6b3e8f6c3e54629546922b5ab72f ok
+[m-c1] STEP cell c1 2026.11.3 none ws-full 2048 start=2026-11-17T10:59:20Z
+[m-c1] INSTALL c1 want=2026.11.3 rc=skip version=OpenClaw_2026.11.3_(847611d)
+[m-c1] INTEGRITY c1 version=2026.11.3 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+[m-c1] CFG catalog=none models_entries=0 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c1/.openclaw/openclaw.json
+[m-c1] PRE UNLOAD requested=0 remaining=0
+[m-c1] CELLSTART c1 t0=1794913162 catalog=none ws=ws-full maxfwd=2048 proxy_from_line=34
+[m-c1] RUN c1 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+[m-c1] RUN c1 reset rc=0
+[m-c1] RUN c1 index rc=1 secs=5 proxy_lines=34-72
+[m-c1] RUN c1 status rc=0
+[m-c1] RUN c1 searches skipped reason=index-failed-without-catalog (avoids further large preload attempts)
+[m-c1] CELLEND c1 t1=1794913171 secs=9
+[m-c1] EFF c1 n=0 none
+[m-c1] LMSPS c1 No models are currently loaded.
+[m-c1] LMSPS c1 
+[m-c1] LMSPS c1 To load a model, run:
+[m-c1] LMSPS c1 
+[m-c1] LMSPS c1     lms load <model path>
+[m-c1] PX loads=15 req_ctx=32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768 first_req_ctx=32768 load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only first_load_http=599 first_load_status=- first_load_instance=- first_load_secs=0.0
+[m-c1] PX_LOADERR {"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+[m-c1] PX embeds=13 capture_only=13 models=text-embedding-qwen3-embedding-0.6b http=599,599,599,599,599,599,599,599,599,599,599,599,599 inputs=1,1,1,5,1,1,1,5,5,1,1,1,1 max_input_chars=1583 prompt_tokens=?,?,?,?,?,?,?,?,?,?,?,?,? gets=15
+[m-c1] PX_EMBERR {"error":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+[m-c1] PXIDX c1 rows=38 loads=13 embeds=12 inputs_2xx=0 inputs_non2xx=24 capture_only=25
+[m-c1] RTSUM c1 bytes=8819 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=0 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-c1] GMEM c1 samples=4 guest_min_avail_mib=8092 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=1814
+[m-c1] INDEX c1 rc=1 updated=- warmup_warn=2 chunks_vec_warn=0 failed=Memory_index_failed_(main):_lmstudio_embeddings_failed_(model:_text-embedding-qwen3-embedding-0.6b,_batch_size:_5)_(599):_lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)
+[m-c1] STATUSJ c1 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T10:59:29Z]_[memory/embeddings]_lmstudio_embeddings_warmup_failed;_continuing_without_preload_baseUrl=http://127.0.0.1:1235/v1_model=text-embedding-qw
+[m-c1] POST UNLOAD requested=0 remaining=0
+[m-c1] STEP cell end=2026-11-17T10:59:35Z
+[m-c1] host-rc=0 host-budget-s=2700
+V198830 2026-11-17T10:59:36Z CELL c1 oc=OpenClaw_2026.11.3_(847611d) oc_installed_ok=yes catalog=none ws=ws-full maxfwd=2048 harness=capture-only px_src=cell req_ctx=32768 loads=15 load_http=599 load_status=- load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only eff_ctx=none n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:0,other:13[synthetic-599] embed_capture_only=13 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=0/12 warmup_warn=2[synthetic-599] index_rc=1[synthetic-599] chunks_vec_warn=0 vector_available= files=/8 chunks=/12 A=none B=none C=none D=none insitu_trunc= insitu_kind= tokens_C= host_samples=8 host_min_avail_gib=4.03 host_max_level=1 host_max_swap_delta_mib=0 host_max_comp_delta_gib=-0.00 host_max_vm_rss_gib=19.50 guest_min_avail_mib=8092 guest_swap_peak_mib=0 lms_rss_peak_mib=1814 stop=none
+V198830 2026-11-17T10:59:36Z CELLERR c1 load_err={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"} embed_err={"error":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}[synthetic-599] index_failed=Memory_index_failed_(main):_lmstudio_embeddings_failed_(model:_text-embedding-qwen3-embedding-0.6b,_batch_size:_5)_(599):_lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_
+[m-pack-c1] STEP pack c1 start=2026-11-17T10:59:36Z
+[m-pack-c1] PACK c1 rc=0 sha256=05592cc3357ae1c87265d4427de9caa09a3fcb7dc622f4f8b907bbd6b2876d79 bytes=22983
+[m-pack-c1] STEP pack end=2026-11-17T10:59:36Z
+[m-pack-c1] host-rc=0 host-budget-s=600
+V198830 2026-11-17T10:59:39Z PULL guest-ev-c1.tgz sha256=05592cc3357ae1c87265d4427de9caa09a3fcb7dc622f4f8b907bbd6b2876d79 ok
+[m-c4] STEP cell c4 2026.11.4 1024 ws-full 2048 start=2026-11-17T10:59:41Z
+[m-c4] INSTALL c4 want=2026.11.4 rc=0 version=OpenClaw_2026.11.4_(d843d6a)
+[m-c4] INTEGRITY c4 version=2026.11.4 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+[m-c4] CFG catalog=1024 models_entries=1 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c4/.openclaw/openclaw.json
+[m-c4] PRE UNLOAD requested=0 remaining=0
+[m-c4] CELLSTART c4 t0=1794913208 catalog=1024 ws=ws-full maxfwd=2048 proxy_from_line=77
+[m-c4] RUN c4 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+[m-c4] RUN c4 reset rc=0
+[m-c4] RUN c4 index rc=0 secs=14 proxy_lines=77-95
+[m-c4] RUN c4 status rc=0
+[m-c4] RUN c4 search-A rc=0
+[m-c4] RUN c4 search-B rc=0
+[m-c4] RUN c4 search-C rc=0
+[m-c4] RUN c4 search-D rc=0
+[m-c4] CELLEND c4 t1=1794913241 secs=33
+[m-c4] EFF c4 n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|1024
+[m-c4] LMSPS c4 
+[m-c4] LMSPS c4 IDENTIFIER                             MODEL                                  STATUS    SIZE         CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL
+[m-c4] LMSPS c4 text-embedding-qwen3-embedding-0.6b    text-embedding-qwen3-embedding-0.6b    IDLE      639.15 MB    1024       -           LM Studio      Local        
+[m-c4] LMSPS c4 
+[m-c4] PROBE insitu-c4 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.747740 cos_C_vs_Calt=1.000000 maxdiff_B=2.08e-1 maxdiff_C=0.00e+0 truncated=yes kind=tail-dropped
+[m-c4] PX loads=1 req_ctx=1024 first_req_ctx=1024 load_results=200/loaded/-/fwd first_load_http=200 first_load_status=loaded first_load_instance=text-embedding-qwen3-embedding-0.6b first_load_secs=0.6
+[m-c4] PX_LOADERR none
+[m-c4] PX embeds=13 capture_only=0 models=text-embedding-qwen3-embedding-0.6b http=200,200,200,200,200,200,200,200,200,200,200,200,200 inputs=1,1,1,5,1,1,1,1,1,1,1,1,1 max_input_chars=1583 prompt_tokens=0,0,0,0,0,0,0,0,0,0,0,0,0 gets=19
+[m-c4] PX_EMBERR none
+[m-c4] PXIDX c4 rows=18 loads=1 embeds=8 inputs_2xx=12 inputs_non2xx=0 capture_only=0
+[m-c4] RTSUM c4 bytes=49360 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-c4] GMEM c4 samples=17 guest_min_avail_mib=7200 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3466
+[m-c4] INDEX c4 rc=0 updated=Memory_index_updated_(main):_8_files_indexed. warmup_warn=0 chunks_vec_warn=0 failed=-
+[m-c4] STATUSJ c4 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T11:00:24Z]_[_{_"agentId":_"main",_"status":_{_"backend":_"builtin",_"files":_8,_"chunks":_12,_"dirty":_false,_"workspaceDir":_"/Users/admin/k198830/w
+[m-c4] SEARCHJ A parsed=no head=+_openclaw_memory_search_--query_coastal_beacon_caretaker_cleaning_metal_lamp_during_dusk_--max-results_6_--min-score_0_--json_[2026-11-17T11:00:27Z]_{_"results":_[_{_"path":_"memory/a-0440df45.md",_"
+[m-c4] SEARCHJ B parsed=no head=+_openclaw_memory_search_--query_elderly_relative_making_loaves_using_spice_kernels_near_timber_stove_--max-results_6_--min-score_0_--json_[2026-11-17T11:00:32Z]_{_"results":_[_{_"path":_"memory/a-044
+[m-c4] SEARCHJ C parsed=no head=+_openclaw_memory_search_--query_eruption_dust_blew_onto_ice_sheet_turning_frozen_terrain_grey_--max-results_6_--min-score_0_--json_[2026-11-17T11:00:35Z]_{_"results":_[_{_"path":_"memory/a-0440df45.m
+[m-c4] SEARCHJ D parsed=no head=+_openclaw_memory_search_--query_symphony_players_adjusting_fiddles;_maestro_stood_near_lectern_--max-results_6_--min-score_0_--json_[2026-11-17T11:00:38Z]_{_"results":_[_{_"path":_"memory/d-0440df45.
+[m-c4] POST UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+[m-c4] POST UNLOAD requested=1 remaining=0
+[m-c4] STEP cell end=2026-11-17T11:00:54Z
+[m-c4] host-rc=0 host-budget-s=2700
+V198830 2026-11-17T11:00:56Z CELL c4 oc=OpenClaw_2026.11.4_(d843d6a) oc_installed_ok=yes catalog=1024 ws=ws-full maxfwd=2048 px_src=cell req_ctx=1024 loads=1 load_http=200 load_status=loaded load_results=200/loaded/-/fwd eff_ctx=1024 n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:13,other:0 embed_capture_only=0 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=12/12 warmup_warn=0 index_rc=0 chunks_vec_warn=0 vector_available= files=/8 chunks=/12 A=none B=none C=none D=none insitu_trunc=yes insitu_kind=tail-dropped tokens_C=0 host_samples=35 host_min_avail_gib=3.85 host_max_level=1 host_max_swap_delta_mib=0 host_max_comp_delta_gib=-0.00 host_max_vm_rss_gib=19.84 guest_min_avail_mib=7200 guest_swap_peak_mib=0 lms_rss_peak_mib=3466 stop=none
+V198830 2026-11-17T11:00:56Z CELLERR c4 load_err=none embed_err=none index_failed=-
+[m-pack-c4] STEP pack c4 start=2026-11-17T11:00:57Z
+[m-pack-c4] PACK c4 rc=0 sha256=89c81267d2ecb4df5cfb0e0271ced7e73291fe5f9d46ed5e034098943a59de63 bytes=31069
+[m-pack-c4] STEP pack end=2026-11-17T11:00:57Z
+[m-pack-c4] host-rc=0 host-budget-s=600
+V198830 2026-11-17T11:00:59Z PULL guest-ev-c4.tgz sha256=89c81267d2ecb4df5cfb0e0271ced7e73291fe5f9d46ed5e034098943a59de63 ok
+[m-c5] STEP cell c5 2026.11.4 2048 ws-full 2048 start=2026-11-17T11:01:01Z
+[m-c5] INSTALL c5 want=2026.11.4 rc=skip version=OpenClaw_2026.11.4_(d843d6a)
+[m-c5] INTEGRITY c5 version=2026.11.4 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+[m-c5] CFG catalog=2048 models_entries=1 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c5/.openclaw/openclaw.json
+[m-c5] PRE UNLOAD requested=0 remaining=0
+[m-c5] CELLSTART c5 t0=1794913263 catalog=2048 ws=ws-full maxfwd=2048 proxy_from_line=110
+[m-c5] RUN c5 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+[m-c5] RUN c5 reset rc=0
+[m-c5] RUN c5 index rc=0 secs=17 proxy_lines=110-128
+[m-c5] RUN c5 status rc=0
+[m-c5] RUN c5 search-A rc=0
+[m-c5] RUN c5 search-B rc=0
+[m-c5] RUN c5 search-C rc=0
+[m-c5] RUN c5 search-D rc=0
+[m-c5] CELLEND c5 t1=1794913297 secs=34
+[m-c5] EFF c5 n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|2048
+[m-c5] LMSPS c5 
+[m-c5] LMSPS c5 IDENTIFIER                             MODEL                                  STATUS    SIZE         CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL
+[m-c5] LMSPS c5 text-embedding-qwen3-embedding-0.6b    text-embedding-qwen3-embedding-0.6b    IDLE      639.15 MB    2048       -           LM Studio      Local        
+[m-c5] LMSPS c5 
+[m-c5] PROBE insitu-c5 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.433757 cos_C_vs_Calt=0.377749 maxdiff_B=1.07e-1 maxdiff_C=1.32e-1 truncated=unclear kind=tokens-below-floor
+[m-c5] PX loads=1 req_ctx=2048 first_req_ctx=2048 load_results=200/loaded/-/fwd first_load_http=200 first_load_status=loaded first_load_instance=text-embedding-qwen3-embedding-0.6b first_load_secs=0.6
+[m-c5] PX_LOADERR none
+[m-c5] PX embeds=13 capture_only=0 models=text-embedding-qwen3-embedding-0.6b http=200,200,200,200,200,200,200,200,200,200,200,200,200 inputs=1,1,1,5,1,1,1,1,1,1,1,1,1 max_input_chars=1583 prompt_tokens=0,0,0,0,0,0,0,0,0,0,0,0,0 gets=19
+[m-c5] PX_EMBERR none
+[m-c5] PXIDX c5 rows=18 loads=1 embeds=8 inputs_2xx=12 inputs_non2xx=0 capture_only=0
+[m-c5] RTSUM c5 bytes=47336 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-c5] GMEM c5 samples=17 guest_min_avail_mib=7155 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3521
+[m-c5] INDEX c5 rc=0 updated=Memory_index_updated_(main):_8_files_indexed. warmup_warn=0 chunks_vec_warn=0 failed=-
+[m-c5] STATUSJ c5 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T11:01:22Z]_[_{_"agentId":_"main",_"status":_{_"backend":_"builtin",_"files":_8,_"chunks":_12,_"dirty":_false,_"workspaceDir":_"/Users/admin/k198830/w
+[m-c5] SEARCHJ A parsed=no head=+_openclaw_memory_search_--query_coastal_beacon_caretaker_cleaning_metal_lamp_during_dusk_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:24Z]_{_"results":_[_{_"path":_"memory/a-0440df45.md",_"
+[m-c5] SEARCHJ B parsed=no head=+_openclaw_memory_search_--query_elderly_relative_making_loaves_using_spice_kernels_near_timber_stove_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:27Z]_{_"results":_[_{_"path":_"memory/b-044
+[m-c5] SEARCHJ C parsed=no head=+_openclaw_memory_search_--query_eruption_dust_blew_onto_ice_sheet_turning_frozen_terrain_grey_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:31Z]_{_"results":_[_{_"path":_"memory/c-0440df45.m
+[m-c5] SEARCHJ D parsed=no head=+_openclaw_memory_search_--query_symphony_players_adjusting_fiddles;_maestro_stood_near_lectern_--max-results_6_--min-score_0_--json_[2026-11-17T11:01:34Z]_{_"results":_[_{_"path":_"memory/d-0440df45.
+[m-c5] POST UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+[m-c5] POST UNLOAD requested=1 remaining=0
+[m-c5] STEP cell end=2026-11-17T11:01:56Z
+[m-c5] host-rc=0 host-budget-s=2700
+V198830 2026-11-17T11:01:57Z CELL c5 oc=OpenClaw_2026.11.4_(d843d6a) oc_installed_ok=yes catalog=2048 ws=ws-full maxfwd=2048 px_src=cell req_ctx=2048 loads=1 load_http=200 load_status=loaded load_results=200/loaded/-/fwd eff_ctx=2048 n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:13,other:0 embed_capture_only=0 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=12/12 warmup_warn=0 index_rc=0 chunks_vec_warn=0 vector_available= files=/8 chunks=/12 A=none B=none C=none D=none insitu_trunc=unclear insitu_kind=tokens-below-floor tokens_C=0 host_samples=26 host_min_avail_gib=4.06 host_max_level=1 host_max_swap_delta_mib=0 host_max_comp_delta_gib=-0.00 host_max_vm_rss_gib=19.85 guest_min_avail_mib=7155 guest_swap_peak_mib=0 lms_rss_peak_mib=3521 stop=none
+V198830 2026-11-17T11:01:57Z CELLERR c5 load_err=none embed_err=none index_failed=-
+[m-pack-c5] STEP pack c5 start=2026-11-17T11:01:57Z
+[m-pack-c5] PACK c5 rc=0 sha256=da669c57c7e578186bd9be75215bdf443799e6e9809706f727ec8197ead8a2b3 bytes=38628
+[m-pack-c5] STEP pack end=2026-11-17T11:01:58Z
+[m-pack-c5] host-rc=0 host-budget-s=600
+V198830 2026-11-17T11:02:00Z PULL guest-ev-c5.tgz sha256=da669c57c7e578186bd9be75215bdf443799e6e9809706f727ec8197ead8a2b3 ok
+[m-c3] STEP cell c3 2026.11.4 none ws-full 2048 start=2026-11-17T11:02:02Z
+[m-c3] INSTALL c3 want=2026.11.4 rc=skip version=OpenClaw_2026.11.4_(d843d6a)
+[m-c3] INTEGRITY c3 version=2026.11.4 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+[m-c3] CFG catalog=none models_entries=0 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c3/.openclaw/openclaw.json
+[m-c3] PRE UNLOAD requested=0 remaining=0
+[m-c3] CELLSTART c3 t0=1794913323 catalog=none ws=ws-full maxfwd=2048 proxy_from_line=143
+[m-c3] RUN c3 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+[m-c3] RUN c3 reset rc=0
+[m-c3] RUN c3 index rc=1 secs=5 proxy_lines=143-181
+[m-c3] RUN c3 status rc=0
+[m-c3] RUN c3 searches skipped reason=index-failed-without-catalog (avoids further large preload attempts)
+[m-c3] CELLEND c3 t1=1794913333 secs=10
+[m-c3] EFF c3 n=0 none
+[m-c3] LMSPS c3 No models are currently loaded.
+[m-c3] LMSPS c3 
+[m-c3] LMSPS c3 To load a model, run:
+[m-c3] LMSPS c3 
+[m-c3] LMSPS c3     lms load <model path>
+[m-c3] PX loads=15 req_ctx=32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768 first_req_ctx=32768 load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only first_load_http=599 first_load_status=- first_load_instance=- first_load_secs=0.0
+[m-c3] PX_LOADERR {"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+[m-c3] PX embeds=13 capture_only=13 models=text-embedding-qwen3-embedding-0.6b http=599,599,599,599,599,599,599,599,599,599,599,599,599 inputs=1,1,1,5,1,1,5,1,1,1,1,5,1 max_input_chars=1583 prompt_tokens=?,?,?,?,?,?,?,?,?,?,?,?,? gets=15
+[m-c3] PX_EMBERR {"error":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+[m-c3] PXIDX c3 rows=38 loads=13 embeds=12 inputs_2xx=0 inputs_non2xx=24 capture_only=25
+[m-c3] RTSUM c3 bytes=8819 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=0 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+[m-c3] GMEM c3 samples=6 guest_min_avail_mib=8315 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=1680
+[m-c3] INDEX c3 rc=1 updated=- warmup_warn=2 chunks_vec_warn=0 failed=Memory_index_failed_(main):_lmstudio_embeddings_failed_(model:_text-embedding-qwen3-embedding-0.6b,_batch_size:_1)_(599):_lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)
+[m-c3] STATUSJ c3 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T11:02:10Z]_[memory/embeddings]_lmstudio_embeddings_warmup_failed;_continuing_without_preload_baseUrl=http://127.0.0.1:1235/v1_model=text-embedding-qw
+[m-c3] POST UNLOAD requested=0 remaining=0
+[m-c3] STEP cell end=2026-11-17T11:02:16Z
+[m-c3] host-rc=0 host-budget-s=2700
+V198830 2026-11-17T11:02:17Z CELL c3 oc=OpenClaw_2026.11.4_(d843d6a) oc_installed_ok=yes catalog=none ws=ws-full maxfwd=2048 harness=capture-only px_src=cell req_ctx=32768 loads=15 load_http=599 load_status=- load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only eff_ctx=none n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:0,other:13[synthetic-599] embed_capture_only=13 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=0/12 warmup_warn=2[synthetic-599] index_rc=1[synthetic-599] chunks_vec_warn=0 vector_available= files=/8 chunks=/12 A=none B=none C=none D=none insitu_trunc= insitu_kind= tokens_C= host_samples=7 host_min_avail_gib=4.09 host_max_level=1 host_max_swap_delta_mib=0 host_max_comp_delta_gib=-0.00 host_max_vm_rss_gib=19.85 guest_min_avail_mib=8315 guest_swap_peak_mib=0 lms_rss_peak_mib=1680 stop=none
+V198830 2026-11-17T11:02:17Z CELLERR c3 load_err={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"} embed_err={"error":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}[synthetic-599] index_failed=Memory_index_failed_(main):_lmstudio_embeddings_failed_(model:_text-embedding-qwen3-embedding-0.6b,_batch_size:_1)_(599):_lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_
+[m-pack-c3] STEP pack c3 start=2026-11-17T11:02:18Z
+[m-pack-c3] PACK c3 rc=0 sha256=768f6aed3199ba476f731086657f31b43f379b1d8d71c9df5ebc3f82dac59c22 bytes=42671
+[m-pack-c3] STEP pack end=2026-11-17T11:02:18Z
+[m-pack-c3] host-rc=0 host-budget-s=600
+V198830 2026-11-17T11:02:20Z PULL guest-ev-c3.tgz sha256=768f6aed3199ba476f731086657f31b43f379b1d8d71c9df5ebc3f82dac59c22 ok
+[m-wd-stop] STEP wd-stop  start=2026-11-17T11:02:20Z
+[m-wd-stop] WD stopped alive=no
+[m-wd-stop] STEP wd-stop end=2026-11-17T11:02:23Z
+[m-wd-stop] host-rc=0 host-budget-s=60
+[m-pack-final] STEP pack final start=2026-11-17T11:02:23Z
+[m-pack-final] PACK final rc=0 sha256=72673556418eb9464ffdc264dee6ccd4467e87d0ae0b95ac957d08ea1510d995 bytes=42685
+[m-pack-final] STEP pack end=2026-11-17T11:02:23Z
+[m-pack-final] host-rc=0 host-budget-s=600
+V198830 2026-11-17T11:02:25Z PULL guest-ev-final.tgz sha256=72673556418eb9464ffdc264dee6ccd4467e87d0ae0b95ac957d08ea1510d995 ok
+V198830 2026-11-17T11:02:27Z MAC_DESTROY rc=0 
+V198830 2026-11-17T11:02:27Z NO_LEFTOVER t198830-mac
+[sup] 2026-11-17T10:54:52Z SUP_VM_SEEN pid=88185 vz_rss_gib=0.92
+[sup] 2026-11-17T10:55:05Z SUP_VM_SEEN pid=88465 vz_rss_gib=0.89
+[sup] 2026-11-17T11:02:28Z SUP_END driver-done vm_gone
+[sup] SUP_PEAKS samples=215 min_avail_gib=3.847 max_swap_delta_mib=0 max_comp_delta_gib=0 max_level=1 max_vz_rss_gib=19.81
+V198830 2026-11-17T11:02:29Z SUPERVISOR_FINAL SUP_END driver-done vm_gone samples=215 min_avail_gib=3.847 max_swap_delta_mib=0 max_comp_delta_gib=0 max_level=1 max_vz_rss_gib=19.81  stopped=no
+V198830 2026-11-17T11:02:29Z SUMMARY req-2026.11.3 (c1) outcome="reproduced" detail="with no catalog entry, OpenClaw's first POST /api/v1/models/load asked context_length=32768 for key text-embedding-qwen3-embedding-0.6b (advertised max_context_length 32768); captured by the proxy; oc_installed_ok=yes; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z SUMMARY alloc-2026.11.3 (c1) outcome="blocked" detail="environment-not-matched for the allocation claim: METALGATE metal=unknown why=no-model-buffer-line (the not-matched/unknown rule is in the order); loads above 2048 were recorded but not forwarded (capture-only, synthetic-599). A CPU result would not be a negative repro of the Metal case. captured: load_http=599 load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z SUMMARY ctl1024-2026.11.3 (c2) outcome="control failed" detail="failed: vector_available= files=/8 chunks=/12 A-not-top1 D-not-top1 (A=none B=none C=none D=none) insitu_trunc=yes kind=tail-dropped tokens_C=0; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z SUMMARY req-2026.11.4 (c3) outcome="reproduced" detail="with no catalog entry, OpenClaw's first POST /api/v1/models/load asked context_length=32768 for key text-embedding-qwen3-embedding-0.6b (advertised max_context_length 32768); captured by the proxy; oc_installed_ok=yes; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z SUMMARY alloc-2026.11.4 (c3) outcome="blocked" detail="environment-not-matched for the allocation claim: METALGATE metal=unknown why=no-model-buffer-line (the not-matched/unknown rule is in the order); loads above 2048 were recorded but not forwarded (capture-only, synthetic-599). A CPU result would not be a negative repro of the Metal case. captured: load_http=599 load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z SUMMARY ctl1024-2026.11.4 (c4) outcome="control failed" detail="failed: vector_available= files=/8 chunks=/12 A-not-top1 D-not-top1 (A=none B=none C=none D=none) insitu_trunc=yes kind=tail-dropped tokens_C=0; metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes"
+V198830 2026-11-17T11:02:29Z COVERAGE direct-1024:[model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.747740 cos_C_vs_Calt=1.000000 maxdiff_B=2.08e-1 maxdiff_C=0.00e+0 truncated=yes kind=tail-dropped] c2:[insitu_trunc=yes kind=tail-dropped tokens_B=0 tokens_C=0 cos_C=1.000000 B=none C=none ] c4:[insitu_trunc=yes kind=tail-dropped tokens_B=0 tokens_C=0 cos_C=1.000000 B=none C=none ] c5:[insitu_trunc=unclear kind=tokens-below-floor tokens_B=0 tokens_C=0 cos_C=0.377749 B=none C=none ] (truncated=yes kind=tail-dropped: the two C inputs differ only after ~1350 digit tokens and gave the same vector; kind=head-dropped: the two B inputs differ only before them and gave the same vector; truncated=no needs both pairs to differ AND prompt_tokens >= the floor)
+V198830 2026-11-17T11:02:29Z C5 2048 c5 oc=OpenClaw_2026.11.4_(d843d6a) oc_installed_ok=yes catalog=2048 ws=ws-full maxfwd=2048 px_src=cell req_ctx=2048 loads=1 load_http=200 load_status=loaded load_results=200/loaded/-/fwd eff_ctx=2048 n_ctx_in_log_order=none n_ubatch=none batch_reset_to=none model_buf=unknown compute_buf=unknown alloc_fail=0 max_mib=none max_fail_bytes=none embeds=13 embed_http=2xx:13,other:0 embed_capture_only=0 embed_models=text-embedding-qwen3-embedding-0.6b index_embed_inputs_2xx=12/12 warmup_warn=0 index_rc=
+V198830 2026-11-17T11:02:29Z RESULT_SUGGESTED=partial-environment-not-matched q1=1 q2=0 q3=1 metal=unknown metal_budget=unknown rmws_gib=none lms=0.4.28+2/app lms_pinned=yes runtime_pinned=yes key=text-embedding-qwen3-embedding-0.6b key_same_as_reporter=yes left_min=137 (passed = all three questions have definite answers on 2026.11.3 on matched Metal; partial-environment-not-matched = q1 and q3 answered, the allocation question blocked: report it to labmail as stopped with that reason)

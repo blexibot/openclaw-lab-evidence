@@ -1,0 +1,1 @@
+stat: /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/labvol/.fseventsd/.openclaw-private-update-capture: stat: Permission denied

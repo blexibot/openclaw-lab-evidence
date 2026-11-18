@@ -1,0 +1,8 @@
+2026-11-17T10:54:49Z SUP_START pid=88030 vm=t198830-mac hse=1794921600 pregate_gib=18 floor_gib=2 swap_delta_mib=256 comp_delta_gib=2 rss_max_gib=21 period_s=2 host=Mac18,5 memsize=34359738368 os=27.0
+2026-11-17T10:54:49Z SUP_BASELINE avail_gib=21.145 inactive_gib=5.887 purgeable_gib=0.066 free_pct=92 swap_used_mib=0.0 compressor_gib=0.335 level=1 vm_rss_gib=0.00 vz_rss_gib=0.00
+2026-11-17T10:54:49Z SUP_PREGATE ok avail_gib=21.145 level=1
+2026-11-17T10:54:49Z SUP_READY
+2026-11-17T10:54:52Z SUP_VM_SEEN pid=88185 vz_rss_gib=0.92
+2026-11-17T10:55:05Z SUP_VM_SEEN pid=88465 vz_rss_gib=0.89
+2026-11-17T11:02:28Z SUP_END driver-done vm_gone
+SUP_PEAKS samples=215 min_avail_gib=3.847 max_swap_delta_mib=0 max_comp_delta_gib=0 max_level=1 max_vz_rss_gib=19.81

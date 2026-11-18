@@ -1,0 +1,20 @@
+STEP lmssetup  start=2026-11-17T10:56:56Z
+LISTEN LM\x20Stu 127.0.0.1:1234
+SERVER start_rc=0 api_up=yes nonloopback_listeners=0
+RUNTIME ls1 rc=0
+RTLS LLM ENGINE                                        SELECTED    MODEL FORMAT
+RTLS llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0       ✓            GGUF    
+RTLS llama.cpp-mac-arm64-apple-metal-advsimd@2.67.0                    GGUF    
+RTLS mlx-llm-mac-arm64-apple-metal-advsimd@1.13.1         ✓            MLX     
+RUNTIME pin=llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 get_rc=0 select_rc=0 listed_2_73_0=1 runtime_pinned=yes selected_line=llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0_✓_GGUF (runtime_pinned=no = premise changed; the run goes on, but an allocation non-reproduction is then inconclusive)
+SETTINGS settings.json "unloadPreviousJITModelOnLoad": true
+SETTINGS settings.json "jitModelTTL": {
+SETTINGS settings.json "ttlSeconds": 3600
+SETTINGS settings.json "apiPredictionHistoryEviction": {
+SETTINGS settings.json "ttlDays": 30
+SETTINGS settings.json "modelLoadingGuardrails": {
+SERVERSTATUS The server is running on port 1234.
+LOGSTREAM runtime alive=yes head=Streaming_logs_from_LM_Studio
+LOGSTREAM server alive=yes head=Streaming_logs_from_LM_Studio
+STEP lmssetup end=2026-11-17T10:57:08Z
+host-rc=0 host-budget-s=2700

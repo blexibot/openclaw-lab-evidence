@@ -1,0 +1,7 @@
+EXP ws-full files=8 chunks=12
+EXP ws-prose files=6 chunks=10
+SENTINEL A file=a-0440df45.md
+SENTINEL B file=b-0440df45.md
+SENTINEL C file=c-0440df45.md
+SENTINEL D file=d-0440df45.md
+PROBE_EXPECT tokens_min=1358

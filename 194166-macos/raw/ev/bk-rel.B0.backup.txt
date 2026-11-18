@@ -1,0 +1,48 @@
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:27:58Z]
+{
+  "createdAt": "2026-11-16T21:27:58.879Z",
+  "archiveRoot": "2026-11-16T21-27-58.879+00-00-openclaw-backup",
+  "archivePath": "/Users/admin/k194166/h-bk-rel/out/2026-11-16T21-27-58.879+00-00-openclaw-backup.tar.gz",
+  "dryRun": false,
+  "includeWorkspace": true,
+  "onlyConfig": false,
+  "verified": true,
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw",
+      "displayPath": "$OPENCLAW_HOME/.openclaw",
+      "archivePath": "2026-11-16T21-27-58.879+00-00-openclaw-backup/payload/posix/Users/admin/k194166/h-bk-rel/.openclaw"
+    }
+  ],
+  "agentRoots": [
+    {
+      "agentId": "main",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+rc=0

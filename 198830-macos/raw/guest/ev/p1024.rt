@@ -1,0 +1,151 @@
+=== /Users/admin/k198830/ev/lms-runtime.log (+3185 bytes)
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [INFO] [PaniniRagEngine] Loading model into embedding engine...
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 0.08.036.000 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.08.316.183 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 0.08.318.559 I cmn          init: llama threadpool init, n_threads = 4
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 0.08.318.607 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+=== /Users/admin/k198830/ev/lms-server.log (+4705 bytes)
+[2026-11-17 10:57:53][DEBUG] Received request: POST to /api/v1/models/load with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "context_length": 1024,
+  "echo_load_config": true
+}
+[2026-11-17 10:57:53][DEBUG][INFO] [PaniniRagEngine] Loading model into embedding engine...
+[2026-11-17 10:58:01][DEBUG][INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[2026-11-17 10:58:02][DEBUG] 0.08.036.000 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[2026-11-17 10:58:02][DEBUG] 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.08.316.183 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[2026-11-17 10:58:02][DEBUG] 0.08.318.559 I cmn          init: llama threadpool init, n_threads = 4
+[2026-11-17 10:58:02][DEBUG] 0.08.318.607 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[2026-11-17 10:58:02][DEBUG][INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[2026-11-17 10:58:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:58:08][INFO] Returning 2 models from v1 API
+[2026-11-17 10:58:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 10:58:08][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven. 7197483948372737933647681..."
+]
+[2026-11-17 10:58:08][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:10][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:10][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 10:58:10][INFO] Received request to embed multiple: [
+  "Copper kettles whistled loudly when morning tea was finally ready upstairs. 719748394837273793364768..."
+]
+[2026-11-17 10:58:10][DEBUG][WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:13][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:13][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 10:58:13][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 10:58:13][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:15][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:15][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+  ]
+}
+[2026-11-17 10:58:15][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 10:58:15][DEBUG][WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:17][INFO] Returning embeddings (not shown in logs)
+=== /Users/admin/.lmstudio/server-logs/2026-11/2026-11-17.1.log (+4705 bytes)
+[2026-11-17 10:57:53][DEBUG] Received request: POST to /api/v1/models/load with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "context_length": 1024,
+  "echo_load_config": true
+}
+[2026-11-17 10:57:53][DEBUG][INFO] [PaniniRagEngine] Loading model into embedding engine...
+[2026-11-17 10:58:01][DEBUG][INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[2026-11-17 10:58:02][DEBUG] 0.08.036.000 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[2026-11-17 10:58:02][DEBUG] 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.08.316.183 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[2026-11-17 10:58:02][DEBUG] 0.08.318.559 I cmn          init: llama threadpool init, n_threads = 4
+[2026-11-17 10:58:02][DEBUG] 0.08.318.607 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[2026-11-17 10:58:02][DEBUG][INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[2026-11-17 10:58:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 10:58:08][INFO] Returning 2 models from v1 API
+[2026-11-17 10:58:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 10:58:08][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven. 7197483948372737933647681..."
+]
+[2026-11-17 10:58:08][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:10][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:10][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 10:58:10][INFO] Received request to embed multiple: [
+  "Copper kettles whistled loudly when morning tea was finally ready upstairs. 719748394837273793364768..."
+]
+[2026-11-17 10:58:10][DEBUG][WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:13][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:13][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 10:58:13][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 10:58:13][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:15][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 10:58:15][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+  ]
+}
+[2026-11-17 10:58:15][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 10:58:15][DEBUG][WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+[WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 10:58:17][INFO] Returning embeddings (not shown in logs)

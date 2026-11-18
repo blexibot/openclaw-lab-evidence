@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-16T21:28:20.449Z",
+  "archiveRoot": "2026-11-16T21-28-20.449+00-00-openclaw-backup",
+  "runtimeVersion": "2026.11.3",
+  "platform": "darwin",
+  "nodeVersion": "v24.22.3",
+  "options": {
+    "includeWorkspace": true,
+    "onlyConfig": false
+  },
+  "paths": {
+    "stateDir": "/Users/admin/k194166/h-bk-rel/.openclaw",
+    "configPath": "/Users/admin/k194166/h-bk-rel/.openclaw/openclaw.json",
+    "oauthDir": "/Users/admin/k194166/h-bk-rel/.openclaw/credentials",
+    "workspaceDirs": [
+      "/Users/admin/k194166/h-bk-rel/.openclaw/workspace"
+    ],
+    "agentRoots": [
+      {
+        "agentId": "main",
+        "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "kind": "state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw",
+      "archivePath": "2026-11-16T21-28-20.449+00-00-openclaw-backup/payload/posix/Users/admin/k194166/h-bk-rel/.openclaw"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "externalSymbolicLinks": [],
+  "sqliteSnapshots": [
+    {
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/state/openclaw.sqlite",
+      "role": "global"
+    },
+    {
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent/openclaw-agent.sqlite",
+      "role": "agent",
+      "agentId": "main"
+    }
+  ]
+}

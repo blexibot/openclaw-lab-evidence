@@ -1,0 +1,7 @@
+STEP install head head-bk start=2026-11-16T22:17:38Z
+INSTALL head head-bk rc=0 version=OpenClaw_2026.11.1_(5438a83) buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z which=/Users/admin/.npm-global/bin/openclaw
+NPMLS /Users/admin/.npm-global/lib
+NPMLS └── openclaw@2026.11.1
+NPMLS 
+STEP install end=2026-11-16T22:17:51Z
+host-rc=0

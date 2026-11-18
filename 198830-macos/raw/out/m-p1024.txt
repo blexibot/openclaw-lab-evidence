@@ -1,0 +1,35 @@
+STEP probe1024  start=2026-11-17T10:57:53Z
+UNLOAD requested=0 remaining=0
+LOADDIRECT req_ctx=1024 http=200 status=loaded instance=text-embedding-qwen3-embedding-0.6b eff_ctx=1024 secs=8.6 err=-
+P1024 LOADED n=1 text-embedding-qwen3-embedding-0.6b|text-embedding-qwen3-embedding-0.6b|1024
+PROBE direct-1024 model=text-embedding-qwen3-embedding-0.6b http=200,200,200,200 tokens_B=0 tokens_Balt=0 tokens_C=0 tokens_Calt=0 tokens_floor=1358 cos_B_vs_Balt=0.747740 cos_C_vs_Calt=1.000000 maxdiff_B=2.08e-1 maxdiff_C=0.00e+0 truncated=yes kind=tail-dropped
+METALGATE metal=unknown why=no-model-buffer-line metal_lines=0 metal_err_lines=0 model_buf=unknown rmws_mb=none rmws_gib=none metal_budget=unknown (16 GB ref 10.67 GiB, band 10.0-12.0) runtime_log_bytes=12788
+RTSUM p1024 bytes=12788 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=3 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+GMEM p1024 samples=13 guest_min_avail_mib=7342 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=3454
+UNLOADED id=text-embedding-qwen3-embedding-0.6b http=200
+UNLOAD requested=1 remaining=0
+RTL p1024 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL p1024 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024 [DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=5082 [WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024 [2026-11-17 10:58:02][DEBUG] 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL p1024     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL p1024 [2026-11-17 10:58:08][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL p1024 [2026-11-17 10:58:10][DEBUG][WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL p1024 [2026-11-17 10:58:13][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+RTL p1024 [2026-11-17 10:58:15][DEBUG][WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024 [2026-11-17 10:58:02][DEBUG] 0.08.316.179 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+RTL p1024     "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL p1024 [2026-11-17 10:58:08][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+RTL p1024 [2026-11-17 10:58:10][DEBUG][WARNING] Number of tokens in input string (1369) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+RTL p1024 [2026-11-17 10:58:13][DEBUG][WARNING] Number of tokens in input string (1368) exceeds model context length (1024). Truncating to 1024 tokens.
+RTL p1024     "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+RTL p1024 [2026-11-17 10:58:15][DEBUG][WARNING] Number of tokens in input string (1367) exceeds model context length (1024). Truncating to 1024 tokens.
+STEP probe1024 end=2026-11-17T10:58:19Z
+host-rc=0 host-budget-s=900

@@ -1,0 +1,97 @@
++ openclaw memory search --query elderly relative making loaves using spice kernels near timber stove --max-results 6 --min-score 0 --json [2026-11-17T11:00:32Z]
+{
+  "results": [
+    {
+      "path": "memory/a-0440df45.md",
+      "startLine": 1,
+      "endLine": 1,
+      "score": 0.3134559392929077,
+      "vectorScore": 0.44779419898986816,
+      "textScore": 0,
+      "snippet": "The lighthouse keeper polished the brass lantern every evening before fishing boats returned to harbor.",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912923481
+      }
+    },
+    {
+      "path": "memory/d-0440df45.md",
+      "startLine": 81,
+      "endLine": 91,
+      "score": 0.2369548976421356,
+      "vectorScore": 0.3385069966316223,
+      "textScore": 0,
+      "snippet": "Shelf 37 in aisle 26 holds 409 cartons of gaskets labelled orange.\nShelf 79 in aisle 11 holds 611 cartons of clamps labelled purple.\nShelf 80 in aisle 15 holds 80 cartons of washers labelled yellow.\nShelf 48 in aisle 38 holds 487 cartons of washers labelled purple.\nShelf 45 in aisle 23 holds 82 cartons of spools labelled yellow.\nShelf 71 in aisle 29 holds 112 cartons of spools labelled green.\nShelf 46 in aisle 2 holds 624 cartons of spools labelled orange.\nShelf 72 in aisle 24 holds 548 cartons of hinges labelled green.\nShelf 64 in aisle 27 holds 328 cartons of rivets labelled green.\nShelf 38 in aisle 2 holds 254 cartons of rivets labelled orange.\nThe orchestra tuned their violins while the ",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912929924
+      }
+    },
+    {
+      "path": "memory/f1-0440df45.md",
+      "startLine": 1,
+      "endLine": 4,
+      "score": 0.2095884084701538,
+      "vectorScore": 0.2994120121002197,
+      "textScore": 0,
+      "snippet": "Shelf 91 in aisle 17 holds 137 cartons of gaskets labelled purple.\nShelf 24 in aisle 6 holds 388 cartons of washers labelled purple.\nShelf 47 in aisle 3 holds 240 cartons of bolts labelled green.\nShelf 17 in aisle 29 holds 792 cartons of spools labelled green.",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912932216
+      }
+    },
+    {
+      "path": "memory/d-0440df45.md",
+      "startLine": 41,
+      "endLine": 64,
+      "score": 0.18823515772819518,
+      "vectorScore": 0.268907368183136,
+      "textScore": 0,
+      "snippet": "Shelf 1 in aisle 15 holds 32 cartons of rivets labelled yellow.\nShelf 27 in aisle 8 holds 490 cartons of brackets labelled green.\nShelf 69 in aisle 12 holds 673 cartons of spools labelled yellow.\nShelf 85 in aisle 39 holds 706 cartons of brackets labelled orange.\nShelf 59 in aisle 39 holds 474 cartons of washers labelled yellow.\nShelf 61 in aisle 9 holds 342 cartons of washers labelled orange.\nShelf 77 in aisle 21 holds 819 cartons of hinges labelled green.\nShelf 95 in aisle 1 holds 355 cartons of bolts labelled purple.\nShelf 56 in aisle 9 holds 399 cartons of rivets labelled purple.\nShelf 39 in aisle 32 holds 664 cartons of spools labelled yellow.\nShelf 28 in aisle 20 holds 265 cartons of r",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912929924
+      }
+    },
+    {
+      "path": "memory/f4-0440df45.md",
+      "startLine": 1,
+      "endLine": 4,
+      "score": 0.20104991197586058,
+      "vectorScore": 0.28721415996551514,
+      "textScore": 0,
+      "snippet": "Shelf 7 in aisle 14 holds 364 cartons of rivets labelled purple.\nShelf 72 in aisle 23 holds 703 cartons of washers labelled orange.\nShelf 46 in aisle 38 holds 400 cartons of rivets labelled yellow.\nShelf 79 in aisle 15 holds 710 cartons of brackets labelled yellow.",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912938836
+      }
+    },
+    {
+      "path": "memory/d-0440df45.md",
+      "startLine": 61,
+      "endLine": 84,
+      "score": 0.18817745447158812,
+      "vectorScore": 0.2688249349594116,
+      "textScore": 0,
+      "snippet": "Shelf 52 in aisle 17 holds 350 cartons of spools labelled yellow.\nShelf 15 in aisle 17 holds 388 cartons of clamps labelled green.\nShelf 46 in aisle 9 holds 153 cartons of hinges labelled orange.\nShelf 46 in aisle 19 holds 148 cartons of hinges labelled purple.\nShelf 93 in aisle 5 holds 694 cartons of gaskets labelled orange.\nShelf 51 in aisle 35 holds 574 cartons of clamps labelled yellow.\nShelf 39 in aisle 8 holds 674 cartons of clamps labelled green.\nShelf 67 in aisle 36 holds 83 cartons of washers labelled orange.\nShelf 66 in aisle 24 holds 297 cartons of bolts labelled orange.\nShelf 69 in aisle 38 holds 802 cartons of hinges labelled purple.\nShelf 33 in aisle 17 holds 170 cartons of riv",
+      "source": "memory",
+      "provenance": {
+        "originClass": "agent",
+        "sessionKind": "unknown",
+        "observedAt": 1794912929924
+      }
+    }
+  ]
+}
+[state/agent-db] agent database clean-close receipt: written
+rc=0

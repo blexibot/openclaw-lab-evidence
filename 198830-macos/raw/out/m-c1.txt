@@ -1,0 +1,132 @@
+STEP cell c1 2026.11.3 none ws-full 2048 start=2026-11-17T10:59:20Z
+INSTALL c1 want=2026.11.3 rc=skip version=OpenClaw_2026.11.3_(847611d)
+INTEGRITY c1 version=2026.11.3 installed_ok=yes dist_models_fetch=match dist_lmstudio_adapter=match npm_integrity=match npm_shasum=match (installed_ok=no = premise changed: not the package the Maintainer read)
+CFG catalog=none models_entries=0 baseUrl=http://127.0.0.1:1235/v1 key=text-embedding-qwen3-embedding-0.6b file=/Users/admin/k198830/h-c1/.openclaw/openclaw.json
+PRE UNLOAD requested=0 remaining=0
+CELLSTART c1 t0=1794913162 catalog=none ws=ws-full maxfwd=2048 proxy_from_line=34
+RUN c1 gateway_status rc=0 first=Service:_LaunchAgent_(not_loaded)_(diagnostic_only,_not_the_check_target)_File_logs:_/tmp/openclaw/openclaw-2026-11-17.log
+RUN c1 reset rc=0
+RUN c1 index rc=1 secs=5 proxy_lines=34-72
+RUN c1 status rc=0
+RUN c1 searches skipped reason=index-failed-without-catalog (avoids further large preload attempts)
+CELLEND c1 t1=1794913171 secs=9
+EFF c1 n=0 none
+LMSPS c1 No models are currently loaded.
+LMSPS c1 
+LMSPS c1 To load a model, run:
+LMSPS c1 
+LMSPS c1     lms load <model path>
+PX loads=15 req_ctx=32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768,32768 first_req_ctx=32768 load_results=599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only,599/-/-/capture-only first_load_http=599 first_load_status=- first_load_instance=- first_load_secs=0.0
+PX_LOADERR {"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PX embeds=13 capture_only=13 models=text-embedding-qwen3-embedding-0.6b http=599,599,599,599,599,599,599,599,599,599,599,599,599 inputs=1,1,1,5,1,1,1,5,5,1,1,1,1 max_input_chars=1583 prompt_tokens=?,?,?,?,?,?,?,?,?,?,?,?,? gets=15
+PX_EMBERR {"error":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=35 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=36 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=37 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=38 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=39 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=40 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[103]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=41 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=42 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=43 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1425]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=44 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=45 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=46 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1428]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=47 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=48 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":5,"chars":[1580,1583,1576,1578,735]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=49 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=50 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=51 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[103]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=52 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=53 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=54 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1425]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=55 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=56 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=57 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1428]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=58 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=59 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=60 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":5,"chars":[1580,1583,1576,1578,735]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=61 GET /api/v1/models status=200 ms=2 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=62 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=63 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":5,"chars":[1580,1583,1576,1578,735]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=64 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=65 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=66 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1428]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=67 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=68 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=69 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[1425]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=70 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=71 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXROW id=72 POST /v1/embeddings status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","n":1,"chars":[103]} resp={"err":"lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)"}
+PXROW id=73 GET /api/v1/models status=200 ms=1 fwd=true req={"raw":""} resp="(models_list)"
+PXROW id=74 POST /api/v1/models/load status=599 ms=0 fwd=false req={"model":"text-embedding-qwen3-embedding-0.6b","context_length":32768} resp={"error":"lab_proxy_capture-only_(synthetic-599):_load_with_context_length_>_2048_not_forwarded"}
+PXIDX c1 rows=38 loads=13 embeds=12 inputs_2xx=0 inputs_non2xx=24 capture_only=25
+RTSUM c1 bytes=8819 n_ctx=none n_ubatch=none n_batch=none batch_reset_to=none metal_lines=0 model_buf=unknown compute_buf=unknown mtl0_lines=0 cpu_buf_lines=0 alloc_fail=0 max_mib=none max_fail_bytes=none rmws_mb=none guardrail_lines=0
+GMEM c1 samples=4 guest_min_avail_mib=8092 guest_swap_peak_mib=0 guest_max_level=1 guest_max_comp_mib=0 lms_rss_peak_mib=1814
+INDEX c1 rc=1 updated=- warmup_warn=2 chunks_vec_warn=0 failed=Memory_index_failed_(main):_lmstudio_embeddings_failed_(model:_text-embedding-qwen3-embedding-0.6b,_batch_size:_5)_(599):_lab_proxy_capture-only_(synthetic-599):_embeddings_for_text-embedding-qwen3-embedding-0.6b_not_forwarded:_no_instance_loaded_at_context_<=_2048_(loaded:_none;_LM_Studio_could_JIT-load)
+STATUSJ c1 parsed=no head=+_openclaw_memory_status_--deep_--json_[2026-11-17T10:59:29Z]_[memory/embeddings]_lmstudio_embeddings_warmup_failed;_continuing_without_preload_baseUrl=http://127.0.0.1:1235/v1_model=text-embedding-qw
+POST UNLOAD requested=0 remaining=0
+--- tail c1 index
+Memory Index (main)
+Provider: lmstudio (requested: lmstudio)
+Model: text-embedding-qwen3-embedding-0.6b
+Sources: memory (MEMORY.md + /Users/admin/k198830/ws-full/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload baseUrl=http://127.0.0.1:1235/v1 model=text-embedding-qwen3-embedding-0.6b error="LM Studio model load failed (599): {\"error\":\"lab proxy capture-only (synthetic-599): load with context_length > 2048 not forwarded\"}"
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 500ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 505ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 551ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+[memory] embeddings retryable error; retrying in 577ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 1166ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 1105ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+[memory] embeddings retryable error; retrying in 944ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+[memory] embeddings retryable error; retrying in 841ms
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+Memory index failed (main): lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5) (599): lab proxy capture-only (synthetic-599): embeddings for text-embedding-qwen3-embedding-0.6b not forwarded: no instance loaded at context <= 2048 (loaded: none; LM Studio could JIT-load)
+[state/agent-db] agent database clean-close receipt: written
+rc=1
+--- grep c1 warmup
+Provider: lmstudio (requested: lmstudio)
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload baseUrl=http://127.0.0.1:1235/v1 model=text-embedding-qwen3-embedding-0.6b error="LM Studio model load failed (599): {\"error\":\"lab proxy capture-only (synthetic-599): load with context_length > 2048 not forwarded\"}"
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":599}
+STEP cell end=2026-11-17T10:59:35Z
+host-rc=0 host-budget-s=2700

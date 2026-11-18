@@ -1,0 +1,47 @@
+STEP lmsinst  start=2026-11-17T10:56:04Z
+DMG rc=0 bytes=572548100 expected_bytes=572548100 sha256=f8be634f1eeabaa19d9004d6de8b8bf8cd805a22e34b1f9538d4d702cf884775 url=https://installers.lmstudio.ai/darwin/arm64/0.4.28-2/LM-Studio-0.4.28-2-arm64.dmg
+DMG attach rc=0
+APP src=LM_Studio.app installed=yes version=0.4.28+2 build=0.4.28+2 quarantine=
+APP open rc=0
+LMS route=app lms_pinned=yes app_version=0.4.28+2 app_build=0.4.28+2 cli=/Users/admin/.lmstudio/bin/lms version=Docs:_https://lmstudio.ai/docs/developer_Join_our_Discord:_https://discord.gg/lmstudio_Contribute:_https://github.com/lmstudio-ai/lms (lms_pinned=no = premise changed: LM Studio is not the reporter's 0.4.28 app build)
+LMS_PROC 3677 /Applications/LM Studio.app/Contents/MacOS/LM Studio
+LMS_PROC 3715 /Applications/LM Studio.app/Contents/Frameworks/Electron Framework.framework/Helpers/chrome_crashpad_handler --no-rate-limit --no-upload-gzip --monitor-self-annotation=ptype=crashpad-handler --database=/Users/admin/Library/Application Support/LM Studio/Crashpad --annotation=_productName=LM Studio --annotation=_version=0.4.28+2 --annotation=plat=OS X --annotation=prod=Electron --annotation=ver=38.6.0 --handshake-fd=17
+LMS_PROC 3716 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper (GPU).app/Contents/MacOS/LM Studio Helper (GPU) --type=gpu-process --user-data-dir=/Users/admin/Library/Application Support/LM Studio --gpu-preferences=SAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAwAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --seatbelt-client=30
+LMS_PROC 3717 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper.app/Contents/MacOS/LM Studio Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=network --user-data-dir=/Users/admin/Library/Application Support/LM Studio --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --seatbelt-client=30
+LMS_PROC 3719 /Users/admin/.lmstudio/.internal/utils/node -e 
+LMS_PROC function connectPort(port) {
+LMS_PROC   const handlersMap = new Map();
+LMS_PROC   return {
+LMS_PROC     postMessage: data => process.send({ port: port, data }),
+LMS_PROC     on: (event, handler) => {
+LMS_PROC       if (event !== "message") {
+LMS_PROC         throw new Error("Unsupported event: " + event);
+LMS_PROC       }
+LMS_PROC       const innerHandler = payload => {
+LMS_PROC         if (payload.port === port) {
+LMS_PROC           handler({ data: payload.data });
+LMS_PROC         }
+LMS_PROC       }
+LMS_PROC       handlersMap.set(handler, innerHandler);
+LMS_PROC       process.on('message', innerHandler);
+LMS_PROC     },
+LMS_PROC     off: (event, handler) => {
+LMS_PROC       if (event !== "message") {
+LMS_PROC         throw new Error("Unsupported event: " + event);
+LMS_PROC       }
+LMS_PROC       const innerHandler = handlersMap.get(handler);
+LMS_PROC       if (innerHandler) {
+LMS_PROC         process.off('message', innerHandler);
+LMS_PROC         handlersMap.delete(handler);
+LMS_PROC       }
+LMS_PROC     },
+LMS_PROC   };
+LMS_PROC }
+LMS_PROC process.parentPort = connectPort(0);
+LMS_PROC process.rcPort = connectPort(1);
+LMS_PROC process.resourcesPath = "/Applications/LM Studio.app/Contents/Resources";
+LMS_PROC require("/Applications/LM Studio.app/Contents/Resources/app/.webpack/lib/systemresourcesworker.js"); /Applications/LM Studio.app/Contents/Resources/app/.webpack/lib/systemresourcesworker.js /Applications/LM Studio.app/Contents/Resources/app/.webpack/bin/liblmstudio/metal/liblmstudio_bindings.node
+LMS_PROC 3749 /Applications/LM Studio.app/Contents/Frameworks/LM Studio Helper (Renderer).app/Contents/MacOS/LM Studio Helper (Renderer) --type=renderer --user-data-dir=/Users/admin/Library/Application Support/LM Studio --app-path=/Applications/LM Studio.app/Contents/Resources/app --no-sandbox --no-zygote --node-integration-in-worker --lang=en-US --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1794912904703814 --launch-time-ticks=108154858 --shared-files --field-trial-handle=1718379636,r,13446528906157099116,7750509901237587296,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --lmstudio-window-key=window-1 --lmstudio-project-identifier=default-project-identifier --lmstudio-window-context=%7B%22type%22%3A%22singleProject%22%2C%22projectIdentifier%22%3A%22default-project-identifier%22%7D
+LMS_PROC 3753 /Users/admin/.lmstudio/extensions/backends/vendor/_amphibian/cpython3.11-mac-arm64@10/bin/python -I /Users/admin/.lmstudio/extensions/backends/vendor/_amphibian/app-mlx-generate-mac14-arm64@39/postinstall.py
+STEP lmsinst end=2026-11-17T10:56:56Z
+host-rc=0 host-budget-s=3600

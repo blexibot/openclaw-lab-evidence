@@ -1,0 +1,11 @@
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-head/out [2026-11-16T22:18:06Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1

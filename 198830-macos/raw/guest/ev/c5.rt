@@ -1,0 +1,614 @@
+=== /Users/admin/k198830/ev/lms-runtime.log (+7041 bytes)
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [INFO] [PaniniRagEngine] Loading model into embedding engine...
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 0.00.061.522 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.00.324.731 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 0.00.327.651 I cmn          init: llama threadpool init, n_threads = 4
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 0.00.327.696 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[DEBUG] llama.cpp-mac-arm64-apple-metal-advsimd@2.73.0 (llama.cpp) text-embedding-qwen3-embedding-0.6b pid=10815 [WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+=== /Users/admin/k198830/ev/lms-server.log (+20050 bytes)
+[2026-11-17 11:01:07][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:07][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:07][DEBUG] Received request: POST to /api/v1/models/load with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "context_length": 2048
+}
+[2026-11-17 11:01:07][DEBUG][INFO] [PaniniRagEngine] Loading model into embedding engine...
+[2026-11-17 11:01:07][DEBUG][INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[2026-11-17 11:01:07][DEBUG] 0.00.061.522 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[2026-11-17 11:01:07][DEBUG] 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.00.324.731 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[2026-11-17 11:01:07][DEBUG] 0.00.327.651 I cmn          init: llama threadpool init, n_threads = 4
+[2026-11-17 11:01:07][DEBUG] 0.00.327.696 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[2026-11-17 11:01:08][DEBUG][INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "The lighthouse keeper polished the brass lantern every evening before fishing boats returned to harbor."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "The lighthouse keeper polished the brass lantern every evening before fishing boats returned to harb..."
+]
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven.\n7197483948372737933647681..."
+]
+[2026-11-17 11:01:08][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 46 in aisle 9 holds 228 cartons of gaskets l... <Truncated in logs> ... 22 holds 631 cartons of brackets labelled yellow.",
+    "Shelf 13 in aisle 22 holds 409 cartons of hinges l... <Truncated in logs> ... 39 holds 706 cartons of brackets labelled orange.",
+    "Shelf 1 in aisle 15 holds 32 cartons of rivets lab... <Truncated in logs> ...le 19 holds 148 cartons of hinges labelled purple.",
+    "Shelf 52 in aisle 17 holds 350 cartons of spools l... <Truncated in logs> ...e 38 holds 487 cartons of washers labelled purple.",
+    "Shelf 37 in aisle 26 holds 409 cartons of gaskets ... <Truncated in logs> ...lins while the conductor waited beside the podium."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Shelf 46 in aisle 9 holds 228 cartons of gaskets labelled orange.\nShelf 87 in aisle 15 holds 402 car...",
+  "Shelf 13 in aisle 22 holds 409 cartons of hinges labelled yellow.\nShelf 13 in aisle 31 holds 375 car...",
+  "Shelf 1 in aisle 15 holds 32 cartons of rivets labelled yellow.\nShelf 27 in aisle 8 holds 490 carton...",
+  "Shelf 52 in aisle 17 holds 350 cartons of spools labelled yellow.\nShelf 15 in aisle 17 holds 388 car...",
+  "Shelf 37 in aisle 26 holds 409 cartons of gaskets labelled orange.\nShelf 79 in aisle 11 holds 611 ca..."
+]
+[2026-11-17 11:01:08][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:08][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 91 in aisle 17 holds 137 cartons of gaskets ... <Truncated in logs> ...sle 29 holds 792 cartons of spools labelled green."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Shelf 91 in aisle 17 holds 137 cartons of gaskets labelled purple.\nShelf 24 in aisle 6 holds 388 car..."
+]
+[2026-11-17 11:01:12][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:12][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:12][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:12][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:12][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:12][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:12][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 98 in aisle 26 holds 182 cartons of brackets... <Truncated in logs> ...e 11 holds 471 cartons of washers labelled purple."
+  ]
+}
+[2026-11-17 11:01:12][INFO] Received request to embed multiple: [
+  "Shelf 98 in aisle 26 holds 182 cartons of brackets labelled yellow.\nShelf 1 in aisle 31 holds 547 ca..."
+]
+[2026-11-17 11:01:16][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:16][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:16][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:16][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:16][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:16][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:16][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 31 in aisle 22 holds 300 cartons of washers ... <Truncated in logs> ...isle 35 holds 87 cartons of bolts labelled orange."
+  ]
+}
+[2026-11-17 11:01:16][INFO] Received request to embed multiple: [
+  "Shelf 31 in aisle 22 holds 300 cartons of washers labelled green.\nShelf 48 in aisle 36 holds 624 car..."
+]
+[2026-11-17 11:01:17][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:18][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:19][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:20][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:21][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:21][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:21][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:21][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 7 in aisle 14 holds 364 cartons of rivets la... <Truncated in logs> ... 15 holds 710 cartons of brackets labelled yellow."
+  ]
+}
+[2026-11-17 11:01:21][INFO] Received request to embed multiple: [
+  "Shelf 7 in aisle 14 holds 364 cartons of rivets labelled purple.\nShelf 72 in aisle 23 holds 703 cart..."
+]
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:22][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "ping"
+  ]
+}
+[2026-11-17 11:01:24][INFO] Received request to embed multiple: [
+  "ping"
+]
+[2026-11-17 11:01:24][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:24][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "coastal beacon caretaker cleaning metal lamp during dusk"
+  ]
+}
+[2026-11-17 11:01:27][INFO] Received request to embed multiple: [
+  "coastal beacon caretaker cleaning metal lamp during dusk"
+]
+[2026-11-17 11:01:27][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:27][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "elderly relative making loaves using spice kernels near timber stove"
+  ]
+}
+[2026-11-17 11:01:30][INFO] Received request to embed multiple: [
+  "elderly relative making loaves using spice kernels near timber stove"
+]
+[2026-11-17 11:01:30][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:30][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "eruption dust blew onto ice sheet turning frozen terrain grey"
+  ]
+}
+[2026-11-17 11:01:33][INFO] Received request to embed multiple: [
+  "eruption dust blew onto ice sheet turning frozen terrain grey"
+]
+[2026-11-17 11:01:33][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:33][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "symphony players adjusting fiddles; maestro stood near lectern"
+  ]
+}
+[2026-11-17 11:01:36][INFO] Received request to embed multiple: [
+  "symphony players adjusting fiddles; maestro stood near lectern"
+]
+[2026-11-17 11:01:36][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:36][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:37][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:37][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getLoadConfig] Getting load config stack for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getModelInfo] Getting descriptor for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][DEBUG][LMSAuthenticator][Client=lms-cli][Endpoint=getInstanceProcessingState] Getting instance processing state for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getModelInfo] Getting descriptor for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][DEBUG][LMSAuthenticator][Client=lms-cli][Endpoint=getInstanceProcessingState] Getting instance processing state for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:38][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:38][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven. 7197483948372737933647681..."
+]
+[2026-11-17 11:01:38][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:42][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:42][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:42][INFO] Received request to embed multiple: [
+  "Copper kettles whistled loudly when morning tea was finally ready upstairs. 719748394837273793364768..."
+]
+[2026-11-17 11:01:42][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:46][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:46][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 11:01:46][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:46][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:50][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:50][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+  ]
+}
+[2026-11-17 11:01:50][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:50][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:54][INFO] Returning embeddings (not shown in logs)
+=== /Users/admin/.lmstudio/server-logs/2026-11/2026-11-17.1.log (+20050 bytes)
+[2026-11-17 11:01:07][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:07][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:07][DEBUG] Received request: POST to /api/v1/models/load with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "context_length": 2048
+}
+[2026-11-17 11:01:07][DEBUG][INFO] [PaniniRagEngine] Loading model into embedding engine...
+[2026-11-17 11:01:07][DEBUG][INFO] [LlamaEmbeddingEngine] Loading model from path: /Users/admin/.lmstudio/models/Qwen/Qwen3-Embedding-0.6B-GGUF/Qwen3-Embedding-0.6B-Q8_0.gguf
+[2026-11-17 11:01:07][DEBUG] 0.00.061.522 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[2026-11-17 11:01:07][DEBUG] 0.00.324.727 W resolve_fused_ops: layer 0 is assigned to device MTL0 but Flash Attention is assigned to device CPU (usually due to missing support)
+0.00.324.731 W resolve_fused_ops: Flash Attention not supported, set to disabled
+[2026-11-17 11:01:07][DEBUG] 0.00.327.651 I cmn          init: llama threadpool init, n_threads = 4
+[2026-11-17 11:01:07][DEBUG] 0.00.327.696 W init: embeddings required but some input tokens were not marked as outputs -> overriding
+[2026-11-17 11:01:08][DEBUG][INFO] [LlamaEmbeddingEngine] Model load complete!
+[INFO] [PaniniRagEngine] Model loaded into embedding engine!
+[INFO] [PaniniRagEngine] Model loaded without an active session.
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "The lighthouse keeper polished the brass lantern every evening before fishing boats returned to harbor."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "The lighthouse keeper polished the brass lantern every evening before fishing boats returned to harb..."
+]
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven.\n7197483948372737933647681..."
+]
+[2026-11-17 11:01:08][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 46 in aisle 9 holds 228 cartons of gaskets l... <Truncated in logs> ... 22 holds 631 cartons of brackets labelled yellow.",
+    "Shelf 13 in aisle 22 holds 409 cartons of hinges l... <Truncated in logs> ... 39 holds 706 cartons of brackets labelled orange.",
+    "Shelf 1 in aisle 15 holds 32 cartons of rivets lab... <Truncated in logs> ...le 19 holds 148 cartons of hinges labelled purple.",
+    "Shelf 52 in aisle 17 holds 350 cartons of spools l... <Truncated in logs> ...e 38 holds 487 cartons of washers labelled purple.",
+    "Shelf 37 in aisle 26 holds 409 cartons of gaskets ... <Truncated in logs> ...lins while the conductor waited beside the podium."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Shelf 46 in aisle 9 holds 228 cartons of gaskets labelled orange.\nShelf 87 in aisle 15 holds 402 car...",
+  "Shelf 13 in aisle 22 holds 409 cartons of hinges labelled yellow.\nShelf 13 in aisle 31 holds 375 car...",
+  "Shelf 1 in aisle 15 holds 32 cartons of rivets labelled yellow.\nShelf 27 in aisle 8 holds 490 carton...",
+  "Shelf 52 in aisle 17 holds 350 cartons of spools labelled yellow.\nShelf 15 in aisle 17 holds 388 car...",
+  "Shelf 37 in aisle 26 holds 409 cartons of gaskets labelled orange.\nShelf 79 in aisle 11 holds 611 ca..."
+]
+[2026-11-17 11:01:08][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:08][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:08][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:08][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 91 in aisle 17 holds 137 cartons of gaskets ... <Truncated in logs> ...sle 29 holds 792 cartons of spools labelled green."
+  ]
+}
+[2026-11-17 11:01:08][INFO] Received request to embed multiple: [
+  "Shelf 91 in aisle 17 holds 137 cartons of gaskets labelled purple.\nShelf 24 in aisle 6 holds 388 car..."
+]
+[2026-11-17 11:01:12][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:12][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:12][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:12][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:12][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:12][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:12][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 98 in aisle 26 holds 182 cartons of brackets... <Truncated in logs> ...e 11 holds 471 cartons of washers labelled purple."
+  ]
+}
+[2026-11-17 11:01:12][INFO] Received request to embed multiple: [
+  "Shelf 98 in aisle 26 holds 182 cartons of brackets labelled yellow.\nShelf 1 in aisle 31 holds 547 ca..."
+]
+[2026-11-17 11:01:16][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:16][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:16][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:16][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:16][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:16][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:16][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 31 in aisle 22 holds 300 cartons of washers ... <Truncated in logs> ...isle 35 holds 87 cartons of bolts labelled orange."
+  ]
+}
+[2026-11-17 11:01:16][INFO] Received request to embed multiple: [
+  "Shelf 31 in aisle 22 holds 300 cartons of washers labelled green.\nShelf 48 in aisle 36 holds 624 car..."
+]
+[2026-11-17 11:01:17][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:18][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:19][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:20][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:21][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:21][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:21][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:21][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Shelf 7 in aisle 14 holds 364 cartons of rivets la... <Truncated in logs> ... 15 holds 710 cartons of brackets labelled yellow."
+  ]
+}
+[2026-11-17 11:01:21][INFO] Received request to embed multiple: [
+  "Shelf 7 in aisle 14 holds 364 cartons of rivets labelled purple.\nShelf 72 in aisle 23 holds 703 cart..."
+]
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:21][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:21][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:22][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:24][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:24][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "ping"
+  ]
+}
+[2026-11-17 11:01:24][INFO] Received request to embed multiple: [
+  "ping"
+]
+[2026-11-17 11:01:24][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:24][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:27][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:27][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "coastal beacon caretaker cleaning metal lamp during dusk"
+  ]
+}
+[2026-11-17 11:01:27][INFO] Received request to embed multiple: [
+  "coastal beacon caretaker cleaning metal lamp during dusk"
+]
+[2026-11-17 11:01:27][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:27][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:30][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:30][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "elderly relative making loaves using spice kernels near timber stove"
+  ]
+}
+[2026-11-17 11:01:30][INFO] Received request to embed multiple: [
+  "elderly relative making loaves using spice kernels near timber stove"
+]
+[2026-11-17 11:01:30][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:30][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:33][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:33][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "eruption dust blew onto ice sheet turning frozen terrain grey"
+  ]
+}
+[2026-11-17 11:01:33][INFO] Received request to embed multiple: [
+  "eruption dust blew onto ice sheet turning frozen terrain grey"
+]
+[2026-11-17 11:01:33][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:33][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:36][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:36][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "symphony players adjusting fiddles; maestro stood near lectern"
+  ]
+}
+[2026-11-17 11:01:36][INFO] Received request to embed multiple: [
+  "symphony players adjusting fiddles; maestro stood near lectern"
+]
+[2026-11-17 11:01:36][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:36][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:37][DEBUG] Received request: GET to /api/v1/models
+[2026-11-17 11:01:37][INFO] Returning 2 models from v1 API
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getLoadConfig] Getting load config stack for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getModelInfo] Getting descriptor for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][DEBUG][LMSAuthenticator][Client=lms-cli][Endpoint=getInstanceProcessingState] Getting instance processing state for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=listLoaded] Listing loaded models
+[2026-11-17 11:01:37][INFO][LMSAuthenticator][Client=lms-cli][Endpoint=getModelInfo] Getting descriptor for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:37][DEBUG][LMSAuthenticator][Client=lms-cli][Endpoint=getInstanceProcessingState] Getting instance processing state for specifier: {"type":"instanceReference","instanceReference":"lf1xMUJArOWd9BV3EHiyo366"}
+[2026-11-17 11:01:38][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Grandmother baked rye bread with caraway seeds ins... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:38][INFO] Received request to embed multiple: [
+  "Grandmother baked rye bread with caraway seeds inside her wood-fired oven. 7197483948372737933647681..."
+]
+[2026-11-17 11:01:38][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:42][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:42][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "Copper kettles whistled loudly when morning tea wa... <Truncated in logs> ...93280379180688398422227310988161494221688539542096"
+  ]
+}
+[2026-11-17 11:01:42][INFO] Received request to embed multiple: [
+  "Copper kettles whistled loudly when morning tea was finally ready upstairs. 719748394837273793364768..."
+]
+[2026-11-17 11:01:42][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:46][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:46][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ... the glacier and darkened the snowfield for weeks."
+  ]
+}
+[2026-11-17 11:01:46][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:46][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:50][INFO] Returning embeddings (not shown in logs)
+[2026-11-17 11:01:50][DEBUG] Received request: POST to /v1/embeddings with body {
+  "model": "text-embedding-qwen3-embedding-0.6b",
+  "input": [
+    "71974839483727379336476818750373629326339166067419... <Truncated in logs> ...oudly when morning tea was finally ready upstairs."
+  ]
+}
+[2026-11-17 11:01:50][INFO] Received request to embed multiple: [
+  "7197483948372737933647681875037362932633916606741922500547022685690067209072280025717494987834768728..."
+]
+[2026-11-17 11:01:50][DEBUG][WARNING] At least one last token in strings embedded is not SEP. 'tokenizer.ggml.add_eos_token' should be set to 'true' in the GGUF header
+[2026-11-17 11:01:54][INFO] Returning embeddings (not shown in logs)

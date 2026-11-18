@@ -1,0 +1,25 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/Users/admin/k198830/ws-full",
+      "skipBootstrap": true
+    }
+  },
+  "memory": {
+    "search": {
+      "enabled": true,
+      "provider": "lmstudio",
+      "model": "text-embedding-qwen3-embedding-0.6b",
+      "fallback": "none"
+    }
+  },
+  "models": {
+    "providers": {
+      "lmstudio": {
+        "baseUrl": "http://127.0.0.1:1235/v1",
+        "api": "openai-completions",
+        "models": []
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+STEP info  start=2026-11-16T21:27:50Z
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+arm64
+uid=501(admin) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),264(_webdeveloper),701(com.apple.sharepoint.group.1),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+v24.22.3
+11.19.1
+/Users/admin/.npm-global
+/Users/admin/.npm-global/lib/node_modules
+/Users/admin/.npm-global/bin/openclaw
+OpenClaw 2026.11.3 (847611d)
+This is perl 5, version 34, subversion 1 (v5.34.1) built for darwin-thread-multi-2level
+/dev/disk2s5    46Gi    11Gi    15Gi    42%    347k  160M    0%   /System/Volumes/Data
+grep194160 done
+STEP info end=2026-11-16T21:27:54Z
+host-rc=0

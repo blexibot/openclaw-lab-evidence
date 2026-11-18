@@ -1,0 +1,8 @@
+STEP info  start=2026-11-17T10:55:21Z
+HW memsize=17179869184 ncpu=4 model=VirtualMac2,1 arch=arm64 os=26.6.2_25G83
+SW node=v24.22.3 npm=11.19.1 openclaw=OpenClaw_2026.11.3_(847611d) npm_prefix=/Users/admin/.npm-global
+DISK /dev/disk2s5    46Gi    11Gi    15Gi    42%    345k  162M    0%   /System/Volumes/Data
+GUESTMEM t=1794912922 avail_mib=10947 comp_mib=0 swap_mib=0 level=1 lms_rss_mib=1
+PRE_LMS_DIR ls: /Users/admin/.lmstudio: No such file or directory
+STEP info end=2026-11-17T10:55:22Z
+host-rc=0 host-budget-s=180

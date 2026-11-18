@@ -1,0 +1,188 @@
+V194166 2026-11-16T21:27:05Z START hard_stop_epoch=1794874325 left_min=165 base=8dd41fc95291553e5885fec09992bd41c3038004 head=5438a832520be89cde6799215b99a711fc039950
+V194166 2026-11-16T21:27:05Z LINUX_BUILD started pid=64113 (base, head, head2; expect 25-50 min)
+V194166 2026-11-16T21:27:49Z MAC_BENCH up OpenClaw 2026.11.3 (847611d)
+V194166 2026-11-16T21:27:50Z PUSH m194166.sh sha256=23f9f7187ca75110e628e8d6b959538bdc9f87165e0e17be1285e0fce6b0d933 ok
+V194166 2026-11-16T21:27:50Z PUSH j194166.mjs sha256=2f4956a5d085a20a379180ca9dd783427adfd32a28fe68eb9a2308754068f069 ok
+V194166 2026-11-16T21:27:50Z NONCES sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 x=892f51504c5e48bf
+[m-info] STEP info  start=2026-11-16T21:27:50Z
+[m-info] STEP info end=2026-11-16T21:27:54Z
+[m-prep] STEP prep  start=2026-11-16T21:27:54Z
+[m-prep] PREP dmg rc=0 sha256=fc4ac5a9b85b2f20b9bb1b8ded9a5a9ee73c86c26c93acb3931d9d7e2866b043
+[m-prep] STEP prep end=2026-11-16T21:27:55Z
+[m-bk-rel] STEP bk rel 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T21:27:55Z
+[m-bk-rel] SETUP bk-rel rc=0
+[m-bk-rel] PLAN bk-rel rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-bk-rel STATE=/Users/admin/k194166/h-bk-rel/.openclaw WORKSPACE=/Users/admin/k194166/h-bk-rel/.openclaw/workspace
+[m-bk-rel] BK bk-rel B0 rc=0 refusal=none skipwarn=0
+[m-bk-rel] ARCH bk-rel B0 tar_rc=0 entries=52 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T21-27-58.879+00-00-openclaw-backup.tar.gz
+[m-bk-rel] ATTACH bk-rel-B1 rc=0
+[m-bk-rel] TRIGGER bk-rel-B1 stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-bk-rel] DRY bk-rel B1 rc=0 refusal=none skipwarn=0
+[m-bk-rel] BK bk-rel B1 rc=1 refusal=unreadable skipwarn=0
+[m-bk-rel] ARCH bk-rel B1 archive=missing
+[m-bk-rel] DETACH bk-rel-B1 rc=0
+[m-bk-rel] BK bk-rel B2 rc=0 refusal=none skipwarn=0
+[m-bk-rel] BK bk-rel N1 rc=1 refusal=unreadable skipwarn=0
+[m-bk-rel] CLEAN N1 ok
+[m-bk-rel] BK bk-rel N2 rc=1 refusal=invalid skipwarn=0
+[m-bk-rel] CLEAN N2 ok
+[m-bk-rel] BK bk-rel N3 rc=1 refusal=invalid skipwarn=0
+[m-bk-rel] CLEAN N3 ok
+[m-bk-rel] BK bk-rel N4 rc=0 refusal=none skipwarn=0
+[m-bk-rel] ARCH bk-rel N4 tar_rc=0 entries=53 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T21-28-20.449+00-00-openclaw-backup.tar.gz
+[m-bk-rel] CLEAN N4 ok
+[m-bk-rel] N5PROBE read_rc=1 eacces=1
+[m-bk-rel] BK bk-rel N5 rc=1 refusal=invalid skipwarn=0
+[m-bk-rel] CLEAN N5 ok
+[m-bk-rel] STEP bk end=2026-11-16T21:28:22Z
+[m-up-rel-att] STEP up rel-att 2026.11.4 1 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T21:28:22Z
+[m-up-rel-att] SETUP up-rel-att rc=0
+[m-up-rel-att] PLAN up-rel-att rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-rel-att STATE=/Users/admin/k194166/h-up-rel-att/.openclaw WORKSPACE=/Users/admin/k194166/h-up-rel-att/.openclaw/workspace
+[m-up-rel-att] CFGSET up-rel-att rc=0
+[m-up-rel-att] ATTACH up-rel-att rc=0
+[m-up-rel-att] TRIGGER up-rel-att stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-up-rel-att] NPMW up-rel-att root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_3_admin_staff_96_Nov_16_21:27_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+[m-up-rel-att] UP rel-att rc=1 trigger=1 target=2026.11.4 ver_before=OpenClaw_2026.11.3_(847611d) ver_after=OpenClaw_2026.11.3_(847611d) bi_before=2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z bi_after=2026.11.3-release-847611dcaa3b-2026-11-10T11-11-36.248Z capture_unavailable=2 nosnap_space=0 skipwarn=0 perm_denied=5 cannot_write=7 capture_manifests=0 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+[m-up-rel-att] BK up-rel-att POST rc=1 refusal=unreadable skipwarn=0
+[m-up-rel-att] ARCH up-rel-att POST archive=missing
+[m-up-rel-att] DETACH up-rel-att rc=0
+[m-up-rel-att] STEP up end=2026-11-16T21:30:24Z
+V194166 2026-11-16T22:16:46Z LINUX_BUILD exit=0 LBUILD base BUILD_RESULT label=base rc=0 sha=8dd41fc95291553e5885fec09992bd41c3038004 tgz=openclaw-2026.11.1.tgz bytes=112073477 sha256=3af2c602ee445e0f3cc306d6df2758075b792b1da28b129d95a7f2ae4a5a300d buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z LPULL base sha256=3af2c602ee445e0f3cc306d6df2758075b792b1da28b129d95a7f2ae4a5a300d ok LBUILD head BUILD_RESULT label=head rc=0 sha=5438a832520be89cde6799215b99a711fc039950 tgz=openclaw-2026.11.1.tgz bytes=112079880 sha256=eec57a9b78049432d22e4910732936c457bf7043a9336848c2d2597b0c273a55 buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z LPULL head sha256=eec57a9b78049432d22e4910732936c457bf7043a9336848c2d2597b0c273a55 ok LBUILD head2 BUILD_RESULT label=head2 rc=0 sha=5438a832520be89cde6799215b99a711fc039950 tgz=openclaw-2026.11.1.tgz bytes=112080217 sha256=19088ccb3bb086591fd062a869fa906e4a6cc62c5254a02bfafe7bed3ba7babc buildid=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z LPULL head2 sha256=19088ccb3bb086591fd062a869fa906e4a6cc62c5254a02bfafe7bed3ba7babc ok 
+V194166 2026-11-16T22:16:46Z PR_HEAD now=5438a832520be89cde6799215b99a711fc039950 pinned=5438a832520be89cde6799215b99a711fc039950 moved=no
+V194166 2026-11-16T22:16:46Z PKG base sha256=3af2c602ee445e0f3cc306d6df2758075b792b1da28b129d95a7f2ae4a5a300d buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z
+V194166 2026-11-16T22:16:46Z PKG head sha256=eec57a9b78049432d22e4910732936c457bf7043a9336848c2d2597b0c273a55 buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z
+V194166 2026-11-16T22:16:47Z PKG head2 sha256=19088ccb3bb086591fd062a869fa906e4a6cc62c5254a02bfafe7bed3ba7babc buildid=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z
+V194166 2026-11-16T22:16:48Z PUSH openclaw-base.tgz sha256=3af2c602ee445e0f3cc306d6df2758075b792b1da28b129d95a7f2ae4a5a300d ok
+V194166 2026-11-16T22:16:49Z PUSH openclaw-head.tgz sha256=eec57a9b78049432d22e4910732936c457bf7043a9336848c2d2597b0c273a55 ok
+V194166 2026-11-16T22:16:50Z PUSH openclaw-head2.tgz sha256=19088ccb3bb086591fd062a869fa906e4a6cc62c5254a02bfafe7bed3ba7babc ok
+[m-install-base-bk] STEP install base base-bk start=2026-11-16T22:16:50Z
+[m-install-base-bk] INSTALL base base-bk rc=0 version=OpenClaw_2026.11.1_(8dd41fc) buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-base-bk] STEP install end=2026-11-16T22:17:22Z
+V194166 2026-11-16T22:17:22Z RUNNER install-base-bk ok version=OpenClaw_2026.11.1_(8dd41fc)
+[m-bk-base] STEP bk base 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:17:22Z
+[m-bk-base] SETUP bk-base rc=0
+[m-bk-base] PLAN bk-base rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-bk-base STATE=/Users/admin/k194166/h-bk-base/.openclaw WORKSPACE=/Users/admin/k194166/h-bk-base/.openclaw/workspace
+[m-bk-base] BK bk-base B0 rc=0 refusal=none skipwarn=0
+[m-bk-base] ARCH bk-base B0 tar_rc=0 entries=56 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-17-25.817+00-00-openclaw-backup.tar.gz
+[m-bk-base] ATTACH bk-base-B1 rc=0
+[m-bk-base] TRIGGER bk-base-B1 stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-bk-base] DRY bk-base B1 rc=0 refusal=none skipwarn=0
+[m-bk-base] BK bk-base B1 rc=1 refusal=unreadable skipwarn=0
+[m-bk-base] ARCH bk-base B1 archive=missing
+[m-bk-base] DETACH bk-base-B1 rc=0
+[m-bk-base] BK bk-base B2 rc=0 refusal=none skipwarn=0
+[m-bk-base] BK bk-base N1 rc=1 refusal=unreadable skipwarn=0
+[m-bk-base] CLEAN N1 ok
+[m-bk-base] BK bk-base N2 rc=1 refusal=invalid skipwarn=0
+[m-bk-base] CLEAN N2 ok
+[m-bk-base] BK bk-base N3 rc=1 refusal=invalid skipwarn=0
+[m-bk-base] CLEAN N3 ok
+[m-bk-base] BK bk-base N4 rc=0 refusal=none skipwarn=0
+[m-bk-base] ARCH bk-base N4 tar_rc=0 entries=57 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-17-35.288+00-00-openclaw-backup.tar.gz
+[m-bk-base] CLEAN N4 ok
+[m-bk-base] N5PROBE read_rc=1 eacces=1
+[m-bk-base] BK bk-base N5 rc=1 refusal=invalid skipwarn=0
+[m-bk-base] CLEAN N5 ok
+[m-bk-base] STEP bk end=2026-11-16T22:17:37Z
+[m-install-head-bk] STEP install head head-bk start=2026-11-16T22:17:38Z
+[m-install-head-bk] INSTALL head head-bk rc=0 version=OpenClaw_2026.11.1_(5438a83) buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-head-bk] STEP install end=2026-11-16T22:17:51Z
+V194166 2026-11-16T22:17:51Z RUNNER install-head-bk ok version=OpenClaw_2026.11.1_(5438a83)
+[m-bk-head] STEP bk head 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:17:51Z
+[m-bk-head] SETUP bk-head rc=0
+[m-bk-head] PLAN bk-head rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-bk-head STATE=/Users/admin/k194166/h-bk-head/.openclaw WORKSPACE=/Users/admin/k194166/h-bk-head/.openclaw/workspace
+[m-bk-head] BK bk-head B0 rc=0 refusal=none skipwarn=0
+[m-bk-head] ARCH bk-head B0 tar_rc=0 entries=56 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-17-54.743+00-00-openclaw-backup.tar.gz
+[m-bk-head] ATTACH bk-head-B1 rc=0
+[m-bk-head] TRIGGER bk-head-B1 stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-bk-head] DRY bk-head B1 rc=0 refusal=none skipwarn=0
+[m-bk-head] BK bk-head B1 rc=0 refusal=none skipwarn=1
+[m-bk-head] ARCH bk-head B1 tar_rc=0 entries=58 fse_entries=0 keep=1e84a0f288fde2e4 x=892f51504c5e48bf sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=1 priv_entries=0 archive=2026-11-16T22-17-57.561+00-00-openclaw-backup.tar.gz
+[m-bk-head] DETACH bk-head-B1 rc=0
+[m-bk-head] BK bk-head B2 rc=0 refusal=none skipwarn=0
+[m-bk-head] BK bk-head N1 rc=1 refusal=unreadable skipwarn=0
+[m-bk-head] CLEAN N1 ok
+[m-bk-head] BK bk-head N2 rc=1 refusal=invalid skipwarn=0
+[m-bk-head] CLEAN N2 ok
+[m-bk-head] BK bk-head N3 rc=1 refusal=invalid skipwarn=0
+[m-bk-head] CLEAN N3 ok
+[m-bk-head] BK bk-head N4 rc=0 refusal=none skipwarn=0
+[m-bk-head] ARCH bk-head N4 tar_rc=0 entries=57 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T22-18-05.153+00-00-openclaw-backup.tar.gz
+[m-bk-head] CLEAN N4 ok
+[m-bk-head] N5PROBE read_rc=1 eacces=1
+[m-bk-head] BK bk-head N5 rc=1 refusal=invalid skipwarn=0
+[m-bk-head] CLEAN N5 ok
+[m-bk-head] STEP bk end=2026-11-16T22:18:07Z
+V194166 2026-11-16T22:18:07Z TARGET head2 buildid=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z (head buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z; must differ or the update may be a no-op)
+[m-install-head-att] STEP install head head-att start=2026-11-16T22:18:08Z
+[m-install-head-att] INSTALL head head-att rc=0 version=OpenClaw_2026.11.1_(5438a83) buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-head-att] STEP install end=2026-11-16T22:18:21Z
+V194166 2026-11-16T22:18:21Z RUNNER install-head-att ok version=OpenClaw_2026.11.1_(5438a83)
+[m-up-head-att] STEP up head-att /Users/admin/k194166/pkgs/openclaw-head2.tgz 1 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:18:21Z
+[m-up-head-att] SETUP up-head-att rc=0
+[m-up-head-att] PLAN up-head-att rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-head-att STATE=/Users/admin/k194166/h-up-head-att/.openclaw WORKSPACE=/Users/admin/k194166/h-up-head-att/.openclaw/workspace
+[m-up-head-att] CFGSET up-head-att rc=0
+[m-up-head-att] ATTACH up-head-att rc=0
+[m-up-head-att] TRIGGER up-head-att stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-up-head-att] NPMW up-head-att root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_3_admin_staff_96_Nov_16_22:18_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+[m-up-head-att] UP head-att rc=0 trigger=1 target=/Users/admin/k194166/pkgs/openclaw-head2.tgz ver_before=OpenClaw_2026.11.1_(5438a83) ver_after=OpenClaw_2026.11.1_(5438a83) bi_before=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z bi_after=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z capture_unavailable=0 nosnap_space=0 skipwarn=0 perm_denied=0 cannot_write=0 capture_manifests=1 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+[m-up-head-att] BK up-head-att POST rc=0 refusal=none skipwarn=1
+[m-up-head-att] ARCH up-head-att POST tar_rc=0 entries=67 fse_entries=0 keep=1e84a0f288fde2e4 x=892f51504c5e48bf sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=1 priv_entries=0 archive=2026-11-16T22-21-06.992+00-00-openclaw-backup.tar.gz
+[m-up-head-att] DETACH up-head-att rc=0
+[m-up-head-att] STEP up end=2026-11-16T22:21:08Z
+[m-install-base-att] STEP install base base-att start=2026-11-16T22:21:08Z
+[m-install-base-att] INSTALL base base-att rc=0 version=OpenClaw_2026.11.1_(8dd41fc) buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-base-att] STEP install end=2026-11-16T22:21:22Z
+V194166 2026-11-16T22:21:22Z RUNNER install-base-att ok version=OpenClaw_2026.11.1_(8dd41fc)
+[m-up-base-att] STEP up base-att /Users/admin/k194166/pkgs/openclaw-head2.tgz 1 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:21:22Z
+[m-up-base-att] SETUP up-base-att rc=0
+[m-up-base-att] PLAN up-base-att rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-base-att STATE=/Users/admin/k194166/h-up-base-att/.openclaw WORKSPACE=/Users/admin/k194166/h-up-base-att/.openclaw/workspace
+[m-up-base-att] CFGSET up-base-att rc=0
+[m-up-base-att] ATTACH up-base-att rc=0
+[m-up-base-att] TRIGGER up-base-att stat_rc=1 eacces=1 owner=root:staff:drwx------
+[m-up-base-att] NPMW up-base-att root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_4_admin_staff_128_Nov_16_22:21_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+[m-up-base-att] UP base-att rc=0 trigger=1 target=/Users/admin/k194166/pkgs/openclaw-head2.tgz ver_before=OpenClaw_2026.11.1_(8dd41fc) ver_after=OpenClaw_2026.11.1_(5438a83) bi_before=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z bi_after=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z capture_unavailable=0 nosnap_space=0 skipwarn=0 perm_denied=0 cannot_write=0 capture_manifests=1 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+[m-up-base-att] BK up-base-att POST rc=0 refusal=none skipwarn=1
+[m-up-base-att] ARCH up-base-att POST tar_rc=0 entries=67 fse_entries=0 keep=1e84a0f288fde2e4 x=892f51504c5e48bf sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=1 priv_entries=0 archive=2026-11-16T22-24-04.763+00-00-openclaw-backup.tar.gz
+[m-up-base-att] DETACH up-base-att rc=0
+[m-up-base-att] STEP up end=2026-11-16T22:24:06Z
+[m-install-base-det] STEP install base base-det start=2026-11-16T22:24:06Z
+[m-install-base-det] INSTALL base base-det rc=0 version=OpenClaw_2026.11.1_(8dd41fc) buildid=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-base-det] STEP install end=2026-11-16T22:24:35Z
+V194166 2026-11-16T22:24:35Z RUNNER install-base-det ok version=OpenClaw_2026.11.1_(8dd41fc)
+[m-up-base-det] STEP up base-det /Users/admin/k194166/pkgs/openclaw-head2.tgz 0 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:24:35Z
+[m-up-base-det] SETUP up-base-det rc=0
+[m-up-base-det] PLAN up-base-det rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-base-det STATE=/Users/admin/k194166/h-up-base-det/.openclaw WORKSPACE=/Users/admin/k194166/h-up-base-det/.openclaw/workspace
+[m-up-base-det] CFGSET up-base-det rc=0
+[m-up-base-det] NPMW up-base-det root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_5_admin_staff_160_Nov_16_22:24_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+[m-up-base-det] UP base-det rc=0 trigger=na target=/Users/admin/k194166/pkgs/openclaw-head2.tgz ver_before=OpenClaw_2026.11.1_(8dd41fc) ver_after=OpenClaw_2026.11.1_(5438a83) bi_before=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z bi_after=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z capture_unavailable=0 nosnap_space=0 skipwarn=0 perm_denied=0 cannot_write=0 capture_manifests=1 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+[m-up-base-det] BK up-base-det POST rc=0 refusal=none skipwarn=0
+[m-up-base-det] STEP up end=2026-11-16T22:27:17Z
+[m-install-head-det] STEP install head head-det start=2026-11-16T22:27:17Z
+[m-install-head-det] INSTALL head head-det rc=0 version=OpenClaw_2026.11.1_(5438a83) buildid=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z which=/Users/admin/.npm-global/bin/openclaw
+[m-install-head-det] STEP install end=2026-11-16T22:27:31Z
+V194166 2026-11-16T22:27:31Z RUNNER install-head-det ok version=OpenClaw_2026.11.1_(5438a83)
+[m-up-head-det] STEP up head-det /Users/admin/k194166/pkgs/openclaw-head2.tgz 0 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:27:31Z
+[m-up-head-det] SETUP up-head-det rc=0
+[m-up-head-det] PLAN up-head-det rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-head-det STATE=/Users/admin/k194166/h-up-head-det/.openclaw WORKSPACE=/Users/admin/k194166/h-up-head-det/.openclaw/workspace
+[m-up-head-det] CFGSET up-head-det rc=0
+[m-up-head-det] NPMW up-head-det root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_6_admin_staff_192_Nov_16_22:27_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+[m-up-head-det] UP head-det rc=0 trigger=na target=/Users/admin/k194166/pkgs/openclaw-head2.tgz ver_before=OpenClaw_2026.11.1_(5438a83) ver_after=OpenClaw_2026.11.1_(5438a83) bi_before=2026.11.1-5438a832520b-2026-11-16T22-04-59.771Z bi_after=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z capture_unavailable=0 nosnap_space=0 skipwarn=0 perm_denied=0 cannot_write=0 capture_manifests=1 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+[m-up-head-det] BK up-head-det POST rc=0 refusal=none skipwarn=0
+[m-up-head-det] STEP up end=2026-11-16T22:30:12Z
+[m-pack] STEP pack  start=2026-11-16T22:30:12Z
+[m-pack] PACK rc=0 sha256=0b1d666a7bf350080a8f9ee421864dba9c4876dfd8cd716c6ef0b786ff5c838f bytes=74914
+[m-pack] STEP pack end=2026-11-16T22:30:12Z
+V194166 2026-11-16T22:30:12Z PULL guest-ev.tgz sha256=0b1d666a7bf350080a8f9ee421864dba9c4876dfd8cd716c6ef0b786ff5c838f ok
+V194166 2026-11-16T22:30:13Z MAC_DESTROY rc=0
+V194166 2026-11-16T22:30:13Z NO_LEFTOVER t194166-mac
+V194166 2026-11-16T22:30:14Z NO_LEFTOVER t194166-bld
+V194166 2026-11-16T22:30:14Z SUMMARY bk-rel outcome="reproduced" detail="B1 rc=1 refusal=unreadable"
+V194166 2026-11-16T22:30:14Z SUMMARY bk-base outcome="reproduced" detail="B1 rc=1 refusal=unreadable"
+V194166 2026-11-16T22:30:14Z SUMMARY bk-head outcome="candidate passes this scenario" detail="all 13 checks passed"
+V194166 2026-11-16T22:30:14Z SUMMARY up-rel-att outcome="reproduced" detail="original-state capture unavailable; update rc=1"
+V194166 2026-11-16T22:30:14Z SUMMARY up-head-att outcome="reproduced" detail="on the candidate, failed: fseventsd-not-in-excludedRoots"
+V194166 2026-11-16T22:30:14Z SUMMARY up-base-att outcome="not reproduced under these conditions" detail="capture_unavailable=0; update rc=0"
+V194166 2026-11-16T22:30:14Z SUMMARY up-base-det outcome="control passed" detail="rc=0 capture_unavailable=0"
+V194166 2026-11-16T22:30:14Z SUMMARY up-head-det outcome="candidate passes this scenario" detail="all checks passed"
+V194166 2026-11-16T22:30:14Z ATTRIBUTION backup=yes update=no (yes = fails at base 8dd41fc95291553e5885fec09992bd41c3038004, passes at 5438a832520be89cde6799215b99a711fc039950, same kit and guest)
+V194166 2026-11-16T22:30:14Z RESULT_SUGGESTED=failed left_min=101

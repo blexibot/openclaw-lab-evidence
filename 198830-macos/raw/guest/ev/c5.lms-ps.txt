@@ -1,0 +1,4 @@
+
+IDENTIFIER                             MODEL                                  STATUS    SIZE         CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL
+text-embedding-qwen3-embedding-0.6b    text-embedding-qwen3-embedding-0.6b    IDLE      639.15 MB    2048       -           LM Studio      Local        
+

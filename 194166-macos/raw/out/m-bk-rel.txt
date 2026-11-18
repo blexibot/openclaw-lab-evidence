@@ -1,0 +1,178 @@
+STEP bk rel 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T21:27:55Z
+SETUP bk-rel rc=0
+PLAN bk-rel rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-bk-rel STATE=/Users/admin/k194166/h-bk-rel/.openclaw WORKSPACE=/Users/admin/k194166/h-bk-rel/.openclaw/workspace
+BK bk-rel B0 rc=0 refusal=none skipwarn=0
+ARCH bk-rel B0 tar_rc=0 entries=52 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T21-27-58.879+00-00-openclaw-backup.tar.gz
+ATTACH bk-rel-B1 rc=0
+LS drwxr-xr-x  4 admin  staff  - 128 Nov 16 21:28 /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/labvol
+LS drwx------+ 3 root   staff  -  96 Nov 16 21:28 /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/labvol/.fseventsd
+LS  0: group:everyone allow readextattr
+LSVOL total 8
+LSVOL drwxr-xr-x  4 admin  staff  128 Nov 16 21:28 .
+LSVOL drwxr-xr-x  4 admin  staff  128 Nov 16 21:27 ..
+LSVOL drwx------+ 3 root   staff   96 Nov 16 21:28 .fseventsd
+LSVOL -rw-r--r--  1 admin  staff   17 Nov 16 21:28 x.txt
+DISKUTIL    Mount Point:               /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/labvol
+DISKUTIL    File System Personality:   APFS
+DISKUTIL    Owners:                    Enabled
+MOUNT /dev/disk8s1 on /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/labvol (apfs, local, nodev, nosuid, journaled, mounted by admin)
+TRIGGER bk-rel-B1 stat_rc=1 eacces=1 owner=root:staff:drwx------
+DRY bk-rel B1 rc=0 refusal=none skipwarn=0
+BK bk-rel B1 rc=1 refusal=unreadable skipwarn=0
+ARCH bk-rel B1 archive=missing
+DETACH bk-rel-B1 rc=0
+BK bk-rel B2 rc=0 refusal=none skipwarn=0
+BK bk-rel N1 rc=1 refusal=unreadable skipwarn=0
+CLEAN N1 ok
+BK bk-rel N2 rc=1 refusal=invalid skipwarn=0
+CLEAN N2 ok
+BK bk-rel N3 rc=1 refusal=invalid skipwarn=0
+CLEAN N3 ok
+BK bk-rel N4 rc=0 refusal=none skipwarn=0
+ARCH bk-rel N4 tar_rc=0 entries=53 fse_entries=0 keep=1e84a0f288fde2e4 x=ABSENT sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=0 priv_entries=0 archive=2026-11-16T21-28-20.449+00-00-openclaw-backup.tar.gz
+CLEAN N4 ok
+LS N5 drwxr-xr-x  3 root  staff  - 96 Nov 16 21:28 /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/fmark
+LS N5 -rw-------  1 root  staff  - 35 Nov 16 21:28 /Users/admin/k194166/h-bk-rel/.openclaw/workspace/state/fmark/.openclaw-private-update-capture
+N5PROBE read_rc=1 eacces=1
+BK bk-rel N5 rc=1 refusal=invalid skipwarn=0
+CLEAN N5 ok
+--- tail bk-rel B0
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+rc=0
+--- tail bk-rel B1
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:28:02Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-rel B2
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+rc=0
+--- tail bk-rel N1
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:28:16Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-rel N2
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:28:17Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-rel N3
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:28:18Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+--- tail bk-rel N4
+  "skipped": [
+    {
+      "kind": "workspace",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/workspace",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/workspace",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "agent",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/agents/main/agent",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/agents/main/agent",
+      "reason": "covered",
+      "coveredBy": "$OPENCLAW_HOME/.openclaw"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-bk-rel/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    }
+  ],
+  "skippedVolatileCount": 0
+}
+rc=0
+--- tail bk-rel N5
++ openclaw backup create --verify --json --output /Users/admin/k194166/h-bk-rel/out [2026-11-16T21:28:21Z]
+{
+  "ok": false,
+  "error": {
+    "type": "cli_error",
+    "message": "Private update capture marker is invalid or unreadable; export refused."
+  }
+}
+[openclaw] The CLI command failed.
+[openclaw] For help, run `openclaw doctor`.
+rc=1
+STEP bk end=2026-11-16T21:28:22Z
+host-rc=0

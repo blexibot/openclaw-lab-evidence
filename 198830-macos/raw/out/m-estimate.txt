@@ -1,0 +1,6 @@
+STEP estimate  start=2026-11-17T10:57:51Z
+EST ctx=1024 rc=0 out=Estimated_GPU_Memory:_853.36_MiB_Estimated_Total_Memory:_853.36_MiB_Confidence:_LOW_Estimate:_This_model_may_be_loaded_based_on_your_resource_guardrails_settings.
+EST ctx=2048 rc=0 out=Estimated_GPU_Memory:_853.36_MiB_Estimated_Total_Memory:_853.36_MiB_Confidence:_LOW_Estimate:_This_model_may_be_loaded_based_on_your_resource_guardrails_settings.
+AFTER_EST LOADED n=0 none
+STEP estimate end=2026-11-17T10:57:53Z
+host-rc=0 host-budget-s=600

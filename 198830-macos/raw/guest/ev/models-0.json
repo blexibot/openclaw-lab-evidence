@@ -1,0 +1,34 @@
+{
+  "models": [
+    {
+      "type": "embedding",
+      "publisher": "Qwen",
+      "key": "text-embedding-qwen3-embedding-0.6b",
+      "display_name": "Qwen3 Embedding 0.6B",
+      "quantization": {
+        "name": "Q8_0",
+        "bits_per_weight": 8
+      },
+      "size_bytes": 639150592,
+      "params_string": "0.6B",
+      "loaded_instances": [],
+      "max_context_length": 32768,
+      "format": "gguf"
+    },
+    {
+      "type": "embedding",
+      "publisher": "nomic-ai",
+      "key": "text-embedding-nomic-embed-text-v1.5",
+      "display_name": "Nomic Embed Text v1.5",
+      "quantization": {
+        "name": "Q4_K_M",
+        "bits_per_weight": 4
+      },
+      "size_bytes": 84106624,
+      "params_string": null,
+      "loaded_instances": [],
+      "max_context_length": 2048,
+      "format": "gguf"
+    }
+  ]
+}

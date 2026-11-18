@@ -1,0 +1,3 @@
+SCAN_PARSE=ok
+FOUND_REASON unreadable-foreign /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd
+FOUND_STRING sourcePath /Users/admin/k194166/h-bk-head/.openclaw/workspace/state/labvol/.fseventsd

@@ -1,0 +1,117 @@
+STEP up base-att /Users/admin/k194166/pkgs/openclaw-head2.tgz 1 24eacc443ae6eaec 1e84a0f288fde2e4 892f51504c5e48bf start=2026-11-16T22:21:22Z
+SETUP up-base-att rc=0
+PLAN up-base-att rc=0 OPENCLAW_HOME=/Users/admin/k194166/h-up-base-att STATE=/Users/admin/k194166/h-up-base-att/.openclaw WORKSPACE=/Users/admin/k194166/h-up-base-att/.openclaw/workspace
+CFGSET up-base-att rc=0
+ATTACH up-base-att rc=0
+LS drwxr-xr-x@  4 admin  staff  - 128 Nov 16 21:28 /Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol
+LS drwx------+ 13 root   staff  - 416 Nov 16 22:21 /Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol/.fseventsd
+LS  0: group:everyone allow readextattr
+LSVOL total 8
+LSVOL drwxr-xr-x@  4 admin  staff  128 Nov 16 21:28 .
+LSVOL drwxr-xr-x   4 admin  staff  128 Nov 16 22:21 ..
+LSVOL drwx------+ 13 root   staff  416 Nov 16 22:21 .fseventsd
+LSVOL -rw-r--r--   1 admin  staff   17 Nov 16 22:21 x.txt
+DISKUTIL    Mount Point:               /Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol
+DISKUTIL    File System Personality:   APFS
+DISKUTIL    Owners:                    Enabled
+MOUNT /dev/disk8s1 on /Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol (apfs, local, nodev, nosuid, journaled, mounted by admin)
+TRIGGER up-base-att stat_rc=1 eacces=1 owner=root:staff:drwx------
+NPMW up-base-att root=/Users/admin/.npm-global/lib/node_modules drwxr-xr-x_4_admin_staff_128_Nov_16_22:21_/Users/admin/.npm-global/lib/node_modules which=/Users/admin/.npm-global/bin/openclaw touch_rc=0
+UP base-att rc=0 trigger=1 target=/Users/admin/k194166/pkgs/openclaw-head2.tgz ver_before=OpenClaw_2026.11.1_(8dd41fc) ver_after=OpenClaw_2026.11.1_(5438a83) bi_before=2026.11.1-8dd41fc95291-2026-11-16T21-35-23.415Z bi_after=2026.11.1-5438a832520b-2026-11-16T22-12-32.416Z capture_unavailable=0 nosnap_space=0 skipwarn=0 perm_denied=0 cannot_write=0 capture_manifests=1 excluded_fse=0 sentinel=24eacc443ae6eaec keep=1e84a0f288fde2e4 cfg=true
+BK up-base-att POST rc=0 refusal=none skipwarn=1
+ARCH up-base-att POST tar_rc=0 entries=67 fse_entries=0 keep=1e84a0f288fde2e4 x=892f51504c5e48bf sentinel=24eacc443ae6eaec manifest=present manifest_foreign_fse=1 priv_entries=0 archive=2026-11-16T22-24-04.763+00-00-openclaw-backup.tar.gz
+DETACH up-base-att rc=0
+CAPDIR total 8
+CAPDIR drwx------  4 admin  staff  128 Nov 16 22:21 .
+CAPDIR drwxr-xr-x  5 admin  staff  160 Nov 16 22:24 ..
+CAPDIR -rw-------  1 admin  staff   35 Nov 16 22:21 .openclaw-private-update-capture
+CAPDIR drwx------  6 admin  staff  192 Nov 16 22:21 9f0586a1-ef70-47b4-a792-8d79ac7c8755
+--- tail up-base-att update
+      },
+      {
+        "step": "finalize:doctor-lint:post-plugin-doctor-lint",
+        "status": "completed",
+        "detail": "{\"exitCode\":0,\"termination\":\"exit\",\"signal\":null,\"killed\":false,\"counts\":{\"error\":0,\"warning\":0,\"info\":0},\"errors\":[],\"omitted\":0}"
+      },
+      {
+        "step": "package-backup-retention",
+        "status": "completed",
+        "exitCode": 0
+      },
+      {
+        "step": "recovery-artifact-cleanup",
+        "status": "completed",
+        "exitCode": 0
+      },
+      {
+        "step": "diagnostic:recovery-artifact-cleanup",
+        "status": "completed",
+        "detail": "Recovery cleanup removed 0 files (0 logical bytes); protected recovery artifacts were retained."
+      }
+    ],
+    "verification": {
+      "recovery": {
+        "serviceRestartSafe": true,
+        "version": "2026.11.1"
+      }
+    },
+    "repair": [],
+    "confirmedAtMs": null,
+    "finishedAtMs": 1794867842301,
+    "downtimeMs": null,
+    "admission": {
+      "owner": "candidate",
+      "protocol": 1,
+      "candidateVersion": "2026.11.1",
+      "checks": [
+        {
+          "name": "config",
+          "status": "ok"
+        },
+        {
+          "name": "database-schema",
+          "status": "ok"
+        },
+        {
+          "name": "node-runtime",
+          "status": "ok"
+        },
+        {
+          "name": "plugin-availability",
+          "status": "ok"
+        }
+      ]
+    }
+  },
+  "reportPath": "/Users/admin/k194166/h-up-base-att/.openclaw/update-reports/9f0586a1-ef70-47b4-a792-8d79ac7c8755.md"
+}
+[infra:temp-artifacts] Runtime retained at /private/var/folders/p7/f_99nxmj7s16qrxbl0cbpz4r0000gn/T/openclaw-update-runtime-EXLQRW: worker generation settled; cleanup deferred to the next eligible update or openclaw doctor --fix
+rc=0
+--- tail up-base-att POST
+      "kind": "plugin skills",
+      "sourcePath": "/Users/admin/k194166/h-up-base-att/.openclaw/plugin-skills",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/plugin-skills",
+      "reason": "regenerable"
+    },
+    {
+      "kind": "managed state",
+      "sourcePath": "/Users/admin/k194166/h-up-base-att/.openclaw/tmp",
+      "displayPath": "$OPENCLAW_HOME/.openclaw/tmp",
+      "reason": "regenerable"
+    },
+    {
+      "kind": "entry",
+      "sourcePath": "/Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol/.fseventsd",
+      "displayPath": "/Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol/.fseventsd",
+      "reason": "unreadable-foreign"
+    }
+  ],
+  "skippedVolatileCount": 0,
+  "warnings": [
+    "Skipped unreadable foreign entry: /Users/admin/k194166/h-up-base-att/.openclaw/workspace/state/labvol/.fseventsd",
+    "SQLite file archived as opaque bytes without a live snapshot or integrity checks: /Users/admin/k194166/h-up-base-att/.openclaw/control/services.sqlite"
+  ]
+}
+rc=0
+STEP up end=2026-11-16T22:24:06Z
+host-rc=0

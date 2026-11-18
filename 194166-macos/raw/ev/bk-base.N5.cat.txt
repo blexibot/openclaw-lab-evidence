@@ -1,0 +1,1 @@
+cat: /Users/admin/k194166/h-bk-base/.openclaw/workspace/state/fmark/.openclaw-private-update-capture: Permission denied

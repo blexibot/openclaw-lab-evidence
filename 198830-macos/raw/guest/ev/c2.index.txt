@@ -1,0 +1,36 @@
++ openclaw memory index --force --verbose [2026-11-17T10:58:32Z]
+Registered plugin command: /dreaming (plugin: memory-core)
+Memory Index (main)
+Provider: lmstudio (requested: lmstudio)
+Model: text-embedding-qwen3-embedding-0.6b
+Sources: memory (MEMORY.md + /Users/admin/k198830/ws-full/memory/*.md), sessions (current transcripts + retained transcript artifacts)
+
+(node:6099) [DEP_PLUGIN_SDK] DeprecationWarning: Plugin SDK: sqlite-runtime.getNodeSqliteKysely is deprecated; use openOpenClawAgentSqliteWorkerStoreV2 or the owning domain's awaited operations instead. Native SQL and callbacks retain their current completion and transaction ordering. Final compatibility day: 2026-12-31. Removal ships in the first January 2027 stable release; no SDK major is required.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","inputCount":5,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 5)","vectorCount":5,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote request {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+memory embeddings: remote response {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","inputCount":1,"status":200}
+memory embeddings: remote response shape {"context":"lmstudio embeddings failed (model: text-embedding-qwen3-embedding-0.6b, batch size: 1)","vectorCount":1,"firstVectorDimensions":1024,"firstIndexType":"number"}
+Memory index updated (main): 8 files indexed.
+[state/agent-db] agent database clean-close receipt: written
+rc=0
