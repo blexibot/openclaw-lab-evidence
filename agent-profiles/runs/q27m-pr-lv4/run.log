@@ -1,0 +1,40 @@
+2026-11-20T21:15:22Z tag=q27m-pr-lv4 model=qwen3.8:27b ctx=32768 mode=suite rungs=[PB PS] seeds=[1 2 3] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T21:15:22Z model digest: ['47951e4a666180bc2aedfc93c169472f2de783696fe196efbf063f5730ecf163']
+2026-11-20T21:15:26Z onboard rc=0
+kit20/run_matrix.sh: line 28: 79317 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/onboard-wire.jsonl nohup $PY -I $K/logproxy.py > $R/proxy-onboard.log 2>&1 < /dev/null
+2026-11-20T21:15:27Z workspace $LABHOME/apx/runs/q27m-pr-lv4/home/.openclaw/workspace
+2026-11-20T21:15:27Z livedin: {'AGENTS.md': 17114, 'USER.md': 3070, 'MEMORY.md': 13688} skills=40
+2026-11-20T21:15:29Z mcp add rc=0
+2026-11-20T21:15:29Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md already absent
+2026-11-20T21:15:30Z model preloaded (untimed)
+2026-11-20T21:15:31Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:22:25Z [PB-s1] suite done rc=0
+kit20/run_matrix.sh: line 57: 79402 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:22:49Z [PB-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:27:59Z [PB-s2] suite done rc=0
+kit20/run_matrix.sh: line 57: 80880 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:28:24Z [PB-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:33:55Z [PB-s3] suite done rc=0
+kit20/run_matrix.sh: line 57: 82600 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:34:19Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:55:06Z [PS-s1] suite done rc=0
+kit20/run_matrix.sh: line 57: 83885 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:55:54Z [PS-s1] rerun once: T15,T16,T11b
+2026-11-20T21:55:55Z [PS-s1-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:57:40Z [PS-s1-a2] suite done rc=0
+kit20/run_matrix.sh: line 57: 87617 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:58:04Z [PS-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T22:01:43Z [PS-s2] suite done rc=0
+kit20/run_matrix.sh: line 57: 88247 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T22:02:09Z [PS-s2] rerun once: T11b
+2026-11-20T22:02:10Z [PS-s2-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T22:03:06Z [PS-s2-a2] suite done rc=0
+kit20/run_matrix.sh: line 57: 89198 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T22:03:30Z [PS-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T22:25:46Z [PS-s3] suite done rc=0
+kit20/run_matrix.sh: line 57: 89628 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T22:26:10Z [PS-s3] rerun once: T15
+2026-11-20T22:26:11Z [PS-s3-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T22:27:34Z [PS-s3-a2] suite done rc=0
+kit20/run_matrix.sh: line 57: 93710 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T22:27:58Z DONE

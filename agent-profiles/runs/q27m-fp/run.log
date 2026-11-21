@@ -1,0 +1,20 @@
+2026-11-20T17:51:54Z tag=q27m-fp model=qwen3.8:27b ctx=32768 mode=footprint rungs=[R0 R1 R2 R3] seeds=[1] openclaw=OpenClaw 2026.11.5 (e13cf15) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T17:51:54Z model digest: ['47951e4a666180bc2aedfc93c169472f2de783696fe196efbf063f5730ecf163']
+2026-11-20T17:51:57Z onboard rc=0
+kit20/run_matrix.sh: line 28: 29733 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/onboard-wire.jsonl nohup $PY -I $K/logproxy.py > $R/proxy-onboard.log 2>&1 < /dev/null
+2026-11-20T17:51:58Z workspace $LABHOME/apx/runs/q27m-fp/home/.openclaw/workspace
+2026-11-20T17:51:58Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md removed
+2026-11-20T17:52:04Z model preloaded (untimed)
+2026-11-20T17:52:05Z [R0-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T17:53:15Z [R0-s1] footprint turn rc=0 status=200 req_bytes=68596 prompt_eval_count=16291 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=23187 oc_budget=24576/32768 oc_remaining=1389 secs_load=0.01 secs_prefill=58.02 secs_total=61.72 wall=61.725
+kit20/run_matrix.sh: line 57: 29922 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T17:53:39Z [R1-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T17:56:40Z [R1-s1] footprint turn rc=1 status=200 req_bytes=63249 prompt_eval_count=14901 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=None oc_estimate=None oc_budget=None/None oc_remaining=None secs_load=0.0 secs_prefill=53.12 secs_total=56.9 wall=56.889
+kit20/run_matrix.sh: line 57: 30286 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T17:57:04Z [R2-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T18:06:19Z [R2-s1] footprint turn rc=0 status=200 req_bytes=56468 prompt_eval_count=13112 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=19186 oc_budget=24576/32768 oc_remaining=5390 secs_load=0.01 secs_prefill=40.61 secs_total=45.7 wall=45.704
+kit20/run_matrix.sh: line 57: 31789 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T18:06:44Z [R3-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T18:07:17Z [R3-s1] footprint turn rc=0 status=200 req_bytes=48762 prompt_eval_count=11335 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=16928 oc_budget=24576/32768 oc_remaining=7648 secs_load=0.0 secs_prefill=25.6 secs_total=25.85 wall=25.851
+kit20/run_matrix.sh: line 57: 34789 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T18:07:41Z DONE

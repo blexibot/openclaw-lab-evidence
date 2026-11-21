@@ -1,0 +1,16 @@
+2026-11-20T19:35:14Z tag=g-pr-lfp model=gemma4:26b-a4b ctx=32768 mode=footprint rungs=[PB PS] seeds=[1] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T19:35:14Z model digest: ['48eb98ec778c163d87f69d735fcdd79e345063af9af4685613fd018ae5debf5e']
+2026-11-20T19:35:18Z onboard rc=0
+kit20/run_matrix.sh: line 28: 54922 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/onboard-wire.jsonl nohup $PY -I $K/logproxy.py > $R/proxy-onboard.log 2>&1 < /dev/null
+2026-11-20T19:35:19Z workspace $LABHOME/apx/runs/g-pr-lfp/home/.openclaw/workspace
+2026-11-20T19:35:19Z livedin: {'AGENTS.md': 17114, 'USER.md': 3070, 'MEMORY.md': 13688} skills=40
+2026-11-20T19:35:21Z mcp add rc=0
+2026-11-20T19:35:21Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md already absent
+2026-11-20T19:35:21Z model preloaded (untimed)
+2026-11-20T19:35:22Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:35:47Z [PB-s1] footprint turn rc=0 status=200 req_bytes=103629 prompt_eval_count=23817 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=compact_only oc_estimate=35922 oc_budget=24576/32768 oc_remaining=0 secs_load=0.01 secs_prefill=17.79 secs_total=18.1 wall=18.101
+kit20/run_matrix.sh: line 57: 55010 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T19:36:24Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:36:40Z [PS-s1] footprint turn rc=0 status=200 req_bytes=58819 prompt_eval_count=13202 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=21751 oc_budget=24576/32768 oc_remaining=2825 secs_load=0.0 secs_prefill=8.87 secs_total=9.06 wall=9.063
+kit20/run_matrix.sh: line 57: 55410 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T19:37:03Z DONE

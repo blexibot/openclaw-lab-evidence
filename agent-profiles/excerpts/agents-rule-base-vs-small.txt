@@ -1,0 +1,47 @@
+# Same-head (ffe3bf0) lived-in workspace, Gemma 4 26B, task T10b ("What is the lab greeting?", no tools allowed).
+# First request of the task session as sent to Ollama (system message only, excerpted). The rule: "## Lab convention (synthetic) / When anyone asks for the lab greeting, reply exactly: TANGERINE WAVE".
+
+## PB-s1 (base) wire seq 9, session None, req_sha256 0a7df2c7b68297f3f38beed8857c5173715413f8a8b0db653feb582c9472e816
+system message chars: 73459; contains "TANGERINE WAVE": True; contains "Lab convention": True
+excerpt:
+ meeting travel list tidy.
+- Tidy reading podcast review report agenda recipe gift summary project invoice project newsletter grocery. Podcast renewal travel car newsletter renewal travel report.
+
+## Lab convention (synthetic)
+When anyone asks for the lab greeting, reply exactly: TANGERINE WAVE
+- Weekly newsletter garden follow-up newslet
+
+
+## PS-s1 (openclaw/small) wire seq 9, session None, req_sha256 5bcc61f3a88dc36011c327bd0c6677088630c2ece0918e06761c9b8f8e36ea62
+system message chars: 29105; contains "TANGERINE WAVE": False; contains "Lab convention": True
+excerpt:
+et meeting birthday.
+- Recipe podcast meeting newsletter invoice review garden agenda weekly photos archive project receipts insurance. Gift grocery review invoice grocery review summary reminder.
+## Lab convention (synthetic)
+[...51 more policy lines omitted...]
+…(truncated AGENTS.md: kept 5400+policy 4188+1800 chars of 17211)…
+ report m
+
+truncation notice in the prompt:
+[Bootstrap truncation warning]
+Some workspace bootstrap files were truncated before Project Context injection.
+Treat Project Context as partial and read the relevant files directly if details seem missing.
+## Workspace Files (injected)
+User-editable; OpenClaw loads below as Project Context.
+# Project Context
+Loaded project context:
+SOUL.md: persona/tone. Follow it unless higher-priority instructions override.
+## $LABHOME/apx/runs/g-pr-lv4/home/.openclaw/workspace/AGENTS.md
+# AGENTS.md - Your Workspace
+
+Keep workspace conventions here. Personality and tone belong in `SOUL.md`.
+
+## Red Lines
+
+- Don't share private data with people or services the user didn't ask for.
+- Confirm destruc
+
+in-file marker: [...truncated, read AGENTS.md for full content...]
+in-file marker: [...51 more policy lines omitted...]
+in-file marker: [...truncated, read SOUL.md for full content...]
+

@@ -1,0 +1,55 @@
+2026-11-20T20:15:48Z tag=q8-pr-lv4 model=qwen3:8b ctx=32768 mode=suite rungs=[PB PS] seeds=[1 2 3] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T20:15:48Z model digest: ['500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41']
+2026-11-20T20:15:51Z onboard rc=0
+2026-11-20T20:15:52Z workspace $LABHOME/apx/runs/q8-pr-lv4/home/.openclaw/workspace
+total 56
+drwxr-xr-x   8 maintainer  staff   256 Nov 20 13:15 .
+drwx------  12 maintainer  staff   384 Nov 20 13:15 ..
+drwxr-xr-x   9 maintainer  staff   288 Nov 20 13:15 .git
+-rw-------   1 maintainer  staff  7203 Nov 20 13:15 AGENTS.md
+-rw-------   1 maintainer  staff  7479 Nov 20 13:15 BOOTSTRAP.md
+-rw-------   1 maintainer  staff  1456 Nov 20 13:15 IDENTITY.md
+-rw-------   1 maintainer  staff  1533 Nov 20 13:15 SOUL.md
+-rw-------   1 maintainer  staff  1077 Nov 20 13:15 USER.md
+2026-11-20T20:15:52Z livedin: {'AGENTS.md': 17114, 'USER.md': 3070, 'MEMORY.md': 13688} skills=40
+Saved MCP server "labtools" to $LABHOME/apx/runs/q8-pr-lv4/home/.openclaw/openclaw.json.
+2026-11-20T20:15:54Z mcp add rc=0
+2026-11-20T20:15:54Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md already absent
+2026-11-20T20:15:55Z model preloaded (untimed)
+2026-11-20T20:15:56Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PB/s1 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=20578..20578 48.5s
+PB/s1 T15 pass {'file_equals_any': True} calls=4 crossed=False prompt_eval=14790..20978 58.1s
+PB/s1 T16 fail {'reply_contains': False} calls=2 crossed=False prompt_eval=15187..25245 64.9s
+PB/s1 T11b fail {'scheduler_job': False} calls=3 crossed=False prompt_eval=20572..20904 19.2s
+2026-11-20T20:19:59Z [PB-s1] suite done rc=0
+2026-11-20T20:20:23Z [PB-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PB/s2 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=20578..20578 44.7s
+PB/s2 T15 pass {'file_equals_any': True} calls=4 crossed=False prompt_eval=14790..20978 55.1s
+PB/s2 T16 fail {'reply_contains': False} calls=1 crossed=False prompt_eval=15187..25245 64.6s
+PB/s2 T11b fail {'scheduler_job': False} calls=3 crossed=False prompt_eval=19480..20875 38.1s
+2026-11-20T20:24:38Z [PB-s2] suite done rc=0
+2026-11-20T20:25:08Z [PB-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PB/s3 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=20578..20578 44.5s
+PB/s3 T15 pass {'file_equals_any': True} calls=4 crossed=False prompt_eval=14790..20978 52.5s
+PB/s3 T16 fail {'reply_contains': False} calls=1 crossed=False prompt_eval=15187..25245 65.5s
+PB/s3 T11b fail {'scheduler_job': False} calls=3 crossed=False prompt_eval=19480..20739 40.6s
+2026-11-20T20:29:23Z [PB-s3] suite done rc=0
+2026-11-20T20:29:56Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PS/s1 T10b fail {'reply_contains': False, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=10837..10837 22.2s
+PS/s1 T15 fail {'file_equals_any': False} calls=9 crossed=False prompt_eval=10828..15936 47.9s
+PS/s1 T16 fail {'reply_contains': False} calls=3 crossed=False prompt_eval=10832..21243 38.8s
+PS/s1 T11b fail {'scheduler_job': False} calls=1 crossed=False prompt_eval=20318..20318 250.7s
+2026-11-20T20:36:48Z [PS-s1] suite done rc=0
+2026-11-20T20:37:13Z [PS-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PS/s2 T10b fail {'reply_contains': False, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=10837..10837 4.1s
+PS/s2 T15 fail {'file_equals_any': False} calls=3 crossed=False prompt_eval=10828..12529 13.3s
+PS/s2 T16 fail {'reply_contains': False} calls=1 crossed=False prompt_eval=10832..15531 17.3s
+PS/s2 T11b fail {'scheduler_job': False} calls=3 crossed=False prompt_eval=10854..11182 15.0s
+2026-11-20T20:38:54Z [PS-s2] suite done rc=0
+2026-11-20T20:39:18Z [PS-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+PS/s3 T10b fail {'reply_contains': False, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=10837..10837 4.1s
+PS/s3 T15 fail {'file_equals_any': False} calls=7 crossed=False prompt_eval=10828..13493 29.6s
+PS/s3 T16 fail {'reply_contains': False} calls=1 crossed=False prompt_eval=10832..15531 17.4s
+PS/s3 T11b fail {'scheduler_job': False} calls=3 crossed=False prompt_eval=10854..11182 15.2s
+2026-11-20T20:41:16Z [PS-s3] suite done rc=0
+2026-11-20T20:41:39Z DONE

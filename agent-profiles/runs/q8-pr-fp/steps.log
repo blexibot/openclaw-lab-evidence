@@ -1,0 +1,20 @@
+2026-11-20T19:53:31Z tag=q8-pr-fp model=qwen3:8b ctx=32768 mode=footprint rungs=[PB PS] seeds=[1] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T19:53:31Z model digest: ['500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41']
+2026-11-20T19:53:35Z onboard rc=0
+2026-11-20T19:53:36Z workspace $LABHOME/apx/runs/q8-pr-fp/home/.openclaw/workspace
+total 56
+drwxr-xr-x   8 maintainer  staff   256 Nov 20 12:53 .
+drwx------  12 maintainer  staff   384 Nov 20 12:53 ..
+drwxr-xr-x   9 maintainer  staff   288 Nov 20 12:53 .git
+-rw-------   1 maintainer  staff  7203 Nov 20 12:53 AGENTS.md
+-rw-------   1 maintainer  staff  7479 Nov 20 12:53 BOOTSTRAP.md
+-rw-------   1 maintainer  staff  1456 Nov 20 12:53 IDENTITY.md
+-rw-------   1 maintainer  staff  1533 Nov 20 12:53 SOUL.md
+-rw-------   1 maintainer  staff  1077 Nov 20 12:53 USER.md
+2026-11-20T19:53:36Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md removed
+2026-11-20T19:53:38Z model preloaded (untimed)
+2026-11-20T19:53:39Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:54:10Z [PB-s1] footprint turn rc=0 status=200 req_bytes=58789 prompt_eval_count=12689 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=20461 oc_budget=24576/32768 oc_remaining=4115 secs_load=0.84 secs_prefill=23.07 secs_total=23.99 wall=23.992
+2026-11-20T19:54:34Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:54:58Z [PS-s1] footprint turn rc=0 status=200 req_bytes=49174 prompt_eval_count=10337 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=17480 oc_budget=24576/32768 oc_remaining=7096 secs_load=0.0 secs_prefill=17.7 secs_total=17.87 wall=17.869
+2026-11-20T19:55:21Z DONE

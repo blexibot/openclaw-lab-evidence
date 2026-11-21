@@ -1,0 +1,16 @@
+2026-11-20T21:11:51Z tag=q27m-pr-lfp model=qwen3.8:27b ctx=32768 mode=footprint rungs=[PB PS] seeds=[1] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T21:11:51Z model digest: ['47951e4a666180bc2aedfc93c169472f2de783696fe196efbf063f5730ecf163']
+2026-11-20T21:11:55Z onboard rc=0
+kit20/run_matrix.sh: line 28: 78333 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/onboard-wire.jsonl nohup $PY -I $K/logproxy.py > $R/proxy-onboard.log 2>&1 < /dev/null
+2026-11-20T21:11:56Z workspace $LABHOME/apx/runs/q27m-pr-lfp/home/.openclaw/workspace
+2026-11-20T21:11:56Z livedin: {'AGENTS.md': 17114, 'USER.md': 3070, 'MEMORY.md': 13688} skills=40
+2026-11-20T21:11:58Z mcp add rc=0
+2026-11-20T21:11:58Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md already absent
+2026-11-20T21:11:58Z model preloaded (untimed)
+2026-11-20T21:11:59Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:13:44Z [PB-s1] footprint turn rc=0 status=200 req_bytes=103844 prompt_eval_count=23811 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=compact_only oc_estimate=36498 oc_budget=24576/32768 oc_remaining=0 secs_load=0.01 secs_prefill=95.51 secs_total=97.98 wall=97.988
+kit20/run_matrix.sh: line 57: 78420 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:14:09Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T21:14:59Z [PS-s1] footprint turn rc=0 status=200 req_bytes=58896 prompt_eval_count=13554 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=21821 oc_budget=24576/32768 oc_remaining=2755 secs_load=0.0 secs_prefill=30.82 secs_total=33.17 wall=33.169
+kit20/run_matrix.sh: line 57: 78933 Terminated: 15          LISTEN=127.0.0.1:$PXP UPSTREAM=${OLL#http://} LOG=$R/$L/wire.jsonl nohup $PY -I $K/logproxy.py > $R/$L/proxy.log 2>&1 < /dev/null
+2026-11-20T21:15:22Z DONE

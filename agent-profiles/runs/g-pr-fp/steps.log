@@ -1,0 +1,20 @@
+2026-11-20T19:19:36Z tag=g-pr-fp model=gemma4:26b-a4b ctx=32768 mode=footprint rungs=[PB PS] seeds=[1] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T19:19:36Z model digest: ['48eb98ec778c163d87f69d735fcdd79e345063af9af4685613fd018ae5debf5e']
+2026-11-20T19:19:40Z onboard rc=0
+2026-11-20T19:19:41Z workspace $LABHOME/apx/runs/g-pr-fp/home/.openclaw/workspace
+total 56
+drwxr-xr-x   8 maintainer  staff   256 Nov 20 12:19 .
+drwx------  12 maintainer  staff   384 Nov 20 12:19 ..
+drwxr-xr-x   9 maintainer  staff   288 Nov 20 12:19 .git
+-rw-------   1 maintainer  staff  7203 Nov 20 12:19 AGENTS.md
+-rw-------   1 maintainer  staff  7479 Nov 20 12:19 BOOTSTRAP.md
+-rw-------   1 maintainer  staff  1456 Nov 20 12:19 IDENTITY.md
+-rw-------   1 maintainer  staff  1533 Nov 20 12:19 SOUL.md
+-rw-------   1 maintainer  staff  1077 Nov 20 12:19 USER.md
+2026-11-20T19:19:41Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md removed
+2026-11-20T19:19:45Z model preloaded (untimed)
+2026-11-20T19:19:46Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:20:03Z [PB-s1] footprint turn rc=0 status=200 req_bytes=65484 prompt_eval_count=15335 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=23521 oc_budget=24576/32768 oc_remaining=1055 secs_load=0.01 secs_prefill=10.2 secs_total=10.34 wall=10.342
+2026-11-20T19:20:28Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T19:20:42Z [PS-s1] footprint turn rc=0 status=200 req_bytes=55872 prompt_eval_count=12684 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=20569 oc_budget=24576/32768 oc_remaining=4007 secs_load=0.01 secs_prefill=7.92 secs_total=8.03 wall=8.03
+2026-11-20T19:21:05Z DONE

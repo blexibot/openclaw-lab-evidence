@@ -1,0 +1,81 @@
+{
+ "version": 4,
+ "note": "v1.1 tasks after an external reviewer's second review. T10b = T10 plus a check that the rule actually reached the model (info.in_request). T11b grades the effect, not the tool name: the scheduler's existing jobs (OpenClaw's built-ins) are noted and kept; jobs created during the task are graded and then removed, and the grade reads the gateway's automations back (a job created during the task, with 'stretch' in it, firing 5-15 minutes after the task started). Which route was used (native tool, shell CLI) and whether it claimed done without a job are recorded in info, not graded. T15 needs a workspace skill that the request never names: pass = label.txt made the skill's way. info.in_request shows whether the skill was listed to the model. T16 hides the answer in the last line of a ~36 KB file, past the read tool's ~16K-char page at 32K: pass = the tail code, by any route (tool calls recorded). Synthetic content only. v1.1b (review fixes): in_request = the needle is in the system prompt of this task's own requests (text found by the model's own reads is found_by_tools); the reminder window is measured from the job's own createdAtMs; a failed readback is verdict 'unknown'; T11b runs last with a 480 s cap so its job can't fire before readback; T15's rule is uppercase only (no letter reversal, which confounds small models).",
+ "critical": [],
+ "tasks": [
+  {
+   "id": "T10b",
+   "name": "convention in the middle of AGENTS.md (+ was it in the request?)",
+   "files": {},
+   "turns": [
+    "What is the lab greeting from your workspace conventions? Reply with the greeting only. Do not read any files or use any tools."
+   ],
+   "grade": {
+    "reply_contains": "TANGERINE WAVE",
+    "no_tool_calls": true,
+    "request_contains_info": "TANGERINE WAVE"
+   },
+   "insert_middle": {
+    "AGENTS.md": "\n## Lab convention (synthetic)\nWhen anyone asks for the lab greeting, reply exactly: TANGERINE WAVE\n"
+   }
+  },
+  {
+   "id": "T15",
+   "name": "use a workspace skill the request doesn't name",
+   "files": {
+    "skills/lab-labeler/SKILL.md": "---\nname: lab-labeler\ndescription: Make a lab label for a sample. Use whenever someone asks for a lab label.\n---\n\n# Lab labeler (synthetic)\n\nTo make a lab label for a sample:\n1. Take the sample name and write it in uppercase.\n2. Write `LBL-` + that + `-7` as the only content of `label.txt` in the workspace.\n\nExample: for the sample `tin`, `label.txt` contains `LBL-TIN-7`.\n"
+   },
+   "ensure_absent": [
+    "label.txt"
+   ],
+   "turns": [
+    "Make a lab label for the sample copper. Reply with the word done when it's made."
+   ],
+   "grade": {
+    "file_equals_any": {
+     "label.txt": [
+      "LBL-COPPER-7",
+      "LBL-COPPER-7\n"
+     ]
+    },
+    "request_contains_info": "lab-labeler"
+   }
+  },
+  {
+   "id": "T16",
+   "name": "answer hidden past the first read page",
+   "files": {},
+   "files_generated": {
+    "long.txt": {
+     "filler": 400,
+     "seed": 9,
+     "tail": "final code KESTREL-88"
+    }
+   },
+   "turns": [
+    "What is the final code written on the last line of long.txt in your workspace? Reply with the code only."
+   ],
+   "grade": {
+    "reply_contains": "KESTREL-88"
+   }
+  },
+  {
+   "id": "T11b",
+   "name": "set a reminder (effect read back from the scheduler)",
+   "files": {},
+   "scheduler_reset": true,
+   "turns": [
+    "Set a reminder that fires 10 minutes from now with the text: stretch break. If you set it, reply with the word done. If you could not, reply with the words not done and the reason."
+   ],
+   "grade": {
+    "scheduler_job": {
+     "text": "stretch",
+     "min_s": 300,
+     "max_s": 900
+    },
+    "native_tool_info": "automations"
+   },
+   "cap": 480
+  }
+ ]
+}

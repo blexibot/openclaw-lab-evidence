@@ -1,0 +1,23 @@
+2026-11-20T20:13:36Z tag=q8-pr-lfp model=qwen3:8b ctx=32768 mode=footprint rungs=[PB PS] seeds=[1] openclaw=OpenClaw 2026.11.5 (ffe3bf0) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T20:13:36Z model digest: ['500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41']
+2026-11-20T20:13:39Z onboard rc=0
+2026-11-20T20:13:40Z workspace $LABHOME/apx/runs/q8-pr-lfp/home/.openclaw/workspace
+total 56
+drwxr-xr-x   8 maintainer  staff   256 Nov 20 13:13 .
+drwx------  12 maintainer  staff   384 Nov 20 13:13 ..
+drwxr-xr-x   9 maintainer  staff   288 Nov 20 13:13 .git
+-rw-------   1 maintainer  staff  7203 Nov 20 13:13 AGENTS.md
+-rw-------   1 maintainer  staff  7479 Nov 20 13:13 BOOTSTRAP.md
+-rw-------   1 maintainer  staff  1456 Nov 20 13:13 IDENTITY.md
+-rw-------   1 maintainer  staff  1533 Nov 20 13:13 SOUL.md
+-rw-------   1 maintainer  staff  1077 Nov 20 13:13 USER.md
+2026-11-20T20:13:40Z livedin: {'AGENTS.md': 17114, 'USER.md': 3070, 'MEMORY.md': 13688} skills=40
+Saved MCP server "labtools" to $LABHOME/apx/runs/q8-pr-lfp/home/.openclaw/openclaw.json.
+2026-11-20T20:13:42Z mcp add rc=0
+2026-11-20T20:13:42Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md already absent
+2026-11-20T20:13:43Z model preloaded (untimed)
+2026-11-20T20:13:44Z [PB-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T20:14:35Z [PB-s1] footprint turn rc=0 status=200 req_bytes=96975 prompt_eval_count=20469 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=compact_only oc_estimate=33254 oc_budget=24576/32768 oc_remaining=0 secs_load=0.83 secs_prefill=44.01 secs_total=44.94 wall=44.938
+2026-11-20T20:15:00Z [PS-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+2026-11-20T20:15:25Z [PS-s1] footprint turn rc=0 status=200 req_bytes=52119 prompt_eval_count=10797 done=stop error=None num_ctx=32768 seed=1 top={'truncate': False, 'shift': False} oc_route=fits oc_estimate=18632 oc_budget=24576/32768 oc_remaining=5944 secs_load=0.0 secs_prefill=18.64 secs_total=18.85 wall=18.852
+2026-11-20T20:15:48Z DONE

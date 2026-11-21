@@ -1,0 +1,104 @@
+2026-11-20T22:52:44Z tag=q27m-v4b model=qwen3.8:27b ctx=32768 mode=suite rungs=[R0 R1 R2 R3] seeds=[1 2 3] openclaw=OpenClaw 2026.11.5 (e13cf15) node=v24.22.3 ollama={"version":"0.40.16"}
+2026-11-20T22:52:44Z model digest: ['47951e4a666180bc2aedfc93c169472f2de783696fe196efbf063f5730ecf163']
+2026-11-20T22:52:48Z onboard rc=0
+2026-11-20T22:52:49Z workspace $LABHOME/apx/runs/q27m-v4b/home/.openclaw/workspace
+total 56
+drwxr-xr-x   8 maintainer  staff   256 Nov 20 15:52 .
+drwx------  11 maintainer  staff   352 Nov 20 15:52 ..
+drwxr-xr-x   9 maintainer  staff   288 Nov 20 15:52 .git
+-rw-------   1 maintainer  staff  7147 Nov 20 15:52 AGENTS.md
+-rw-------   1 maintainer  staff  7479 Nov 20 15:52 BOOTSTRAP.md
+-rw-------   1 maintainer  staff  1456 Nov 20 15:52 IDENTITY.md
+-rw-------   1 maintainer  staff  1533 Nov 20 15:52 SOUL.md
+-rw-------   1 maintainer  staff  1137 Nov 20 15:52 USER.md
+2026-11-20T22:52:49Z prep_ws: IDENTITY.md filled (1532 bytes), BOOTSTRAP.md removed
+2026-11-20T22:52:49Z model preloaded (untimed)
+2026-11-20T22:52:50Z [R0-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R0/s1 T10b fail {'reply_contains': True, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=16359..17131 71.3s
+R0/s1 T15 pass {'file_equals_any': True} calls=2 crossed=False prompt_eval=16406..16786 41.2s
+R0/s1 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=16330..16433 32.4s
+R0/s1 T11b pass {'scheduler_job': True} calls=4 crossed=False prompt_eval=16352..21018 46.4s
+2026-11-20T22:56:54Z [R0-s1] suite done rc=0
+2026-11-20T22:57:19Z [R0-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R0/s2 T10b fail {'reply_contains': True, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=16359..16449 34.8s
+R0/s2 T15 pass {'file_equals_any': True} calls=3 crossed=False prompt_eval=16406..17054 27.0s
+R0/s2 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=16330..16410 6.4s
+R0/s2 T11b pass {'scheduler_job': True} calls=4 crossed=False prompt_eval=16352..24223 49.8s
+2026-11-20T23:00:10Z [R0-s2] suite done rc=0
+2026-11-20T23:00:34Z [R0-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R0/s3 T10b fail {'reply_contains': True, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=16359..17594 43.1s
+R0/s3 T15 pass {'file_equals_any': True} calls=2 crossed=False prompt_eval=16406..16786 19.5s
+R0/s3 T16 pass {'reply_contains': True} calls=3 crossed=False prompt_eval=16330..26712 64.7s
+R0/s3 T11b pass {'scheduler_job': True} calls=9 crossed=False prompt_eval=24937..25454 153.6s
+2026-11-20T23:06:08Z [R0-s3] suite done rc=0
+2026-11-20T23:06:53Z [R1-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R1/s1 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=14969..14969 62.0s
+R1/s1 T15 pass {'file_equals_any': True} calls=2 crossed=False prompt_eval=15016..15396 61.9s
+R1/s1 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=14940..15043 30.8s
+R1/s1 T11b pass {'scheduler_job': True} calls=10 crossed=False prompt_eval=14962..22452 97.3s
+2026-11-20T23:11:58Z [R1-s1] suite done rc=0
+2026-11-20T23:12:22Z [R1-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R1/s2 T10b fail {'reply_contains': True, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=14969..15032 34.1s
+R1/s2 T15 pass {'file_equals_any': True} calls=2 crossed=False prompt_eval=15016..15396 19.6s
+R1/s2 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=14940..15020 6.2s
+R1/s2 T11b pass {'scheduler_job': True} calls=7 crossed=False prompt_eval=14962..19303 42.5s
+2026-11-20T23:14:57Z [R1-s2] suite done rc=0
+2026-11-20T23:15:21Z [R1-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R1/s3 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=14969..14969 7.2s
+R1/s3 T15 pass {'file_equals_any': True} calls=2 crossed=False prompt_eval=15016..15396 12.2s
+R1/s3 T16 pass {'reply_contains': True} calls=3 crossed=False prompt_eval=14940..25322 52.4s
+R1/s3 T11b pass {'scheduler_job': True} calls=11 crossed=False prompt_eval=23845..24318 151.9s
+2026-11-20T23:19:58Z [R1-s3] suite done rc=0
+2026-11-20T23:20:22Z [R2-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R2/s1 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=13169..13169 23.2s
+R2/s1 T15 fail {'file_equals_any': False} calls=9 crossed=False prompt_eval=13136..17696 138.5s
+R2/s1 T16 invalid {'reply_contains': True} calls=1 crossed=False prompt_eval=13140..13220 21.7s
+R2/s1 T11b pass {'scheduler_job': True} calls=5 crossed=False prompt_eval=13162..18153 43.8s
+2026-11-20T23:25:07Z [R2-s1] suite done rc=0
+2026-11-20T23:25:31Z [R2-s1] rerun once: T16
+2026-11-20T23:25:32Z [R2-s1-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R2/s1 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=13140..13243 8.6s
+2026-11-20T23:25:59Z [R2-s1-a2] suite done rc=0
+2026-11-20T23:26:24Z [R2-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R2/s2 T10b pass {'reply_contains': True, 'no_tool_calls': True} calls=0 crossed=False prompt_eval=13169..13169 26.1s
+R2/s2 T15 fail {'file_equals_any': False} calls=2 crossed=False prompt_eval=13136..13793 24.8s
+R2/s2 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=13140..13243 6.5s
+R2/s2 T11b pass {'scheduler_job': True} calls=7 crossed=False prompt_eval=13162..18351 47.2s
+2026-11-20T23:29:01Z [R2-s2] suite done rc=0
+2026-11-20T23:29:33Z [R2-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R2/s3 T10b fail {'reply_contains': True, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=13169..13259 7.7s
+R2/s3 T15 fail {'file_equals_any': False} calls=6 crossed=False prompt_eval=13136..16961 99.3s
+R2/s3 T16 invalid {'reply_contains': True} calls=2 crossed=False prompt_eval=13140..17928 39.6s
+R2/s3 T11b fail {'scheduler_job': False} calls=10 crossed=False prompt_eval=13162..18367 82.6s
+2026-11-20T23:34:40Z [R2-s3] suite done rc=0
+2026-11-20T23:35:04Z [R2-s3] rerun once: T16
+2026-11-20T23:35:05Z [R2-s3-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R2/s3 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=13140..13243 7.6s
+2026-11-20T23:35:31Z [R2-s3-a2] suite done rc=0
+2026-11-20T23:35:55Z [R3-s1] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R3/s1 T10b fail {'reply_contains': False, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=11364..12131 53.1s
+R3/s1 T15 fail {'file_equals_any': False} calls=9 crossed=False prompt_eval=11356..14555 112.3s
+R3/s1 T16 invalid {'reply_contains': True} calls=1 crossed=False prompt_eval=11360..11463 31.5s
+R3/s1 T11b pass {'scheduler_job': True} calls=11 crossed=False prompt_eval=11382..17630 103.5s
+2026-11-20T23:42:24Z [R3-s1] suite done rc=0
+2026-11-20T23:42:47Z [R3-s1] rerun once: T16
+2026-11-20T23:42:49Z [R3-s1-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R3/s1 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=11360..11463 8.6s
+2026-11-20T23:43:16Z [R3-s1-a2] suite done rc=0
+2026-11-20T23:43:41Z [R3-s2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R3/s2 T10b fail {'reply_contains': False, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=11364..12144 53.2s
+R3/s2 T15 pass {'file_equals_any': True} calls=5 crossed=False prompt_eval=11356..13009 29.5s
+R3/s2 T16 invalid {'reply_contains': True} calls=1 crossed=False prompt_eval=11360..11463 25.8s
+R3/s2 T11b pass {'scheduler_job': True} calls=7 crossed=False prompt_eval=11382..16752 48.2s
+2026-11-20T23:47:40Z [R3-s2] suite done rc=0
+2026-11-20T23:48:03Z [R3-s2] rerun once: T16
+2026-11-20T23:48:04Z [R3-s2-a2] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R3/s2 T16 pass {'reply_contains': True} calls=2 crossed=False prompt_eval=11360..16126 26.3s
+2026-11-20T23:48:50Z [R3-s2-a2] suite done rc=0
+2026-11-20T23:49:14Z [R3-s3] validate: Config valid: $OPENCLAW_HOME/.openclaw/openclaw.json 
+R3/s3 T10b fail {'reply_contains': False, 'no_tool_calls': False} calls=1 crossed=False prompt_eval=11364..12131 23.5s
+R3/s3 T15 pass {'file_equals_any': True} calls=5 crossed=False prompt_eval=11356..13311 28.7s
+R3/s3 T16 pass {'reply_contains': True} calls=1 crossed=False prompt_eval=11360..11463 7.1s
+R3/s3 T11b pass {'scheduler_job': True} calls=6 crossed=False prompt_eval=11382..16149 42.1s
+2026-11-20T23:51:48Z [R3-s3] suite done rc=0
+2026-11-20T23:52:46Z DONE

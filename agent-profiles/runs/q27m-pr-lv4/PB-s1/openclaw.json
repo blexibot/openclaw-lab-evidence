@@ -1,0 +1,278 @@
+{
+  "agents": {
+    "entries": {
+      "main": {
+        "name": "main",
+        "workspace": "$LABHOME/apx/runs/q27m-pr-lv4/home/.openclaw/workspace",
+        "agentDir": "$LABHOME/apx/runs/q27m-pr-lv4/home/.openclaw/agents/main/agent",
+        "identity": {
+          "name": "main"
+        }
+      }
+    },
+    "defaults": {
+      "workspace": "$LABHOME/apx/runs/q27m-pr-lv4/home/.openclaw/workspace",
+      "model": {
+        "primary": "ollama/qwen3.8:27b"
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "ollama": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true,
+      "utilityModelSeparation": true,
+      "skillWorkshopPlugin": true,
+      "skillLibraryToolSplit": true
+    },
+    "lastTouchedVersion": "2026.11.5"
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "<redacted>"
+    },
+    "port": 18989,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "tools": {
+    "profile": "full"
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11535",
+        "api": "ollama",
+        "apiKey": "<redacted>",
+        "models": [
+          {
+            "id": "qwen3.8:27b",
+            "name": "qwen3.8:27b",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 16384,
+            "thinkingLevelMap": {
+              "off": "false",
+              "minimal": null,
+              "low": "low",
+              "medium": "medium",
+              "high": "xhigh",
+              "xhigh": "xhigh",
+              "max": "xhigh"
+            },
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true,
+              "supportsJsonSchemaResponseFormat": true
+            },
+            "contextTokens": 32768,
+            "params": {
+              "temperature": 0.7,
+              "top_p": 0.8,
+              "top_k": 20,
+              "min_p": 0,
+              "presence_penalty": 1.5,
+              "num_ctx": 32768,
+              "seed": 1,
+              "truncate": false
+            }
+          },
+          {
+            "id": "qwen3.8:27b-q4_K_M",
+            "name": "qwen3.8:27b-q4_K_M",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 16384,
+            "thinkingLevelMap": {
+              "off": "false",
+              "minimal": null,
+              "low": "low",
+              "medium": "medium",
+              "high": "xhigh",
+              "xhigh": "xhigh",
+              "max": "xhigh"
+            },
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true,
+              "supportsJsonSchemaResponseFormat": true
+            },
+            "contextTokens": 32768,
+            "params": {
+              "temperature": 0.7,
+              "top_p": 0.8,
+              "top_k": 20,
+              "min_p": 0,
+              "presence_penalty": 1.5,
+              "num_ctx": 32768,
+              "seed": 1,
+              "truncate": false
+            }
+          },
+          {
+            "id": "qwen3:8b",
+            "name": "qwen3:8b",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 40960,
+            "maxTokens": 16384,
+            "thinkingLevelMap": {
+              "off": "false",
+              "minimal": null,
+              "low": "true",
+              "medium": "true",
+              "high": "true",
+              "xhigh": null,
+              "max": "true"
+            },
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true,
+              "supportsJsonSchemaResponseFormat": true
+            },
+            "contextTokens": 32768,
+            "params": {
+              "temperature": 0.7,
+              "top_p": 0.8,
+              "top_k": 20,
+              "min_p": 0,
+              "presence_penalty": 1.5,
+              "num_ctx": 32768,
+              "seed": 1,
+              "truncate": false
+            }
+          },
+          {
+            "id": "gemma4:26b-a4b",
+            "name": "gemma4:26b-a4b",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 16384,
+            "thinkingLevelMap": {
+              "off": "false",
+              "minimal": null,
+              "low": "true",
+              "medium": "true",
+              "high": "true",
+              "xhigh": null,
+              "max": "true"
+            },
+            "compat": {
+              "supportsTools": true,
+              "supportsUsageInStreaming": true,
+              "supportsJsonSchemaResponseFormat": true
+            },
+            "contextTokens": 32768,
+            "params": {
+              "temperature": 0.7,
+              "top_p": 0.8,
+              "top_k": 20,
+              "min_p": 0,
+              "presence_penalty": 1.5,
+              "num_ctx": 32768,
+              "seed": 1,
+              "truncate": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "hooks": {
+    "internal": {
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-11-20T21:15:26.208Z",
+    "lastRunVersion": "2026.11.5",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "mcp": {
+    "servers": {
+      "labtools": {
+        "command": "/usr/bin/python3",
+        "args": [
+          "-I",
+          "$LABHOME/apx/kit20/mcpfake.py"
+        ],
+        "codex": {
+          "defaultToolsApprovalMode": "approve"
+        }
+      }
+    }
+  }
+}
